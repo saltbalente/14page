@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retorno de Pareja Seguro | Maestro Evaristo · Consulta Gratis</title>
+    <meta name="description" content="Logra tu retorno de pareja hoy. El Maestro Evaristo te guía con sabiduría ancestral para recuperar el amor perdido. Consulta gratis por WhatsApp.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0b0b0f;
+            --surface: #15151e;
+            --surface-hover: #1e1e2b;
+            --text: #ffffff;
+            --text-muted: #a0a0ab;
+            --primary: #1fb855;
+            --primary-dark: #179142;
+            --accent: #1fb855;
+            --border: rgba(255, 255, 255, 0.08);
+            --radius-btn: 50px;
+            --radius-card: 16px;
+            --font-title: 'Merriweather', serif;
+            --font-body: 'Inter', sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-title);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Utilidades */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .text-center { text-align: center; }
+        .mb-2 { margin-bottom: 2rem; }
+        .mb-4 { margin-bottom: 4rem; }
+        .mt-4 { margin-top: 4rem; }
+        
+        .highlight { color: var(--accent); }
+
+        /* Botones */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--primary);
+            color: #ffffff;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: var(--radius-btn);
+            font-size: 1.1rem;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(31, 184, 85, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .btn:hover, .btn:active {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(31, 184, 85, 0.4);
+        }
+
+        .btn-pulse {
+            animation: pulse-glow 2.5s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(31, 184, 85, 0.5); }
+            50% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(31, 184, 85, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(31, 184, 85, 0); }
+        }
+
+        /* Header Sticky */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(11, 11, 15, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-brand {
+            font-family: var(--font-title);
+            font-weight: 900;
+            font-size: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .header-btn {
+            background: var(--primary);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: var(--radius-btn);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Hero Cinemático */
+        .hero {
+            position: relative;
+            min-height: 92svh;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 10svh;
+            overflow: hidden;
+            margin-top: 60px; /* offset header */
+        }
+
+        .hero-video-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(11,11,15,0.2) 0%, rgba(11,11,15,0.85) 60%, rgba(11,11,15,1) 100%);
+            z-index: -1;
+        }
+        
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(31, 184, 85, 0.12); /* Velo primario */
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .badge-pill {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.3rem, 9vw, 4rem);
+            font-weight: 900;
+            line-height: 1.05;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .trust-microtext {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .scroll-arrow {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-10px) translateX(-50%); }
+            60% { transform: translateY(-5px) translateX(-50%); }
+        }
+
+        /* Secciones Generales */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 6vw, 2.8rem);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+        }
+
+        /* Maestro Section */
+        .oracular-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+        
+        .oracular-text:first-letter {
+            font-family: var(--font-title);
+            font-size: 3rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 8px;
+            color: var(--accent);
+        }
+
+        .video-vertical-wrapper {
+            max-width: 380px;
+            margin: 2rem auto;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .video-vertical {
+            width: 100%;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Grids & Cards (No Sliders) */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .grid-cards {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-card);
+            padding: 24px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card:hover {
+            background: var(--surface-hover);
+            transform: translateY(-5px);
+            border-color: rgba(31, 184, 85, 0.3);
+        }
+
+        .card-img-wrapper {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            aspect-ratio: 5/6;
+            max-height: 45vh;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .card-text {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Testimonios */
+        .testimonial-card {
+            background: var(--surface);
+            border-radius: var(--radius-card);
+            padding: 30px;
+            border: 1px solid var(--border);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '❝';
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(31, 184, 85, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+
+        .stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 20px;
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 20px 20px;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 10px;
+            padding-top: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Animaciones Scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Delays para grids */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+            .btn-pulse {
+                animation: none;
+            }
+            .scroll-arrow {
+                animation: none;
+            }
+            * {
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5S9BD5G9');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11495571750"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11495571750');gtag('config','AW-11034559801');gtag('config','AW-682101450');gtag('config','AW-16586320392');gtag('config','AW-16892054054');gtag('config','AW-16568918455');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%236d28d9'/><text x='32' y='44' font-size='34' text-anchor='middle'>🔮</text></svg>">
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9BD5G9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header class="header">
+        <div class="header-brand">Maestro Evaristo</div>
+        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Evaristo,%20vengo%20por%20una%20consulta%20sobre%20un%20retorno%20de%20pareja" class="header-btn">Consultar Gratis</a>
+    </header>
+
+    <main>
+        <!-- 1. HERO -->
+        <section class="hero">
+            <video class="hero-video-bg" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp">
+                <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-vela-roja-en-altar.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content container reveal">
+                <span class="badge-pill">✦ Sabiduría ancestral disponible ahora</span>
+                <h1>Tu Retorno de Pareja Seguro Hoy</h1>
+                <p class="hero-subtitle">Deja de sufrir en silencio. Te escucho con el respeto que mereces y te guío por el camino antiguo para recuperar lo que es tuyo.</p>
+                
+                <a href="https://wa.me/19498917311?text=Maestro,%20necesito%20ayuda%20urgente%20para%20un%20retorno%20de%20pareja" class="btn btn-pulse">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Consultar gratis por WhatsApp
+                </a>
+                
+                <div class="trust-microtext">
+                    ⭐ 4.9 · +5.000 consultas · Respuesta inmediata
+                </div>
+            </div>
+            
+            <div class="scroll-arrow">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+        </section>
+
+        <!-- 2. SOBRE EL MAESTRO -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Maestro santero con más de 25 años de experiencia</h2>
+                
+                <div class="video-vertical-wrapper reveal delay-1">
+                    <video class="video-vertical" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp">
+                        <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="reveal delay-2" style="max-width: 800px; margin: 0 auto;">
+                    <p class="oracular-text">Escúchame bien, hijo mío. Has llegado hasta aquí no por azar, sino porque tu espíritu clama por una respuesta que el mundo terrenal te niega. Lo que mis manos forjan no se aprende en páginas frías. El Maestro Evaristo lleva más de dos décadas pisando este sendero de luz y sombra, manteniendo el fuego del altar siempre vivo y el respeto por los ancestros intacto.</p>
+                    <p class="oracular-text">He visto corazones rotos sanar con un retorno de pareja bien guiado, y he ayudado a cientos a enderezar los pasos que el destino torció. Conozco los secretos de la magia antigua como la palma de mi mano vieja. Si ya intentaste todo y el dolor persiste, ven a mí. Te escucharé sin prisa, sin juzgar, y juntos hallaremos el remedio exacto para que el amor regrese a tu puerta.</p>
+                    
+                    <div class="text-center mt-4">
+                        <a href="https://wa.me/19498917311?text=Maestro%20Evaristo,%20deseo%20una%20consulta%20con%20usted" class="btn">Escríbele al Maestro Evaristo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TESTIMONIOS -->
+        <section class="section" style="background: rgba(255,255,255,0.02);">
+            <div class="container">
+                <h2 class="section-title reveal">Personas que ya recuperaron su tranquilidad</h2>
+                <p class="section-desc reveal delay-1">Palabras de quienes ya caminaron este sendero, confiaron en el retorno de pareja y encontraron la paz que tanto buscaban.</p>
+                
+                <div class="grid-cards">
+                    <div class="testimonial-card reveal delay-1">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">Llevaba ocho meses sumido en la desesperación intentando un retorno de pareja por mi cuenta y nada funcionaba. El Maestro Evaristo leyó mi destino con una claridad que asusta. Hizo un trabajo profundo y, para mi asombro, ella me buscó pidiendo perdón. Su don es innegable.</p>
+                        <p class="testimonial-author">Mateo C. — Houston, TX</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal delay-2">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">La verdad yo no creía en esto, se lo juro. Mi esposo se fue de la casa de la noche a la mañana. Busqué ayuda para un retorno de pareja con don Evaristo y me guió paso a paso. A las tres semanas, mi familia volvió a estar unida. Mil gracias, maestro.</p>
+                        <p class="testimonial-author">Silvia R. — Phoenix, AZ</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal delay-3">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">Evaristo no hace falsas promesas. Me habló claro desde el primer instante sobre mi caso. Su trabajo para mi retorno de pareja fue intenso y sentí el cambio en la energía de inmediato. Hoy estamos mejor que cuando nos conocimos.</p>
+                        <p class="testimonial-author">Jorge L. — Chicago, IL</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal delay-1">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">¡No tengo palabras para agradecerle! Estaba devastada por una tercera persona que se metió en mi relación. El maestro realizó un alejamiento y luego un retorno de pareja. A los pocos días del ritual, recibí ese mensaje que tanto anhelaba.</p>
+                        <p class="testimonial-author">Carmen T. — Miami, FL</p>
+                    </div>
+                    
+                    <div class="testimonial-card reveal delay-2">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">Mi situación era oscura y yo estaba muy escéptico. Pero la voz de Evaristo me dio una confianza inmensa. Me explicó cómo potenciar el retorno de pareja y nunca me dejó solo en el proceso. Mi mujer volvió, cambiada para bien y llena de amor.</p>
+                        <p class="testimonial-author">Diego M. — Los Angeles, CA</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4 reveal delay-3">
+                    <a href="https://wa.me/19498917311?text=Quiero%20ver%20resultados%20en%20mi%20vida,%20Maestro" class="btn" style="background: transparent; border: 1px solid var(--primary); color: var(--primary); box-shadow: none;">Ver más testimonios por WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICIOS INTRO & 5-11 SERVICIOS -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Servicios de brujería y retorno de pareja</h2>
+                <p class="section-desc reveal delay-1">Todo trabajo profundo nace de escuchar. La primera consulta es un regalo de mi parte para entender tu pena. Evaluamos tu caso sin costo y pagas solo cuando el sendero se aclara.</p>
+                
+                <div class="grid-cards">
+                    
+                    <!-- Servicio Principal (Keyword) -->
+                    <div class="card reveal delay-1">
+                        <div class="card-img-wrapper">
+                            <img src="https://retorno-de-pareja.brujero.org/optimizado/ag-200094841673/banco-vela-roja-y-beso-bajo-la-luna.webp" alt="Retorno de Pareja Seguro" width="800" height="960" loading="lazy" decoding="async" class="card-img">
+                        </div>
+                        <h3 class="card-title">Retorno de Pareja</h3>
+                        <p class="card-text">El decreto final para que el amor regrese. Usamos la fuerza de los elementos y rituales ancestrales para reavivar la llama, calmar los conflictos y doblegar el orgullo de quien se marchó, logrando un retorno de pareja seguro y duradero.</p>
+                        <a href="https://wa.me/19498917311?text=Deseo%20informaci%C3%B3n%20sobre%20el%20Retorno%20de%20Pareja" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+
+                    <!-- Magia Negra -->
+                    <div class="card reveal delay-2">
+                        <div class="card-img-wrapper">
+                            
+                        </div>
+                        <h3 class="card-title">Magia Negra</h3>
+                        <p class="card-text">Fuerzas intensas invocadas para casos extremos donde otros caminos han fallado. Es un sendero serio que requiere la responsabilidad de mis años, usado solo tras una profunda valoración espiritual para doblegar voluntades rebeldes.</p>
+                        <a href="https://wa.me/19498917311?text=Necesito%20ayuda%20con%20Magia%20Negra" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+
+                    <!-- Magia Blanca (Con Video) -->
+                    <div class="card reveal delay-3">
+                        <div class="card-img-wrapper">
+                            <video class="card-img" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra-caratula.webp" style="object-fit: cover;">
+                                <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <h3 class="card-title">Magia Blanca</h3>
+                        <p class="card-text">Energía pura enfocada en tu bienestar absoluto. Atraemos la luz, superamos los tropiezos del destino y llamamos a la buena fortuna, protegiendo tu aura con el poder inquebrantable del amor genuino y la fe.</p>
+                        <a href="https://wa.me/19498917311?text=Busco%20limpieza%20con%20Magia%20Blanca" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+
+                    <!-- Magia Roja -->
+                    <div class="card reveal delay-1">
+                        <div class="card-img-wrapper">
+                            
+                        </div>
+                        <h3 class="card-title">Magia Roja</h3>
+                        <p class="card-text">El fuego sagrado de la pasión. Despertamos el deseo dormido y fortalecemos la atracción íntima a niveles insospechados, para que esa persona especial no tenga ojos, cuerpo ni pensamientos para nadie más que tú.</p>
+                        <a href="https://wa.me/19498917311?text=Quiero%20saber%20sobre%20Magia%20Roja" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+
+                    <!-- Endulzamientos -->
+                    <div class="card reveal delay-2">
+                        <div class="card-img-wrapper">
+                            
+                        </div>
+                        <h3 class="card-title">Endulzamientos</h3>
+                        <p class="card-text">Suavizamos hasta los corazones más duros. Con esencias ancestrales, miel y canela, calmamos el enojo visceral y acercamos dulcemente a quien se ha alejado cegado por el orgullo, preparando el terreno para el retorno.</p>
+                        <a href="https://wa.me/19498917311?text=Necesito%20un%20endulzamiento" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+
+                    <!-- Limpias Espirituales -->
+                    <div class="card reveal delay-3">
+                        <div class="card-img-wrapper">
+                            
+                        </div>
+                        <h3 class="card-title">Limpias Espirituales</h3>
+                        <p class="card-text">Desterramos la oscuridad que te acecha. Si sientes pesadez o que nada florece, purificamos tu aura y tu entorno, liberándote de envidias, salaciones y malas influencias que bloquean tu camino al éxito.</p>
+                        <a href="https://wa.me/19498917311?text=Siento%20que%20necesito%20una%20limpia" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+
+                    <!-- Alejamientos -->
+                    <div class="card reveal delay-1">
+                        <div class="card-img-wrapper">
+                            
+                        </div>
+                        <h3 class="card-title">Alejamientos</h3>
+                        <p class="card-text">Cortamos de raíz los lazos que hacen daño. Trabajo firme e implacable para separar definitivamente a terceras personas que interfieren en tu relación, cerrando ciclos tóxicos con autoridad espiritual y protección.</p>
+                        <a href="https://wa.me/19498917311?text=Necesito%20alejar%20a%20una%20persona" class="highlight font-weight-bold">Consulta $0 ➔</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. RETORNO DE PAREJA CASERO (Destacado) -->
+        <section class="section" style="background: rgba(31, 184, 85, 0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container">
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 800px; margin: 0 auto;">
+                    <span class="badge-pill reveal" style="color: var(--primary); border-color: var(--primary);">★ El sendero más solicitado</span>
+                    <h2 class="section-title reveal delay-1">Guía para el Retorno de Pareja</h2>
+                    
+                    <div class="reveal delay-2" style="width: 100%; max-width: 400px; margin: 2rem 0; border-radius: var(--radius-card); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        
+                    </div>
+
+                    <p class="oracular-text text-center reveal delay-3" style="text-align: center;">Te guío paso a paso en poderosos rituales para un <strong>retorno de pareja</strong> desde tu hogar, potenciados con mi canalización de energía a distancia. Prácticas seguras y efectivas para afianzar la lealtad, analizadas siempre con una consulta previa para tener certeza absoluta del proceso y no errar el camino.</p>
+                    
+                    <div class="trust-microtext reveal delay-3" style="justify-content: center; margin: 2rem 0; font-size: 1rem;">
+                        💰 Pagas al ver resultados · 🕯️ Consulta gratis · 🔮 Seguimiento personal
+                    </div>
+                    
+                    <a href="https://wa.me/19498917311?text=Maestro,%20quiero%20iniciar%20el%20proceso%20de%20retorno%20de%20pareja" class="btn btn-pulse reveal delay-3">Consultar ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. FAQ -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Resolvemos tus dudas sobre el retorno de pareja</h2>
+                <p class="section-desc reveal delay-1">La claridad es el primer paso hacia la luz. Aquí respondo a las inquietudes de quienes buscan recuperar su destino.</p>
+                
+                <div class="faq-container">
+                    <details class="reveal delay-1">
+                        <summary>¿Qué es exactamente un retorno de pareja y cómo funciona?</summary>
+                        <div class="faq-content">
+                            Es un trabajo espiritual profundo diseñado para restaurar el vínculo amoroso quebrantado. Funciona canalizando energías antiguas para disipar rencores, avivar los sentimientos originales y hacer que la persona amada sienta la necesidad imperiosa de volver a tu lado.
+                        </div>
+                    </details>
+                    
+                    <details class="reveal delay-2">
+                        <summary>¿Es seguro realizar un trabajo de retorno de pareja?</summary>
+                        <div class="faq-content">
+                            Absolutamente, siempre y cuando vayas de la mano de un maestro experimentado como yo. Sello cada ritual con protecciones ancestrales para evitar cualquier karma o consecuencia negativa, asegurando que la energía fluya desde la luz y el amor.
+                        </div>
+                    </details>
+                    
+                    <details class="reveal delay-3">
+                        <summary>¿En cuánto tiempo veré los resultados de este retorno?</summary>
+                        <div class="faq-content">
+                            Los tiempos del espíritu son únicos para cada corazón y dependen de la resistencia de la persona. Algunos notan acercamientos en pocos días, otros requieren semanas. Mi compromiso como tu guía es acompañarte hasta que tu situación mejore visiblemente.
+                        </div>
+                    </details>
+                    
+                    <details class="reveal delay-1">
+                        <summary>¿Tengo que pagar por adelantado la consulta sobre mi caso?</summary>
+                        <div class="faq-content">
+                            No. El primer paso en nuestro sendero es totalmente gratuito. Quiero escuchar tu caso con calma; solo hablaremos de costos cuando estemos seguros del ritual a tomar y yo te confirme que el retorno de pareja es viable.
+                        </div>
+                    </details>
+                    
+                    <details class="reveal delay-2">
+                        <summary>¿Puede ayudarme con el retorno si vivo en otro estado de USA?</summary>
+                        <div class="faq-content">
+                            La energía antigua no conoce de distancias ni fronteras terrenales. Atiendo a personas de todo Estados Unidos, canalizando la fuerza a distancia con la misma devoción y poder que si estuvieras presente frente a mi propio altar.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="section" style="padding-bottom: 6rem;">
+            <div class="container text-center reveal">
+                <h2 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem;">No dejes que el tiempo apague lo que aún tiene fuego</h2>
+                <p style="color: var(--text-muted); font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">El momento de actuar es ahora. Hay saberes antiguos para lo que te pasa, y estoy aquí para escucharte. Pronuncia tu petición.</p>
+                <a href="https://wa.me/19498917311?text=Maestro%20Evaristo,%20estoy%20listo/a%20para%20mi%20retorno%20de%20pareja" class="btn btn-pulse" style="max-width: 400px; font-size: 1.2rem; padding: 20px;">
+                    Hablar con el Maestro Evaristo
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Maestro Evaristo. Servicios espirituales y retorno de pareja.</p>
+            <p style="margin-top: 10px; opacity: 0.6; font-size: 0.75rem;">Los resultados pueden variar según cada caso. Servicios para mayores de 18 años con fines de entretenimiento espiritual y orientación personal.</p>
+        </div>
+    </footer>
+
+    <!-- Animaciones Scroll & Reduced Motion Logic -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const handleReveal = () => {
+                if (prefersReducedMotion.matches) {
+                    revealElements.forEach(el => el.classList.add('visible'));
+                    return;
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+                revealElements.forEach(el => observer.observe(el));
+            };
+
+            handleReveal();
+            prefersReducedMotion.addEventListener('change', handleReveal);
+        });
+    </script>
+
+    <!-- Datos Estructurados -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Qué es exactamente un retorno de pareja y cómo funciona?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es un trabajo espiritual profundo diseñado para restaurar el vínculo amoroso quebrantado. Funciona canalizando energías antiguas para disipar rencores, avivar los sentimientos originales y hacer que la persona amada sienta la necesidad imperiosa de volver a tu lado."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Es seguro realizar un trabajo de retorno de pareja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutamente, siempre y cuando vayas de la mano de un maestro experimentado como yo. Sello cada ritual con protecciones ancestrales para evitar cualquier karma o consecuencia negativa."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo veré los resultados de este retorno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los tiempos del espíritu son únicos para cada corazón. Algunos notan acercamientos en pocos días, otros requieren semanas. Mi compromiso es acompañarte hasta que tu situación mejore."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Tengo que pagar por adelantado la consulta sobre mi caso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El primer paso en nuestro sendero es totalmente gratuito. Quiero escuchar tu caso con calma; solo hablaremos de costos cuando estemos seguros del ritual a tomar."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Puede ayudarme con el retorno si vivo en otro estado de USA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La energía antigua no conoce de distancias. Atiendo a personas de todo Estados Unidos, canalizando la fuerza a distancia con la misma devoción y poder que si estuvieras presente."
+        }
+      }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Maestro Evaristo - Especialista en Retorno de Pareja",
+      "image": "https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp",
+      "telephone": "+19498917311",
+      "url": "https://retorno-de-pareja.brujero.org/",
+      "priceRange": "$$",
+      "description": "El Maestro Evaristo ofrece servicios espirituales ancestrales especializados en retorno de pareja, amarres y limpiezas en todo Estados Unidos. Consulta gratuita.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+<script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--WA-FAB:sello-mistico--><div class="wfab-sello"><style>
+.wfab-sello{position:fixed;right:18px;bottom:18px;z-index:99999}
+.wfab-sello .wr{position:absolute;inset:-9px;border-radius:50%;border:2px dashed rgba(212,175,55,.85);animation:wfabSelloSpin 16s linear infinite;pointer-events:none}
+.wfab-sello a{display:flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2fe07c,#0f8a49);color:#fff;box-shadow:0 6px 22px rgba(15,138,73,.5),0 0 16px rgba(147,51,234,.35);animation:wfabSelloGlow 4s ease-in-out infinite;text-decoration:none}
+@keyframes wfabSelloSpin{to{transform:rotate(360deg)}}
+@keyframes wfabSelloGlow{0%,100%{box-shadow:0 6px 22px rgba(15,138,73,.5),0 0 14px rgba(147,51,234,.3)}50%{box-shadow:0 6px 22px rgba(15,138,73,.55),0 0 30px rgba(147,51,234,.6)}}
+@media (prefers-reduced-motion:reduce){.wfab-sello *{animation:none!important}}
+</style><span class="wr"></span><a href="https://wa.me/19498917311?text=Hola%20Maestro%20Evaristo,%20vengo%20por%20una%20consulta%20sobre%20un%20retorno%20de%20pareja" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div><!--/WA-FAB-->
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+</body>
+</html>

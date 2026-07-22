@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Limpias Espirituales | Maestro Baltazar · Consulta por WhatsApp</title>
+  <meta name="description" content="Limpias espirituales con el Maestro Baltazar. Consulta privada, orientación a distancia y acompañamiento espiritual por WhatsApp.">
+  <link rel="canonical" href="https://limpias-espirituales.brujero.org/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --surface:#15151e;
+      --surface-2:#1b1b25;
+      --text:#fff;
+      --muted:#c9c9d0;
+      --line:#30303a;
+      --green:#1fb855;
+      --green-dark:#13833b;
+      --radius:16px;
+      --serif:"Merriweather",Georgia,serif;
+      --sans:"Inter",Arial,sans-serif
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    img{display:block}
+    .site-header{position:sticky;top:0;z-index:20;background:rgba(11,11,15,.96);border-bottom:1px solid var(--line)}
+    .header-inner{max-width:1120px;margin:auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-family:var(--serif);font-size:.92rem;font-weight:900;letter-spacing:.02em}
+    .brand span{display:block;color:var(--green);font:600 .68rem var(--sans);letter-spacing:.13em;text-transform:uppercase}
+    .header-cta,.button{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--green);color:#fff;font-weight:700;transition:transform .2s,box-shadow .2s,background .2s}
+    .header-cta{padding:8px 15px;border-radius:999px;font-size:.78rem;white-space:nowrap}
+    .button{border-radius:999px;padding:15px 22px;min-height:50px}
+    .button:hover,.header-cta:hover{transform:translateY(-2px);background:#25c864;box-shadow:0 10px 24px rgba(31,184,85,.28)}
+    .button:active,.header-cta:active{transform:translateY(0)}
+    .button.primary{animation:breath 2.5s infinite}
+    @keyframes breath{0%,100%{transform:scale(1);box-shadow:0 0 0 rgba(31,184,85,0)}50%{transform:scale(1.04);box-shadow:0 0 25px rgba(31,184,85,.3)}}
+    main{overflow:hidden}
+    section{max-width:1120px;margin:0 auto;padding:76px 18px}
+    .hero{max-width:none;min-height:92svh;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:0 18px 62px}
+    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+    .hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.76) 80%),linear-gradient(120deg,rgba(31,184,85,.13),transparent 58%)}
+    .hero-copy{position:relative;z-index:2;width:100%;max-width:760px;margin:0 auto}
+    .eyebrow{display:inline-flex;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.25);backdrop-filter:blur(8px);border-radius:999px;padding:7px 13px;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    h1,h2,h3{font-family:var(--serif);line-height:1.15;margin:0 0 18px}
+    h1{font-size:clamp(2.3rem,9vw,3.6rem);font-weight:900;text-shadow:0 3px 18px rgba(0,0,0,.42);margin-top:20px}
+    h2{font-size:clamp(1.65rem,5vw,2.35rem)}
+    h3{font-size:1.25rem}
+    p{margin:0 0 18px}
+    .hero-sub{color:rgba(255,255,255,.88);font-size:1.03rem;max-width:620px}
+    .trust{color:#e9e9ed;font-size:.82rem;margin-top:14px}
+    .hero .button{margin-top:8px}
+    .scroll-cue{position:absolute;z-index:2;bottom:17px;left:50%;width:1px;height:30px;background:rgba(255,255,255,.7);animation:scrollCue 1.8s infinite}
+    @keyframes scrollCue{0%,100%{opacity:.35;transform:scaleY(.7);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
+    .section-kicker{color:var(--green);font-size:.73rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:12px}
+    .lead{color:var(--muted);max-width:720px}
+    .dark-section{background:var(--surface);max-width:none}
+    .dark-section > *{max-width:1120px;margin-left:auto;margin-right:auto}
+    .two-col{display:grid;gap:28px;align-items:center}
+    .media img{width:min(84%,360px);height:auto;max-height:45vh;aspect-ratio:5/6;object-fit:cover;border-radius:var(--radius);margin:0 auto;box-shadow:0 16px 34px rgba(0,0,0,.32)}
+    .media figcaption{color:#a9a9b2;text-align:center;font-size:.78rem;margin-top:9px}
+    .video-frame{width:min(100%,380px);aspect-ratio:9/16;margin:20px auto 0;border-radius:var(--radius);overflow:hidden;background:#050507;box-shadow:0 18px 35px rgba(0,0,0,.34)}
+    .video-frame video{width:100%;height:100%;object-fit:cover}
+    .story-grid{display:grid;gap:13px;margin-top:28px}
+    .story,.service-card,.faq details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+    .story{padding:20px}
+    .stars{color:var(--green);letter-spacing:.08em;font-size:.83rem}
+    .story p{font-size:.92rem;color:#ededf0;margin:8px 0 12px}
+    .story cite{font-style:normal;color:#a8a8b2;font-size:.78rem}
+    .service-intro{display:grid;gap:22px;align-items:center}
+    .service-index{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+    .service-index a{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;color:#eee;font-size:.86rem;transition:transform .2s,border-color .2s}
+    .service-index a:hover{transform:translateY(-2px);border-color:var(--green)}
+    .service-section{border-top:1px solid var(--line)}
+    .service-layout{display:grid;gap:24px;align-items:center}
+    .service-copy p{color:var(--muted)}
+    .mini-note{color:var(--green);font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .faq-list{display:grid;gap:10px;margin-top:24px}
+    .faq details{padding:0 18px;transition:border-color .2s}
+    .faq details[open]{border-color:var(--green)}
+    summary{cursor:pointer;list-style:none;padding:18px 28px 18px 0;font-weight:700;position:relative}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";position:absolute;right:0;top:15px;color:var(--green);font-size:1.4rem;transition:transform .25s}
+    details[open] summary:after{transform:rotate(45deg)}
+    details p{color:var(--muted);font-size:.9rem;padding:0 0 17px;margin:0}
+    .final-cta{text-align:center;background:var(--surface)}
+    .final-cta p{color:var(--muted);max-width:580px;margin:0 auto 22px}
+    footer{border-top:1px solid var(--line);padding:25px 18px 90px;text-align:center;color:#94949e;font-size:.76rem}
+    .reveal{transform:translateY(24px);opacity:1}
+    .js .reveal{opacity:0;transition:opacity .6s ease-out,transform .6s ease-out}
+    .js .reveal.visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.05s!important}.delay-2{transition-delay:.1s!important}.delay-3{transition-delay:.15s!important}.delay-4{transition-delay:.2s!important}
+    .hero-copy>*{animation:heroIn .7s both}
+    .hero-copy .eyebrow{animation-delay:0s}.hero-copy h1{animation-delay:.2s}.hero-copy .hero-sub{animation-delay:.4s}.hero-copy .button{animation-delay:.6s}
+    @keyframes heroIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+    @media (min-width:768px){
+      section{padding:96px 28px}
+      .two-col,.service-layout{grid-template-columns:1fr 1fr}
+      .service-intro{grid-template-columns:1.1fr .9fr}
+      .story-grid{grid-template-columns:repeat(2,1fr)}
+      .service-index{grid-template-columns:repeat(4,1fr)}
+      .hero{padding-left:7vw;padding-bottom:86px}
+    }
+    @media (min-width:1020px){.story-grid{grid-template-columns:repeat(3,1fr)}}
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{animation:none!important;transition:none!important}
+      .js .reveal,.js .reveal.visible{opacity:1;transform:none}
+    }
+  </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5S9BD5G9');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11495571750"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11495571750');gtag('config','AW-11034559801');gtag('config','AW-682101450');gtag('config','AW-16586320392');gtag('config','AW-16892054054');gtag('config','AW-16568918455');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%236d28d9'/><text x='32' y='44' font-size='34' text-anchor='middle'>🔮</text></svg>">
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9BD5G9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio">Baltazar<span>Guía espiritual</span></a>
+      <a class="header-cta" href="https://wa.me/19498917311?text=Hola%20Maestro%20Baltazar%2C%20deseo%20consultar%20por%20limpias%20espirituales" aria-label="Consultar limpias espirituales por WhatsApp">WhatsApp 24/7</a>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-labelledby="hero-title">
+      <video autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp">
+        <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-vela-roja-en-altar.mp4" type="video/mp4">
+      </video>
+      <div class="hero-copy">
+        <span class="eyebrow">✦ Maestro disponible ahora</span>
+        <h1 id="hero-title">Limpias Espirituales Hoy, con guía de Baltazar</h1>
+        <p class="hero-sub">Has llegado hasta aquí no por azar. Consulta tu caso y recibe una orientación espiritual seria, privada y respetuosa.</p>
+        <a class="button primary" href="https://wa.me/19498917311?text=Hola%20Maestro%20Baltazar%2C%20quiero%20agendar%20limpias%20espirituales%20hoy">Agendar limpias espirituales</a>
+        <div class="trust">⭐ 4.9 · más de 5.000 conversaciones · respuesta inmediata</div>
+      </div>
+      <span class="scroll-cue" aria-hidden="true"></span>
+    </section>
+
+    <section class="dark-section reveal" aria-labelledby="maestro-title">
+      <div class="two-col">
+        <div>
+          <div class="section-kicker">Linaje, escucha y discreción</div>
+          <h2 id="maestro-title">Maestro santero con más de 25 años de experiencia</h2>
+          <p>Lo espiritual no se aprende en una pantalla fría. Baltazar ha recorrido durante más de dos décadas un sendero de oración, elementos y respeto por los ancestros, atendiendo a personas que sienten cansancio, bloqueos o una racha que parece no terminar.</p>
+          <p>En una consulta de limpias espirituales, primero escucha sin prisa y sin juzgar. Después distingue si conviene una limpieza personal, del hogar o una orientación distinta. No se trabaja desde el miedo: cada paso se explica antes de tomar una decisión.</p>
+          <a class="button" href="https://wa.me/19498917311?text=Maestro%20Baltazar%2C%20quiero%20hablar%20en%20privado%20sobre%20limpias%20espirituales">Escríbele al Maestro Baltazar</a>
+        </div>
+        <div>
+          <figure class="media">
+            
+            <figcaption>El trabajo comienza con una palabra dicha con verdad.</figcaption>
+          </figure>
+          <div class="video-frame">
+            <video autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp">
+              <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal" aria-labelledby="stories-title">
+      <div class="section-kicker">Voces de quienes consultaron</div>
+      <h2 id="stories-title">Personas que ya recuperaron su tranquilidad</h2>
+      <p class="lead">Cada historia pertenece a una persona distinta. Una experiencia espiritual puede variar según el caso; lo primero es hablar con claridad.</p>
+      <div class="story-grid">
+        <article class="story delay-1"><div class="stars">★★★★★</div><p>La verdad, yo dudaba de todo. Llevaba casi tres meses con insomnio y una pesadez rara en mi apartamento. Después de la orientación de Baltazar hice la limpieza indicada y a la semana volví a dormir mejor.</p><cite>Marisol G. — Houston, TX</cite></article>
+        <article class="story delay-2"><div class="stars">★★★★★</div><p>Se lo juro que había probado sahumerios y consejos de internet. Baltazar me preguntó cosas muy concretas, sin asustarme. Sentí el ambiente más ligero después de varios días.</p><cite>Edwin C. — Phoenix, AZ</cite></article>
+        <article class="story delay-3"><div class="stars">★★★★★</div><p>Dos semanas de mala racha: discusiones, clientes cancelados y nada salía bien. Consulté, seguí sus indicaciones y mantuve la casa ordenada. No fue magia instantánea, pero recuperé calma y enfoque.</p><cite>Yolanda R. — Charlotte, NC</cite></article>
+        <article class="story delay-4"><div class="stars">★★★★★</div><p>Yo estaba escéptica y con miedo de que me cobraran de más. Baltazar explicó el proceso antes de comenzar y respetó mi decisión. Al terminar la limpieza de mi hogar sentí alivio, ¡de verdad!</p><cite>Lucía Andrade — Newark, NJ</cite></article>
+        <article class="story delay-1"><div class="stars">★★★★★</div><p>Breve y puntual: consulté por una sensación de bloqueo que duraba meses. La conversación fue privada, clara y sin promesas exageradas. Me ayudó a ordenar lo espiritual y también mis hábitos.</p><cite>Rafael M. — Fresno, CA</cite></article>
+      </div>
+      <p style="margin-top:24px"><a class="button" href="https://wa.me/19498917311?text=Hola%20Baltazar%2C%20quiero%20conocer%20experiencias%20y%20consultar%20limpias%20espirituales">Conocer más por WhatsApp</a></p>
+    </section>
+
+    <section class="dark-section reveal" aria-labelledby="services-title">
+      <div class="service-intro">
+        <div>
+          <div class="section-kicker">Consulta inicial sin costo</div>
+          <h2 id="services-title">Servicios de brujería y amarres de amor</h2>
+          <p>Todo trabajo profundo nace de escuchar. Baltazar revisa tu situación, explica el camino posible y deja que decidas con calma. La conversación inicial es gratuita; cualquier trabajo se acuerda antes, sin presión.</p>
+          <div class="service-index">
+            <a href="#pareja">Amarres de Pareja</a><a href="#negra">Magia Negra</a><a href="#blanca">Magia Blanca</a><a href="#roja">Magia Roja</a><a href="#endulzamientos">Endulzamientos</a><a href="#limpias">Limpias Espirituales</a><a href="#alejamientos">Alejamientos</a><a href="#caseros">Amarres Caseros</a>
+          </div>
+        </div>
+        <figure class="media">
+          
+        </figure>
+      </div>
+    </section>
+
+    <section id="pareja" class="service-section reveal" aria-labelledby="pareja-title">
+      <div class="service-layout"><div class="service-copy"><div class="mini-note">Consulta previa · privacidad absoluta</div><h2 id="pareja-title">Amarres de Pareja</h2><p>Para vínculos heridos por discusiones, distancia o confusión. Se revisan emociones, límites y la intención real antes de trabajar con velas, oración y elementos simbólicos.</p><a class="button" href="https://wa.me/19498917311?text=Maestro%20Baltazar%2C%20deseo%20consultar%20amarres%20de%20pareja">Consultar por WhatsApp</a></div></div>
+    </section>
+
+    <section id="negra" class="service-section reveal" aria-labelledby="negra-title">
+      <div class="service-copy"><div class="mini-note">Sendero serio y reservado</div><h2 id="negra-title">Magia Negra</h2><p>Una práctica intensa que solo se considera después de valorar el caso. Baltazar explica sus implicaciones y no alimenta el miedo ni la dependencia.</p></div>
+    </section>
+
+    <section id="blanca" class="dark-section reveal" aria-labelledby="blanca-title">
+      <div class="service-layout"><div class="service-copy"><div class="mini-note">Luz, protección y equilibrio</div><h2 id="blanca-title">Magia Blanca</h2><p>Orientada al bienestar espiritual, la armonía del hogar y la protección simbólica. La intención es despejar el camino sin buscar dominar la voluntad de nadie.</p><a class="button" href="https://wa.me/19498917311?text=Hola%20Baltazar%2C%20quiero%20consultar%20magia%20blanca%20y%20limpias%20espirituales">Consultar magia blanca</a></div><div class="video-frame"><video autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra-caratula.webp"><source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra.mp4" type="video/mp4"></video></div></div>
+    </section>
+
+    <section id="roja" class="service-section reveal" aria-labelledby="roja-title">
+      <div class="service-layout"><div class="service-copy"><div class="mini-note">Fuego de la intención</div><h2 id="roja-title">Magia Roja</h2><p>Trabajo simbólico para explorar deseo, pasión y conexión íntima dentro de una relación. Se conversa primero sobre consentimiento, expectativas y límites.</p></div><figure class="media"></figure></div>
+    </section>
+
+    <section id="endulzamientos" class="service-section reveal" aria-labelledby="endulzamientos-title">
+      <div class="service-copy"><div class="mini-note">Suavizar, no forzar</div><h2 id="endulzamientos-title">Endulzamientos</h2><p>Con miel, canela y oración se busca apaciguar tensiones y abrir una conversación más amable. Es una guía espiritual, no una garantía sobre las decisiones de otra persona.</p></div>
+    </section>
+
+    <section id="limpias" class="dark-section reveal" aria-labelledby="limpias-title">
+      <div class="service-layout"><div class="service-copy"><div class="mini-note">Servicio principal</div><h2 id="limpias-title">Limpias Espirituales</h2><p>Si sientes pesadez, cansancio emocional, discusiones constantes o una mala racha, Baltazar puede orientarte con una limpia personal, del hogar o a distancia. Se emplean oración, agua, sal, hierbas y elementos definidos según tu relato.</p><a class="button primary" href="https://wa.me/19498917311?text=Hola%20Maestro%20Baltazar%2C%20quiero%20agendar%20limpias%20espirituales%20urgentes">Reservar limpias espirituales</a></div><figure class="media"><img src="https://limpias-espirituales.brujero.org/optimizado/ag-199347705740/banco-ritual-de-limpieza-con-velas-y-limones.webp" width="800" height="960" loading="lazy" decoding="async" alt="Limpias espirituales con velas y limones"></figure></div>
+    </section>
+
+    <section id="alejamientos" class="service-section reveal" aria-labelledby="alejamientos-title">
+      <div class="service-copy"><div class="mini-note">Cierre de ciclos</div><h2 id="alejamientos-title">Alejamientos</h2><p>Para marcar distancia de ambientes, hábitos o influencias que percibes como dañinas. El enfoque es proteger tu paz y ayudarte a recuperar límites firmes.</p></div>
+    </section>
+
+    <section id="caseros" class="service-section reveal" aria-labelledby="caseros-title">
+      <div class="service-layout"><div class="service-copy"><div class="mini-note">Guía paso a paso</div><h2 id="caseros-title">Amarres de Amor Caseros</h2><p>Recibe instrucciones sencillas para trabajar en casa con elementos cotidianos y una intención clara. La consulta previa evita rituales improvisados y permite elegir un camino responsable.</p><a class="button" href="https://wa.me/19498917311?text=Maestro%20Baltazar%2C%20quiero%20consultar%20amarres%20de%20amor%20caseros">Consultar amarres caseros</a></div><figure class="media"></figure></div>
+    </section>
+
+    <section class="faq dark-section reveal" aria-labelledby="faq-title">
+      <div class="section-kicker">Respuestas antes de decidir</div>
+      <h2 id="faq-title">Preguntas sobre limpias espirituales</h2>
+      <div class="faq-list">
+        <details><summary>¿Qué son las limpias espirituales?</summary><p>Son prácticas simbólicas de oración y purificación que algunas personas usan para ordenar su energía y su espacio. Baltazar revisa tu situación antes de sugerir un método.</p></details>
+        <details><summary>¿Para qué sirven las limpias espirituales?</summary><p>Pueden ayudarte a crear un momento de claridad, renovar hábitos y sentir tu hogar más ordenado. La experiencia es personal y no sustituye ayuda profesional cuando la necesitas.</p></details>
+        <details><summary>¿Puedo agendar limpias espirituales hoy?</summary><p>Sí. Escribe por WhatsApp, cuenta brevemente qué ocurre y solicita una consulta. La disponibilidad se confirma directamente, sin comprometerte a contratar un trabajo.</p></details>
+        <details><summary>¿Las limpias espirituales se realizan a distancia?</summary><p>La orientación y algunas prácticas pueden organizarse a distancia dentro de Estados Unidos. Recibirás instrucciones claras sobre los elementos y el momento adecuado.</p></details>
+        <details><summary>¿Cuánto tarda una limpia espiritual?</summary><p>Depende del tipo de consulta y de lo que necesites preparar. Baltazar te explicará la duración aproximada y qué puedes observar durante el proceso.</p></details>
+        <details><summary>¿La consulta de limpias espirituales tiene costo?</summary><p>La primera conversación es gratuita. Antes de cualquier trabajo se informa el alcance y el costo, para que decidas con calma y privacidad.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta reveal" aria-labelledby="final-title">
+      <h2 id="final-title">Activa tu consulta de limpias espirituales</h2>
+      <p>No dejes que la confusión gobierne tus próximos pasos. El momento de actuar es ahora: pronuncia tu petición por WhatsApp y habla con Baltazar.</p>
+      <a class="button primary" href="https://wa.me/19498917311?text=Hola%20Maestro%20Baltazar%2C%20quiero%20activar%20mi%20consulta%20de%20limpias%20espirituales">Hablar con el Maestro Baltazar</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Maestro Baltazar · Orientación espiritual y limpias espirituales · Atención privada en Estados Unidos.
+  </footer>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reveals = document.querySelectorAll('.reveal');
+    if (reduced) reveals.forEach(el => el.classList.add('visible'));
+    else new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); obs.unobserve(entry.target); } });
+    }, {threshold:.12}).observe(reveals[0]);
+    if (!reduced) {
+      const io = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting ? e.target.play().catch(()=>{}) : e.target.pause()), {threshold:.15});
+      document.querySelectorAll('video').forEach(v => io.observe(v));
+    } else document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"LocalBusiness",
+        "@id":"https://limpias-espirituales.brujero.org/#baltazar",
+        "name":"Maestro Baltazar",
+        "url":"https://limpias-espirituales.brujero.org/",
+        "telephone":"+19498917311",
+        "areaServed":"Estados Unidos",
+        "serviceType":"Orientación espiritual y limpias espirituales"
+      },
+      {
+        "@type":"Service",
+        "@id":"https://limpias-espirituales.brujero.org/#servicio",
+        "name":"Limpias Espirituales",
+        "provider":{"@id":"https://limpias-espirituales.brujero.org/#baltazar"},
+        "areaServed":"Estados Unidos",
+        "serviceType":"Limpias espirituales",
+        "url":"https://limpias-espirituales.brujero.org/"
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"¿Qué son las limpias espirituales?","acceptedAnswer":{"@type":"Answer","text":"Son prácticas simbólicas de oración y purificación que algunas personas usan para ordenar su energía y su espacio. Baltazar revisa tu situación antes de sugerir un método."}},
+          {"@type":"Question","name":"¿Para qué sirven las limpias espirituales?","acceptedAnswer":{"@type":"Answer","text":"Pueden ayudarte a crear un momento de claridad, renovar hábitos y sentir tu hogar más ordenado. La experiencia es personal y no sustituye ayuda profesional cuando la necesitas."}},
+          {"@type":"Question","name":"¿Puedo agendar limpias espirituales hoy?","acceptedAnswer":{"@type":"Answer","text":"Sí. Escribe por WhatsApp, cuenta brevemente qué ocurre y solicita una consulta. La disponibilidad se confirma directamente, sin comprometerte a contratar un trabajo."}},
+          {"@type":"Question","name":"¿Las limpias espirituales se realizan a distancia?","acceptedAnswer":{"@type":"Answer","text":"La orientación y algunas prácticas pueden organizarse a distancia dentro de Estados Unidos. Recibirás instrucciones claras sobre los elementos y el momento adecuado."}},
+          {"@type":"Question","name":"¿Cuánto tarda una limpia espiritual?","acceptedAnswer":{"@type":"Answer","text":"Depende del tipo de consulta y de lo que necesites preparar. Baltazar te explicará la duración aproximada y qué puedes observar durante el proceso."}},
+          {"@type":"Question","name":"¿La consulta de limpias espirituales tiene costo?","acceptedAnswer":{"@type":"Answer","text":"La primera conversación es gratuita. Antes de cualquier trabajo se informa el alcance y el costo, para que decidas con calma y privacidad."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--WA-FAB:vela-mistica--><div class="wfab-vela"><style>
+.wfab-vela{position:fixed;right:18px;bottom:18px;z-index:99999}
+.wfab-vela::before{content:'';position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle,rgba(255,170,60,.5),rgba(255,90,40,.18) 55%,transparent 75%);animation:wfabVelaFlick 3.2s ease-in-out infinite;pointer-events:none}
+.wfab-vela a{position:relative;display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(160deg,#22c55e,#0e7a41);color:#fff;border:2px solid rgba(255,200,120,.7);box-shadow:0 6px 20px rgba(0,0,0,.4);text-decoration:none}
+@keyframes wfabVelaFlick{0%,100%{opacity:.75;transform:scale(1)}45%{opacity:1;transform:scale(1.07)}60%{opacity:.85;transform:scale(1.02)}}
+@media (prefers-reduced-motion:reduce){.wfab-vela::before{animation:none!important}}
+</style><a href="https://wa.me/19498917311?text=Hola%20Maestro%20Baltazar%2C%20deseo%20consultar%20por%20limpias%20espirituales" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div><!--/WA-FAB-->
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+</body>
+</html>

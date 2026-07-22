@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curandera Near Me · Limpia Espiritual · Maestro Melchor | Consulta Gratis</title>
+    <meta name="description" content="¿Buscas curandera near me? El Maestro Melchor, Brujo Mayor de Catemaco, te ofrece curandera limpia near me, consulta espiritual y trabajos personalizados. Contáctalo por WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --bg: #5d4fff;
+            --surface: #000000;
+            --text: #ffffff;
+            --cta: #32373c;
+            --accent: #32373c;
+            --text-secondary: rgba(255, 255, 255, 0.78);
+            --radius-card: 32px;
+            --radius-btn: 50px;
+            --font: 'Poppins', Arial, Helvetica, sans-serif;
+            --transition: 0.22s ease;
+        }
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            font-family: var(--font);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.55;
+            min-height: 100svh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ── HEADER STICKY ── */
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            min-height: 48px;
+        }
+        .header-sticky .brand {
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: -0.01em;
+            color: #fff;
+            white-space: nowrap;
+            line-height: 1.1;
+        }
+        .header-sticky .brand span {
+            display: block;
+            font-size: 0.68rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 0.02em;
+        }
+        .btn-header-wa {
+            background: #25D366;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.78rem;
+            padding: 9px 18px;
+            border-radius: 50px;
+            white-space: nowrap;
+            letter-spacing: -0.01em;
+            transition: transform var(--transition), box-shadow var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+        }
+        .btn-header-wa:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+        }
+        .btn-header-wa:active {
+            transform: translateY(0);
+        }
+        .btn-header-wa svg {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            min-height: 92svh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+        }
+        .hero video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(0, 0, 0, .20) 0%, rgba(0, 0, 0, .72) 78%);
+            background-blend-mode: overlay;
+        }
+        .hero-overlay::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(93, 79, 255, 0.12);
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 28px 18px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: 0.01em;
+            opacity: 0;
+            animation: fadeUp 0.6s ease-out 0s forwards;
+        }
+        .hero h1 {
+            font-size: clamp(2.3rem, 9vw, 3.6rem);
+            font-weight: 800;
+            line-height: 1.05;
+            color: #ffffff;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+            letter-spacing: -0.02em;
+            opacity: 0;
+            animation: fadeUp 0.6s ease-out 0.2s forwards;
+            max-width: 500px;
+        }
+        .hero-sub {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 380px;
+            opacity: 0;
+            animation: fadeUp 0.6s ease-out 0.4s forwards;
+            line-height: 1.4;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 15px 30px;
+            border-radius: 50px;
+            letter-spacing: -0.01em;
+            opacity: 0;
+            animation: fadeUp 0.6s ease-out 0.6s forwards, pulseGlow 2.5s ease-in-out infinite;
+            transition: transform var(--transition), box-shadow var(--transition);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+            cursor: pointer;
+        }
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.4);
+        }
+        .hero-cta:active {
+            transform: translateY(0);
+        }
+        .hero-cta svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+        .hero-trust {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 0;
+            animation: fadeUp 0.6s ease-out 0.8s forwards;
+            letter-spacing: 0.01em;
+        }
+        .hero-scroll {
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            opacity: 0;
+            animation: fadeUp 0.6s ease-out 1s forwards, bounceArrow 2s ease-in-out infinite;
+        }
+        .hero-scroll svg {
+            width: 22px;
+            height: 22px;
+            stroke: rgba(255, 255, 255, 0.7);
+            fill: none;
+            stroke-width: 2;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+            }
+            50% {
+                box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+            }
+        }
+        @keyframes bounceArrow {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(8px);
+            }
+        }
+
+        /* ── SECTIONS ── */
+        section {
+            padding: 40px 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        section h2 {
+            font-size: clamp(1.5rem, 5vw, 2rem);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin-bottom: 12px;
+            line-height: 1.2;
+            text-align: center;
+        }
+        section h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.01em;
+        }
+        section p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius-card);
+            padding: 22px 18px;
+            margin-bottom: 16px;
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+            transition: transform var(--transition), box-shadow var(--transition);
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4);
+        }
+        .card img {
+            width: 100%;
+            max-height: 40vh;
+            object-fit: cover;
+            border-radius: 20px;
+            aspect-ratio: 5 / 6;
+            margin: 0 auto 14px;
+            display: block;
+        }
+        .card h3 {
+            margin-top: 4px;
+        }
+        .card .card-cta {
+            display: inline-block;
+            margin-top: 10px;
+            background: var(--cta);
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 11px 24px;
+            border-radius: var(--radius-btn);
+            letter-spacing: -0.01em;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        .card .card-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(50, 55, 60, 0.5);
+        }
+        .card .card-cta:active {
+            transform: translateY(0);
+        }
+
+        /* ── BADGE STRIP ── */
+        .badge-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 8px 0 0;
+        }
+        .badge-strip .pill {
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 50px;
+            padding: 7px 16px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 0.01em;
+        }
+
+        /* ── SOBRE EL MAESTRO ── */
+        .sobre-maestro {
+            text-align: center;
+        }
+        .sobre-maestro img {
+            width: 75%;
+            max-width: 280px;
+            max-height: 42vh;
+            object-fit: cover;
+            aspect-ratio: 5 / 6;
+            border-radius: 28px;
+            margin: 0 auto 18px;
+            display: block;
+            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.4);
+        }
+        .sobre-maestro h2 {
+            margin-bottom: 8px;
+        }
+        .sobre-maestro p {
+            text-align: left;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 0.93rem;
+        }
+
+        /* ── FAQ ── */
+        details {
+            background: var(--surface);
+            border-radius: 20px;
+            padding: 0 16px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+            transition: all var(--transition);
+            overflow: hidden;
+        }
+        details[open] {
+            padding-bottom: 14px;
+        }
+        summary {
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 16px 0;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            color: #fff;
+            letter-spacing: -0.01em;
+        }
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary .arrow {
+            flex-shrink: 0;
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s ease;
+            stroke: #fff;
+            fill: none;
+            stroke-width: 2.5;
+        }
+        details[open] summary .arrow {
+            transform: rotate(180deg);
+        }
+        details p {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+            margin: 0;
+            padding-bottom: 4px;
+        }
+
+        /* ── TESTIMONIOS ── */
+        .testimonial-card {
+            background: var(--surface);
+            border-radius: var(--radius-card);
+            padding: 20px 17px;
+            margin-bottom: 14px;
+            box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .testimonial-card .quote {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.5;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+        .testimonial-card .name {
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #fff;
+        }
+        .testimonial-card .city {
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.55);
+        }
+
+        /* ── CTA FINAL ── */
+        .cta-final {
+            text-align: center;
+            padding: 36px 18px 48px;
+        }
+        .cta-final .big-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 16px 32px;
+            border-radius: 50px;
+            letter-spacing: -0.01em;
+            transition: transform var(--transition), box-shadow var(--transition);
+            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+            cursor: pointer;
+        }
+        .cta-final .big-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+        }
+        .cta-final .big-cta:active {
+            transform: translateY(0);
+        }
+        .cta-final .big-cta svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            text-align: center;
+            padding: 28px 18px 36px;
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        footer a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        /* ── REVEAL ON SCROLL ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-stagger>*:nth-child(1) {
+            transition-delay: 0s;
+        }
+        .reveal-stagger>*:nth-child(2) {
+            transition-delay: 0.05s;
+        }
+        .reveal-stagger>*:nth-child(3) {
+            transition-delay: 0.1s;
+        }
+        .reveal-stagger>*:nth-child(4) {
+            transition-delay: 0.15s;
+        }
+        .reveal-stagger>*:nth-child(5) {
+            transition-delay: 0.2s;
+        }
+        .reveal-stagger>*:nth-child(6) {
+            transition-delay: 0.25s;
+        }
+        .reveal-stagger>*:nth-child(7) {
+            transition-delay: 0.3s;
+        }
+        .reveal-stagger>*:nth-child(8) {
+            transition-delay: 0.35s;
+        }
+
+        /* ── GRID ESCRITORIO ── */
+        @media (min-width: 768px) {
+            section {
+                padding: 48px 24px;
+            }
+            .services-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 18px;
+            }
+            .services-grid .card {
+                margin-bottom: 0;
+            }
+            .testimonials-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+            .testimonials-grid .testimonial-card {
+                margin-bottom: 0;
+            }
+            .hero-content {
+                padding: 36px 24px 50px;
+            }
+            .sobre-maestro {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 28px;
+                text-align: left;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .sobre-maestro img {
+                width: 40%;
+                max-width: 220px;
+                flex-shrink: 0;
+                margin: 0;
+            }
+            .sobre-maestro>div {
+                flex: 1;
+            }
+            .sobre-maestro h2 {
+                text-align: left;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PQW2RL4R');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-672356997"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-672356997');</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%236d28d9'/><text x='32' y='44' font-size='34' text-anchor='middle'>🔮</text></svg>">
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQW2RL4R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER STICKY -->
+    <header class="header-sticky">
+        <div class="brand">Maestro Melchor<span>Brujo Mayor de Catemaco</span></div>
+        <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20una%20consulta%20espiritual" class="btn-header-wa" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="hero" aria-label="Consulta curandera near me">
+            <video autoplay muted loop playsinline preload="metadata" poster="https://brujounicornionegro.curanderos.top/wp-content/uploads/2026/06/presentacion-web-brujo-mayor-catemaco-poster.jpg" fetchpriority="high">
+                <source src="https://brujounicornionegro.curanderos.top/wp-content/uploads/2026/06/presentacion-web-brujo-mayor-catemaco-vertical.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">✦ Maestro disponible ahora</div>
+                <h1>Curandera Near Me — Consulta y Limpia Espiritual con el Maestro Melchor</h1>
+                <p class="hero-sub">¿Cuántas noches llevas sintiendo que algo te frena? El Maestro Melchor, Brujo Mayor de Catemaco, te escucha y te orienta con una <strong>curandera limpia near me</strong> seria y reservada.</p>
+                <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20necesito%20una%20curandera%20limpia%20near%20me%2C%20%C2%BFme%20puedes%20ayudar%3F" class="hero-cta">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Escríbele al Maestro Melchor
+                </a>
+                <p class="hero-trust">⭐ 4.9 · +5.000 consultas · Respuesta inmediata</p>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+        </section>
+
+        <!-- RESULTADOS GARANTIZADOS -->
+        <section class="reveal" aria-label="Confianza">
+            <div class="badge-strip">
+                <span class="pill">🔒 Web Segura</span>
+                <span class="pill">✅ Verificado</span>
+                <span class="pill">⚡ Resultados Comprobados</span>
+                <span class="pill">📍 Catemaco, Veracruz</span>
+            </div>
+            <p style="text-align:center;margin-top:14px;font-weight:600;font-size:0.9rem;letter-spacing:0.04em;color:#fff;">R E S U L T A D O S &nbsp; G A R A N T I Z A D O S</p>
+            <p style="text-align:center;font-size:0.85rem;color:rgba(255,255,255,0.7);">Más de 20 años de experiencia respaldan cada trabajo espiritual. Siéntete acompañado de verdad.</p>
+        </section>
+
+        <!-- SOBRE EL MAESTRO -->
+        <section class="sobre-maestro reveal" id="sobre-maestro" aria-label="Sobre el Maestro Melchor">
+            
+            <div>
+                <h2>Brujo Mayor de Catemaco — Maestro Melchor</h2>
+                <p>Nací entre los cerros de Catemaco, Veracruz, cuna de los brujos más respetados de México. Desde niño, mi abuela —curandera de siete generaciones— me enseñó que el don no se elige: se hereda y se honra con cada consulta. Hoy, después de más de dos décadas de oficio, atiendo a hermanos y hermanas que buscan una <strong>curandera near me</strong> con raíz, con verdad.</p>
+                <p>No hago milagros: hago trabajo espiritual serio. Cada caso lo tomo personalmente —sin intermediarios, sin recetas genéricas— porque sé lo que duele un amor perdido, una mala racha que no se quita o esa sensación de que algo te amarró el camino. Si llegaste hasta aquí buscando <strong>curandera limpia near me</strong>, es porque tu espíritu ya sabe que necesita ayuda. Cuéntame tu caso, te leo personalmente.</p>
+            </div>
+        </section>
+
+        <!-- AGENDA VIDEOLAMADA -->
+        <section class="reveal" id="videollamada" aria-label="Agenda videollamada">
+            <div class="card">
+                
+                <h3>¡Agenda Videollamada!</h3>
+                <p>Consulta directa con el Maestro Melchor por videollamada. Atención privada para revisar tu caso y orientar el trabajo espiritual adecuado.</p>
+                <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20agendar%20una%20videollamada%20para%20consulta%20espiritual" class="card-cta">Programar Videollamada Ahora</a>
+            </div>
+        </section>
+
+        <!-- CONSULTA DIRECTA -->
+        <section class="reveal" id="consulta-directa" aria-label="Consulta directa WhatsApp">
+            <div class="card">
+                
+                <h3>Consulta Directa con el Maestro Melchor</h3>
+                <p>Atención privada por WhatsApp para revisar tu caso y orientar el trabajo espiritual adecuado. Tú me cuentas, yo te escucho y trazamos juntos el camino.</p>
+                <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20una%20consulta%20directa%20para%20mi%20caso" class="card-cta">Consultar Ahora</a>
+            </div>
+        </section>
+
+        <!-- TRABAJOS ESPIRITUALES PERSONALIZADOS -->
+        <section class="reveal" id="trabajos-personalizados" aria-label="Trabajos espirituales personalizados">
+            <div class="card">
+                
+                <h3>Trabajos Espirituales Personalizados</h3>
+                <p>Rituales, amarres, limpias, retornos de pareja, endulzamientos y más. Cada trabajo tiene seguimiento serio y reservado. Nadie más que tú y yo sabremos lo que estamos moviendo.</p>
+                <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20saber%20sobre%20trabajos%20espirituales%20personalizados" class="card-cta">Ver Mi Caso</a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="reveal" id="servicios" aria-label="Servicios espirituales">
+            <h2>Servicios Espirituales</h2>
+            <p style="text-align:center;margin-bottom:18px;color:rgba(255,255,255,0.75);">Cada trabajo se diseña a tu medida. No hay dos casos iguales — ni dos rituales iguales.</p>
+            <div class="services-grid reveal-stagger">
+
+                <!-- Curandera Near Me -->
+                <div class="card">
+                    <img src="https://curandera-near-me.brujoychaman.digital/optimizado/ag-198758500019/banco-ritual-esoterico-con-velas-rojas.webp" alt="Curandera near me - Ritual esotérico con velas rojas del Maestro Melchor" width="800" height="960" loading="lazy" decoding="async" style="aspect-ratio:5/6;object-fit:cover;max-height:40vh;border-radius:20px;">
+                    <h3>Curandera Near Me</h3>
+                    <p>¿Sientes que todo va mal y te cuesta avanzar? Recupera tu equilibrio emocional y atrae la abundancia con una limpieza energética profunda. Liberarás tu aura, cuerpo y espíritu de energías negativas.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20necesito%20curandera%20near%20me%2C%20%C2%BFme%20puedes%20ayudar%3F" class="card-cta">Solicitar Curandera</a>
+                </div>
+
+                <!-- Curandera Limpia Near Me -->
+                <div class="card">
+                    <img src="https://curandera-near-me.brujoychaman.digital/optimizado/ag-198758500019/banco-altar-con-velas-rituales-y-hierbas.webp" alt="Curandera limpia near me - Altar con velas rituales y hierbas del Maestro Melchor" width="800" height="960" loading="lazy" decoding="async" style="aspect-ratio:5/6;object-fit:cover;max-height:40vh;border-radius:20px;">
+                    <h3>Curandera Limpia Near Me</h3>
+                    <p>La limpia espiritual que necesitas para cortar de raíz lo que te tiene estancado. Trabajo minucioso con hierbas, velas y oraciones de Catemaco. Siente la diferencia desde la primera consulta.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20una%20curandera%20limpia%20near%20me%20urgente" class="card-cta">Pedir Limpia</a>
+                </div>
+
+                <!-- Amarres de Amor -->
+                <div class="card">
+                    
+                    <h3>Amarres de Amor</h3>
+                    <p>En corto tiempo me encargo de que tu persona amada no deje de pensar en ti. Amarres para parejas de cualquier sexo, hombre o mujer. Si se alejó por otra persona, por desamor o por simple decisión, este conjuro te ayudará a que regrese.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20necesito%20un%20amarre%20de%20amor%20urgente" class="card-cta">Recupera Tu Pareja</a>
+                </div>
+
+                <!-- Endulzamientos -->
+                <div class="card">
+                    
+                    <h3>Endulzamientos</h3>
+                    <p>¿Tu pareja ha perdido interés? ¿Sientes que se aleja poco a poco? Con mis endulzamientos revivirás ese amor y no perderás a esa persona especial. ¡No sufras más! Es el momento de ver cambios positivos.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20un%20endulzamiento%20para%20mi%20relaci%C3%B3n" class="card-cta">Revive Tu Amor</a>
+                </div>
+
+                <!-- Retornos de Parejas -->
+                <div class="card">
+                    
+                    <h3>Retornos de Parejas</h3>
+                    <p>Revivimos la llama del amor, de la pasión y del deseo de esa persona especial para ti. Recuperarás ese amor bonito que dabas por perdido, uniéndote en cuerpo y alma para una relación plena, feliz y duradera.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20recuperar%20a%20mi%20pareja" class="card-cta">Retorno Urgente</a>
+                </div>
+
+                <!-- Amarres del Mismo Sexo -->
+                <div class="card">
+                    
+                    <h3>Amarres del Mismo Sexo</h3>
+                    <p>¿Sientes atracción por una persona de tu mismo sexo pero no logras que se fije en ti? Déjame ayudarte para que esté a tu lado. Todos merecemos amar y ser amados. Sin juicios, con respeto total.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20necesito%20un%20amarre%20del%20mismo%20sexo" class="card-cta">Consultar Ahora</a>
+                </div>
+
+                <!-- Alejamientos -->
+                <div class="card">
+                    
+                    <h3>Alejamientos</h3>
+                    <p>¡No permitas que nadie se interponga en tu relación! Realizo alejamientos a terceros: esposas, amantes, exparejas e incluso familiares que no te permiten ser feliz. Con estos rituales, nadie se interpondrá.</p>
+                    <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20necesito%20un%20alejamiento%20urgente" class="card-cta">Vive Sin Obstáculos</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RITUALES (sección destacada) -->
+        <section class="reveal" id="rituales" aria-label="Rituales del Maestro Melchor">
+            <div class="card">
+                <h3>Rituales Poderosos</h3>
+                <p>Realizo toda clase de rituales para que tu ser amado sea dominado y doblegado en cuerpo, mente y alma. Atraigo o aparto a tu pareja sin importar el sexo ni la distancia. Solo necesitas tu fe. Hago amarres y hechizos de todo tipo para solucionar los problemas que hoy te quitan el sueño.</p>
+                <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20h%C3%A1blame%20de%20tus%20rituales" class="card-cta">Solicitar Ritual</a>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section class="reveal" id="testimonios" aria-label="Testimonios reales">
+            <h2>Testimonios</h2>
+            <p style="text-align:center;margin-bottom:18px;color:rgba(255,255,255,0.7);">Personas que llegaron después de mucho buscar comparten cómo encontraron apoyo, claridad y una guía espiritual cercana con el Maestro Melchor.</p>
+            <div class="testimonials-grid reveal-stagger">
+
+                <div class="testimonial-card">
+                    <p class="quote">"La verdad yo no creía en estas cosas, pero después de tres meses sin dormir bien y con una angustia que no se me quitaba, una amiga me habló de la <strong>curandera limpia near me</strong> que encontró en el Maestro Melchor. A la semana de la limpia, algo cambió. Se lo juro que empecé a respirar distinto."</p>
+                    <p class="name">Yolanda R.</p>
+                    <p class="city">Orlando, FL</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Llevaba año y medio buscando a alguien serio. Pagué a tres videntes antes y solo me sacaron dinero. El Maestro Melchor me devolvió la calma desde la primera videollamada. Hizo una <strong>curandera near me</strong> y mi negocio —que estaba muerto— empezó a moverse."</p>
+                    <p class="name">Carlos M.</p>
+                    <p class="city">Phoenix, AZ</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Felicito al Maestro por su claridad. Me ayudó a ordenar mis pensamientos y a recuperar la confianza cuando más lo necesitaba. Después de la limpia, hasta mi esposo notó que yo estaba diferente —más ligera, más yo."</p>
+                    <p class="name">Lucía H.</p>
+                    <p class="city">Fresno, CA</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"Después de tanto buscarlo, por fin encontré una consulta seria. El Maestro Melchor me acompañó con paciencia, sin prisa, y supe que estaba en buenas manos. La limpia que me hizo fue minuciosa —nada que ver con lo que me ofrecían en otros lados."</p>
+                    <p class="name">Javier S.</p>
+                    <p class="city">Charlotte, NC</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"No fue una conversación cualquiera. Sentí que me escuchó de verdad. Después de meses sintiendo que todo me salía mal, la <strong>curandera limpia near me</strong> del Maestro Melchor me ayudó a cerrar un ciclo horrible. Hoy estoy en paz."</p>
+                    <p class="name">María Elena G.</p>
+                    <p class="city">Houston, TX</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="reveal" id="faq" aria-label="Preguntas frecuentes">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="reveal-stagger">
+                <details>
+                    <summary>
+                        ¿Qué es una curandera near me y cómo puede ayudarme?
+                        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <p>Una curandera near me es un servicio de consulta y limpieza espiritual ofrecido por un maestro con linaje y experiencia real. El Maestro Melchor, desde Catemaco, te ayuda a liberar energías negativas, recuperar tu equilibrio y atraer lo que deseas mediante rituales personalizados y atención directa.</p>
+                </details>
+                <details>
+                    <summary>
+                        ¿En qué consiste una curandera limpia near me?
+                        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <p>La curandera limpia near me es un trabajo espiritual profundo que combina hierbas sagradas, velas rituales y oraciones tradicionales de Catemaco para cortar energías densas, envidias, trabas y malas rachas. Se realiza de forma personalizada según tu caso y con seguimiento cercano.</p>
+                </details>
+                <details>
+                    <summary>
+                        ¿Cómo sé si necesito una limpia espiritual?
+                        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <p>Si sientes que todo va mal sin explicación, que te cuesta avanzar, que tu energía está baja o que hay patrones negativos repitiéndose en tu vida, una limpia espiritual puede ser justo lo que necesitas. El Maestro Melchor te orienta sin compromiso.</p>
+                </details>
+                <details>
+                    <summary>
+                        ¿El Maestro Melchor atiende en persona o a distancia?
+                        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <p>El Maestro Melchor atiende por videollamada y WhatsApp para que puedas recibir su guía estés donde estés dentro de Estados Unidos. La distancia no es un obstáculo para el trabajo espiritual serio.</p>
+                </details>
+                <details>
+                    <summary>
+                        ¿Cuánto tardan en verse los resultados de una curandera limpia near me?
+                        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </summary>
+                    <p>Cada caso es único, pero muchos clientes reportan cambios notables en días o pocas semanas. El Maestro Melchor trabaja con constancia y te da seguimiento para que puedas percibir los avances paso a paso.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-final reveal" id="cta-final" aria-label="Contacto final">
+            <h2 style="font-size:1.6rem;margin-bottom:14px;">¿Problemas de amor, energía o mala racha?</h2>
+            <p style="color:rgba(255,255,255,0.8);margin-bottom:20px;max-width:420px;margin-left:auto;margin-right:auto;">Contacta al <strong>Maestro Melchor</strong>, Brujo Mayor de Catemaco. Su conocimiento en ciencias ocultas puede ayudarte a recuperar tu paz, tu pareja y tu camino. Solicita una <strong>curandera limpia near me</strong> hoy mismo.</p>
+            <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20vengo%20de%20tu%20p%C3%A1gina%20y%20necesito%20ayuda%20espiritual%20urgente" class="big-cta">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Escríbele al Maestro Melchor Ahora
+            </a>
+            <p style="margin-top:12px;font-size:0.75rem;color:rgba(255,255,255,0.5);">📱 WhatsApp directo · Atención 24/7 · +1 (914) 209-0428</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><strong>Maestro Melchor</strong> — Brujo Mayor de Catemaco</p>
+        <p>Sitio oficial · Consultas espirituales · Curandera near me · Curandera limpia near me</p>
+        <p style="margin-top:6px;">📞 <a href="https://wa.me/19142090428">+1 (914) 209-0428</a></p>
+        <p style="margin-top:8px;font-size:0.65rem;color:rgba(255,255,255,0.4);">NO TRABAJAMOS CON MENORES DE 18 AÑOS<br>Consulta por video · Videollamada · WhatsApp</p>
+        <p style="margin-top:10px;font-size:0.6rem;color:rgba(255,255,255,0.3);">© 2025 Maestro Melchor · <a href="https://curandera-near-me.brujoychaman.digital/">curandera-near-me.brujoychaman.digital</a></p>
+    </footer>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "¿Qué es una curandera near me y cómo puede ayudarme?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Una curandera near me es un servicio de consulta y limpieza espiritual ofrecido por un maestro con linaje y experiencia real. El Maestro Melchor, desde Catemaco, te ayuda a liberar energías negativas, recuperar tu equilibrio y atraer lo que deseas mediante rituales personalizados y atención directa."
+                }
+            }, {
+                "@type": "Question",
+                "name": "¿En qué consiste una curandera limpia near me?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La curandera limpia near me es un trabajo espiritual profundo que combina hierbas sagradas, velas rituales y oraciones tradicionales de Catemaco para cortar energías densas, envidias, trabas y malas rachas. Se realiza de forma personalizada según tu caso y con seguimiento cercano."
+                }
+            }, {
+                "@type": "Question",
+                "name": "¿Cómo sé si necesito una limpia espiritual?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Si sientes que todo va mal sin explicación, que te cuesta avanzar, que tu energía está baja o que hay patrones negativos repitiéndose en tu vida, una limpia espiritual puede ser justo lo que necesitas. El Maestro Melchor te orienta sin compromiso."
+                }
+            }, {
+                "@type": "Question",
+                "name": "¿El Maestro Melchor atiende en persona o a distancia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "El Maestro Melchor atiende por videollamada y WhatsApp para que puedas recibir su guía estés donde estés dentro de Estados Unidos. La distancia no es un obstáculo para el trabajo espiritual serio."
+                }
+            }, {
+                "@type": "Question",
+                "name": "¿Cuánto tardan en verse los resultados de una curandera limpia near me?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cada caso es único, pero muchos clientes reportan cambios notables en días o pocas semanas. El Maestro Melchor trabaja con constancia y te da seguimiento para que puedas percibir los avances paso a paso."
+                }
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Maestro Melchor - Brujo Mayor de Catemaco",
+            "description": "Servicios de curandera near me, curandera limpia near me, amarres de amor, limpias espirituales, retornos de pareja y consultas espirituales con el Maestro Melchor.",
+            "telephone": "+19142090428",
+            "url": "https://curandera-near-me.brujoychaman.digital/",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Catemaco",
+                "addressRegion": "Veracruz",
+                "addressCountry": "MX"
+            },
+            "sameAs": ["https://wa.me/19142090428"],
+            "openingHours": "Mo-Su 00:00-23:59",
+            "priceRange": "$$"
+        }
+    </script>
+
+    <!-- IntersectionObserver para animaciones reveal -->
+    <script>
+        (function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        })();
+    </script>
+
+<script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<!--WA-FAB:talisman-dorado--><div class="wfab-tali"><style>
+.wfab-tali{position:fixed;right:16px;bottom:16px;z-index:99999}
+.wfab-tali a{display:flex;align-items:center;gap:10px;padding:10px 18px 10px 10px;border-radius:999px;background:linear-gradient(#141018,#141018) padding-box,linear-gradient(120deg,#d4af37,#7c3aed,#d4af37) border-box;border:2px solid transparent;color:#f7e9c4;font:700 14px/1.1 Georgia,serif;letter-spacing:.02em;text-decoration:none;box-shadow:0 8px 26px rgba(0,0,0,.45);position:relative;overflow:hidden;animation:wfabTaliFloat 5s ease-in-out infinite}
+.wfab-tali a::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);animation:wfabTaliShine 6s ease-in-out infinite}
+.wfab-tali .wi{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#16b558;color:#fff;flex:0 0 auto}
+@keyframes wfabTaliFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes wfabTaliShine{0%,60%{left:-70%}80%,100%{left:120%}}
+@media (prefers-reduced-motion:reduce){.wfab-tali a,.wfab-tali a::after{animation:none!important}}
+</style><a href="https://wa.me/19142090428?text=Hola%20Maestro%20Melchor%2C%20quiero%20una%20consulta%20espiritual" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><span class="wi"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span><span>Consulta al WhatsApp</span></a></div><!--/WA-FAB-->
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+</body>
+</html>

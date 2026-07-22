@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teléfonos de Brujos · Maestro Damián | Consulta Gratis</title>
+    <meta name="description" content="Encuentra respuestas reales en los teléfonos de brujos del Maestro Damián. Sabiduría ancestral, amarres y guía espiritual. Consulta gratis por WhatsApp.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #0b0b0f;
+            --surface: #15151e;
+            --text-main: #ffffff;
+            --text-muted: #a0a0b0;
+            --primary: #1fb855;
+            --primary-hover: #1aa34a;
+            --border: rgba(255, 255, 255, 0.08);
+            --radius-card: 16px;
+            --radius-btn: 999px;
+            --font-main: 'Merriweather', serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: clamp(2.3rem, 9vw, 3.8rem); font-weight: 900; text-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+        h2 { font-size: clamp(1.8rem, 6vw, 2.5rem); color: var(--primary); }
+        h3 { font-size: clamp(1.3rem, 4vw, 1.8rem); }
+        p { margin-bottom: 1rem; font-size: clamp(1rem, 3vw, 1.1rem); color: #d0d0dc; font-weight: 300; }
+        
+        .text-highlight { color: var(--text-main); font-weight: 400; }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 11, 15, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-compact {
+            background: var(--primary);
+            color: #fff;
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--radius-btn);
+            font-size: 0.85rem;
+            font-weight: 700;
+            font-family: system-ui, -apple-system, sans-serif;
+            transition: background 0.2s;
+        }
+
+        /* Buttons & CTAs */
+        .btn-main {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-btn);
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: system-ui, -apple-system, sans-serif;
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 4px 20px rgba(31, 184, 85, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: pulse-glow 2.5s infinite;
+            margin-top: 1rem;
+        }
+
+        .btn-main:active {
+            transform: scale(0.98);
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(31, 184, 85, 0.4); transform: scale(1); }
+            50% { box-shadow: 0 0 20px 10px rgba(31, 184, 85, 0); transform: scale(1.02); }
+            100% { box-shadow: 0 0 0 0 rgba(31, 184, 85, 0); transform: scale(1); }
+        }
+
+        /* Hero Section (Cinematic) */
+        .hero {
+            min-height: 92svh;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem 1.5rem 4rem 1.5rem;
+        }
+
+        .hero-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.85) 78%), rgba(31, 184, 85, 0.08);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-btn);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .hero-trust {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #e0e0e0;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* Layout Sections */
+        .section {
+            padding: 4rem 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* Media (Images & Videos) */
+        .media-container {
+            margin: 2rem auto;
+            max-width: 380px;
+            border-radius: var(--radius-card);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .media-vertical {
+            width: 100%;
+            aspect-ratio: 5/6;
+            max-height: 45vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-vertical {
+            width: 100%;
+            aspect-ratio: 9/16;
+            max-height: 60vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Cards (Services & Testimonials) */
+        .card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .card-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero { padding-bottom: 6rem; }
+        }
+
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius-card);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            border-color: rgba(31, 184, 85, 0.3);
+        }
+
+        .card-service {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card-service .media-container {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        /* Testimonials specific */
+        .stars { color: #ffd700; font-size: 1.2rem; margin-bottom: 1rem; letter-spacing: 2px; }
+        .testimonial-text { font-style: italic; color: #e0e0e0; }
+        .testimonial-author { margin-top: 1rem; font-weight: 700; font-size: 0.9rem; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+
+        /* FAQ */
+        details {
+            background: var(--surface);
+            border-radius: var(--radius-card);
+            margin-bottom: 1rem;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 1.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker { display: none; }
+        
+        summary::after {
+            content: '+';
+            color: var(--primary);
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        details[open] summary::after { transform: rotate(45deg); }
+        
+        .faq-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            color: #d0d0dc;
+        }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+                animation: none !important;
+            }
+            .btn-main { animation: none; }
+        }
+
+        .text-center { text-align: center; }
+        .mt-2 { margin-top: 2rem; }
+        .mb-2 { margin-bottom: 2rem; }
+    </style>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfessionalService",
+          "name": "Maestro Damián - Teléfonos de Brujos",
+          "image": "https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp",
+          "telephone": "+19498917311",
+          "url": "https://telefonos-de-brujos.brujero.org/",
+          "description": "Teléfonos de brujos reales. El Maestro Damián ofrece sabiduría ancestral, amarres y limpias espirituales con más de 25 años de experiencia.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+          },
+          "priceRange": "$0 (Consulta Gratis)"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Es seguro contactar teléfonos de brujos por internet?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, hijo, cuando llegas a un maestro de verdad. Mi línea está protegida por mis ancestros; aquí solo encontrarás guía honesta y confidencialidad absoluta."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Tengo que pagar por la primera consulta al escribirle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Mi primera palabra para ti es un regalo. Quiero escuchar tu caso con calma; solo hablaremos de costos cuando el sendero se aclare."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Atiende a personas en todo Estados Unidos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La energía antigua no conoce fronteras. A través de estos teléfonos de brujos, guío a personas de todo el país con la misma fuerza que si estuvieran en mi altar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿En cuánto tiempo veré resultados tras comunicarme?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los tiempos del espíritu son únicos. Algunos notan paz inmediata al hablar, otros requieren semanas de trabajo. Mi compromiso es acompañarte en el proceso."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué tipo de trabajos realiza a distancia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Realizo amarres de pareja, limpias espirituales, alejamientos y endulzamientos, guiándote paso a paso desde mi altar hasta tu hogar."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5S9BD5G9');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11495571750"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11495571750');gtag('config','AW-11034559801');gtag('config','AW-682101450');gtag('config','AW-16586320392');gtag('config','AW-16892054054');gtag('config','AW-16568918455');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%236d28d9'/><text x='32' y='44' font-size='34' text-anchor='middle'>🔮</text></svg>">
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9BD5G9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <header>
+        <div class="header-title">Maestro Damián</div>
+        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Dami%C3%A1n,%20buscaba%20tel%C3%A9fonos%20de%20brujos%20y%20necesito%20una%20consulta%20gratis." class="btn-compact">WhatsApp 24/7</a>
+    </header>
+
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp">
+            <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-vela-roja-en-altar.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <div class="badge">✦ Sabiduría Ancestral Disponible</div>
+            <h1>Teléfonos de Brujos</h1>
+            <p class="text-highlight">Deja de sufrir en silencio. Te escucho con el respeto que mereces y te guío por el camino antiguo para recuperar lo que es tuyo.</p>
+            <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Dami%C3%A1n,%20buscaba%20tel%C3%A9fonos%20de%20brujos%20y%20necesito%20una%20consulta%20gratis." class="btn-main">Consultar gratis por WhatsApp</a>
+            <div class="hero-trust">
+                <span>⭐ 4.9</span> · <span>+5.000 consultas</span> · <span>Respuesta inmediata</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- 2. Maestro -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2>Maestro santero con más de 25 años de experiencia</h2>
+            </div>
+            <p>Escúchame bien, hijo mío. Lo que mis manos hacen y mi boca aconseja a través de estos <strong class="text-highlight">teléfonos de brujos</strong> no se aprende en páginas frías. El Maestro Damián lleva más de dos décadas pisando este sendero de luz y sombra, con el fuego del altar siempre vivo y el respeto por los ancestros intacto.</p>
+            
+            <div class="media-container">
+                <video class="video-vertical" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja-caratula.webp">
+                    <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-amor-con-velas-de-pareja.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <p>He visto corazones rotos sanar con la guía correcta a distancia, y he ayudado a cientos a enderezar los pasos que el destino torció. Conozco los secretos de la magia antigua como la palma de mi mano vieja. Si ya intentaste todo y el dolor persiste, ven a mí. Te escucharé sin prisa, sin juzgar, y juntos hallaremos el remedio que tu alma clama.</p>
+            <div class="text-center mt-2">
+                <a href="https://wa.me/19498917311?text=Maestro%20Dami%C3%A1n,%20necesito%20su%20ayuda.%20Mi%20caso%20es..." class="btn-main" style="animation: none; box-shadow: none;">Escríbele al Maestro Damián</a>
+            </div>
+        </section>
+
+        <!-- 3. Testimonios -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2>Personas que ya recuperaron su tranquilidad</h2>
+                <p>Palabras de quienes buscaron ayuda en mis líneas y encontraron la paz que tanto buscaban.</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">«La verdad yo no creía en buscar teléfonos de brujos por internet, se lo juro. Había intentado cosas por mi cuenta y nada. Después de meses separada, escribí a don Damián. A las pocas semanas, mi esposo me buscó llorando. Su don es real.»</p>
+                    <div class="testimonial-author">Leticia M. — Houston, TX</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">«Busqué mucho un buen guía entre tantos números hasta que di con él. Damián me habló claro desde el primer minuto, sin promesas falsas. Trabajó un amarre fuerte a distancia, y hoy estamos más unidos que nunca. Mi gratitud es eterna.»</p>
+                    <div class="testimonial-author">Roberto V. — Phoenix, AZ</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">«Llevaba meses sin dormir, consumido por el recuerdo de ella. Escribí a su WhatsApp y sentí una paz que me faltaba hace mucho. A los ocho días de iniciar el trabajo, recibí ese mensaje que tanto esperaba. Mil gracias, maestro.»</p>
+                    <div class="testimonial-author">Javier T. — Charlotte, NC</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">«Yo estaba muy escéptica, con miedo de que me engañaran. Pero la voz de Damián me dio una confianza inmensa al contactarlo. Me guió paso a paso, me explicó cómo potenciar el trabajo en casa. Mi pareja volvió, cambiado para bien.»</p>
+                    <div class="testimonial-author">Elena S. — Orlando, FL</div>
+                </div>
+
+                <div class="card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">«Recomiendo al maestro a ojo cerrado porque de verdad tiene el don. Lo consulté porque mi novia se alejaba, y de paso me hizo una limpia espiritual a distancia. Cumple su palabra y responde siempre.»</p>
+                    <div class="testimonial-author">Carlos D. — Fresno, CA</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Intro Servicios -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2>Servicios de brujería a través de la línea ancestral</h2>
+                <p>Todo trabajo profundo nace de escuchar. Al buscar <strong class="text-highlight">teléfonos de brujos</strong>, has llegado al altar correcto. La primera consulta es un regalo de mi parte para entender tu pena. Evaluamos tu caso sin costo y pagas solo cuando el sendero se aclara.</p>
+            </div>
+            
+            <div class="media-container">
+                <img src="https://telefonos-de-brujos.brujero.org/optimizado/ag-198622750076/banco-hombre-leyendo-cartas-de-tarot-2.webp" alt="Maestro atendiendo teléfonos de brujos" width="800" height="960" loading="lazy" decoding="async" class="media-vertical">
+            </div>
+        </section>
+
+        <!-- 5-12. Servicios Grid -->
+        <section class="section reveal">
+            <div class="card-grid">
+                
+                <!-- Amarres de Pareja -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <h3>Amarres de Pareja</h3>
+                        <p>Rituales antiguos para sellar el amor. Usamos la fuerza de los elementos, velas e inciensos desde mi altar para reavivar la llama y apagar las discusiones que envenenan tu hogar.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Magia Negra -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <h3>Magia Negra</h3>
+                        <p>Fuerzas intensas para casos difíciles donde otros caminos han fallado. Es un sendero serio que requiere la responsabilidad de mis años, usado solo tras una profunda valoración.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Magia Blanca -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        <video class="video-vertical" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra-caratula.webp">
+                            <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <h3>Magia Blanca</h3>
+                        <p>Energía pura enfocada en tu bienestar. Atraemos la luz, superamos los tropiezos y llamamos a la buena fortuna protegiendo tu aura con el poder del amor genuino.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Magia Roja -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <h3>Magia Roja</h3>
+                        <p>El fuego de la pasión. Despertamos el deseo dormido y fortalecemos la atracción íntima para que esa persona especial no tenga ojos ni pensamientos para nadie más que tú.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Endulzamientos -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <h3>Endulzamientos</h3>
+                        <p>Suavizamos los corazones duros. Con miel, canela y esencias ancestrales, calmamos el enojo y acercamos dulcemente a quien se ha alejado cegado por el orgullo.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Limpias Espirituales -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <h3>Limpias Espirituales</h3>
+                        <p>Desterramos la oscuridad. Si sientes pesadez, purificamos tu aura y tu camino a distancia, liberándote de envidias, salaciones y malas influencias.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Alejamientos -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <h3>Alejamientos</h3>
+                        <p>Cortamos lazos que hacen daño. Trabajo firme para separar definitivamente a terceras personas que interfieren en tu relación, cerrando ciclos tóxicos con autoridad.</p>
+                        <p class="text-highlight" style="font-weight: 700; font-size:0.9rem;">Consulta $0</p>
+                    </div>
+                </div>
+
+                <!-- Amarres de Amor Caseros -->
+                <div class="card card-service">
+                    <div class="media-container">
+                        
+                    </div>
+                    <div>
+                        <div class="badge" style="margin-bottom:0.5rem; font-size:0.7rem;">★ Más solicitado</div>
+                        <h3>Amarres de Amor Guiados</h3>
+                        <p>Te guío paso a paso a través de mi línea en poderosos amarres que puedes apoyar desde casa, potenciados con mi canalización de energía a distancia. Seguros y efectivos.</p>
+                        <a href="https://wa.me/19498917311?text=Maestro,%20me%20interesa%20un%20amarre%20guiado." class="btn-compact" style="margin-top:1rem; display:inline-block;">Consultar ahora</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 13. FAQ -->
+        <section class="section reveal">
+            <div class="section-header">
+                <h2>Resolvemos tus dudas sobre nuestros teléfonos de brujos</h2>
+                <p>La claridad es el primer paso hacia la luz. Lee con atención, hijo mío.</p>
+            </div>
+
+            <details>
+                <summary>¿Es seguro contactar teléfonos de brujos por internet?</summary>
+                <div class="faq-content">
+                    <p>Sí, hijo, cuando llegas a un maestro de verdad. Mi línea está protegida por mis ancestros; aquí solo encontrarás guía honesta, respeto por tu dolor y confidencialidad absoluta en cada palabra que crucemos.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿Tengo que pagar por adelantado al escribirle?</summary>
+                <div class="faq-content">
+                    <p>No. Mi primera palabra para ti es totalmente gratuita. Quiero escuchar tu caso con calma y sinceridad; solo hablaremos de costos cuando estemos seguros del sendero a tomar y empieces a ver la luz.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿Cómo sé que el Maestro Damián es el indicado?</summary>
+                <div class="faq-content">
+                    <p>La intuición del alma no miente. Al leer mis palabras y contactar mi número, sentirás la paz que da la experiencia de 25 años caminando este sendero. No hago promesas falsas, solo ofrezco trabajo real.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿Puede ayudarme si vivo en otro estado de USA?</summary>
+                <div class="faq-content">
+                    <p>La energía antigua no conoce de distancias ni fronteras. A través de estos teléfonos de brujos, atiendo y guío a personas de todo Estados Unidos con la misma fuerza y devoción que si estuvieran frente a mi propio altar.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>¿En cuánto tiempo veré resultados de los trabajos?</summary>
+                <div class="faq-content">
+                    <p>Los tiempos del espíritu son únicos para cada corazón. Hay quienes notan cambios en pocos días, otros requieren algunas semanas. Mi compromiso es ajustar el trabajo y acompañarte hasta que tu situación encuentre la paz.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="section reveal text-center" style="padding-bottom: 6rem;">
+            <h2>No dejes que el tiempo apague lo que aún tiene fuego</h2>
+            <p class="mb-2">Escríbeme ahora. Hay saberes antiguos para lo que te pasa, y estoy aquí para escucharte.</p>
+            <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Dami%C3%A1n,%20necesito%20su%20ayuda%20urgente." class="btn-main">Hablar con el Maestro Damián</a>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted);">
+        <p>© 2024 Maestro Damián. Servicios espirituales y sabiduría ancestral.</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7;">Los resultados pueden variar según cada caso. Solo para mayores de 18 años.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const revealElements = document.querySelectorAll(".reveal");
+
+            if (prefersReducedMotion) {
+                revealElements.forEach(el => el.classList.add("visible"));
+                return;
+            }
+
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px 0px -10% 0px",
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            revealElements.forEach(el => observer.observe(el));
+        });
+    </script>
+<script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--WA-FAB:luna-plateada--><div class="wfab-luna"><style>
+.wfab-luna{position:fixed;right:16px;bottom:16px;z-index:99999}
+.wfab-luna a{display:flex;align-items:center;gap:10px;padding:9px 16px 9px 9px;border-radius:999px;background:linear-gradient(135deg,#1e1b4b,#312e81 60%,#1e1b4b);border:1px solid rgba(203,213,225,.55);color:#e2e8f0;font:600 13.5px/1.1 'Segoe UI',sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(30,27,75,.55);position:relative;overflow:hidden;animation:wfabLunaFloat 6s ease-in-out infinite}
+.wfab-luna a::before,.wfab-luna a::after{content:'✦';position:absolute;color:rgba(226,232,240,.8);font-size:9px;animation:wfabLunaTwinkle 4s ease-in-out infinite}
+.wfab-luna a::before{top:6px;right:18px}
+.wfab-luna a::after{bottom:7px;right:44px;animation-delay:2s}
+.wfab-luna .wi{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#19c15f;color:#fff;flex:0 0 auto}
+@keyframes wfabLunaFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes wfabLunaTwinkle{0%,100%{opacity:.15}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.wfab-luna a,.wfab-luna a::before,.wfab-luna a::after{animation:none!important}}
+</style><a href="https://wa.me/19498917311?text=Hola%20Maestro%20Dami%C3%A1n,%20buscaba%20tel%C3%A9fonos%20de%20brujos%20y%20necesito%20una%20consulta%20gratis." target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><span class="wi"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span><span>Escríbeme ahora 🌙</span></a></div><!--/WA-FAB-->
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+</body>
+</html>

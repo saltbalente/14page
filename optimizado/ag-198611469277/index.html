@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curanderas cerca de mi | Consulta gratis con Maestro Ezequiel</title>
+  <meta name="description" content="Curanderas cerca de mi con atención inmediata por WhatsApp. Consulta espiritual gratis con el Maestro Ezequiel para amor, relaciones, limpias y guía ancestral.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --surface:#15151e;
+      --surface-2:#1c1c27;
+      --cream:#f4ead5;
+      --ink:#19171a;
+      --text:#fff;
+      --muted:#c9c4c2;
+      --green:#1fb855;
+      --green-dark:#13833b;
+      --gold:#d6ad62;
+      --line:rgba(214,173,98,.3);
+      --radius:16px;
+      --shadow:0 18px 45px rgba(0,0,0,.4);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Playfair Display",Georgia,serif;
+      font-size:16px;
+      line-height:1.55;
+    }
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:"Merriweather",Georgia,serif}
+    h2{font-size:clamp(1.65rem,6vw,2.55rem);line-height:1.15;margin-bottom:14px}
+    h3{font-size:1.16rem;line-height:1.25}
+    .wrap{width:min(100% - 32px,1120px);margin-inline:auto}
+    .eyebrow{
+      color:var(--green);
+      font:700 .72rem/1.2 "Merriweather",serif;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+    .muted{color:var(--muted)}
+    .section{padding:76px 0}
+    .section-head{max-width:700px;margin-bottom:28px}
+    .section-head p{color:var(--muted);margin-bottom:0}
+    .header{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(11,11,15,.96);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      min-height:62px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .brand{
+      font:700 .92rem "Merriweather",serif;
+      letter-spacing:.01em;
+    }
+    .brand span{display:block;color:var(--green);font:500 .69rem "Playfair Display",serif}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:48px;
+      padding:12px 21px;
+      border-radius:50px;
+      background:var(--green);
+      color:#fff;
+      font:700 .88rem "Merriweather",serif;
+      border:1px solid var(--green);
+      transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+      box-shadow:0 8px 22px rgba(31,184,85,.2);
+    }
+    .btn:hover,.btn:active{transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,184,85,.34);background:#25c762}
+    .btn.small{min-height:38px;padding:8px 15px;font-size:.7rem}
+    .btn.outline{background:transparent;border-color:var(--green);color:#fff}
+    .btn.outline:hover{background:var(--green)}
+    .hero{
+      min-height:92svh;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:flex-end;
+      isolation:isolate;
+    }
+    .hero video{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-3;
+    }
+    .hero-overlay{
+      position:absolute;
+      inset:0;
+      z-index:-2;
+      background:linear-gradient(180deg,rgba(0,0,0,.20),rgba(0,0,0,.72) 78%);
+    }
+    .hero-overlay:after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(31,184,85,.12);
+      mix-blend-mode:screen;
+    }
+    .hero-content{width:min(100% - 32px,1120px);margin:0 auto;padding:80px 0 42px}
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      padding:8px 13px;
+      margin-bottom:17px;
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:50px;
+      background:rgba(0,0,0,.24);
+      backdrop-filter:blur(8px);
+      color:#fff;
+      font-size:.78rem;
+    }
+    .hero h1{
+      max-width:720px;
+      margin-bottom:16px;
+      font-size:clamp(2.3rem,9vw,3.6rem);
+      line-height:1.05;
+      font-weight:900;
+      color:#fff;
+      text-shadow:0 3px 20px rgba(0,0,0,.6);
+    }
+    .hero-sub{max-width:600px;color:rgba(255,255,255,.88);font-size:1.05rem;margin-bottom:23px}
+    .hero .btn{min-height:57px;padding-inline:25px;font-size:.92rem;animation:pulse 2.5s infinite}
+    .trust{margin:14px 0 0;color:#fff;font-size:.82rem}
+    .scroll-mark{display:block;width:1px;height:31px;background:rgba(255,255,255,.65);margin:28px auto 0;animation:float 1.8s ease-in-out infinite}
+    .two-col{display:grid;gap:28px;align-items:center}
+    .dark-panel{background:var(--surface);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:25px;box-shadow:var(--shadow)}
+    .accent-line{height:2px;width:58px;background:var(--green);margin:20px 0}
+    .photo{
+      width:100%;
+      height:auto;
+      max-height:45vh;
+      object-fit:cover;
+      aspect-ratio:5/6;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+    .tarot-layout{display:grid;gap:24px;align-items:center}
+    .tarot-layout .photo{max-width:270px;margin:auto}
+    .quote{
+      border-left:2px solid var(--green);
+      padding-left:17px;
+      color:#f2eee9;
+      font-size:1.08rem;
+    }
+    .cream-band{background:#111118}
+    .premium-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));
+      gap:20px;
+    }
+    .premium-card{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      min-height:292px;
+      padding:32px 21px 20px;
+      border-radius:var(--radius);
+      background:linear-gradient(145deg,#f8efdD,#e6d5b7);
+      color:var(--ink);
+      border:1px solid rgba(214,173,98,.8);
+      box-shadow:0 18px 38px rgba(0,0,0,.42),0 0 22px rgba(214,173,98,.08);
+      transition:transform .2s ease,box-shadow .2s ease;
+    }
+    .premium-card:hover{transform:translateY(-2px);box-shadow:0 22px 45px rgba(0,0,0,.52),0 0 25px rgba(214,173,98,.14)}
+    .card-icon{
+      position:absolute;
+      top:-19px;
+      left:20px;
+      width:39px;
+      height:39px;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:var(--green);
+      border:3px solid var(--cream);
+      border-radius:50%;
+      box-shadow:0 8px 18px rgba(0,0,0,.4);
+    }
+    .card-icon svg{width:19px;height:19px}
+    .premium-card h3{margin:0 0 9px}
+    .premium-card p{font-size:.92rem;margin-bottom:15px}
+    .price{font:900 1.2rem "Merriweather",serif;margin-top:auto;margin-bottom:15px;color:#24552e}
+    .premium-card .btn{width:100%;min-height:43px;font-size:.76rem}
+    .service-image{
+      width:100%;
+      max-height:45vh;
+      aspect-ratio:5/6;
+      object-fit:cover;
+      border-radius:13px;
+      margin:-12px 0 18px;
+      border:1px solid rgba(214,173,98,.6);
+    }
+    .about{background:var(--surface)}
+    .about-grid{display:grid;gap:26px;align-items:center}
+    .about .photo{max-width:310px;margin:auto}
+    .testimonials{display:grid;gap:14px}
+    .testimonial{
+      padding:19px;
+      background:var(--surface);
+      border-left:2px solid var(--green);
+      border-radius:0 var(--radius) var(--radius) 0;
+    }
+    .stars{color:var(--green);letter-spacing:.08em;font-size:.85rem;margin-bottom:7px}
+    .testimonial p{font-size:.93rem;margin-bottom:10px}
+    .byline{color:var(--gold);font-size:.8rem}
+    .service-section{background:#101016}
+    .service-note{
+      margin-top:23px;
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      color:var(--muted);
+    }
+    details{
+      background:var(--surface);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:12px;
+      margin-bottom:10px;
+      overflow:hidden;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding:17px 42px 17px 18px;
+      position:relative;
+      font:700 .93rem "Merriweather",serif;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary:after{
+      content:"+";
+      position:absolute;
+      right:18px;
+      color:var(--green);
+      font-size:1.25rem;
+      transition:transform .25s ease;
+    }
+    details[open] summary:after{transform:rotate(45deg)}
+    details p{padding:0 18px 17px;color:var(--muted);font-size:.91rem;margin:0}
+    .final-cta{
+      margin-top:32px;
+      padding:28px 20px;
+      text-align:center;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(145deg,#17171f,#111116);
+    }
+    .final-cta h3{margin-bottom:9px}
+    .final-cta p{color:var(--muted);margin-bottom:18px}
+    footer{padding:27px 0 88px;border-top:1px solid rgba(255,255,255,.08);color:#aaa;font-size:.78rem}
+    .reveal{opacity:1;transform:none}
+    .reveal.visible{animation:fade-up .6s ease-out both}
+    .premium-card:nth-child(2).visible,.testimonial:nth-child(2).visible{animation-delay:.05s}
+    .premium-card:nth-child(3).visible,.testimonial:nth-child(3).visible{animation-delay:.1s}
+    .testimonial:nth-child(4).visible{animation-delay:.15s}
+    .testimonial:nth-child(5).visible{animation-delay:.2s}
+    @keyframes fade-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    @keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 8px 22px rgba(31,184,85,.2)}50%{transform:scale(1.04);box-shadow:0 12px 31px rgba(31,184,85,.4)}}
+    @keyframes float{50%{transform:translateY(7px);opacity:.45}}
+    @media (min-width:768px){
+      .wrap,.hero-content{width:min(100% - 64px,1120px)}
+      .section{padding:96px 0}
+      .two-col,.about-grid{grid-template-columns: minmax(0,1fr) minmax(0,1fr)}
+      .tarot-layout{grid-template-columns:290px 1fr}
+      .about-grid .photo{order:2}
+      .testimonials{grid-template-columns:repeat(2,1fr)}
+      .service-image{max-width:180px}
+    }
+    @media (min-width:1020px){
+      .testimonials{grid-template-columns:repeat(3,1fr)}
+      .hero-content{padding-bottom:65px}
+    }
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{animation:none!important;transition:none!important}
+      .reveal,.reveal.visible{opacity:1;transform:none}
+    }
+  </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5S9BD5G9');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11495571750"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11495571750');gtag('config','AW-11034559801');gtag('config','AW-682101450');gtag('config','AW-16586320392');gtag('config','AW-16892054054');gtag('config','AW-16568918455');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%235b21b6'/><text x='32' y='44' font-size='34' text-anchor='middle'>🪄</text></svg>">
+<style id="maq-laurel-css">.maq-laurel{display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;margin:0 auto 18px;max-width:440px;filter:drop-shadow(0 1px 6px rgba(0,0,0,.45))}.maq-laurel .ml-mid{display:flex;flex-direction:column;align-items:center;gap:3px}.maq-laurel .ml-title{font-weight:800;font-size:17px;line-height:1.2;letter-spacing:.2px;text-align:center}.maq-laurel .ml-stars{font-size:16px;letter-spacing:3px;line-height:1}.maq-laurel .ml-since{font-weight:700;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;opacity:.95}</style>
+<style id="maq-gallery-css">.maq-gallery{padding:34px 14px}.maq-gallery .mgi{max-width:1080px;margin:0 auto;columns:2;column-gap:10px}@media(min-width:760px){.maq-gallery .mgi{columns:3;column-gap:12px}}.maq-gallery figure{break-inside:avoid;margin:0 0 10px;position:relative;border-radius:16px;overflow:hidden;background:#111;transform:translateZ(0)}.maq-gallery img,.maq-gallery video{width:100%;height:auto;display:block;border-radius:16px;transition:transform .45s ease}.maq-gallery figure:hover img,.maq-gallery figure:hover video{transform:scale(1.04)}.maq-gallery .mgb{position:absolute;top:8px;left:8px;margin:0;padding:3px 9px;border-radius:999px;font:700 10px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}</style>
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9BD5G9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Navegación principal">
+      <a class="brand" href="#inicio">Maestro Ezequiel<span>Guía espiritual por WhatsApp</span></a>
+      <a class="btn small" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Busco%20curanderas%20cerca%20de%20mi.">WhatsApp</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <video autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/tarot-con-carta-de-luna-mistica-caratula.webp" aria-hidden="true">
+        <source src="https://googleads.mkinnovador.com/banco/videos/tarot-con-carta-de-luna-mistica.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="badge">✦ Maestro Ezequiel disponible ahora</div>
+        <div class="maq-laurel"><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg><span class="ml-mid"><span class="ml-title">Curanderas Cerca De Mi</span><span class="ml-stars">★★★★★</span><span class="ml-since">Resultados Reales</span></span><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true" style="transform:scaleX(-1)"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg></div>
+<h1>Curanderas cerca de mi: consulta gratis y atención inmediata</h1>
+        <p class="hero-sub">Si estás buscando curanderas cerca de ti, mira: puedes contarme lo que pasa por WhatsApp, con calma, respeto y sin sentirte juzgada.</p>
+        <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20una%20consulta%20gratis%20de%20curanderas%20cerca%20de%20mi.">Hablar con el Maestro Ezequiel</a>
+        <p class="trust">★ 4.9 · más de 5.000 consultas · respuesta personal 24/7</p>
+        <span class="scroll-mark" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap two-col">
+        <div>
+          <div class="eyebrow">Una conversación para comenzar</div>
+          <h2>Descubre las respuestas que tu corazón busca</h2>
+          <p>Mira, te voy a ser sincero: cuando buscas una curandera cerca de mi, muchas veces no quieres más ruido. Quieres que alguien escuche tu historia y te ayude a ordenar lo que sientes.</p>
+          <p>En la consulta gratis hablamos de amor, familia, decisiones, cansancio emocional y esos caminos que parecen cerrados. Te digo qué opciones espirituales tienen sentido y cuáles conviene dejar atrás, sin presionarte.</p>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20contarte%20mi%20situaci%C3%B3n%20en%20una%20consulta%20gratis.">Escríbeme y hablamos con calma</a>
+        </div>
+        <div class="dark-panel">
+          <p class="quote">“Primero escuchamos tu caso. Después vemos si hay un camino espiritual responsable para ti.”</p>
+          <p class="muted">Atención privada para hispanos en todo Estados Unidos, estés en Houston, Phoenix, Orlando o cualquier otra ciudad.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cream-band reveal">
+      <div class="wrap tarot-layout">
+        <img class="photo" src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-altar-esoterico-con-estatua-de-buda.webp" loading="lazy" decoding="async" width="800" height="960" alt="Tarot y altar esotérico para orientación espiritual">
+        <div>
+          <div class="eyebrow">TAROT</div>
+          <h2>Una lectura para mirar con más claridad</h2>
+          <p>Las cartas pueden ayudarte a poner nombre a una duda, reconocer señales y observar tus posibilidades en el amor, tus relaciones y tu bienestar. No deciden por ti; te dan un espacio para escucharte.</p>
+          <a class="btn outline" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Me%20interesa%20una%20lectura%20de%20Tarot.">Preguntar por Tarot</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap section-head">
+        <div class="eyebrow">Lectura de Tarot</div>
+        <h2>Lectura de Tarot para tu siguiente paso</h2>
+        <p>Si estás entre escribirle o esperar, continuar o cerrar, podemos revisar la energía de la situación con serenidad. También conversamos sobre astrología y ciclos personales cuando eso aporta contexto.</p>
+      </div>
+    </section>
+
+    <section class="section cream-band reveal">
+      <div class="wrap two-col">
+        <div>
+          <div class="eyebrow">Claridad sin dramatismos</div>
+          <h2>Abre la puerta a tu futuro con serenidad</h2>
+          <p>No necesitas que alguien decida por ti. A veces basta una mirada distinta para recuperar la confianza y dar el paso que llevas semanas evitando.</p>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Necesito%20claridad%20sobre%20mi%20futuro%20y%20mi%20relaci%C3%B3n.">Dar el primer paso</a>
+        </div>
+        <div class="dark-panel">
+          <h3>Atención cercana, aunque estés lejos</h3>
+          <p class="muted">El Maestro Ezequiel atiende por WhatsApp a personas hispanas en Estados Unidos, con respuesta personal y discreta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap section-head">
+        <div class="eyebrow">Tu historia importa</div>
+        <h2>Descubre las respuestas que tu corazón busca</h2>
+        <p>Cuéntame qué cambió, desde cuándo lo notas y qué has intentado. Con esa información podemos hablar de una guía que cuide tu tranquilidad y tu libertad.</p>
+      </div>
+    </section>
+
+    <section class="section cream-band reveal">
+      <div class="wrap two-col">
+        <img class="photo" src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-velas-rojas-encendidas-ritual-esoterico.webp" loading="lazy" decoding="async" width="800" height="960" alt="Velas rojas para una conversación sobre amarres de amor caseros">
+        <div>
+          <div class="eyebrow">Amarres De Amor Caseros</div>
+          <h2>Amor, relaciones y decisiones con los pies en la tierra</h2>
+          <p>Si estás pensando en un amarre de amor casero, háblalo primero. Revisamos qué ocurre entre ustedes, qué deseas realmente y si hay una forma más sana de abrir el diálogo. Ningún proceso responsable debe forzar la voluntad de otra persona.</p>
+          <a class="btn outline" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20orientaci%C3%B3n%20sobre%20amarres%20de%20amor%20caseros.">Consultar sobre el amor</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about reveal">
+      <div class="wrap about-grid">
+        <img class="photo" src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-recorte-sabio-indigena-con-ofrendas-naturales.webp" loading="lazy" decoding="async" width="800" height="960" alt="Retrato del Maestro Ezequiel, curandero espiritual">
+        <div>
+          <div class="eyebrow">Sobre el maestro</div>
+          <h2>Curandero profesional con más de 25 años de experiencia</h2>
+          <p>El Maestro Ezequiel aprendió este oficio en una tradición familiar de plantas, oración y respeto por los ancestros. Lleva más de dos décadas acompañando a personas que llegan confundidas, agotadas o con el corazón detenido.</p>
+          <p>Te habla claro y protege tu privacidad. No ofrece controlar a nadie ni alimentar miedo o dependencia: observa tu situación y propone un proceso espiritual responsable, si de verdad puede ayudarte.</p>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20conocer%20su%20orientaci%C3%B3n%20espiritual.">Escríbele al Maestro Ezequiel</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap section-head">
+        <div class="eyebrow">Voces reales</div>
+        <h2>Personas que ya recuperaron su tranquilidad</h2>
+        <p>Cada experiencia es distinta. Estas personas compartieron cómo vivieron su consulta y qué sintieron después.</p>
+      </div>
+      <div class="wrap testimonials">
+        <article class="testimonial"><div class="stars">★★★★★</div><p>La verdad yo no creía en estas cosas. Después de tres meses de discusiones por una separación, Ezequiel me escuchó sin meterme miedo y pude volver a dormir tranquila.</p><div class="byline">Nayeli G. — Houston, TX</div></article>
+        <article class="testimonial"><div class="stars">★★★★★</div><p>Se lo juro que llegué con vergüenza. Mi pareja llevaba casi dos meses sin hablarme; la consulta fue respetuosa y sus indicaciones nos ayudaron a sentarnos a conversar.</p><div class="byline">Brayan M. — Orlando, FL</div></article>
+        <article class="testimonial"><div class="stars">★★★★★</div><p>Buscaba un curandero cerca de mi que hablara directo. Ezequiel revisó mi caso, explicó los límites y me dio seguimiento durante una semana.</p><div class="byline">Lucía Andrade — El Paso, TX</div></article>
+        <article class="testimonial"><div class="stars">★★★★★</div><p>Había probado baños y consejos de internet durante cinco semanas. La orientación me ayudó a dejar de reaccionar con ansiedad y tomar una decisión más serena.</p><div class="byline">Óscar R. — Newark, NJ</div></article>
+        <article class="testimonial"><div class="stars">★★★★★</div><p>¡Sentí que alguien por fin entendía lo que estaba viviendo! Llegué por una mala racha en casa y salí con pasos concretos para cuidar mi ambiente y mi ánimo.</p><div class="byline">Maritza Solís — Fresno, CA</div></article>
+      </div>
+    </section>
+
+    <section class="section service-section reveal" data-blk="tarjetas-premium-responsivas">
+      <div class="wrap section-head">
+        <div class="eyebrow">Acompañamiento espiritual</div>
+        <h2>Servicios de curandero y guía ancestral</h2>
+        <p>La primera conversación es sin costo. Escuchamos tu caso antes de hablar de cualquier trabajo y aclaramos cada paso.</p>
+      </div>
+      <div class="wrap premium-grid">
+        <article class="premium-card">
+          <span class="card-icon" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M12 21s7-4.4 7-10.2A4.8 4.8 0 0 0 12 7a4.8 4.8 0 0 0-7 3.8C5 16.6 12 21 12 21Z"/><path d="M8.5 12h7"/></svg></span>
+          <img class="service-image" src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-img-1096.webp" fetchpriority="high" decoding="async" width="800" height="960" alt="Curanderas cerca de mi para orientación de amor">
+          <h3>Curanderas cerca de mi</h3><p>Una consulta privada para hablar de amor, vínculos y decisiones sin sentirte sola.</p><div class="price">$0 · primera consulta</div>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Busco%20curanderas%20cerca%20de%20mi%20y%20quiero%20consultar.">Consultar gratis</a>
+        </article>
+        <article class="premium-card">
+          <span class="card-icon" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="8"/></svg></span>
+          <h3>Limpias y protección</h3><p>Para conversar sobre pesadez, envidia, discusiones repetidas o ambientes que se sienten difíciles.</p><div class="price">A consultar</div>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20hablar%20sobre%20una%20limpia%20espiritual.">Saber más</a>
+        </article>
+        <article class="premium-card">
+          <span class="card-icon" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M12 3 5 6v5c0 4.5 3 7.8 7 10 4-2.2 7-5.5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Amor y unión</h3><p>Orientación para reconciliación, endulzamientos y conversaciones difíciles, siempre con límites claros.</p><div class="price">Según tu caso</div>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Necesito%20orientaci%C3%B3n%20para%20amor%20y%20uni%C3%B3n.">Hablar del caso</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="wrap two-col">
+        <div>
+          <div class="eyebrow">Consulta inicial</div>
+          <h2>Orientación de curandero</h2>
+          <p>Te escucho primero. Después revisamos si conviene una lectura, una limpia o simplemente ordenar tus ideas. Sin sorpresas y sin obligarte a continuar.</p>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20una%20orientaci%C3%B3n%20de%20curandero.">Iniciar conversación</a>
+        </div>
+        <div class="dark-panel"><p class="quote">“Lo espiritual debe devolverte claridad, no quitarte libertad.”</p><p class="muted">La consulta no sustituye atención médica, psicológica ni legal.</p></div>
+      </div>
+    </section>
+
+    <section class="section cream-band reveal">
+      <div class="wrap two-col">
+        <img class="photo" src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-manos-clavando-alfileres-en-muneco-vudu-2.webp" loading="lazy" decoding="async" width="800" height="960" alt="Objeto ritual asociado a magia negra y amarres de pareja">
+        <div>
+          <div class="eyebrow">Amor y relaciones</div>
+          <h2>Amarres de pareja con guía responsable</h2>
+          <p>Podemos hablar de distancia emocional, atracción, celos o una reconciliación. También de magia blanca, magia roja y endulzamientos. Primero entendemos el vínculo; nunca se promete dominar la voluntad ajena.</p>
+          <a class="btn outline" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Quiero%20consultar%20sobre%20un%20amarre%20de%20pareja.">Consultar mi situación</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="faq">
+      <div class="wrap section-head">
+        <div class="eyebrow">Preguntas frecuentes</div>
+        <h2>Lo que conviene saber antes de buscar curanderas cerca de mi</h2>
+      </div>
+      <div class="wrap">
+        <details><summary>¿Hay curanderas cerca de mi que atiendan por WhatsApp?</summary><p>Sí. El Maestro Ezequiel atiende por WhatsApp a hispanos en todo Estados Unidos, aunque estés buscando una guía espiritual en otra ciudad.</p></details>
+        <details><summary>¿Cómo consulto a un curandero cerca de mi?</summary><p>Escríbele al número de esta página, cuéntale brevemente qué sucede y recibe una respuesta personal para comenzar.</p></details>
+        <details><summary>¿La consulta de curanderas cerca de mi es gratis?</summary><p>La primera conversación no tiene costo. Antes de recomendar cualquier trabajo se revisa tu caso y se explican las opciones con claridad.</p></details>
+        <details><summary>¿El Maestro Ezequiel está disponible 24/7?</summary><p>Recibe mensajes todos los días y procura responder con rapidez. La atención se coordina por WhatsApp según tu horario y situación.</p></details>
+        <details><summary>¿Puedo preguntar por amor, tarot o limpias?</summary><p>Claro. Puedes hablar de relaciones, amarres, Tarot, protección, malas rachas o decisiones personales, sin juicios y con privacidad.</p></details>
+        <details><summary>¿Esto reemplaza a un médico o psicólogo?</summary><p>No. La guía espiritual es complementaria y no sustituye atención médica, psicológica, legal ni otros servicios profesionales.</p></details>
+        <div class="final-cta">
+          <h3>¿Sigues buscando curanderas cerca de mi?</h3>
+          <p>Escríbeme ahora. Me cuentas qué pasa y lo vemos con calma, sin compromisos.</p>
+          <a class="btn" href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Llegu%C3%A9%20buscando%20curanderas%20cerca%20de%20mi%20y%20quiero%20consultar.">Escribir al Maestro Ezequiel</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+<section class="maq-gallery" id="maq-gal-auto"><div class="mgi"><figure><img src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-dos-mujeres-con-vela-ritual.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-persona-con-velon-ritual-y-ofrendas.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-altar-a-santa-muerte-con-ofrendas.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-altar-con-figuras-de-la-santa-muerte.webp" alt="" loading="lazy" decoding="async"></figure><figure><video autoplay src="https://googleads.mkinnovador.com/banco/videos/hombre-hablando-en-un-coche.mp4" poster="https://googleads.mkinnovador.com/banco/videos/hombre-hablando-en-un-coche-caratula.webp" muted loop playsinline preload="metadata"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure><figure><img src="https://curanderas-cerca-de-mi.brujero.org/optimizado/ag-198611469277/banco-altar-con-ofrendas-y-retrato-de-mujer.webp" alt="" loading="lazy" decoding="async"></figure><figure><video autoplay src="https://googleads.mkinnovador.com/banco/videos/ritual-de-vela-roja-y-mano.mp4" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-vela-roja-y-mano-caratula.webp" muted loop playsinline preload="metadata"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure></div></section>
+<footer>
+    <div class="wrap">© 2026 Maestro Ezequiel · Orientación espiritual privada por WhatsApp para hispanos en Estados Unidos.</div>
+  </footer>
+
+  <script>
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const items=document.querySelectorAll('.reveal');
+    if(reduced){items.forEach(el=>el.classList.add('visible'))}
+    else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});items.forEach(el=>io.observe(el))}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"LocalBusiness",
+        "@id":"https://curanderas-cerca-de-mi.brujero.org/#maestro",
+        "name":"Maestro Ezequiel | Curandero espiritual",
+        "url":"https://curanderas-cerca-de-mi.brujero.org/",
+        "telephone":"+19498917311",
+        "description":"Orientación espiritual privada por WhatsApp para hispanos en Estados Unidos.",
+        "areaServed":{"@type":"Country","name":"Estados Unidos"},
+        "openingHours":"Mo-Su 00:00-23:59",
+        "priceRange":"$"
+      },
+      {
+        "@type":"Service",
+        "@id":"https://curanderas-cerca-de-mi.brujero.org/#consulta",
+        "name":"Curanderas cerca de mi",
+        "serviceType":"Consulta espiritual y orientación de curandero",
+        "provider":{"@id":"https://curanderas-cerca-de-mi.brujero.org/#maestro"},
+        "areaServed":{"@type":"Country","name":"Estados Unidos"},
+        "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"https://curanderas-cerca-de-mi.brujero.org/#faq",
+        "mainEntity":[
+          {"@type":"Question","name":"¿Hay curanderas cerca de mi que atiendan por WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Sí. El Maestro Ezequiel atiende por WhatsApp a hispanos en todo Estados Unidos."}},
+          {"@type":"Question","name":"¿Cómo consulto a un curandero cerca de mi?","acceptedAnswer":{"@type":"Answer","text":"Escríbele por WhatsApp, cuéntale brevemente qué sucede y recibe una respuesta personal para comenzar."}},
+          {"@type":"Question","name":"¿La consulta de curanderas cerca de mi es gratis?","acceptedAnswer":{"@type":"Answer","text":"La primera conversación no tiene costo. Antes de recomendar cualquier trabajo se revisa tu caso."}},
+          {"@type":"Question","name":"¿El Maestro Ezequiel está disponible 24/7?","acceptedAnswer":{"@type":"Answer","text":"Recibe mensajes todos los días y procura responder con rapidez por WhatsApp."}},
+          {"@type":"Question","name":"¿Puedo preguntar por amor, tarot o limpias?","acceptedAnswer":{"@type":"Answer","text":"Sí. Puedes hablar de relaciones, Tarot, protección, malas rachas y decisiones personales."}},
+          {"@type":"Question","name":"¿Esto reemplaza a un médico o psicólogo?","acceptedAnswer":{"@type":"Answer","text":"No. La guía espiritual no sustituye atención médica, psicológica, legal ni otros servicios profesionales."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<script id="wa-img-guard">(function(){function h(t){if(!t||t.tagName!=='IMG')return;t.style.display='none';var f=t.closest&&t.closest('figure');if(f){var alive=false;f.querySelectorAll('img,video,iframe').forEach(function(m){if(m.style.display!=='none')alive=true});if(!alive)f.style.display='none'}}document.addEventListener('error',function(e){h(e.target)},true);window.addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('img').forEach(function(i){if(i.src&&i.complete&&i.naturalWidth===0)h(i)})},400)});})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--WA-FAB:sello-mistico--><div class="wfab-sello"><style>
+.wfab-sello{position:fixed;right:18px;bottom:18px;z-index:99999}
+.wfab-sello .wr{position:absolute;inset:-9px;border-radius:50%;border:2px dashed rgba(212,175,55,.85);animation:wfabSelloSpin 16s linear infinite;pointer-events:none}
+.wfab-sello a{display:flex;align-items:center;justify-content:center;width:62px;height:62px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2fe07c,#0f8a49);color:#fff;box-shadow:0 6px 22px rgba(15,138,73,.5),0 0 16px rgba(147,51,234,.35);animation:wfabSelloGlow 4s ease-in-out infinite;text-decoration:none}
+@keyframes wfabSelloSpin{to{transform:rotate(360deg)}}
+@keyframes wfabSelloGlow{0%,100%{box-shadow:0 6px 22px rgba(15,138,73,.5),0 0 14px rgba(147,51,234,.3)}50%{box-shadow:0 6px 22px rgba(15,138,73,.55),0 0 30px rgba(147,51,234,.6)}}
+@media (prefers-reduced-motion:reduce){.wfab-sello *{animation:none!important}}
+</style><span class="wr"></span><a href="https://wa.me/19498917311?text=Hola%2C%20Maestro%20Ezequiel.%20Busco%20curanderas%20cerca%20de%20mi." target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div><!--/WA-FAB-->
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+</body>
+</html>

@@ -1395,37 +1395,197 @@
 
 
     <section class="section light reveal" id="faq">
-      <div class="section-inner">
-        <p class="kicker">Preguntas frecuentes</p>
-        <h2>Limpias espirituales: respuestas claras</h2>
-        <div class="faq-list" style="color: #000;color:black !important">
-          <details>
-            <summary>¿Qué son las limpias espirituales?</summary>
-            <p>Son prácticas de renovación y enfoque que se conversan de manera individual, según la historia y las necesidades de cada persona.</p>
-          </details>
-          <details>
-            <summary>¿Cómo saber si necesito una limpia espiritual?</summary>
-            <p>Una consulta ayuda a revisar periodos de cansancio, inquietud o sensación de bloqueo sin asumir de antemano una causa única.</p>
-          </details>
-          <details>
-            <summary>¿Qué incluye una consulta de limpias espirituales?</summary>
-            <p>Incluye una conversación privada, preguntas sobre el momento actual y una explicación de las alternativas espirituales posibles.</p>
-          </details>
-          <details>
-            <summary>¿Las limpias espirituales se consultan a distancia?</summary>
-            <p>Sí. El primer contacto es por WhatsApp y puede realizarse desde Houston, Phoenix, Orlando o cualquier ciudad de Estados Unidos.</p>
-          </details>
-          <details>
-            <summary style="color:#000 !important">¿Cuánto tarda una consulta de limpias espirituales?</summary>
-            <p>Los mensajes se reciben a cualquier hora. El tiempo de respuesta puede variar según el volumen y la complejidad de cada consulta.</p>
-          </details>
-          <details>
-            <summary>¿Existe una consulta inicial sin compromiso?</summary>
-            <p>Sí. La conversación inicial es confidencial y permite conocer la situación antes de decidir si se desea continuar.</p>
-          </details>
+  <style>
+    #faq .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      color: #1a1a1a;
+      max-width: 720px;
+      margin: 2rem auto 0;
+    }
+    #faq details {
+      background: #fafaf7;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 0;
+      transition: background 0.2s ease;
+    }
+    #faq details:hover {
+      background: #f5f3ee;
+      border-color: rgba(0,0,0,0.15);
+    }
+    #faq details[open] {
+      background: #f7f5f0;
+      border-color: rgba(0,0,0,0.12);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    #faq summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+      line-height: 1.4;
+      list-style: none;
+      color: #2b2b28;
+      user-select: none;
+      min-height: 56px;
+    }
+    #faq summary::-webkit-details-marker {
+      display: none;
+    }
+    #faq summary::marker {
+      content: "";
+    }
+    #faq summary:focus-visible {
+      outline: 2px solid #8b7a5e;
+      outline-offset: 2px;
+      border-radius: 12px;
+    }
+    #faq summary:active {
+      background: rgba(0,0,0,0.02);
+    }
+    #faq .faq-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      transition: transform 0.25s ease;
+      color: #6b5e4a;
+    }
+    #faq details[open] .faq-icon {
+      transform: rotate(180deg);
+    }
+    #faq details .faq-content {
+      padding: 0 1.5rem 1.25rem;
+      color: #4a4a44;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+    #faq .faq-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    #faq .faq-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.8rem;
+      background: #5a8a5c;
+      color: #fff;
+      border-radius: 100px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s ease, transform 0.15s ease;
+      min-height: 48px;
+    }
+    #faq .faq-cta a:hover {
+      background: #4a7a4c;
+      transform: translateY(-1px);
+    }
+    #faq .faq-cta a:focus-visible {
+      outline: 2px solid #5a8a5c;
+      outline-offset: 3px;
+    }
+    #faq .faq-cta a:active {
+      transform: translateY(0);
+      background: #3d6a3f;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #faq .faq-icon {
+        transition: none;
+      }
+      #faq .faq-cta a {
+        transition: none;
+      }
+    }
+  </style>
+  <div class="section-inner">
+    <p class="kicker">Preguntas frecuentes</p>
+    <h2>Limpias espirituales: respuestas claras</h2>
+    <div class="faq-list" style="color: #000;color:black !important">
+      <details>
+        <summary>
+          ¿Qué son las limpias espirituales?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="faq-content">
+          <p>Son prácticas de renovación y enfoque que se conversan de manera individual, según la historia y las necesidades de cada persona.</p>
         </div>
-      </div>
-    </section>
+      </details>
+      <details>
+        <summary>
+          ¿Cómo saber si necesito una limpia espiritual?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="faq-content">
+          <p>Una consulta ayuda a revisar periodos de cansancio, inquietud o sensación de bloqueo sin asumir de antemano una causa única.</p>
+        </div>
+      </details>
+      <details>
+        <summary>
+          ¿Qué incluye una consulta de limpias espirituales?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="faq-content">
+          <p>Incluye una conversación privada, preguntas sobre el momento actual y una explicación de las alternativas espirituales posibles.</p>
+        </div>
+      </details>
+      <details>
+        <summary>
+          ¿Las limpias espirituales se consultan a distancia?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="faq-content">
+          <p>Sí. El primer contacto es por WhatsApp y puede realizarse desde Houston, Phoenix, Orlando o cualquier ciudad de Estados Unidos.</p>
+        </div>
+      </details>
+      <details>
+        <summary style="color:#000 !important">
+          ¿Cuánto tarda una consulta de limpias espirituales?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="faq-content">
+          <p>Los mensajes se reciben a cualquier hora. El tiempo de respuesta puede variar según el volumen y la complejidad de cada consulta.</p>
+        </div>
+      </details>
+      <details>
+        <summary>
+          ¿Existe una consulta inicial sin compromiso?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="faq-content">
+          <p>Sí. La conversación inicial es confidencial y permite conocer la situación antes de decidir si se desea continuar.</p>
+        </div>
+      </details>
+    </div>
+    <div class="faq-cta">
+      <a href="https://wa.me/19142090428?text=Hola%20Maestro%20Macario%2C%20tengo%20una%20consulta%20sobre%20limpias%20espirituales" rel="noopener" aria-label="Hablar por WhatsApp sobre limpias espirituales">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" width="20" height="20">
+          <path d="M20 11.5a8 8 0 0 1-11.8 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z"></path>
+          <path d="M8.5 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.6 1.1 1.5 2 2.6 2.6l.6-.5c.2-.2.4-.2.6-.1l1.6.7c.3.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.4.2-1.1.4-1.7.2-1.1-.3-2.5-1-3.8-2.3s-2-2.7-2.3-3.8c-.2-.6 0-1.3.2-1.7Z"></path>
+        </svg>
+        <span>Hablar por WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
 
     
 <section class="maq-blk" data-blk="3-imagenes-cta-morado"></section>

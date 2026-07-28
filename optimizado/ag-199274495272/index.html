@@ -170,7 +170,7 @@
     </section>
 
 
-<section class="maq-blk" data-blk="tarjeta-alto-impacto-verde-opaca"><section class="bkimg-amrr">
+<section class="maq-blk" data-blk="tarjeta-alto-impacto-verde-opaca"><section class="bkimg-amrr" aria-labelledby="bkimg-amrr-title">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
@@ -182,12 +182,12 @@
             --gold-dark: #8a7322;
             --text-main: #f4f0e6;
             --text-muted: #a8b5ae;
-            
+
             background-color: var(--bg-base);
             background-image: radial-gradient(circle at 70% 30%, var(--bg-glow) 0%, var(--bg-base) 60%);
             width: 100%;
             min-height: 100vh;
-            padding: 2rem 1rem;
+            padding: clamp(2rem, 5vw, 4rem) 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -197,7 +197,9 @@
             overflow: hidden;
         }
 
-        .bkimg-amrr * {
+        .bkimg-amrr *,
+        .bkimg-amrr *::before,
+        .bkimg-amrr *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -208,11 +210,10 @@
             max-width: 1080px;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: clamp(2rem, 5vw, 4rem);
             position: relative;
         }
 
-        /* Main Layout */
         .bkimg-amrr-main-area {
             display: flex;
             gap: 2rem;
@@ -221,40 +222,43 @@
 
         .bkimg-amrr-glow-box {
             flex: 1;
+            min-width: 0;
             position: relative;
-            border: 2px solid rgba(249, 229, 150, 0.6);
-            border-radius: 40px;
-            padding: clamp(2rem, 5vw, 4rem);
-            box-shadow: 
-                0 0 20px rgba(249, 229, 150, 0.15),
-                inset 0 0 20px rgba(249, 229, 150, 0.1);
-            background: linear-gradient(180deg, rgba(10, 36, 26, 0.4) 0%, rgba(5, 16, 12, 0.8) 100%);
+            border: 1px solid rgba(249, 229, 150, 0.55);
+            border-radius: 2rem;
+            padding: clamp(1.5rem, 5vw, 4rem);
+            box-shadow:
+                0 0 20px rgba(249, 229, 150, 0.12),
+                inset 0 0 20px rgba(249, 229, 150, 0.08);
+            background: linear-gradient(180deg, rgba(10, 36, 26, 0.42) 0%, rgba(5, 16, 12, 0.88) 100%);
             z-index: 1;
         }
 
-        /* Glowing accents on corners */
         .bkimg-amrr-glow-box::before,
         .bkimg-amrr-glow-box::after {
             content: '';
             position: absolute;
-            width: 150px;
-            height: 150px;
-            border: 2px solid var(--gold-bright);
-            border-radius: 40px;
-            filter: blur(4px);
-            opacity: 0.5;
+            width: 120px;
+            height: 120px;
+            border: 1px solid var(--gold-bright);
+            border-radius: 2rem;
+            filter: blur(3px);
+            opacity: 0.42;
             pointer-events: none;
         }
+
         .bkimg-amrr-glow-box::before {
-            top: -2px; left: -2px;
+            top: -1px;
+            left: -1px;
             clip-path: polygon(0 0, 100% 0, 0 100%);
         }
+
         .bkimg-amrr-glow-box::after {
-            bottom: -2px; right: -2px;
+            right: -1px;
+            bottom: -1px;
             clip-path: polygon(100% 100%, 0 100%, 100% 0);
         }
 
-        /* Social Sidebar */
         .bkimg-amrr-sidebar {
             display: none;
             flex-direction: column;
@@ -272,51 +276,59 @@
             justify-content: center;
             color: var(--gold-bright);
             background: rgba(5, 16, 12, 0.5);
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.16);
         }
+
         .bkimg-amrr-social-icon svg {
             width: 20px;
             height: 20px;
-            fill: currentColor;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
-        /* Moon Ornament */
         .bkimg-amrr-moon {
             position: absolute;
-            top: 10%;
-            right: 10%;
-            width: 80px;
-            height: 80px;
-            opacity: 0.9;
-            filter: drop-shadow(0 0 15px var(--gold-bright));
+            top: 7%;
+            right: 7%;
+            width: clamp(52px, 10vw, 80px);
+            height: clamp(52px, 10vw, 80px);
+            color: var(--gold-bright);
+            opacity: 0.72;
+            filter: drop-shadow(0 0 12px rgba(249, 229, 150, 0.65));
             z-index: 0;
         }
 
-        /* Header Section */
         .bkimg-amrr-header {
+            max-width: 68ch;
+            margin: 0 auto 2.5rem;
             text-align: center;
-            margin-bottom: 3rem;
             position: relative;
             z-index: 2;
         }
 
         .bkimg-amrr-eyebrow {
-            font-size: clamp(0.7rem, 2vw, 0.85rem);
-            letter-spacing: 0.3em;
+            font-size: clamp(0.68rem, 2vw, 0.84rem);
+            letter-spacing: 0.24em;
+            line-height: 1.5;
             color: var(--text-muted);
             text-transform: uppercase;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
         }
+
         .bkimg-amrr-eyebrow::before,
         .bkimg-amrr-eyebrow::after {
             content: '';
-            width: 30px;
+            width: 28px;
             height: 1px;
             background: var(--gold-dark);
+            flex-shrink: 0;
         }
 
         .bkimg-amrr-title {
@@ -324,68 +336,85 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            line-height: 1.1;
+            line-height: 1.05;
             margin-bottom: 1rem;
         }
 
         .bkimg-amrr-title-italic {
             font-style: italic;
-            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-size: clamp(1.9rem, 6vw, 4rem);
             color: var(--gold-bright);
             font-weight: 400;
-            margin-bottom: -0.2em;
-            margin-left: -4em;
+            margin-bottom: -0.12em;
+            transform: translateX(clamp(-1.8rem, -5vw, -4rem));
         }
 
         .bkimg-amrr-title-main {
-            font-size: clamp(3.5rem, 9vw, 6rem);
+            font-size: clamp(2.45rem, 10vw, 6rem);
             font-weight: 600;
             color: var(--gold-bright);
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.045em;
             background: linear-gradient(to bottom, #fff9e6, #d4af37);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+            overflow-wrap: anywhere;
         }
 
         .bkimg-amrr-title-sub {
-            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-size: clamp(1.25rem, 4.5vw, 3.2rem);
             font-weight: 400;
             color: var(--gold-mid);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
         }
 
         .bkimg-amrr-subtitle {
-            font-size: clamp(0.8rem, 2.5vw, 1.1rem);
-            letter-spacing: 0.2em;
+            max-width: 58ch;
+            margin: 1rem auto 0;
+            font-size: clamp(0.78rem, 2.4vw, 1.05rem);
+            line-height: 1.7;
+            letter-spacing: 0.12em;
             color: var(--text-main);
             text-transform: uppercase;
-            margin-top: 1rem;
         }
 
-        /* Divider */
         .bkimg-amrr-divider {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 2rem 0;
+            margin: 1.75rem 0;
         }
+
         .bkimg-amrr-divider svg {
             width: 100px;
             height: 20px;
-            fill: var(--gold-mid);
+            fill: none;
+            stroke: var(--gold-mid);
+            stroke-width: 1;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
-        /* Features List */
+        .bkimg-amrr-intro {
+            max-width: 62ch;
+            margin: 0 auto 1.75rem;
+            color: var(--text-muted);
+            font-size: clamp(0.95rem, 2vw, 1.08rem);
+            font-weight: 300;
+            line-height: 1.8;
+            text-align: center;
+        }
+
         .bkimg-amrr-features {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 4rem;
+            gap: 1.25rem;
+            margin: 0 auto 2.25rem;
             position: relative;
-            max-width: 500px;
+            max-width: 620px;
             z-index: 2;
         }
 
@@ -393,8 +422,8 @@
             content: '';
             position: absolute;
             left: 24px;
-            top: 20px;
-            bottom: 20px;
+            top: 24px;
+            bottom: 24px;
             width: 1px;
             background: rgba(212, 175, 55, 0.3);
             z-index: 0;
@@ -402,465 +431,375 @@
 
         .bkimg-amrr-feature-item {
             display: flex;
-            align-items: center;
-            gap: 1.5rem;
+            align-items: flex-start;
+            gap: 1rem;
             position: relative;
             z-index: 1;
         }
 
         .bkimg-amrr-feature-icon {
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             border: 1px solid var(--gold-mid);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: var(--gold-bright);
             background: var(--bg-base);
             flex-shrink: 0;
         }
+
         .bkimg-amrr-feature-icon svg {
-            width: 24px;
-            height: 24px;
-            stroke: var(--gold-bright);
+            width: 23px;
+            height: 23px;
             fill: none;
+            stroke: currentColor;
             stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
-        .bkimg-amrr-feature-text h4 {
-            font-size: 1rem;
+        .bkimg-amrr-feature-text {
+            padding-top: 0.15rem;
+        }
+
+        .bkimg-amrr-feature-text h3 {
+            font-size: 0.95rem;
             font-weight: 600;
             color: var(--gold-bright);
-            letter-spacing: 0.1em;
+            letter-spacing: 0.08em;
+            line-height: 1.35;
             text-transform: uppercase;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.3rem;
         }
+
         .bkimg-amrr-feature-text p {
+            max-width: 58ch;
             font-size: 0.9rem;
             color: var(--text-muted);
             font-weight: 300;
+            line-height: 1.65;
         }
 
-        /* Cards Section */
-        .bkimg-amrr-cards-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 4rem;
-            position: relative;
-            z-index: 3;
-            perspective: 1000px;
-        }
-
-        .bkimg-amrr-card {
-            background: linear-gradient(145deg, #0d2b20, #05100c);
-            border: 1px solid rgba(212, 175, 55, 0.4);
-            border-radius: 10px;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.8);
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-
-        .bkimg-amrr-card::before {
-            content: '';
-            position: absolute;
-            inset: 4px;
-            border: 1px solid rgba(249, 229, 150, 0.1);
-            border-radius: 6px;
-            pointer-events: none;
-        }
-
-        .bkimg-amrr-card-img-wrap {
-            width: 100%;
-            aspect-ratio: 3/4;
-            border: 1px solid var(--gold-dark);
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 1rem 0;
-            position: relative;
-        }
-        
-        .bkimg-amrr-card-img-wrap::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
-            pointer-events: none;
-        }
-
-        .bkimg-amrr-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: contrast(1.1) brightness(0.9);
-        }
-
-        .bkimg-amrr-card-title {
-            font-family: 'Playfair Display', serif;
-            color: var(--gold-bright);
-            text-transform: uppercase;
-            line-height: 1.2;
-        }
-
-        .bkimg-amrr-card-subtitle {
-            font-size: 0.7rem;
-            letter-spacing: 0.1em;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            margin-top: auto;
-        }
-
-        /* Specific Card Styles */
-        .bkimg-amrr-card-1, .bkimg-amrr-card-3 {
-            width: 220px;
-            z-index: 1;
-            filter: brightness(0.7);
-        }
-        .bkimg-amrr-card-1 {
-            transform: rotate(-8deg) translateX(30px) translateY(20px);
-        }
-        .bkimg-amrr-card-3 {
-            transform: rotate(8deg) translateX(-30px) translateY(20px);
-        }
-        
-        .bkimg-amrr-card-2 {
-            width: 280px;
-            z-index: 2;
-            transform: scale(1.05) translateY(-10px);
-            border-color: var(--gold-mid);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.9), 0 0 30px rgba(212, 175, 55, 0.15);
-        }
-
-        .bkimg-amrr-card-1 .bkimg-amrr-card-title { font-size: 1.2rem; }
-        .bkimg-amrr-card-3 .bkimg-amrr-card-title { font-size: 1.2rem; }
-        
-        .bkimg-amrr-card-2 .bkimg-amrr-card-eyebrow {
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
-            color: var(--text-main);
-            margin-bottom: 0.5rem;
-        }
-        .bkimg-amrr-card-2 .bkimg-amrr-card-title {
-            font-size: 2rem;
-            margin-bottom: 0.2rem;
-        }
-        .bkimg-amrr-card-2 .bkimg-amrr-card-desc {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            letter-spacing: 0.1em;
-        }
-
-        /* CTA Section */
-        .bkimg-amrr-cta-area {
-            text-align: center;
-            position: relative;
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .bkimg-amrr-cta-text {
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(0.9rem, 2.5vw, 1.2rem);
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--text-main);
-        }
-        .bkimg-amrr-cta-text span {
-            display: block;
-            font-family: 'Playfair Display', serif;
-            font-style: italic;
-            font-size: clamp(2rem, 5vw, 3rem);
-            color: var(--gold-bright);
-            text-transform: none;
-            letter-spacing: normal;
-            margin-top: 0.5rem;
-        }
-
-        .bkimg-amrr-btn {
+        .bkimg-amrr-button {
+            min-height: 48px;
+            width: fit-content;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0.85rem 1.35rem;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background: linear-gradient(90deg, #0a241a, #113326);
+            gap: 0.65rem;
             border: 1px solid var(--gold-bright);
-            border-radius: 30px;
-            padding: 1rem 2.5rem;
-            color: var(--gold-bright);
-            font-family: 'Montserrat', sans-serif;
+            border-radius: 999px;
+            color: var(--bg-base);
+            background: var(--gold-bright);
+            font-size: 0.78rem;
             font-weight: 600;
-            font-size: 1.1rem;
+            letter-spacing: 0.08em;
+            line-height: 1.3;
+            text-align: center;
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.5), inset 0 0 10px rgba(249, 229, 150, 0.2);
-            transition: all 0.3s ease;
+            transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
         }
-        .bkimg-amrr-btn:hover {
-            background: linear-gradient(90deg, #113326, #1a4a38);
-            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3), inset 0 0 15px rgba(249, 229, 150, 0.4);
+
+        .bkimg-amrr-button svg {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.6;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            flex-shrink: 0;
+        }
+
+        .bkimg-amrr-button:hover {
+            color: var(--gold-bright);
+            background: transparent;
             transform: translateY(-2px);
         }
 
-        .bkimg-amrr-cta-sub {
-            font-size: 0.8rem;
-            letter-spacing: 0.2em;
+        .bkimg-amrr-button:focus-visible {
+            outline: 3px solid var(--gold-bright);
+            outline-offset: 4px;
+        }
+
+        .bkimg-amrr-microcopy {
+            margin-top: 0.8rem;
             color: var(--text-muted);
-            text-transform: uppercase;
+            font-size: 0.76rem;
+            line-height: 1.5;
+            text-align: center;
         }
 
-        /* Logo Area */
-        .bkimg-amrr-logo-area {
-            position: absolute;
-            bottom: 2rem;
-            left: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 80px;
-            border: 1px dashed var(--gold-mid);
-            border-radius: 50%;
-            padding: 5px;
-        }
-        .bkimg-amrr-logo-inner {
+        .bkimg-amrr-cards-section {
             width: 100%;
-            height: 100%;
-            border: 1px solid var(--gold-bright);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: var(--gold-bright);
-            font-style: italic;
-        }
-        .bkimg-amrr-logo-area svg {
-            position: absolute;
-            width: 120%;
-            height: 120%;
-            animation: bkimg-amrr-spin 20s linear infinite;
-        }
-
-        @keyframes bkimg-amrr-spin {
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Footer Bar */
-        .bkimg-amrr-footer {
-            width: 100%;
-            max-width: 1080px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 15px;
-            background: rgba(5, 16, 12, 0.8);
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
             gap: 1rem;
         }
 
-        .bkimg-amrr-footer-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.85rem;
-            color: var(--text-main);
-            letter-spacing: 0.05em;
-        }
-        .bkimg-amrr-footer-item svg {
-            width: 18px;
-            height: 18px;
-            fill: none;
-            stroke: var(--gold-mid);
-            stroke-width: 1.5;
+        .bkimg-amrr-cards-heading {
+            grid-column: 1 / -1;
+            max-width: 62ch;
+            margin-bottom: 0.5rem;
         }
 
-        /* Responsive Design */
-        @media (min-width: 992px) {
+        .bkimg-amrr-cards-heading p {
+            margin-top: 0.65rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .bkimg-amrr-card {
+            min-width: 0;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 1.25rem;
+            background: rgba(5, 16, 12, 0.76);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        }
+
+        .bkimg-amrr-card-image {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+        }
+
+        .bkimg-amrr-card-content {
+            padding: 1.25rem;
+        }
+
+        .bkimg-amrr-card-content h3 {
+            color: var(--gold-bright);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.25rem, 3vw, 1.55rem);
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.65rem;
+        }
+
+        .bkimg-amrr-card-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        .bkimg-amrr-note {
+            width: 100%;
+            padding: 1.25rem;
+            border-left: 2px solid var(--gold-mid);
+            background: rgba(10, 36, 26, 0.42);
+            color: var(--text-main);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        .bkimg-amrr-note strong {
+            color: var(--gold-bright);
+            font-weight: 600;
+        }
+
+        .bkimg-amrr-final {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            padding: clamp(1.5rem, 4vw, 2.5rem);
+            border-top: 1px solid rgba(212, 175, 55, 0.25);
+            text-align: center;
+        }
+
+        .bkimg-amrr-final h3 {
+            color: var(--gold-bright);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        .bkimg-amrr-final p {
+            max-width: 58ch;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        @media (min-width: 700px) {
+            .bkimg-amrr-cards-section {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 1.25rem;
+            }
+
+            .bkimg-amrr-note {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (min-width: 1024px) {
             .bkimg-amrr-sidebar {
                 display: flex;
             }
         }
 
-        @media (max-width: 991px) {
-            .bkimg-amrr-cards-section {
-                flex-direction: column;
-                gap: 2rem;
-            }
-            .bkimg-amrr-card-1, .bkimg-amrr-card-3 {
-                transform: none;
-                width: 280px;
-                filter: none;
-            }
-            .bkimg-amrr-card-2 {
-                transform: none;
-                width: 300px;
-            }
-            .bkimg-amrr-logo-area {
-                position: relative;
-                bottom: auto;
-                left: auto;
-                margin-bottom: 2rem;
-            }
-            .bkimg-amrr-footer {
-                justify-content: center;
-                flex-direction: column;
-            }
-            .bkimg-amrr-title-italic {
-                margin-left: 0;
+        @media (prefers-reduced-motion: reduce) {
+            .bkimg-amrr-button {
+                transition: none;
             }
         }
     </style>
 
     <div class="bkimg-amrr-container">
         <div class="bkimg-amrr-main-area">
-            
             <div class="bkimg-amrr-glow-box">
-                
-                <!-- Moon SVG -->
-                <svg class="bkimg-amrr-moon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M75,50 A30,30 0 1,1 45,20 A40,40 0 1,0 75,50 Z" fill="#f9e596"/>
+                <svg class="bkimg-amrr-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M18.8 14.8A8.5 8.5 0 0 1 9.2 5.2 8.5 8.5 0 1 0 18.8 14.8Z"></path>
                 </svg>
 
-                <div class="bkimg-amrr-header">
-                    <div class="bkimg-amrr-eyebrow">Profesional • Efectivo • Resultados Rápidos</div>
-                    <h2 class="bkimg-amrr-title">
-                        <span class="bkimg-amrr-title-italic">Poderosos</span>
-                        <span class="bkimg-amrr-title-main">Amarres</span>
-                        <span class="bkimg-amrr-title-sub">De Amor</span>
+                <header class="bkimg-amrr-header">
+                    <p class="bkimg-amrr-eyebrow">Señales, contexto y claridad</p>
+                    <h2 class="bkimg-amrr-title" id="bkimg-amrr-title">
+                        <span class="bkimg-amrr-title-italic">Cómo saber si tienes</span>
+                        <span class="bkimg-amrr-title-main">BRUJERÍA</span>
+                        <span class="bkimg-amrr-title-sub">sin vivir con miedo</span>
                     </h2>
-                    <div class="bkimg-amrr-subtitle">Que atraen y dominan a tu pareja</div>
-                    
-                    <div class="bkimg-amrr-divider">
-                        <svg viewBox="0 0 100 20">
-                            <path d="M0,10 L40,10 L50,0 L60,10 L100,10 L60,10 L50,20 L40,10 Z" />
-                        </svg>
-                    </div>
+                    <p class="bkimg-amrr-subtitle">Una mirada espiritual serena para entender lo que estás sintiendo</p>
+                </header>
+
+                <div class="bkimg-amrr-divider" aria-hidden="true">
+                    <svg viewBox="0 0 100 20" focusable="false">
+                        <path d="M3 10h30M67 10h30M43 10h14"></path>
+                        <path d="m38 10 5-4 5 4-5 4-5-4Z"></path>
+                    </svg>
                 </div>
+
+                <p class="bkimg-amrr-intro">
+                    Si buscas cómo saber si tienes brujería, empieza por observar tus cambios con calma. El cansancio, las pesadillas, los bloqueos o una sensación de pesadez pueden tener distintas causas y no confirman por sí solos un trabajo espiritual.
+                </p>
 
                 <div class="bkimg-amrr-features">
                     <div class="bkimg-amrr-feature-item">
                         <div class="bkimg-amrr-feature-icon">
-                            <svg viewBox="0 0 24 24"><path d="M12 2L2 12l10 10 10-10L12 2zm0 4.5l5.5 5.5-5.5 5.5-5.5-5.5L12 6.5z"/></svg>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <circle cx="12" cy="12" r="8.5"></circle>
+                                <path d="M12 7v5l3 2"></path>
+                            </svg>
                         </div>
                         <div class="bkimg-amrr-feature-text">
-                            <h4>Amarres Eternos</h4>
-                            <p>Que unen sus destinos para siempre</p>
+                            <h3>Observa lo que se repite</h3>
+                            <p>Anota cuándo comenzaron las molestias, qué situaciones las acompañan y cómo afectan tu descanso, tu ánimo o tus relaciones.</p>
                         </div>
                     </div>
+
                     <div class="bkimg-amrr-feature-item">
                         <div class="bkimg-amrr-feature-icon">
-                            <svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.6H22l-6.2 4.5 2.4 7.6-6.2-4.5-6.2 4.5 2.4-7.6L2 9.6h7.6z"/></svg>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M4 18.5 10 12l3 3 7-8"></path>
+                                <path d="M16 7h4v4"></path>
+                            </svg>
                         </div>
                         <div class="bkimg-amrr-feature-text">
-                            <h4>Alta Magia Roja</h4>
-                            <p>Rituales que encienden la pasión</p>
+                            <h3>No confundas una señal con una certeza</h3>
+                            <p>El estrés, el insomnio, los conflictos y algunas situaciones de salud también pueden producir sensaciones intensas. Revisar el contexto evita alimentar el miedo.</p>
                         </div>
                     </div>
+
                     <div class="bkimg-amrr-feature-item">
                         <div class="bkimg-amrr-feature-icon">
-                            <svg viewBox="0 0 24 24"><path d="M2 20h20v2H2v-2zm2-2l2-12 4 4 2-6 2 6 4-4 2 12H4z"/></svg>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                <path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.3-7 9-4.1-1.7-7-4.8-7-9V6l7-2.5Z"></path>
+                                <path d="m9.5 12 1.7 1.7 3.6-3.8"></path>
+                            </svg>
                         </div>
                         <div class="bkimg-amrr-feature-text">
-                            <h4>Trabajos Garantizados</h4>
-                            <p>Únicos. Seguros. Impactantes.</p>
+                            <h3>Busca orientación sin juicios</h3>
+                            <p>Una consulta espiritual puede ayudarte a ordenar tus inquietudes, distinguir posibilidades y decidir con mayor claridad qué hacer después.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bkimg-amrr-cards-section">
-                    
-                    <!-- Card 1 -->
-                    <div class="bkimg-amrr-card bkimg-amrr-card-1">
-                        <h5 class="bkimg-amrr-card-title">Nuevo<br>Conjuro</h5>
-                        <div class="bkimg-amrr-card-img-wrap">
-                            <img src="https://como-saber-si-tienes-brujeria.brujoychaman.digital/optimizado/ag-199274495272/banco-velas-rojas-ritual-amarre-amor.webp" alt="Velas rojas ritual amarre amor" loading="lazy">
-                        </div>
-                        <span class="bkimg-amrr-card-subtitle">Descubre Más</span>
-                    </div>
-
-                    <!-- Card 2 (Center) -->
-                    <div class="bkimg-amrr-card bkimg-amrr-card-2">
-                        <span class="bkimg-amrr-card-eyebrow">ELEVA TU</span>
-                        <h5 class="bkimg-amrr-card-title">Relación</h5>
-                        <span class="bkimg-amrr-card-desc">MÁS ALLÁ DEL DESEO</span>
-                        <div class="bkimg-amrr-card-img-wrap">
-                            <img src="https://como-saber-si-tienes-brujeria.brujoychaman.digital/optimizado/ag-199274495272/banco-pareja-besandose-en-bola-magica.webp" alt="Pareja besándose en bola mágica" loading="lazy">
-                        </div>
-                        <span class="bkimg-amrr-card-subtitle">Eterno • Apasionado • Único</span>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bkimg-amrr-card bkimg-amrr-card-3">
-                        <h5 class="bkimg-amrr-card-title">Oferta<br>Exclusiva</h5>
-                        <div class="bkimg-amrr-card-img-wrap">
-                            <img src="https://como-saber-si-tienes-brujeria.brujoychaman.digital/optimizado/ag-199274495272/banco-ritual-de-amor-con-velas-y-fotos.webp" alt="Ritual de amor con velas y fotos" loading="lazy">
-                        </div>
-                        <span class="bkimg-amrr-card-subtitle">Solo por hoy</span>
-                    </div>
-
-                </div>
-
-                <div class="bkimg-amrr-cta-area">
-                    <div class="bkimg-amrr-logo-area">
-                        <svg viewBox="0 0 100 100">
-                            <path id="curve" d="M 10 50 A 40 40 0 1 1 90 50 A 40 40 0 1 1 10 50" fill="transparent" />
-                            <text width="500">
-                                <textPath href="#curve" fill="#d4af37" font-size="10" letter-spacing="2">
-                                    • MAGIA ROJA • AMARRES •
-                                </textPath>
-                            </text>
+                <div style="text-align:center;">
+                    <a class="bkimg-amrr-button" href="https://wa.me/19142090428?text=Hola%20Maestro%20Genaro%2C%20quiero%20saber%20si%20tengo%20brujeria%20y%20recibir%20orientacion%20espiritual">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path>
+                            <path d="M8.8 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.6 1.1 1.5 1.9 2.6 2.5l.6-.6c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.3.6-.2.7-.8 1.2-1.5 1.2-1.1 0-2.8-.8-4.2-2.1-1.3-1.2-2.1-2.7-2.1-3.8 0-.5.2-.9.4-1.2Z"></path>
                         </svg>
-                        <div class="bkimg-amrr-logo-inner">A</div>
-                    </div>
-
-                    <h3 class="bkimg-amrr-cta-text">
-                        Creemos un vínculo que
-                        <span>Te Traiga Felicidad</span>
-                    </h3>
-                    
-                    <a href="https://wa.me/" class="bkimg-amrr-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-                        💬 WhatsApp directo
+                        Consultar por WhatsApp
                     </a>
-                    
-                    <span class="bkimg-amrr-cta-sub">Escríbeme para empezar</span>
+                    <p class="bkimg-amrr-microcopy">Conversación privada y respetuosa · comparte solo lo que te resulte cómodo</p>
                 </div>
-
             </div>
 
-            <div class="bkimg-amrr-sidebar">
-                <div class="bkimg-amrr-social-icon"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></div>
-                <div class="bkimg-amrr-social-icon"><svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></div>
-                <div class="bkimg-amrr-social-icon"><svg viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.279 1.14c-.038.154-.127.189-.286.115-1.067-.498-1.735-2.063-1.735-3.322 0-2.703 1.964-5.184 5.66-5.184 2.97 0 5.28 2.116 5.28 4.943 0 2.952-1.86 5.327-4.442 5.327-1.05 0-2.038-.546-2.376-1.191l-.646 2.461c-.234.896-.867 2.016-1.293 2.701 1.02.314 2.098.483 3.21.483 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg></div>
-                <div class="bkimg-amrr-social-icon"><svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></div>
-            </div>
-
+            <aside class="bkimg-amrr-sidebar" aria-label="Puntos de orientación">
+                <div class="bkimg-amrr-social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M12 20a8 8 0 1 0-8-8c0 1.5.4 2.9 1.2 4.1L4 20l3.9-1.2A8 8 0 0 0 12 20Z"></path>
+                        <path d="M8.5 9.5h.01M12 9.5h.01M15.5 9.5h.01"></path>
+                    </svg>
+                </div>
+                <div class="bkimg-amrr-social-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                        <path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.3-7 9-4.1-1.7-7-4.8-7-9V6l7-2.5Z"></path>
+                        <path d="M12 8v4l2.5 1.5"></path>
+                    </svg>
+                </div>
+            </aside>
         </div>
 
-        <div class="bkimg-amrr-footer">
-            <div class="bkimg-amrr-footer-item">
-                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                @maestro_amarres_oficial
+        <section class="bkimg-amrr-cards-section" aria-labelledby="bkimg-amrr-revision">
+            <div class="bkimg-amrr-cards-heading">
+                <p class="bkimg-amrr-eyebrow">Antes de sacar conclusiones</p>
+                <h3 id="bkimg-amrr-revision">Cómo revisar si hay algo que te preocupa</h3>
+                <p>Una lectura responsable comienza por escuchar tu experiencia completa, no por etiquetar cada dificultad como brujería.</p>
             </div>
-            <div class="bkimg-amrr-footer-item">
-                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                contacto@Como Saber Si Tienes Brujeria
-            </div>
-            <div class="bkimg-amrr-footer-item">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                Como Saber Si Tienes Brujeria
-            </div>
+
+            <article class="bkimg-amrr-card">
+                <img style="object-fit:cover;object-position:center" class="bkimg-amrr-card-image" src="https://como-saber-si-tienes-brujeria.brujoychaman.digital/optimizado/ag-199274495272/maq-1785219916970-1-ritual-de-limpieza-con-velas-y-limones.webp" alt="Ritual de limpieza con velas y limones" width="640" height="400" loading="lazy" decoding="async">
+                <div class="bkimg-amrr-card-content">
+                    <h3>Identifica lo que sientes</h3>
+                    <p>Considera si la sensación de carga, los bloqueos o las pesadillas son recientes, constantes o aparecen después de un momento específico.</p>
+                </div>
+            </article>
+
+            <article class="bkimg-amrr-card">
+                <img style="object-fit:cover;object-position:center" class="bkimg-amrr-card-image" src="https://como-saber-si-tienes-brujeria.brujoychaman.digital/optimizado/ag-199274495272/maq-1785219916970-2-altar-esoterico-con-velas-y-tarot.webp" alt="Altar esotérico con velas y tarot para una consulta espiritual" width="640" height="400" loading="lazy" decoding="async">
+                <div class="bkimg-amrr-card-content">
+                    <h3>Revisa el contexto</h3>
+                    <p>Observa tu descanso, tus preocupaciones y tus relaciones. Una visión amplia ayuda a separar una intuición de una interpretación apresurada.</p>
+                </div>
+            </article>
+
+            <article class="bkimg-amrr-card">
+                <img style="object-fit:cover;object-position:center" class="bkimg-amrr-card-image" src="https://como-saber-si-tienes-brujeria.brujoychaman.digital/optimizado/ag-199274495272/maq-1785219916970-3-caja-ritual-de-hierbas-contra-envidia.webp" alt="Caja ritual de hierbas para protección espiritual" width="640" height="400" loading="lazy" decoding="async">
+                <div class="bkimg-amrr-card-content">
+                    <h3>Elige protección consciente</h3>
+                    <p>Si deseas explorar una práctica espiritual, hazlo desde la calma, con información y sin permitir que nadie aumente tu angustia.</p>
+                </div>
+            </article>
+
+            <p class="bkimg-amrr-note">
+                <strong>Importante:</strong> sentir varias de estas señales no demuestra que tengas brujería. Si existe un malestar físico o emocional persistente, también conviene buscar apoyo profesional adecuado.
+            </p>
+        </section>
+
+        <div class="bkimg-amrr-final">
+            <h3>¿Quieres entender mejor lo que estás viviendo?</h3>
+            <p>Cuéntale al Maestro Genaro qué señales has notado y recibe una orientación espiritual serena, discreta y sin juicios.</p>
+            <a class="bkimg-amrr-button" href="https://wa.me/19142090428?text=Hola%20Maestro%20Genaro%2C%20quiero%20saber%20si%20tengo%20brujeria%20y%20recibir%20orientacion%20espiritual">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"></path>
+                    <path d="M8.8 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c.6 1.1 1.5 1.9 2.6 2.5l.6-.6c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.3.6-.2.7-.8 1.2-1.5 1.2-1.1 0-2.8-.8-4.2-2.1-1.3-1.2-2.1-2.7-2.1-3.8 0-.5.2-.9.4-1.2Z"></path>
+                </svg>
+                Hablar sobre mi caso
+            </a>
+            <p class="bkimg-amrr-microcopy">Tu consulta comienza con una conversación privada por WhatsApp</p>
         </div>
     </div>
 </section></section>

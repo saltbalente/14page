@@ -343,6 +343,17 @@
 .watm-wrap{--wa-hd-ios:#008069;--wa-hd-and:#075e54;--wa-bg:#e5ddd5;--wa-me:#d9fdd3;--wa-you:#fff;--wa-tx:#111b21;--wa-mt:#667781;--wa-blue:#53bdeb;
   box-sizing:border-box;width:100%;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none}
 .watm-wrap *,.watm-wrap *::before,.watm-wrap *::after{box-sizing:border-box}
+/* 🛡️ BLINDAJE: cada landing trae su propio CSS global (mayúsculas, espaciado
+   de letras, itálicas, interlineados enormes, sombras de texto). Sin esto, el
+   pantallazo se deforma y deja de parecer WhatsApp. El teléfono queda aislado
+   de todo eso, pase lo que pase en la página que lo aloja. */
+.watm-phone,.watm-phone *{text-transform:none;letter-spacing:normal;word-spacing:normal;
+  font-style:normal;font-variant:normal;text-shadow:none;text-indent:0;text-decoration:none;
+  animation:none;transition:none;
+  /* inherit (y no un valor fijo) para que cada parte del chat mande sobre sus
+     hijos: así un interlineado global enorme de la landing no separa las
+     líneas de las burbujas, pero .wb sigue pudiendo fijar el suyo. */
+  line-height:inherit}
 /* 📐 PROPORCIÓN REAL DE UN TELÉFONO: la altura NO es un número fijo — se deriva
    del ancho con la relación de pantalla de cada familia (iPhone 19.5:9,
    Android 20:9). Todo el marco (padding, radios, botón lateral) escala con
@@ -354,7 +365,7 @@
 .watm-phone::before{content:"";position:absolute;inset:calc(var(--pw)*.017);border-radius:calc(var(--pw)*.133);border:1px solid rgba(255,255,255,.06);pointer-events:none}
 .watm-phone::after{content:"";position:absolute;top:calc(var(--pw)*.24);right:-2px;width:2px;height:calc(var(--pw)*.187);border-radius:2px;background:linear-gradient(#4a4d55,#17181c);box-shadow:-1px 0 0 rgba(0,0,0,.5)}
 .watm-screen{position:relative;border-radius:calc(var(--pw)*.113);overflow:hidden;background:var(--wa-bg);
-  aspect-ratio:9/19.5;display:flex;flex-direction:column;
+  aspect-ratio:9/19.5;display:flex;flex-direction:column;line-height:1.35;
   box-shadow:0 0 0 2px #000, 0 0 1px 3px rgba(255,255,255,.04) inset}
 .watm-android .watm-screen{aspect-ratio:9/20}
 /* fondo doodle sutil */
@@ -384,7 +395,14 @@
 .wm.me{justify-content:flex-end}
 .wm.you{justify-content:flex-start}
 .wb{max-width:78%;position:relative;padding:6px 8px 8px;border-radius:8px;font-size:14.2px;line-height:1.32;color:var(--wa-tx);
-  box-shadow:0 1px .5px rgba(0,0,0,.13);word-wrap:break-word}
+  box-shadow:0 1px .5px rgba(0,0,0,.13);
+  /* El texto del chat SIEMPRE va a la izquierda, como en WhatsApp real. La
+     landing puede tener text-align:center global (y lo heredaba: dejaba huecos
+     raros a la izquierda de cada línea). Aquí se corta esa herencia. */
+  text-align:left;
+  /* Reparto de líneas «bonito»: evita dejar una palabra sola en la última
+     línea y parte bien las palabras largas o las URLs. */
+  text-wrap:pretty;overflow-wrap:break-word;word-break:normal;hyphens:none}
 .wm.me .wb{background:var(--wa-me);border-top-right-radius:2px}
 .wm.you .wb{background:var(--wa-you);border-top-left-radius:2px}
 .wb.has-img{padding:3px 3px 3px}

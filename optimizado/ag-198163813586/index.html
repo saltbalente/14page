@@ -608,11 +608,12 @@
 
 <script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
 
-<!--CALL-FAB:perla-clara--><div class="cfab-perl"><style>
-.cfab-perl{position:fixed!important;top:50%!important;bottom:auto!important;left:auto!important;right:max(12px,env(safe-area-inset-right,12px))!important;transform:translateY(-50%);z-index:2147483000;line-height:0;pointer-events:auto}
-.cfab-perl a{-webkit-tap-highlight-color:transparent}
-@media(min-width:768px){.cfab-perl{display:none!important}}
-@media(prefers-reduced-motion:reduce){.cfab-perl,.cfab-perl *,.cfab-perl::before,.cfab-perl::after{animation:none!important}}
-.cfab-perl a{display:flex;align-items:center;justify-content:center;width:57px;height:57px;border-radius:22px;background:linear-gradient(160deg,#ffffff,#e7e5e4);color:#059669;text-decoration:none;box-shadow:0 14px 32px rgba(15,23,42,.28),inset 0 1px 0 #fff,inset 0 -3px 0 rgba(5,150,105,.55)}
-</style><a href="tel:+15042987893" aria-label="Llamar por teléfono" rel="nofollow"><svg viewBox="0 0 24 24" width="25" height="25" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.2 3h3.3c.5 0 .9.34 1.01.83l.86 3.4c.09.37-.02.76-.3 1.02L7.1 10.2c1.3 2.6 3.4 4.7 6 6l1.95-1.97c.26-.27.65-.38 1.02-.29l3.4.86c.49.12.83.55.83 1.05v3.3c0 .61-.5 1.11-1.11 1.08C10.35 19.83 4.17 13.65 3.12 4.11 3.09 3.5 3.59 3 4.2 3Z"/></svg></a></div><!--/CALL-FAB-->
+<!--CALL-FAB:marino-pestana--><div class="cfab-mari"><style>
+.cfab-mari{position:fixed!important;top:50%!important;bottom:auto!important;left:auto!important;right:0!important;transform:translateY(-50%);z-index:2147483000;line-height:0;pointer-events:auto}
+.cfab-mari a{-webkit-tap-highlight-color:transparent}
+@media(min-width:768px){.cfab-mari{display:none!important}}
+@media(prefers-reduced-motion:reduce){.cfab-mari,.cfab-mari *,.cfab-mari::before,.cfab-mari::after{animation:none!important}}
+.cfab-mari a{display:flex;align-items:center;gap:8px;padding:12px 12px 12px 15px;border-radius:999px 0 0 999px;background:linear-gradient(150deg,#0e7490,#164e63);color:#ecfeff;text-decoration:none;font:700 13px/1 'Segoe UI',system-ui,sans-serif;box-shadow:-6px 8px 24px rgba(0,0,0,.4)}
+.cfab-mari .ci{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.16);flex:0 0 auto}
+</style><a href="tel:+15042987893" aria-label="Llamar por teléfono" rel="nofollow"><span class="ci"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.2 3h3.3c.5 0 .9.34 1.01.83l.86 3.4c.09.37-.02.76-.3 1.02L7.1 10.2c1.3 2.6 3.4 4.7 6 6l1.95-1.97c.26-.27.65-.38 1.02-.29l3.4.86c.49.12.83.55.83 1.05v3.3c0 .61-.5 1.11-1.11 1.08C10.35 19.83 4.17 13.65 3.12 4.11 3.09 3.5 3.59 3 4.2 3Z"/></svg></span><span>Llamar</span></a></div><!--/CALL-FAB-->
 </body></html>

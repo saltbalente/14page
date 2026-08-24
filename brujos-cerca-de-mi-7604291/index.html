@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brujos cerca de mi — El Maestro Teodoro te atiende por WhatsApp. Consulta gratis, amarres de amor, limpieza espiritual y más. Resultados reales en 72 horas. Hispanos en todo Estados Unidos.">
+    <title>Brujos Cerca de Mi · Maestro Teodoro · Consulta Gratis Ahora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --negro-abismal: #030303;
+            --negro-panel: #0d0c09;
+            --champan: #e9ddb8;
+            --champan-suave: #d5c9a8;
+            --dorado: #d4a017;
+            --dorado-claro: #f0cd6a;
+            --dorado-oscuro: #b8860b;
+            --dorado-profundo: #6b5010;
+            --verde-whatsapp: #25D366;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background: var(--negro-abismal);
+            color: var(--champan);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            background: linear-gradient(180deg, #030303 0%, #0a0a09 30%, #080805 60%, #030303 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* TIPOGRAFÍA */
+        h1,
+        h2,
+        h3,
+        .titulo-dorado {
+            font-family: 'Prata', serif;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+
+        .gradiente-oro {
+            background: linear-gradient(105deg, #6b5010 0%, #d4a017 25%, #fff3c4 50%, #d4a017 75%, #6b5010 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: destello-oro 6s ease-in-out infinite;
+        }
+
+        @keyframes destello-oro {
+            0% {
+                background-position: 0% center;
+            }
+            50% {
+                background-position: 200% center;
+            }
+            100% {
+                background-position: 0% center;
+            }
+        }
+
+        @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+            .gradiente-oro {
+                color: #d4a017;
+                background: none;
+                -webkit-text-fill-color: #d4a017;
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5.5vw, 3.2rem);
+            line-height: 1.15;
+            text-align: center;
+        }
+        h2 {
+            font-size: clamp(1.5rem, 3.8vw, 2.2rem);
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        h3 {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            color: var(--champan);
+        }
+
+        p {
+            color: var(--champan-suave);
+            font-weight: 300;
+            font-size: 1rem;
+        }
+
+        /* HEADER STICKY */
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(3, 3, 3, 0.92);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(212, 160, 23, 0.2);
+            padding: 0.55rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+        }
+        .header-sticky .nombre-maestro {
+            font-family: 'Prata', serif;
+            font-size: 1.1rem;
+            color: #d4a017;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+        }
+        .header-sticky .btn-wa-sm {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: var(--verde-whatsapp);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 0.45rem 0.9rem;
+            border-radius: 50px;
+            text-decoration: none;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 12px rgba(37, 211, 102, 0.3);
+        }
+        .header-sticky .btn-wa-sm:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(37, 211, 102, 0.5);
+        }
+        .header-sticky .btn-wa-sm:active {
+            transform: scale(0.96);
+        }
+
+        /* CONTENEDOR */
+        .contenedor {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* HÉROE - AURORA ANIMADA */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #030303 0%, #0f0c05 30%, #080604 50%, #0c0a04 70%, #030303 100%);
+            background-size: 300% 300%;
+            animation: aurora-hero 14s ease-in-out infinite;
+            padding: 2.5rem 1rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.18);
+            overflow: hidden;
+        }
+        @keyframes aurora-hero {
+            0% {
+                background-position: 0% 50%;
+            }
+            33% {
+                background-position: 100% 30%;
+            }
+            66% {
+                background-position: 50% 100%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .hero::before {
+            content: '✦';
+            position: absolute;
+            top: 8px;
+            left: 12px;
+            font-size: 0.7rem;
+            color: #d4a017;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '✦';
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            font-size: 0.7rem;
+            color: #d4a017;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .hero .destello-esquina-tr {
+            position: absolute;
+            top: 10px;
+            right: 14px;
+            font-size: 0.55rem;
+            color: #d4a017;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .hero .destello-esquina-bl {
+            position: absolute;
+            bottom: 10px;
+            left: 14px;
+            font-size: 0.55rem;
+            color: #d4a017;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        .hero .badge-disponibilidad {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #0d0c09;
+            border: 1px solid rgba(212, 160, 23, 0.5);
+            border-radius: 50px;
+            padding: 0.35rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #e9ddb8;
+            letter-spacing: 0.03em;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+        }
+        .hero .badge-disponibilidad .punto-verde {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: #22c55e;
+            display: inline-block;
+            animation: pulso-verde 2s ease-in-out infinite;
+        }
+        @keyframes pulso-verde {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+            }
+        }
+        .hero h1 {
+            margin-bottom: 0.6rem;
+        }
+        .hero h1 .keyword-subrayada {
+            position: relative;
+            display: inline-block;
+        }
+        .hero h1 .keyword-subrayada::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4a017, #fff3c4, #d4a017, transparent);
+            animation: dibujar-subrayado 1s ease-out 0.3s forwards;
+        }
+        @keyframes dibujar-subrayado {
+            to {
+                width: 100%;
+            }
+        }
+        .hero .subtitulo {
+            font-size: 1.05rem;
+            color: #c9bfa3;
+            max-width: 420px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+        .hero .cta-xl {
+            display: inline-block;
+            background: linear-gradient(135deg, #f0cd6a 0%, #d4a017 40%, #b8860b 100%);
+            color: #030303;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 28px rgba(212, 160, 23, 0.4);
+            animation: pulso-cta 2.5s ease-in-out infinite;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .hero .cta-xl:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 36px rgba(240, 205, 106, 0.55);
+        }
+        .hero .cta-xl:active {
+            transform: scale(0.95);
+        }
+        @keyframes pulso-cta {
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 28px rgba(212, 160, 23, 0.4);
+            }
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 6px 34px rgba(240, 205, 106, 0.6);
+            }
+        }
+        .hero .fila-confianza {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin-top: 1.3rem;
+            font-size: 0.85rem;
+            color: #b8a980;
+            font-weight: 400;
+        }
+        .hero .fila-confianza span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .hero .fila-confianza .estrellas {
+            color: #f0cd6a;
+            letter-spacing: 0.05em;
+        }
+
+        /* BARRA DE URGENCIA */
+        .barra-urgencia {
+            background: #0d0c09;
+            border-top: 1px solid rgba(212, 160, 23, 0.25);
+            border-bottom: 1px solid rgba(212, 160, 23, 0.25);
+            text-align: center;
+            padding: 0.6rem 1rem;
+            font-size: 0.9rem;
+            color: #e9ddb8;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        .barra-urgencia .dorado-resaltado {
+            color: #d4a017;
+            font-weight: 700;
+        }
+
+        /* SECCIONES REVEAL */
+        .seccion-reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .seccion-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .seccion-reveal:nth-child(2) {
+            transition-delay: 0.05s;
+        }
+        .seccion-reveal:nth-child(3) {
+            transition-delay: 0.1s;
+        }
+        .seccion-reveal:nth-child(4) {
+            transition-delay: 0.15s;
+        }
+        .seccion-reveal:nth-child(5) {
+            transition-delay: 0.2s;
+        }
+        .seccion-reveal:nth-child(6) {
+            transition-delay: 0.25s;
+        }
+        .seccion-reveal:nth-child(7) {
+            transition-delay: 0.3s;
+        }
+
+        /* SOBRE EL MAESTRO */
+        .sobre-maestro {
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.12);
+        }
+        .sobre-maestro .retrato-maestro {
+            width: auto;
+            max-width: 75%;
+            height: auto;
+            max-height: 40vh;
+            aspect-ratio: 5/6;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 1px solid rgba(212, 160, 23, 0.35);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 8px rgba(212, 160, 23, 0.06);
+            margin-bottom: 1.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sobre-maestro h2 {
+            margin-bottom: 0.8rem;
+        }
+        .sobre-maestro .texto-maestro {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            color: #d5c9a8;
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+        .sobre-maestro .texto-maestro p {
+            margin-bottom: 1rem;
+        }
+
+        /* SLIDER DE SERVICIOS */
+        .servicios {
+            padding: 2rem 0 1.5rem;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.12);
+        }
+        .servicios h2 {
+            margin-bottom: 0.3rem;
+            padding: 0 1rem;
+        }
+        .servicios .subtitulo-servicios {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #b8a980;
+            margin-bottom: 1.5rem;
+            padding: 0 1rem;
+        }
+        .slider-servicios {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            gap: 0.9rem;
+            padding: 0.5rem 1rem 1rem;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .slider-servicios::-webkit-scrollbar {
+            display: none;
+        }
+        .tarjeta-servicio {
+            flex: 0 0 78%;
+            scroll-snap-align: center;
+            background: #0d0c09;
+            border: 1px solid rgba(212, 160, 23, 0.28);
+            border-radius: 18px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s, box-shadow 0.25s;
+            position: relative;
+        }
+        .tarjeta-servicio:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 160, 23, 0.18);
+        }
+        .tarjeta-servicio:active {
+            transform: scale(0.97);
+        }
+        .tarjeta-servicio img {
+            width: 100%;
+            height: auto;
+            max-height: 38vh;
+            aspect-ratio: 5/6;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.2);
+        }
+        .tarjeta-servicio .info-tarjeta {
+            padding: 1rem 1.1rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .tarjeta-servicio .info-tarjeta h3 {
+            font-family: 'Prata', serif;
+            font-size: 1.15rem;
+            margin-bottom: 0.4rem;
+            color: #f0cd6a;
+            letter-spacing: 0.02em;
+        }
+        .tarjeta-servicio .info-tarjeta p {
+            font-size: 0.9rem;
+            color: #c9bfa3;
+            margin-bottom: 1rem;
+            flex: 1;
+            line-height: 1.5;
+        }
+        .tarjeta-servicio .mini-cta {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #d4a017;
+            color: #d4a017;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: background 0.25s, color 0.25s;
+            align-self: flex-start;
+        }
+        .tarjeta-servicio .mini-cta:hover {
+            background: #d4a017;
+            color: #030303;
+        }
+        .slider-puntos {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.3rem 0 0.8rem;
+        }
+        .slider-puntos .punto {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(212, 160, 23, 0.3);
+            transition: background 0.3s;
+        }
+        .slider-puntos .punto.activo {
+            background: #d4a017;
+            box-shadow: 0 0 8px rgba(212, 160, 23, 0.5);
+        }
+
+        /* GRID ESCRITORIO PARA SLIDER */
+        @media (min-width: 768px) {
+            .slider-servicios {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.2rem;
+                overflow-x: visible;
+                scroll-snap-type: none;
+                padding: 0.5rem 1rem 1rem;
+            }
+            .tarjeta-servicio {
+                flex: unset;
+                scroll-snap-align: unset;
+            }
+            .slider-puntos {
+                display: none;
+            }
+            .tarjeta-servicio img {
+                max-height: 30vh;
+            }
+        }
+
+        /* CÓMO FUNCIONA */
+        .como-funciona {
+            padding: 2.5rem 1rem;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.12);
+            text-align: center;
+        }
+        .como-funciona h2 {
+            margin-bottom: 1.5rem;
+        }
+        .pasos {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            max-width: 420px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .paso {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .paso .numero-paso {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #0d0c09;
+            border: 2px solid #d4a017;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Prata', serif;
+            font-size: 1.2rem;
+            color: #f0cd6a;
+            font-weight: 400;
+        }
+        .paso .contenido-paso h4 {
+            font-family: 'Prata', serif;
+            color: #e9ddb8;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+        .paso .contenido-paso p {
+            font-size: 0.9rem;
+            color: #b8a980;
+            line-height: 1.5;
+        }
+
+        /* TESTIMONIOS */
+        .testimonios {
+            padding: 2.5rem 1rem;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.12);
+        }
+        .testimonios h2 {
+            margin-bottom: 1.5rem;
+        }
+        .grid-testimonios {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .testimonio-card {
+            background: #0d0c09;
+            border: 1px solid rgba(212, 160, 23, 0.22);
+            border-radius: 16px;
+            padding: 1.2rem 1.1rem;
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .testimonio-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 160, 23, 0.1);
+        }
+        .testimonio-card .rombo-inicial {
+            flex-shrink: 0;
+            width: 38px;
+            height: 38px;
+            background: #0d0c09;
+            border: 1.5px solid #d4a017;
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+        .testimonio-card .rombo-inicial span {
+            transform: rotate(-45deg);
+            font-family: 'Prata', serif;
+            font-size: 0.9rem;
+            color: #f0cd6a;
+            font-weight: 400;
+        }
+        .testimonio-card .cuerpo-testimonio {
+            flex: 1;
+        }
+        .testimonio-card .cuerpo-testimonio .nombre-cliente {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #e9ddb8;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+        }
+        .testimonio-card .cuerpo-testimonio .texto-testimonio {
+            font-size: 0.9rem;
+            color: #c9bfa3;
+            line-height: 1.55;
+            font-style: italic;
+        }
+        .testimonio-card .cuerpo-testimonio .ciudad-testimonio {
+            font-size: 0.75rem;
+            color: #8a7d60;
+            margin-top: 0.3rem;
+            font-weight: 400;
+        }
+
+        /* FAQ */
+        .faq {
+            padding: 2.5rem 1rem;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.12);
+        }
+        .faq h2 {
+            margin-bottom: 1.3rem;
+        }
+        .faq details {
+            background: #0d0c09;
+            border: 1px solid rgba(212, 160, 23, 0.2);
+            border-radius: 14px;
+            margin-bottom: 0.7rem;
+            overflow: hidden;
+            transition: border-color 0.3s;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .faq details[open] {
+            border-color: rgba(212, 160, 23, 0.5);
+        }
+        .faq summary {
+            padding: 1rem 1.2rem;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: #e9ddb8;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            letter-spacing: 0.02em;
+            transition: color 0.3s;
+        }
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq summary:hover {
+            color: #f0cd6a;
+        }
+        .faq summary::after {
+            content: '▾';
+            font-size: 0.7rem;
+            color: #d4a017;
+            transition: transform 0.35s ease;
+            flex-shrink: 0;
+        }
+        .faq details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .faq .respuesta-faq {
+            padding: 0 1.2rem 1rem;
+            font-size: 0.88rem;
+            color: #b8a980;
+            line-height: 1.6;
+        }
+
+        /* CTA FINAL */
+        .cta-final {
+            padding: 2.5rem 1rem 2rem;
+            text-align: center;
+        }
+        .cta-final h2 {
+            margin-bottom: 0.8rem;
+        }
+        .cta-final p {
+            max-width: 400px;
+            margin: 0 auto 1.5rem;
+            color: #c9bfa3;
+            font-size: 1rem;
+        }
+        .cta-final .cta-xl {
+            display: inline-block;
+            background: linear-gradient(135deg, #f0cd6a 0%, #d4a017 40%, #b8860b 100%);
+            color: #030303;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.15rem;
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 28px rgba(212, 160, 23, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-final .cta-xl:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 36px rgba(240, 205, 106, 0.55);
+        }
+        .cta-final .cta-xl:active {
+            transform: scale(0.95);
+        }
+
+        /* FOOTER */
+        .footer-sobrio {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.78rem;
+            color: #5c5340;
+            border-top: 1px solid rgba(212, 160, 23, 0.1);
+            letter-spacing: 0.03em;
+        }
+
+        /* DIVISOR DORADO */
+        .divisor-dorado {
+            width: 80px;
+            height: 1px;
+            margin: 0.8rem auto 1.2rem;
+            background: linear-gradient(90deg, transparent, #d4a017, transparent);
+            border: none;
+        }
+
+        /* PREFERS REDUCED MOTION */
+        @media (prefers-reduced-motion: reduce) {
+            .gradiente-oro {
+                animation: none !important;
+            }
+            @keyframes aurora-hero {
+                0%,
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            .hero .cta-xl {
+                animation: none !important;
+            }
+            .hero h1 .keyword-subrayada::after {
+                animation: none !important;
+                width: 100%;
+            }
+            .seccion-reveal {
+                opacity: 1 !important;
+                transform: none !important;
+                transition: none !important;
+            }
+            .slider-servicios {
+                scroll-behavior: auto;
+            }
+            .tarjeta-servicio:hover {
+                transform: none;
+            }
+            .testimonio-card:hover {
+                transform: none;
+            }
+        }
+
+        /* UTILIDADES */
+        @media (max-width: 380px) {
+            .hero .fila-confianza {
+                gap: 0.6rem;
+                font-size: 0.75rem;
+            }
+            .tarjeta-servicio {
+                flex: 0 0 85%;
+            }
+            .header-sticky .nombre-maestro {
+                font-size: 0.95rem;
+            }
+            .header-sticky .btn-wa-sm {
+                font-size: 0.7rem;
+                padding: 0.35rem 0.7rem;
+            }
+        }
+    </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T4BCC6P');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-672356997"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-672356997');gtag('config','AW-672356997');gtag('config','AW-672356997');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4BCC6P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER STICKY -->
+    <header class="header-sticky">
+        <span class="nombre-maestro">✦ Maestro Teodoro</span>
+        <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Teodoro%2C%20vi%20tu%20p%C3%A1gina%20de%20brujos%20cerca%20de%20mi%20y%20quiero%20mi%20consulta%20gratis" class="btn-wa-sm" aria-label="WhatsApp Maestro Teodoro">WhatsApp</a>
+    </header>
+
+    <!-- HÉROE: AURORA ANIMADA -->
+    <section class="hero seccion-reveal">
+        <span class="destello-esquina-tr">✦</span>
+        <span class="destello-esquina-bl">✦</span>
+        <div class="badge-disponibilidad">
+            <span class="punto-verde"></span> Disponible hoy · 3 cupos libres
+        </div>
+        <h1>
+            <span class="gradiente-oro">¿Buscas</span><br>
+            <span class="keyword-subrayada gradiente-oro">brujos cerca de mi</span><span class="gradiente-oro">?</span>
+        </h1>
+        <p class="subtitulo">El <strong>Maestro Teodoro</strong> te atiende por WhatsApp desde cualquier parte de Estados Unidos. Resultados en 72 horas. Paga solo al ver el cambio real.</p>
+        <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Teodoro%2C%20necesito%20ayuda%20urgente%20con%20un%20amarrre%20de%20amor%2C%20vi%20tu%20p%C3%A1gina%20de%20brujos%20cerca%20de%20mi" class="cta-xl">Consulta Gratis Ahora ✦</a>
+        <div class="fila-confianza">
+            <span class="estrellas">⭐ 4.9</span>
+            <span>+5.000 consultas</span>
+            <span>35 años</span>
+        </div>
+    </section>
+
+    <!-- BARRA DE URGENCIA -->
+    <div class="barra-urgencia seccion-reveal">
+        ✦ Hoy puedo tomar <span class="dorado-resaltado">solo 3 casos más</span> — la energía se diluye si atiendo de más. Escribe ya.
+    </div>
+
+    <!-- SOBRE EL MAESTRO -->
+    <section class="sobre-maestro seccion-reveal">
+        <img src="/brujos-cerca-de-mi-7604291/optimizado/ag-198755395160/kw-446440606477/banco-ritual-de-brujeria-con-santa-muerte.webp"
+        alt="Maestro Teodoro, brujo experto cerca de mi en pose de oración"
+        width="800" height="960"
+        loading="lazy" decoding="async"
+        class="retrato-maestro"
+        fetchpriority="high">
+        <h2 class="gradiente-oro">Maestro Teodoro</h2>
+        <div class="divisor-dorado"></div>
+        <div class="texto-maestro">
+            <p>Soy un brujo altamente experimentado con más de <strong>35 años de práctica</strong> en las artes espirituales profundas. He forjado mi reputación ayudando a cientos de almas hispanas en Estados Unidos a conquistar sus deseos amorosos, su éxito profesional y su poder personal. Mi linaje proviene de una tradición oral que se remonta a tres generaciones de maestros espirituales, y cada trabajo que realizo está respaldado por un conocimiento que no se aprende en libros: se hereda, se perfecciona y se entrega con absoluta seriedad.</p>
+            <p>Si estás buscando <strong>brujos cerca de mi</strong> que realmente respondan, has llegado al lugar indicado. No importa en qué ciudad estés —Houston, Phoenix, Los Ángeles, Miami, Chicago—, te atiendo personalmente por WhatsApp con la misma dedicación que si estuvieras frente a mi altar. Mi compromiso es escucharte, analizar tu caso sin prisas y determinar juntos el camino espiritual que te devolverá la tranquilidad.</p>
+        </div>
+    </section>
+
+    <!-- SLIDER DE SERVICIOS (después de Sobre el maestro) -->
+    <section class="servicios seccion-reveal">
+        <h2 class="gradiente-oro">Servicios Espirituales</h2>
+        <p class="subtitulo-servicios">Desliza para ver todo lo que puedo hacer por ti — <strong>brujos cerca de mi</strong> con resultados comprobados</p>
+        <div class="slider-servicios" id="sliderServicios" aria-label="Servicios del Maestro Teodoro">
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta-servicio" data-index="0">
+                <img src="/brujos-cerca-de-mi-7604291/optimizado/ag-198755395160/kw-446440606477/banco-pareja-abrazandose-al-atardecer.webp" alt="Amarre de amor con brujo cerca de mi" width="800" height="960" loading="lazy" decoding="async">
+                <div class="info-tarjeta">
+                    <h3>Amarres de Amor</h3>
+                    <p>Atraigo y regreso al ser querido en <strong>72 horas</strong> sin importar edad, sexo, tiempo ni distancia. Cruzo mente, cuerpo y espíritu para doblegar indiferencia, orgullo y quitar rivales. Donde otros han fracasado, yo triunfo con alta brujería efectiva.</p>
+                    <a href="https://wa.me/15042987893?text=Maestro%20Teodoro%2C%20quiero%20un%20amarrre%20de%20amor%20urgente%20con%20resultados%20en%2072%20horas" class="mini-cta">Pedir Amarre ✦</a>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta-servicio" data-index="1">
+                <img src="/brujos-cerca-de-mi-7604291/optimizado/ag-198755395160/kw-446440606477/banco-persona-con-velon-ritual-y-ofrendas.webp" alt="Ritual poderoso con brujo experto cerca de mi" width="800" height="960" loading="lazy" decoding="async">
+                <div class="info-tarjeta">
+                    <h3>Rituales Poderosos</h3>
+                    <p>Especialista en velas, hierbas mágicas y ceremonias para atraer pasión y felicidad. Cada ritual es canalizado con energía precisa para tu caso. No hago trabajos genéricos: cada vela, cada hierba y cada palabra tienen un propósito.</p>
+                    <a href="https://wa.me/15042987893?text=Maestro%20Teodoro%2C%20necesito%20un%20ritual%20personalizado%20para%20mi%20situaci%C3%B3n" class="mini-cta">Solicitar Ritual ✦</a>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta-servicio" data-index="2">
+                
+                <div class="info-tarjeta">
+                    <h3>Limpieza Espiritual</h3>
+                    <p>Desato entidades negativas, retiro malas energías, posesiones y males postizos. Libero tu aura de todo lo que te frena. Si sientes pesadez, mala racha o bloqueos inexplicables, una limpieza profunda lo resuelve desde la raíz.</p>
+                    <a href="https://wa.me/15042987893?text=Maestro%20Teodoro%2C%20necesito%20una%20limpieza%20espiritual%20urgente" class="mini-cta">Limpiar Energía ✦</a>
+                </div>
+            </div>
+            <!-- Tarjeta 4 -->
+            <div class="tarjeta-servicio" data-index="3">
+                <img src="/brujos-cerca-de-mi-7604291/optimizado/ag-198755395160/kw-446440606477/banco-pareja-apasionada-entre-llamas.webp" alt="Consulta espiritual con brujo cerca de mi" width="800" height="960" loading="lazy" decoding="async">
+                <div class="info-tarjeta">
+                    <h3>Consulta Espiritual</h3>
+                    <p>Leo tu caso con herramientas esotéricas y te revelo lo que realmente está pasando. Claridad total sobre amor, dinero o salud. La consulta es gratis y sin compromiso: primero entiendes, luego decides si trabajamos juntos.</p>
+                    <a href="https://wa.me/15042987893?text=Maestro%20Teodoro%2C%20quiero%20mi%20consulta%20espiritual%20gratis%20hoy%20mismo" class="mini-cta">Consulta Gratis ✦</a>
+                </div>
+            </div>
+            <!-- Tarjeta 5 -->
+            <div class="tarjeta-servicio" data-index="4">
+                
+                <div class="info-tarjeta">
+                    <h3>Protección & Defensa</h3>
+                    <p>Hago contras, sanciones espirituales y protecciones blindadas. Si alguien te está haciendo daño desde el plano oculto, lo detecto y lo devuelvo. Nadie te toca cuando estás bajo la cobertura energética del Maestro Teodoro.</p>
+                    <a href="https://wa.me/15042987893?text=Maestro%20Teodoro%2C%20necesito%20protecci%C3%B3n%20espiritual%20contra%20malas%20energ%C3%ADas" class="mini-cta">Protegerme Ahora ✦</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-puntos" id="sliderPuntos">
+            <span class="punto activo" data-index="0"></span>
+            <span class="punto" data-index="1"></span>
+            <span class="punto" data-index="2"></span>
+            <span class="punto" data-index="3"></span>
+            <span class="punto" data-index="4"></span>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="como-funciona seccion-reveal">
+        <h2 class="gradiente-oro">Cómo Trabaja el Maestro</h2>
+        <div class="divisor-dorado"></div>
+        <div class="pasos">
+            <div class="paso">
+                <div class="numero-paso">1</div>
+                <div class="contenido-paso">
+                    <h4>Consulta previa gratis</h4>
+                    <p>Analizo tu caso debidamente con una consulta sin costo. Así determino qué tipo de trabajo necesitas y tengo plena certeza del buen desarrollo.</p>
+                </div>
+            </div>
+            <div class="paso">
+                <div class="numero-paso">2</div>
+                <div class="contenido-paso">
+                    <h4>Canalización de energía</h4>
+                    <p>Lo importante es una buena canalización y el convencimiento de que a esa persona le va a funcionar al 100%. Realizo el trabajo con velas, hierbas y mi altar.</p>
+                </div>
+            </div>
+            <div class="paso">
+                <div class="numero-paso">3</div>
+                <div class="contenido-paso">
+                    <h4>Pagas al ver resultados</h4>
+                    <p>Como medida de garantía, <strong>solo pagas cuando veas resultados</strong>. Yo trabajo primero y tú pagas después. Además, hago seguimiento de tu caso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios seccion-reveal">
+        <h2 class="gradiente-oro">Lo Que Dicen Quienes Ya Encontraron a Su Brujo Cerca de Mi</h2>
+        <div class="divisor-dorado"></div>
+        <div class="grid-testimonios">
+            <!-- Testimonio 1 -->
+            <div class="testimonio-card">
+                <div class="rombo-inicial"><span>F</span></div>
+                <div class="cuerpo-testimonio">
+                    <div class="nombre-cliente">Fabio López</div>
+                    <p class="texto-testimonio">"La verdad yo no creía en nada de esto. Había probado con dos brujos que encontré buscando brujos cerca de mi y solo perdí dinero. El Maestro Teodoro me atendió sin prisas e hizo un amarre que en 5 días tuvo un efecto muy fuerte. Estoy sorprendido."</p>
+                    <div class="ciudad-testimonio">Los Ángeles, CA</div>
+                </div>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="testimonio-card">
+                <div class="rombo-inicial"><span>Y</span></div>
+                <div class="cuerpo-testimonio">
+                    <div class="nombre-cliente">Yolanda R.</div>
+                    <p class="texto-testimonio">"Se lo juro que en 3 días mi ex me llamó llorando. Llevaba 8 meses con indiferencia total. Gracias por atenderme aunque estoy en Phoenix y tú en otra ciudad. ¡Brujos cerca de mi de verdad!"</p>
+                    <div class="ciudad-testimonio">Phoenix, AZ</div>
+                </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="testimonio-card">
+                <div class="rombo-inicial"><span>M</span></div>
+                <div class="cuerpo-testimonio">
+                    <div class="nombre-cliente">Marco A. Salinas</div>
+                    <p class="texto-testimonio">"Contacté al Maestro Teodoro buscando numero de brujos gratis en internet. Me hizo una limpieza energética que me quitó esa mala racha de meses sin trabajo. A la semana ya tenía tres ofertas. No sé cómo explicarlo, pero funcionó."</p>
+                    <div class="ciudad-testimonio">Houston, TX</div>
+                </div>
+            </div>
+            <!-- Testimonio 4 -->
+            <div class="testimonio-card">
+                <div class="rombo-inicial"><span>C</span></div>
+                <div class="cuerpo-testimonio">
+                    <div class="nombre-cliente">Carmen D.</div>
+                    <p class="texto-testimonio">"Tenía una rival que me estaba haciendo la vida imposible. El Maestro la retiró en menos de una semana. Pude respirar tranquila otra vez. Lo recomiendo a cualquiera que ande buscando brujos cerca de mi en El Paso."</p>
+                    <div class="ciudad-testimonio">El Paso, TX</div>
+                </div>
+            </div>
+            <!-- Testimonio 5 -->
+            <div class="testimonio-card">
+                <div class="rombo-inicial"><span>R</span></div>
+                <div class="cuerpo-testimonio">
+                    <div class="nombre-cliente">René Castillo</div>
+                    <p class="texto-testimonio">"Pagué cuando vi resultados, tal cual me prometió. El seguimiento después del trabajo fue lo que más me gustó: no me dejó solo. Si estás en Orlando como yo, este es el brujo cerca de ti que necesitas."</p>
+                    <div class="ciudad-testimonio">Orlando, FL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq seccion-reveal">
+        <h2 class="gradiente-oro">Preguntas Frecuentes</h2>
+        <div class="divisor-dorado"></div>
+        <details>
+            <summary>¿Realmente hay brujos cerca de mi si vivo en Estados Unidos?</summary>
+            <div class="respuesta-faq">Sí. El Maestro Teodoro atiende por WhatsApp a hispanos en todo el país: California, Texas, Florida, Arizona, Nueva York y más. La energía no conoce fronteras y el trabajo espiritual se hace a distancia con la misma efectividad que presencial.</div>
+        </details>
+        <details>
+            <summary>¿Cuánto tardan en verse los resultados de un amarre?</summary>
+            <div class="respuesta-faq">En la mayoría de los casos los primeros cambios se notan en 72 horas: llamadas, mensajes o acercamientos inesperados. Cada caso es único, pero el Maestro Teodoro enfoca toda su energía en que el resultado sea rápido y duradero.</div>
+        </details>
+        <details>
+            <summary>¿Por qué la consulta es gratis? ¿Hay letra chica?</summary>
+            <div class="respuesta-faq">No hay letra chica. La consulta gratis permite analizar tu caso y determinar si realmente necesitas un trabajo espiritual. Si no hay camino claro, el Maestro te lo dice honestamente. Solo pagas si decides trabajar con él y después de ver resultados.</div>
+        </details>
+        <details>
+            <summary>¿Qué necesito para contactar al Maestro Teodoro hoy?</summary>
+            <div class="respuesta-faq">Solo necesitas un teléfono con WhatsApp. Escríbele ahora mismo, cuéntale tu caso con sinceridad y él te responderá en minutos. No importa la hora: el Maestro Teodoro atiende consultas de brujos cerca de mi todos los días.</div>
+        </details>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final seccion-reveal">
+        <h2 class="gradiente-oro">¿Listo para resolver tu situación?</h2>
+        <p>No lo pienses más. Si estás buscando <strong>brujos cerca de mi</strong> que realmente cumplan, escríbele hoy al Maestro Teodoro. Respuesta en minutos.</p>
+        <a href="https://wa.me/15042987893?text=Maestro%20Teodoro%2C%20quiero%20resolver%20mi%20situaci%C3%B3n%20hoy%20mismo%2C%20vi%20tu%20p%C3%A1gina%20de%20brujos%20cerca%20de%20mi" class="cta-xl">Escríbele Ahora ✦</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-sobrio">
+        &copy; 2025 Maestro Teodoro · Consulta Espiritual Gratis · <span style="color:#d4a017;">(351) 213-1040</span>
+    </footer>
+
+    <script>
+        (function() {
+            // INTERSECTION OBSERVER PARA REVEAL
+            const reveals = document.querySelectorAll('.seccion-reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.18, rootMargin: '0px 0px -30px 0px' });
+            reveals.forEach(el => observer.observe(el));
+
+            // SLIDER AUTOPLAY
+            const slider = document.getElementById('sliderServicios');
+            const puntos = document.querySelectorAll('#sliderPuntos .punto');
+            let autoplayInterval;
+            let pausado = false;
+            let currentIndex = 0;
+            const totalTarjetas = 5;
+            const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function moverAlIndice(idx) {
+                const tarjetas = slider.querySelectorAll('.tarjeta-servicio');
+                if (tarjetas.length === 0) return;
+                const tarjeta = tarjetas[Math.min(idx, tarjetas.length - 1)];
+                if (tarjeta) {
+                    slider.scrollTo({ left: tarjeta.offsetLeft - slider.offsetLeft - (slider.offsetWidth - tarjeta
+                            .offsetWidth) / 2, behavior: 'smooth' });
+                }
+                actualizarPuntos(idx);
+                currentIndex = idx;
+            }
+
+            function actualizarPuntos(idx) {
+                puntos.forEach((p, i) => {
+                    p.classList.toggle('activo', i === idx);
+                });
+            }
+
+            function siguienteTarjeta() {
+                if (pausado || prefersReduced) return;
+                currentIndex = (currentIndex + 1) % totalTarjetas;
+                moverAlIndice(currentIndex);
+            }
+
+            function iniciarAutoplay() {
+                if (prefersReduced) return;
+                autoplayInterval = setInterval(siguienteTarjeta, 5000);
+            }
+
+            function pausarAutoplay() {
+                pausado = true;
+                clearInterval(autoplayInterval);
+                setTimeout(() => {
+                    pausado = false;
+                    iniciarAutoplay();
+                }, 10000);
+            }
+
+            if (!prefersReduced && slider && totalTarjetas > 1) {
+                iniciarAutoplay();
+                slider.addEventListener('touchstart', pausarAutoplay, { passive: true });
+                slider.addEventListener('mousedown', pausarAutoplay);
+                slider.addEventListener('wheel', pausarAutoplay, { passive: true });
+            }
+
+            // DETECTAR ÍNDICE VISIBLE AL HACER SCROLL MANUAL PARA ACTUALIZAR PUNTOS
+            if (slider && puntos.length > 0) {
+                slider.addEventListener('scroll', () => {
+                    const tarjetas = slider.querySelectorAll('.tarjeta-servicio');
+                    let idxVisible = 0;
+                    let minDist = Infinity;
+                    const centroSlider = slider.offsetLeft + slider.offsetWidth / 2;
+                    tarjetas.forEach((t, i) => {
+                        const centroTarjeta = t.offsetLeft + t.offsetWidth / 2;
+                        const dist = Math.abs(centroSlider - centroTarjeta);
+                        if (dist < minDist) {
+                            minDist = dist;
+                            idxVisible = i;
+                        }
+                    });
+                    if (idxVisible !== currentIndex) {
+                        currentIndex = idxVisible;
+                        actualizarPuntos(idxVisible);
+                    }
+                }, { passive: true });
+            }
+
+            // CLICK EN PUNTOS INDICADORES
+            puntos.forEach(p => {
+                p.addEventListener('click', () => {
+                    const idx = parseInt(p.getAttribute('data-index'), 10);
+                    if (!isNaN(idx)) {
+                        pausarAutoplay();
+                        moverAlIndice(idx);
+                    }
+                });
+            });
+
+            // PREFERS REDUCED MOTION LISTENER
+            window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (e) => {
+                if (e.matches) {
+                    clearInterval(autoplayInterval);
+                }
+            });
+        })();
+    </script>
+<script data-sendto="AW-672356997/QCpfCPTWos4cEIW1zcAC" src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<!--WA-FAB:vela-mistica--><div class="wfab-vela"><style>
+.wfab-vela{position:fixed;right:18px;bottom:18px;z-index:99999}
+.wfab-vela::before{content:'';position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle,rgba(255,170,60,.5),rgba(255,90,40,.18) 55%,transparent 75%);animation:wfabVelaFlick 3.2s ease-in-out infinite;pointer-events:none}
+.wfab-vela a{position:relative;display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:linear-gradient(160deg,#22c55e,#0e7a41);color:#fff;border:2px solid rgba(255,200,120,.7);box-shadow:0 6px 20px rgba(0,0,0,.4);text-decoration:none}
+@keyframes wfabVelaFlick{0%,100%{opacity:.75;transform:scale(1)}45%{opacity:1;transform:scale(1.07)}60%{opacity:.85;transform:scale(1.02)}}
+@media (prefers-reduced-motion:reduce){.wfab-vela::before{animation:none!important}}
+</style><a href="https://wa.me/15042987893?text=Hola%20Maestro%20Teodoro%2C%20vi%20tu%20p%C3%A1gina%20de%20brujos%20cerca%20de%20mi%20y%20quiero%20mi%20consulta%20gratis" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div><!--/WA-FAB-->
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--CALL-FAB:pestana-lateral--><div class="cfab-pest"><style>
+.cfab-pest{position:fixed!important;top:50%!important;bottom:auto!important;left:auto!important;right:0!important;transform:translateY(-50%);z-index:2147483000;line-height:0;pointer-events:auto}
+.cfab-pest a{-webkit-tap-highlight-color:transparent}
+@media(min-width:768px){.cfab-pest{display:none!important}}
+@media(prefers-reduced-motion:reduce){.cfab-pest,.cfab-pest *,.cfab-pest::before,.cfab-pest::after{animation:none!important}}
+.cfab-pest a{display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 8px;border-radius:14px 0 0 14px;background:linear-gradient(180deg,#0f766e,#134e4a);color:#ecfeff;text-decoration:none;font:700 11px/1 'Segoe UI',system-ui,sans-serif;letter-spacing:.16em;box-shadow:-6px 6px 22px rgba(0,0,0,.45)}
+.cfab-pest span{writing-mode:vertical-rl;text-orientation:mixed}
+</style><a href="tel:+15042987893" aria-label="Llamar por teléfono" rel="nofollow"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.2 3h3.3c.5 0 .9.34 1.01.83l.86 3.4c.09.37-.02.76-.3 1.02L7.1 10.2c1.3 2.6 3.4 4.7 6 6l1.95-1.97c.26-.27.65-.38 1.02-.29l3.4.86c.49.12.83.55.83 1.05v3.3c0 .61-.5 1.11-1.11 1.08C10.35 19.83 4.17 13.65 3.12 4.11 3.09 3.5 3.59 3 4.2 3Z"/></svg><span>LLAMAR</span></a></div><!--/CALL-FAB-->
+</body>
+</html>

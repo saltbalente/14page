@@ -1,0 +1,1487 @@
+<!DOCTYPE html><html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maestro Sebastián, guía espiritual experto en amarres de amor y brujería. Consulta gratuita sin compromiso. +20 años de experiencia. Atención en Catemaco y online.">
+    <title>Maestro Sebastián | Guía Espiritual | Amarres de Amor y Brujería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@700;800&amp;family=Fira+Sans:wght@400&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --card: #0d0d0d;
+            --accent: #b00020;
+            --accent-hover: #d32f2f;
+            --text: #d5d7dc;
+            --text-dim: #9aa0a6;
+            --line: #1c1c1c;
+            --white: #f0f0f2;
+            --clip: polygon(0 12px, 12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 400;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-image: radial-gradient(ellipse at 50% 30%, #1c1c1c 0%, #050505 55%);
+            background-attachment: fixed;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Eczar', serif;
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-weight: 800;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ========== HEADER STICKY ========== */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 5, 5, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid #1a1a1a;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 50px;
+        }
+        .header__brand {
+            font-family: 'Eczar', serif;
+            font-weight: 700;
+            font-size: clamp(1rem, 2.4vw, 1.2rem);
+            color: var(--white);
+            letter-spacing: 0.02em;
+        }
+        .header__brand span {
+            color: var(--accent);
+        }
+        .header__cta {
+            background: var(--accent);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            transition: background 0.2s, transform 0.2s;
+            white-space: nowrap;
+        }
+        .header__cta:hover,
+        .header__cta:active {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        /* ========== HÉROE CONSTELACIÓN VIVA ========== */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: clamp(32px, 7vh, 56px) 16px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            isolation: isolate;
+        }
+        .hero__stars {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .hero__star {
+            position: absolute;
+            color: #9aa0a6;
+            font-size: 10px;
+            animation: twinkle var(--dur) ease-in-out infinite;
+            animation-delay: var(--delay);
+            opacity: 0.25;
+        }
+        @keyframes twinkle {
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(0.9);
+            }
+            40% {
+                opacity: 1;
+                transform: scale(1.25);
+            }
+            70% {
+                opacity: 0.45;
+                transform: scale(1.05);
+            }
+        }
+        .hero__constellation-line {
+            position: absolute;
+            top: 22%;
+            left: 8%;
+            width: 140px;
+            border-top: 1px dashed rgba(176, 0, 32, 0.55);
+            transform: rotate(-18deg);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.7;
+        }
+        .hero__badge {
+            display: inline-block;
+            background: rgba(176, 0, 32, 0.18);
+            color: #f0a0a8;
+            font-size: 0.78rem;
+            letter-spacing: 0.06em;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(176, 0, 32, 0.3);
+        }
+        .hero h1 {
+            font-size: clamp(1.8rem, 5.5vw, 2.6rem);
+            color: var(--white);
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 40px rgba(255, 255, 255, 0.10), 0 0 80px rgba(176, 0, 32, 0.18);
+            max-width: 600px;
+            margin: 0 auto 10px;
+            text-wrap: balance;
+        }
+        .hero h1 em {
+            font-style: normal;
+            color: #e0a0a8;
+            text-shadow: 0 0 24px rgba(176, 0, 32, 0.4);
+        }
+        .hero__sub {
+            font-size: clamp(0.95rem, 2.6vw, 1.1rem);
+            color: var(--text-dim);
+            position: relative;
+            z-index: 1;
+            max-width: 440px;
+            margin: 0 auto 20px;
+            text-wrap: balance;
+        }
+        .hero__cta {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Eczar', serif;
+            font-weight: 700;
+            font-size: clamp(1.05rem, 2.8vw, 1.25rem);
+            padding: 14px 36px;
+            border-radius: 8px;
+            letter-spacing: 0.03em;
+            position: relative;
+            z-index: 1;
+            transition: background 0.2s, transform 0.2s, box-shadow 0.3s;
+            animation: pulse-cta 2.5s infinite ease-in-out;
+            cursor: pointer;
+        }
+        @keyframes pulse-cta {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(176, 0, 32, 0.7);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 0 0 18px rgba(176, 0, 32, 0);
+                transform: scale(1.04);
+            }
+        }
+        .hero__cta:hover,
+        .hero__cta:active {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            animation: none;
+            box-shadow: 0 0 0 8px rgba(176, 0, 32, 0.15);
+        }
+        .hero__trust {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            position: relative;
+            z-index: 1;
+            margin-top: 16px;
+            letter-spacing: 0.02em;
+        }
+        .hero__trust span {
+            color: #f0c040;
+            font-weight: 700;
+        }
+
+        /* ========== URGENCIA ========== */
+        .urgency {
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.82rem;
+            color: #c09090;
+            letter-spacing: 0.04em;
+            background: rgba(176, 0, 32, 0.06);
+            border-top: 1px solid #1a1111;
+            border-bottom: 1px solid #1a1111;
+        }
+        .urgency strong {
+            color: #f0b0b0;
+        }
+
+        /* ========== SECCIONES ========== */
+        .section {
+            padding: clamp(36px, 6vh, 56px) 16px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        .section__title {
+            font-size: clamp(1.35rem, 3.5vw, 1.7rem);
+            color: var(--white);
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 20px;
+            border-left: 2px solid var(--accent);
+        }
+        .section__title::before {
+            content: '†';
+            position: absolute;
+            left: -8px;
+            top: -4px;
+            font-size: 0.7rem;
+            color: var(--accent);
+            font-family: serif;
+        }
+        .section__subtitle {
+            color: var(--text-dim);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        /* ========== REVEAL ========== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== SLIDER ========== */
+        .slider-wrapper {
+            position: relative;
+            margin: 0 -16px;
+            padding: 0 16px;
+        }
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 12px;
+            padding: 8px 0 16px;
+            scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
+        }
+        .slider::-webkit-scrollbar {
+            display: none;
+        }
+        .slider__card {
+            flex: 0 0 78%;
+            min-width: 260px;
+            scroll-snap-align: center;
+            background: var(--card);
+            border-radius: 6px;
+            clip-path: var(--clip);
+            padding: 0 0 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #141414;
+        }
+        .slider__card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+        }
+        .slider__card img {
+            width: 100%;
+            aspect-ratio: 5 / 6;
+            object-fit: cover;
+            max-height: 40vh;
+            display: block;
+            border-radius: 0;
+        }
+        .slider__card-body {
+            padding: 14px 14px 8px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .slider__card-title {
+            font-family: 'Eczar', serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--white);
+            margin-bottom: 6px;
+            padding-left: 12px;
+            border-left: 2px solid var(--accent);
+            position: relative;
+        }
+        .slider__card-title::before {
+            content: '†';
+            position: absolute;
+            left: -7px;
+            top: -2px;
+            font-size: 0.55rem;
+            color: var(--accent);
+            font-family: serif;
+        }
+        .slider__card-text {
+            font-size: 0.84rem;
+            color: var(--text-dim);
+            line-height: 1.5;
+            flex: 1;
+            margin-bottom: 10px;
+        }
+        .slider__card-cta {
+            display: inline-block;
+            font-size: 0.78rem;
+            color: #e0a0a8;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            transition: color 0.2s;
+            align-self: flex-start;
+            border-bottom: 1px solid transparent;
+        }
+        .slider__card-cta:hover {
+            color: #fff;
+            border-bottom-color: var(--accent);
+        }
+        .slider__dots {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 4px;
+            flex-wrap: wrap;
+        }
+        .slider__dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #2a2a2a;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .slider__dot.active {
+            background: var(--accent);
+        }
+
+        @media(min-width:768px) {
+            .slider {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+                overflow-x: visible;
+                scroll-snap-type: none;
+                padding: 8px 0;
+            }
+            .slider__card {
+                flex: unset;
+                min-width: unset;
+                scroll-snap-align: unset;
+            }
+            .slider__dots {
+                display: none;
+            }
+            .slider-wrapper {
+                margin: 0;
+                padding: 0;
+            }
+            .hero {
+                min-height: 50vh;
+                padding: clamp(40px, 8vh, 70px) 16px;
+            }
+        }
+
+        /* ========== SOBRE EL MAESTRO ========== */
+        .about {
+            background: rgba(13, 13, 13, 0.5);
+            border-top: 1px solid #1a1111;
+            border-bottom: 1px solid #1a1111;
+        }
+        .about__content {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+        }
+        .about__img {
+            width: 180px;
+            aspect-ratio: 5/6;
+            object-fit: cover;
+            border-radius: 6px;
+            clip-path: var(--clip);
+            border: 1px solid #1a1a1a;
+            max-height: 40vh;
+        }
+        .about__text p {
+            font-size: 0.9rem;
+            color: var(--text);
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .about__text p strong {
+            color: var(--white);
+        }
+        @media(min-width:768px) {
+            .about__content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .about__img {
+                width: 200px;
+                flex-shrink: 0;
+            }
+        }
+
+        /* ========== PASOS ========== */
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            counter-reset: step;
+        }
+        .steps__item {
+            background: var(--card);
+            clip-path: var(--clip);
+            padding: 18px 16px;
+            border: 1px solid #141414;
+            position: relative;
+            padding-left: 50px;
+            counter-increment: step;
+        }
+        .steps__item::before {
+            content: counter(step);
+            position: absolute;
+            left: 14px;
+            top: 14px;
+            font-family: 'Eczar', serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--accent);
+            line-height: 1;
+        }
+        .steps__item h4 {
+            font-size: 0.95rem;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+        .steps__item p {
+            font-size: 0.82rem;
+            color: var(--text-dim);
+        }
+
+        /* ========== TESTIMONIOS ========== */
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .testimonial {
+            background: var(--card);
+            clip-path: var(--clip);
+            padding: 16px;
+            border: 1px solid #141414;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            line-height: 1.55;
+        }
+        .testimonial__first {
+            color: var(--white);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .testimonial__author {
+            font-size: 0.75rem;
+            color: #7a7075;
+            margin-top: 6px;
+            letter-spacing: 0.03em;
+        }
+        .testimonial__stars {
+            color: #f0c040;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+        }
+
+        /* ========== FAQ ========== */
+        .faq details {
+            background: var(--card);
+            clip-path: var(--clip);
+            border: 1px solid #141414;
+            margin-bottom: 8px;
+            padding: 0;
+            transition: all 0.2s;
+        }
+        .faq summary {
+            padding: 14px 16px;
+            cursor: pointer;
+            font-family: 'Eczar', serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--white);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            letter-spacing: 0.01em;
+        }
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq summary::after {
+            content: '†';
+            font-family: serif;
+            font-size: 0.9rem;
+            color: var(--accent);
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 10px;
+        }
+        .faq details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .faq details>div {
+            padding: 0 16px 14px;
+            font-size: 0.84rem;
+            color: var(--text-dim);
+            line-height: 1.6;
+        }
+
+        /* ========== CTA FINAL ========== */
+        .cta-final {
+            text-align: center;
+            background: rgba(176, 0, 32, 0.05);
+            border-top: 1px solid #1a1111;
+            border-bottom: 1px solid #1a1111;
+        }
+        .cta-final h2 {
+            font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+        .cta-final p {
+            color: var(--text-dim);
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+        .cta-final__btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Eczar', serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 14px 34px;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s;
+            letter-spacing: 0.03em;
+        }
+        .cta-final__btn:hover,
+        .cta-final__btn:active {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 0.72rem;
+            color: #4a4550;
+            letter-spacing: 0.03em;
+        }
+        .footer span {
+            color: var(--accent);
+        }
+
+        /* ========== DIVISORES ========== */
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(to right, var(--accent), transparent);
+            margin: 8px 0 20px;
+        }
+
+        /* ========== PAGOS ========== */
+        .payments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            font-size: 0.78rem;
+            color: var(--text-dim);
+        }
+        .payments span {
+            background: var(--card);
+            padding: 6px 14px;
+            border-radius: 4px;
+            letter-spacing: 0.04em;
+            border: 1px solid #1a1a1a;
+        }
+
+        /* ========== REDUCED MOTION ========== */
+        @media(prefers-reduced-motion:reduce) {
+            .hero__cta {
+                animation: none;
+            }
+            .hero__star {
+                animation: none;
+                opacity: 0.5;
+            }
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+            .slider__card:hover {
+                transform: none;
+            }
+            .cta-final__btn:hover,
+            .header__cta:hover,
+            .hero__cta:hover {
+                transform: none;
+            }
+        }
+
+        /* ========== BADGE DISPONIBILIDAD ========== */
+        .badge-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #22c55e;
+            margin-right: 5px;
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+            }
+        }
+
+        /* Mapa / ubicación */
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--card);
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            border: 1px solid #1a1a1a;
+            letter-spacing: 0.03em;
+        }
+        .location-badge strong {
+            color: #e0c090;
+        }
+    </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PQW2RL4R');</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-682101450"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-682101450');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<!--WA-BAR:whatsapp-verde|manos-femeninas-en-ritual-de-velas.webp-->
+<style>
+.wabar{position:fixed;top:0;left:0;right:0;z-index:2147483000;display:flex;justify-content:center;padding:8px 8px 0;pointer-events:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,system-ui,sans-serif}
+.wabar[hidden]{display:none}
+.wabar .wabar-card{pointer-events:auto;display:flex;align-items:flex-start;gap:10px;width:100%;max-width:440px;padding:10px 12px;border-radius:18px;transform:translateY(-140%);opacity:0;transition:transform .55s cubic-bezier(.22,1.2,.36,1),opacity .4s ease}
+.wabar.wabar-in .wabar-card{transform:translateY(0);opacity:1}
+.wabar .wabar-av{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 auto;background:#128c7e}
+.wabar .wabar-body{flex:1 1 auto;min-width:0}
+.wabar .wabar-top{display:flex;align-items:baseline;gap:8px}
+.wabar .wabar-name{font-weight:700;font-size:14px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wabar .wabar-time{font-size:11px;margin-left:auto;flex:0 0 auto}
+.wabar .wabar-msg{font-size:13px;line-height:1.35;margin-top:2px;min-height:18px;word-break:break-word}
+.wabar .wabar-cursor{display:inline-block;width:1px;margin-left:1px;animation:wabarBlink 1s steps(1) infinite}
+.wabar .wabar-typing{display:inline-flex;gap:4px;align-items:center;height:16px}
+.wabar .wabar-typing i{width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.5;animation:wabarDot 1.2s infinite ease-in-out}
+.wabar .wabar-typing i:nth-child(2){animation-delay:.2s}.wabar .wabar-typing i:nth-child(3){animation-delay:.4s}
+.wabar .wabar-x{pointer-events:auto;background:none;border:0;font-size:20px;line-height:1;padding:0 2px;cursor:pointer;opacity:.7;flex:0 0 auto}
+@keyframes wabarDot{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:.9}}
+@keyframes wabarBlink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.wabar .wabar-card{transition:opacity .3s}.wabar .wabar-typing i,.wabar .wabar-cursor{animation:none}}
+.wabar-whatsapp-verde .wabar-card{background:#fff;color:#111;border:1px solid rgba(0,0,0,.05);box-shadow:0 10px 30px rgba(7,94,84,.25);border-top:3px solid #25d366}
+.wabar-whatsapp-verde .wabar-name{color:#075e54}.wabar-whatsapp-verde .wabar-time{color:#9aa}.wabar-whatsapp-verde .wabar-msg{color:#222}.wabar-whatsapp-verde .wabar-x{color:#9aa}
+.wabar-whatsapp-verde .wabar-av{box-shadow:0 0 0 2px #25d366}
+</style>
+<div class="wabar wabar-whatsapp-verde" id="wabar" role="status" aria-live="polite" hidden="">
+<div class="wabar-card">
+<img class="wabar-av" src="https://googleads.mkinnovador.com/banco/manos-femeninas-en-ritual-de-velas.webp" alt="" width="40" height="40" loading="lazy">
+<div class="wabar-body"><div class="wabar-top"><span class="wabar-name">Maestro Sebastián</span><span class="wabar-time">ahora</span></div>
+<div class="wabar-msg"><span class="wabar-typing" aria-hidden="true"><i></i><i></i><i></i></span><span class="wabar-text"></span></div></div>
+<button class="wabar-x" aria-label="Cerrar">×</button></div></div>
+<script>(function(){
+var el=document.getElementById('wabar');if(!el)return;
+var msgs=["Hola 👋 estoy en línea ahora. Cuéntame tu caso por WhatsApp: la primera consulta es gratis y sin compromiso.","Soy el maestro Sebastián. Escríbeme por WhatsApp y hablamos con calma. Te respondo yo mismo en pocos minutos.","¿Tienes una duda o una situación que resolver? Estoy disponible ahora para orientarte, sin costo.","Estoy atendiendo por WhatsApp en este momento. La primera orientación es totalmente gratuita.","Cuéntame qué te preocupa y te leo personalmente. Sin compromiso, con total confidencialidad. 🙏","Aquí estoy para ayudarte. Escríbeme por WhatsApp cuando quieras: la consulta inicial es gratis.","Tu bienestar es lo primero. Escríbeme y demos juntos el primer paso — sin compromiso.","Estoy en línea 24/7 para acompañarte. Cuéntame tu caso por WhatsApp, sin costo inicial."];if(!msgs.length){return}
+var preview=/[?&]__bar=1/.test(location.search);
+var isMobile=(window.matchMedia&&window.matchMedia('(pointer:coarse)').matches)||window.innerWidth<=768;
+if(!preview){if(!isMobile)return;try{if(sessionStorage.getItem('wabar_seen'))return}catch(e){}}
+var txt=el.querySelector('.wabar-text'),typing=el.querySelector('.wabar-typing'),msg=msgs[Math.floor(Math.random()*msgs.length)];
+var closed=false,closeTimer=null;
+function close(){if(closed)return;closed=true;el.classList.remove('wabar-in');try{sessionStorage.setItem('wabar_seen','1')}catch(e){}setTimeout(function(){el.setAttribute('hidden','')},600)}
+el.querySelector('.wabar-x').addEventListener('click',close);
+function type(i){if(closed)return;if(i<=msg.length){txt.innerHTML=msg.slice(0,i).replace(/</g,'&lt;')+'<span class=\'wabar-cursor\'>|</span>';setTimeout(function(){type(i+1)},28+Math.random()*40)}else{txt.textContent=msg}}
+function show(){if(closed||el.__shown)return;el.__shown=true;el.removeAttribute('hidden');requestAnimationFrame(function(){el.classList.add('wabar-in')});
+setTimeout(function(){if(closed)return;typing.style.display='none';type(1)},1200);
+closeTimer=setTimeout(close,20000)}
+if(preview){show();return}
+var scrolled=false,elapsed=false;
+function pct(){var h=Math.max(1,document.documentElement.scrollHeight-window.innerHeight);return (window.scrollY||window.pageYOffset||0)/h*100}
+function check(){if(scrolled&&elapsed)show()}
+function onScroll(){if(pct()>=5){scrolled=true;window.removeEventListener('scroll',onScroll);check()}}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+setTimeout(function(){elapsed=true;check()},5000);
+})();</script>
+<!--/WA-BAR-->
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQW2RL4R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER STICKY -->
+    <header class="header reveal">
+        <a href="#" class="header__brand">Maestro <span>Sebastián</span></a>
+        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20mi%20consulta%20gratuita%20de%20orientaci%C3%B3n%20espiritual" class="header__cta">☏ Consulta gratis</a>
+    </header>
+
+    <!-- HÉROE CONSTELACIÓN VIVA -->
+    <section class="hero reveal">
+        <div class="hero__stars" aria-hidden="true">
+            <span class="hero__star" style="top:8%;left:12%;--dur:3.2s;--delay:0s;">✦</span>
+            <span class="hero__star" style="top:14%;left:28%;--dur:3.8s;--delay:0.6s;">✦</span>
+            <span class="hero__star" style="top:6%;left:48%;--dur:2.9s;--delay:1.2s;">✦</span>
+            <span class="hero__star" style="top:18%;left:65%;--dur:4.1s;--delay:0.3s;">✦</span>
+            <span class="hero__star" style="top:10%;left:80%;--dur:3.4s;--delay:1.8s;">✦</span>
+            <span class="hero__star" style="top:25%;left:6%;--dur:3.6s;--delay:2.2s;">✦</span>
+            <span class="hero__star" style="top:30%;left:38%;--dur:4.3s;--delay:0.9s;">✦</span>
+            <span class="hero__star" style="top:22%;left:72%;--dur:3.1s;--delay:1.5s;">✦</span>
+            <span class="hero__star" style="top:36%;left:18%;--dur:3.9s;--delay:2.6s;">✦</span>
+            <span class="hero__star" style="top:40%;left:55%;--dur:4.5s;--delay:0.4s;">✦</span>
+            <span class="hero__star" style="top:33%;left:88%;--dur:3.3s;--delay:1.9s;">✦</span>
+            <span class="hero__star" style="top:48%;left:8%;--dur:3.7s;--delay:2.9s;">✦</span>
+            <span class="hero__star" style="top:52%;left:32%;--dur:4.0s;--delay:1.1s;">✦</span>
+            <span class="hero__star" style="top:44%;left:68%;--dur:3.5s;--delay:0.7s;">✦</span>
+            <span class="hero__star" style="top:56%;left:50%;--dur:4.2s;--delay:2.0s;">✦</span>
+        </div>
+        <div class="hero__constellation-line" aria-hidden="true"></div>
+        <span class="hero__badge"><span class="badge-dot"></span> Disponible hoy · Consulta inmediata</span>
+        <h1>Brujería y <em>amarres de amor</em> con el Maestro Sebastián</h1>
+        <p class="hero__sub">Basta de esperar a que el destino decida por ti. Oriento tu camino con rituales sagrados, guía ancestral y energía divina para transformar tu vida amorosa.</p>
+        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20consulta%20gratuita%20sobre%20amarres%20de%20amor%20y%20brujer%C3%ADa" class="hero__cta">Toma hoy la decisión — escríbeme ahora</a>
+        <div class="hero__trust">
+            <span>★ 4.9</span> · +5.000 consultas · 25 años · <span>100% confidencial</span>
+        </div>
+    </section><section id="wa-testimonios"><style>
+.watm-wrap{--wa-hd-ios:#008069;--wa-hd-and:#075e54;--wa-bg:#e5ddd5;--wa-me:#d9fdd3;--wa-you:#fff;--wa-tx:#111b21;--wa-mt:#667781;--wa-blue:#53bdeb;
+  box-sizing:border-box;width:100%;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none}
+.watm-wrap *,.watm-wrap *::before,.watm-wrap *::after{box-sizing:border-box}
+/* 🛡️ BLINDAJE: cada landing trae su propio CSS global (mayúsculas, espaciado
+   de letras, itálicas, interlineados enormes, sombras de texto). Sin esto, el
+   pantallazo se deforma y deja de parecer WhatsApp. El teléfono queda aislado
+   de todo eso, pase lo que pase en la página que lo aloja. */
+.watm-phone,.watm-phone *{text-transform:none;letter-spacing:normal;word-spacing:normal;
+  font-style:normal;font-variant:normal;text-shadow:none;text-indent:0;text-decoration:none;
+  animation:none;transition:none;
+  /* inherit (y no un valor fijo) para que cada parte del chat mande sobre sus
+     hijos: así un interlineado global enorme de la landing no separa las
+     líneas de las burbujas, pero .wb sigue pudiendo fijar el suyo. */
+  line-height:inherit}
+/* 📐 PROPORCIÓN REAL DE UN TELÉFONO: la altura NO es un número fijo — se deriva
+   del ancho con la relación de pantalla de cada familia (iPhone 19.5:9,
+   Android 20:9). Todo el marco (padding, radios, botón lateral) escala con
+   --pw, así el teléfono se ve correcto en móvil, tablet y escritorio. */
+.watm-phone{position:relative;--pw:min(300px,86vw);width:var(--pw);margin:0 auto;
+  border-radius:calc(var(--pw)*.147);padding:calc(var(--pw)*.037);
+  background:linear-gradient(150deg,#3a3d45 0%,#0e0f12 42%,#22242a 100%);
+  box-shadow:0 2px 3px rgba(255,255,255,.25) inset,0 26px 50px -12px rgba(0,0,0,.6),0 8px 18px rgba(0,0,0,.4);}
+.watm-phone::before{content:"";position:absolute;inset:calc(var(--pw)*.017);border-radius:calc(var(--pw)*.133);border:1px solid rgba(255,255,255,.06);pointer-events:none}
+.watm-phone::after{content:"";position:absolute;top:calc(var(--pw)*.24);right:-2px;width:2px;height:calc(var(--pw)*.187);border-radius:2px;background:linear-gradient(#4a4d55,#17181c);box-shadow:-1px 0 0 rgba(0,0,0,.5)}
+.watm-screen{position:relative;border-radius:calc(var(--pw)*.113);overflow:hidden;background:var(--wa-bg);
+  aspect-ratio:9/19.5;display:flex;flex-direction:column;line-height:1.35;
+  box-shadow:0 0 0 2px #000, 0 0 1px 3px rgba(255,255,255,.04) inset}
+.watm-android .watm-screen{aspect-ratio:9/20}
+/* fondo doodle sutil */
+/* Los mensajes se anclan ABAJO, como en un chat real con historial: si sobran,
+   se cortan por arriba (igual que un pantallazo de verdad) y nunca queda un
+   hueco vacío al pie cuando la conversación es corta. */
+.wbody{flex:1;min-height:0;overflow:hidden;padding:8px 7px 4px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;position:relative;
+  background-image:radial-gradient(rgba(0,0,0,.028) 1px,transparent 1px);background-size:22px 22px}
+.wbody>*{flex:none}
+/* cabecera */
+.whead{display:flex;align-items:center;gap:7px;padding:9px 8px;color:#fff}
+.watm-ios .whead{background:var(--wa-hd-ios)}
+.watm-android .whead{background:var(--wa-hd-and)}
+.whback{display:flex;color:#fff;opacity:.95;margin-right:-2px}
+.whav{width:34px;height:34px;border-radius:50%;flex:none;overflow:hidden;background:#c9d2d9;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:15px}
+.whav img{width:100%;height:100%;object-fit:cover;filter:blur(5px) brightness(.96);transform:scale(1.25);pointer-events:none}
+.whname{min-width:0;flex:1;line-height:1.1}
+.whn{font-size:16px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.whsub{font-size:12px;opacity:.85;margin-top:1px}
+.whicons{display:flex;align-items:center;gap:13px}
+.whic{display:flex;color:#fff;opacity:.96}
+/* fecha */
+.wdate{display:flex;justify-content:center;margin:4px 0 6px}
+.wdate span{background:#fff;color:#54656f;font-size:12px;padding:4px 11px;border-radius:8px;box-shadow:0 1px .5px rgba(0,0,0,.13)}
+/* burbujas */
+.wm{display:flex;margin:1px 0}
+.wm.me{justify-content:flex-end}
+.wm.you{justify-content:flex-start}
+.wb{max-width:78%;position:relative;padding:6px 8px 8px;border-radius:8px;font-size:14.2px;line-height:1.32;color:var(--wa-tx);
+  box-shadow:0 1px .5px rgba(0,0,0,.13);
+  /* El texto del chat SIEMPRE va a la izquierda, como en WhatsApp real. La
+     landing puede tener text-align:center global (y lo heredaba: dejaba huecos
+     raros a la izquierda de cada línea). Aquí se corta esa herencia. */
+  text-align:left;
+  /* Reparto de líneas «bonito»: evita dejar una palabra sola en la última
+     línea y parte bien las palabras largas o las URLs. */
+  text-wrap:pretty;overflow-wrap:break-word;word-break:normal;hyphens:none}
+.wm.me .wb{background:var(--wa-me);border-top-right-radius:2px}
+.wm.you .wb{background:var(--wa-you);border-top-left-radius:2px}
+.wb.has-img{padding:3px 3px 3px}
+.wtx{white-space:pre-wrap}
+.wmeta{display:inline-flex;align-items:center;gap:3px;float:right;margin:6px 0 -2px 8px;transform:translateY(2px)}
+.wt{font-size:11px;color:var(--wa-mt)}
+.wtk{margin-bottom:-1px}
+.wimg{display:block;position:relative;border-radius:6px;overflow:hidden}
+.wimg img{display:block;width:210px;max-width:60vw;height:auto;pointer-events:none}
+.wimg .wmeta{position:absolute;right:6px;bottom:5px;margin:0;padding:1px 5px;border-radius:8px;background:rgba(0,0,0,.35)}
+.wimg .wt{color:#eef}
+/* pie / barra de escritura */
+.wfoot{display:flex;align-items:center;gap:7px;padding:6px 8px;background:#f0f2f5}
+.watm-android .wfoot{background:#eef0f1}
+.wemoji,.wmic{display:flex;color:#8696a0;flex:none}
+.winp{flex:1;display:flex;align-items:center;gap:8px;background:#fff;border-radius:22px;padding:8px 10px;min-width:0}
+.winp-ph{flex:1;color:#8b98a5;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wclip,.wcam{display:flex;color:#8696a0;flex:none}
+.wmic{width:38px;height:38px;border-radius:50%;background:var(--wa-hd-ios);align-items:center;justify-content:center}
+.watm-android .wmic{background:#00a884}
+/* fuentes de fábrica */
+.watm-ios .watm-screen{font-family:-apple-system,"SF Pro Text","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif}
+.watm-android .watm-screen{font-family:Roboto,"Noto Sans","Segoe UI",Arial,sans-serif}
+/* anti-copia: capa transparente encima que se come cualquier interacción */
+.watm-guard{position:absolute;inset:0;z-index:5;background:transparent}
+.watm-phone img,.watm-phone svg{-webkit-user-drag:none;user-drag:none}
+
+.watm-wrap{padding:18px 0 22px;text-align:center}
+.watm-title,.watm-galhead{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-weight:700;font-size:16px;color:inherit;opacity:.92;margin:0 auto 14px;max-width:90%}
+.watm-viewport{overflow:hidden;max-width:100%}
+.watm-track{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.watm-slide{min-width:100%;display:flex;justify-content:center;padding:0 6px}
+.watm-dots{display:flex;gap:6px;justify-content:center;margin-top:14px}
+.watm-dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.25;transition:opacity .3s,transform .3s}
+.watm-dot.on{opacity:.9;transform:scale(1.25)}
+.watm-galhead{display:inline-flex;align-items:center;gap:8px;cursor:pointer;background:none;border:0;padding:6px 10px}
+.watm-chev{font-size:13px;opacity:.7}
+.watm-galbody{overflow:hidden;transition:max-height .45s ease}
+.watm-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:16px 6px 4px}
+</style><div class="watm-wrap" data-fmt="slider" data-secs="12"><div class="watm-title">Lo que dicen quienes ya confiaron 🙏</div><div class="watm-viewport"><div class="watm-track"><div class="watm-slide"><div class="watm-phone watm-android" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/women/41.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Julia Miami</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro no sabe cuanto le agradezco ❤️ despues del amarre pedro volvió a casa el domingo en la noche</span><span class="wmeta"><span class="wt">02:31</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Que la luz te acompañe siempre Rosalba, tu fe fue clave 🙏</span><span class="wmeta"><span class="wt">02:40</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">llego con flores y todo 😭 estaba tan distante antes… ahora hasta me prepara cafe</span><span class="wmeta"><span class="wt">02:44</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Así es cuando las energías se alinean, todo fluye. Dale tiempo al tiempo ✨</span><span class="wmeta"><span class="wt">02:51</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">yo lloraba pensando q no iba a funcionar y mire... gracias de verdad</span><span class="wmeta"><span class="wt">02:53</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Solo fui un canal, tu disposición hizo el resto. Bendiciones</span><span class="wmeta"><span class="wt">02:58</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-ios" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/men/62.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Alfonso Houston</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro mire q ya no hay peleas en mi casa 🥺 con eso de la limpieza todo cambió</span><span class="wmeta"><span class="wt">01:32</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Era necesario sacar esas sombras, me alegra el alma leerte 🙏</span><span class="wmeta"><span class="wt">01:34</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">hasta los niños duermen mejor y mi esposo ya no llega tan amargado</span><span class="wmeta"><span class="wt">01:39</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">La paz que sembraste está floreciendo, confía</span><span class="wmeta"><span class="wt">01:47</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">gracias, hasta yo me siento mas ligera ❤️ ya no me duele tanto el pecho de la ansiedad</span><span class="wmeta"><span class="wt">01:50</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-android" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/women/81.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Estela Los Angeles</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro hola es lorena, quería contarle que me llamaron de un trabajo ✨</span><span class="wmeta"><span class="wt">12:33</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">La sanación abrió caminos, me llena de gozo saberlo</span><span class="wmeta"><span class="wt">12:36</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">despues de la curación senti como si me quitaran un peso de encima, ya no me siento con esa mala suerte</span><span class="wmeta"><span class="wt">12:42</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Así obra la energía cuando se limpia de raíz, todo empieza a vibrar distinto</span><span class="wmeta"><span class="wt">12:51</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">y es increible porque justo ayer me enteré que una amiga q siempre hablaba mal de mi se alejó solita 😂</span><span class="wmeta"><span class="wt">12:55</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">A veces la vida saca lo que no sirve sin que hagamos nada, confía en eso</span><span class="wmeta"><span class="wt">13:02</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">gracias por todo maes, en serio me cambió la vida ❤️</span><span class="wmeta"><span class="wt">13:04</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-ios" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/men/6.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Omar New York</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestreee luis volvio 😭 ayer toco la puerta y me pidio perdon</span><span class="wmeta"><span class="wt">11:34</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">No hay distancia que el amor no pueda acortar cuando se trabaja con fe 🙏</span><span class="wmeta"><span class="wt">11:38</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">estabamos separados como cinco meses... no pensé que esto fuera posible</span><span class="wmeta"><span class="wt">11:45</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Nunca subestimes el poder de una conexión genuina, pero ahora toca cuidarla entre los dos</span><span class="wmeta"><span class="wt">11:47</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">si, vamos a ir a terapia como me dijo y todo, estoy muy agradecida</span><span class="wmeta"><span class="wt">11:52</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Sabia decisión, el retorno es solo el comienzo. Mucha luz para ambos ✨</span><span class="wmeta"><span class="wt">12:00</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-android" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/women/59.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Julia Chicago</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro el endulzamiento si pegó jaja mi esposo hoy me desperto con desayuno a la cama 😍</span><span class="wmeta"><span class="wt">10:35</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Dulzura llama dulzura, Valentina. Me alegra que lo recibas con el corazón abierto</span><span class="wmeta"><span class="wt">10:40</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">antes ni me miraba, siempre con el celular, ahora hasta apaga la tele para cenar conmigo</span><span class="wmeta"><span class="wt">10:48</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Los gestos pequeños son los que prueban el cambio. Disfruta y agradece</span><span class="wmeta"><span class="wt">10:51</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">yo le ponia velita como ud me dijo y mire, funcionó ❤️ hasta me regaló un perfume</span><span class="wmeta"><span class="wt">10:57</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">Siempre con fe, sin forzar. La magia está en la intención pura. Bendiciones 🙏</span><span class="wmeta"><span class="wt">11:06</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div></div></div><div class="watm-dots"><span class="watm-dot on"></span><span class="watm-dot"></span><span class="watm-dot"></span><span class="watm-dot"></span><span class="watm-dot"></span></div></div><script>(function(){var W=document.querySelectorAll('.watm-wrap');if(!W.length)return;
+  function stop(e){e.preventDefault();e.stopPropagation();return false}
+  W.forEach(function(w){['contextmenu','dragstart','selectstart','copy','cut'].forEach(function(ev){w.addEventListener(ev,stop)});
+    var track=w.querySelector('.watm-track');var slides=w.querySelectorAll('.watm-slide');
+    if(w.getAttribute('data-fmt')==='gallery'){var head=w.querySelector('.watm-galhead');var body=w.querySelector('.watm-galbody');
+      if(head&&body){head.addEventListener('click',function(){var open=w.classList.toggle('watm-open');body.style.maxHeight=open?body.scrollHeight+'px':'0px';var c=w.querySelector('.watm-chev');if(c)c.textContent=open?'▴':'▾'})}
+    } else if(track&&slides.length>1){var i=0;var secs=Number(w.getAttribute('data-secs'))||6;
+      setInterval(function(){i=(i+1)%slides.length;track.style.transform='translateX(-'+(i*100)+'%)';var dots=w.querySelectorAll('.watm-dot');dots.forEach(function(d,k){d.className='watm-dot'+(k===i?' on':'')})},secs*1000)}
+  });})();</script></section>
+<section class="section reveal" style="text-align:center;">
+    <div style="max-width: 540px; margin: 0 auto; clip-path: var(--clip); border: 1px solid #1a1a1a; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 18px rgba(0,0,0,0.5);">
+        <img src="/amarresdeamor/optimizado/ag-161324027963/maq-1784005423888-1-chaman-con-altar-de-ofrendas.webp" alt="Altar esotérico con muñecos vudú" style="width: 100%; height: auto; display: block; object-fit: cover; object-position: center; aspect-ratio: 4/3; max-height: 60vh;" loading="lazy">
+    </div>
+    <p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 8px; letter-spacing: 0.03em;">† Altar esotérico con muñecos vudú</p>
+</section>
+
+    <!-- BARRA DE URGENCIA -->
+    <div class="urgency reveal">
+        <strong>†</strong> Si sientes que algo bloquea tu camino, no lo ignores más. <strong>Consulta inicial sin compromiso</strong> — hoy puede ser el día en que todo cambie.
+    </div>
+
+    <!-- SLIDER 1: SERVICIOS PRINCIPALES -->
+    <section class="section reveal" id="servicios-principales">
+        <h2 class="section__title">Rituales de amor y trabajos de brujería</h2>
+        <p class="section__subtitle">Cada ritual es realizado con intención pura, respeto y poder espiritual verdadero. Estos son los servicios que más busca quien necesita respuestas.</p>
+        <div class="divider"></div>
+        <div class="slider-wrapper">
+            <div class="slider" id="slider1" role="region" aria-label="Servicios principales">
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-altar-esoterico-con-velas-y-arcangel.webp" alt="Altar esotérico con velas para amarres de amor" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Amarres de amor</h3>
+                        <p class="slider__card-text">Rituales poderosos para unir dos almas y consolidar el vínculo desde la energía del amor eterno. Si tu relación se tambalea, un amarre bien canalizado restaura la conexión profunda que creías perdida.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20necesito%20informaci%C3%B3n%20sobre%20amarres%20de%20amor" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-altar-esoterico-con-virgen-de-guadalupe-invertida.webp" alt="Altar esotérico con Virgen para brujería ritual" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Brujería</h3>
+                        <p class="slider__card-text">Trabajos de brujería seria, con linaje y respeto por las fuerzas que se invocan. No todo ritual es igual: aquí se obra con conocimiento ancestral, ética y discreción absoluta para tu protección.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20saber%20m%C3%A1s%20sobre%20trabajos%20de%20brujer%C3%ADa" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-pareja-forma-corazon-de-luz.webp" alt="Pareja formando corazón de luz para trabajos de brujería" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Trabajos de brujería</h3>
+                        <p class="slider__card-text">Cada trabajo es único y personalizado. Analizo tu caso, preparo el ritual adecuado y lo ejecuto con intención pura. Así se logra lo que otros no pueden: mover la energía a tu favor.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20consultar%20por%20trabajos%20de%20brujer%C3%ADa%20personalizados" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-altar-esoterico-con-figuras-y-velas-3.webp" alt="Altar esotérico con figuras para brujos y hechiceros" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Brujos y hechiceros</h3>
+                        <p class="slider__card-text">No todos los que dicen ser brujos lo son de verdad. Yo vengo de un linaje de curanderos espirituales con más de dos décadas de servicio real. La diferencia se nota en los resultados.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20busco%20brujos%20de%20confianza%20para%20consulta" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__dots" id="dots1"></div>
+        </div>
+    </section>
+
+    <!-- SOBRE EL MAESTRO + UBICACIÓN CATEMACO -->
+    <!-- retirado por el maquetador -->
+<section class="section about reveal" id="sobre-el-maestro">
+        <style>
+            #sobre-el-maestro {
+                overflow: hidden;
+            }
+
+            #sobre-el-maestro .about__content {
+                width: min(100%, 1160px);
+                margin-inline: auto;
+                display: grid;
+                grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+                align-items: center;
+                gap: clamp(1.25rem, 4vw, 3rem);
+            }
+
+            #sobre-el-maestro .about__img {
+                display: block;
+                width: 100% !important;
+                max-width: 520px;
+                height: clamp(320px, 42vw, 560px) !important;
+                aspect-ratio: 5 / 6;
+                justify-self: center;
+                border-radius: 18px;
+                object-fit: cover !important;
+                object-position: center !important;
+                box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+            }
+
+            #sobre-el-maestro .about__text {
+                min-width: 0;
+                font-size: clamp(1rem, 1.5vw, 1.08rem);
+                line-height: 1.75;
+            }
+
+            #sobre-el-maestro .about__text p {
+                margin: 0 0 1rem;
+            }
+
+            #sobre-el-maestro .about__text p:last-of-type {
+                margin-bottom: 0;
+            }
+
+            #sobre-el-maestro .location-badge {
+                display: inline-flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.25rem;
+                max-width: 100%;
+                line-height: 1.45;
+                border-radius: 999px;
+                padding: 0.65rem 0.95rem;
+                word-break: normal;
+                overflow-wrap: anywhere;
+            }
+
+            @media (max-width: 900px) {
+                #sobre-el-maestro .about__content {
+                    grid-template-columns: 1fr;
+                    text-align: left;
+                }
+
+                #sobre-el-maestro .about__img {
+                    max-width: min(100%, 560px);
+                    height: clamp(300px, 70vw, 520px) !important;
+                }
+
+                #sobre-el-maestro .about__text {
+                    width: min(100%, 720px);
+                    margin-inline: auto;
+                }
+            }
+
+            @media (max-width: 520px) {
+                #sobre-el-maestro .about__content {
+                    gap: 1.1rem;
+                }
+
+                #sobre-el-maestro .about__img {
+                    border-radius: 14px;
+                    height: clamp(260px, 82vw, 420px) !important;
+                }
+
+                #sobre-el-maestro .location-badge {
+                    width: 100%;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 14px;
+                }
+            }
+        </style>
+        <h2 class="section__title">Sobre el Maestro Sebastián</h2>
+        <div class="divider"></div>
+        <div class="about__content">
+            <img style="object-fit:cover;object-position:center;width:min(100%,1000px);height:auto" src="/amarresdeamor/optimizado/ag-161324027963/maq-1784004941653-1-chaman-con-altar-de-ofrendas.webp" alt="Maestro Sebastián en ritual esotérico con incienso" width="1000" height="1200" class="about__img" loading="lazy" decoding="async">
+            <div class="about__text">
+                <p><strong>Desde hace más de dos décadas, dedico mi vida al servicio espiritual.</strong> Guío a personas que buscan respuestas, amor y propósito con respeto, ética y poder espiritual verdadero. Cada consulta es única y cada ritual es realizado con intención pura y energía divina. No hay problema sin solución cuando existe fe, energía y la guía correcta.</p>
+                <p><strong>Mi linaje viene de Catemaco, Veracruz</strong> — tierra de brujos y curanderos ancestrales. Allí aprendí el oficio de mis mayores, y desde entonces he atendido a más de cinco mil personas en Estados Unidos y Latinoamérica. Trabajo con discreción absoluta: lo que compartes conmigo se queda entre tú, yo y las fuerzas que invocamos. Si estás listo para dejar atrás la espera y tomar las riendas de tu destino, <strong>estoy aquí para caminar contigo.</strong></p>
+                <div class="location-badge" style="margin-top:8px;">
+                    † <strong>Catemaco, Veracruz</strong> · Consulta online y presencial
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRABAJOS DE AMOR EFECTIVOS + CÓMO FUNCIONA -->
+    <section class="section reveal" id="como-funciona">
+        <h2 class="section__title">Así obran los trabajos de amor efectivos</h2>
+        <p class="section__subtitle">No se trata de magia de fantasía. Se trata de energía, intención y un maestro que sabe canalizarla. Así funciona el proceso cuando trabajas conmigo.</p>
+        <div class="divider"></div>
+        <div class="steps">
+            <div class="steps__item">
+                <h4>Cuéntame tu situación sin filtros</h4>
+                <p>Me escribes por WhatsApp, me cuentas qué te duele, qué deseas y qué has intentado. Te escucho de verdad. La consulta inicial es gratuita y sin compromiso.</p>
+            </div>
+            <div class="steps__item">
+                <h4>Preparo tu ritual con intención pura</h4>
+                <p>Analizo tu caso y diseño el trabajo espiritual que necesitas: amarre, limpieza, reconciliación o protección. Cada ritual es único, hecho a tu medida con elementos consagrados.</p>
+            </div>
+            <div class="steps__item">
+                <h4>Ves los resultados y recuperas tu poder</h4>
+                <p>La energía se mueve. El amor regresa, los bloqueos se disuelven y tú vuelves a sentirte dueño de tu vida. Te acompaño en cada paso del camino.</p>
+            </div>
+        </div>
+    </section><section id="opiniones-clientes"><style>
+.gmw-wrap{--g-bg:#1b1b1c;--g-card:#202124;--g-line:#2e2f31;--g-tx:#e8eaed;--g-sub:#9aa0a6;--g-teal:#7ec8ca;--g-gold:#fbbc04;
+  box-sizing:border-box;width:100%;max-width:100%;overflow-x:hidden;
+  -webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none}
+.gmw-wrap *,.gmw-wrap *::before,.gmw-wrap *::after{box-sizing:border-box}
+/* 🛡️ Blindaje: la landing no debe deformar el bloque. */
+.gmw-card,.gmw-card *{text-transform:none;letter-spacing:normal;word-spacing:normal;font-style:normal;
+  font-variant:normal;text-shadow:none;text-indent:0;text-decoration:none;animation:none;transition:none;line-height:inherit;
+  font-family:Roboto,"Google Sans","Helvetica Neue",Arial,sans-serif}
+/* El ancho SIEMPRE manda la pantalla: la fila de chips es más ancha que un
+   móvil y, sin estos topes, empujaba toda la tarjeta fuera del viewport. */
+.gmw-card{position:relative;width:100%;max-width:520px;min-width:0;margin:0 auto;background:var(--g-bg);color:var(--g-tx);
+  border-radius:16px;overflow:hidden;line-height:1.45;text-align:left;
+  box-shadow:0 12px 34px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.05)}
+.gmw-head{padding:14px 16px 0}
+.gmw-title{font-size:21px;font-weight:500;letter-spacing:.2px}
+.gmw-tabs{display:flex;gap:22px;margin-top:12px;border-bottom:1px solid var(--g-line);font-size:13.5px;color:var(--g-sub);overflow:hidden}
+.gmw-tabs span{padding-bottom:11px;white-space:nowrap}
+.gmw-tabs .on{color:var(--g-teal);box-shadow:inset 0 -3px 0 var(--g-teal)}
+/* nota media + barras */
+.gmw-score{display:flex;align-items:center;gap:18px;padding:16px 16px 14px}
+.gsc-l{text-align:center;flex:none}
+.gsc-n{font-size:38px;font-weight:400;line-height:1}
+.gsc-s{display:flex;gap:1px;justify-content:center;margin:4px 0 2px}
+.gsc-t{font-size:12.5px;color:var(--g-sub)}
+.gsc-bars{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0}
+.gbar{display:block;height:7px;border-radius:4px;background:#3c4043;overflow:hidden}
+.gbarf{display:block;height:100%;background:var(--g-gold);border-radius:4px}
+/* chips */
+.gmw-chips{display:flex;gap:8px;padding:0 16px 14px;overflow:hidden}
+.gchip{display:inline-flex;align-items:center;gap:5px;flex:none;padding:7px 13px;border-radius:18px;
+  background:#303134;color:var(--g-tx);font-size:13px;white-space:nowrap}
+.gchip-i{padding:7px 9px;background:transparent;color:var(--g-sub)}
+.gchip.on{background:#37474a;color:#cfeeee}
+/* opiniones */
+.gmw-list{border-top:1px solid var(--g-line)}
+.grev{padding:14px 16px 12px;border-bottom:1px solid var(--g-line)}
+.grev:last-child{border-bottom:0}
+.grh{display:flex;align-items:center;gap:11px}
+.gav{width:38px;height:38px;border-radius:50%;flex:none;overflow:hidden;display:block;background:#3c4043}
+.gav img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.gav-l{display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;font-weight:500}
+.grn{flex:1;min-width:0}
+.gnm{font-size:14.5px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gsub{font-size:12.5px;color:var(--g-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gdots{color:var(--g-sub);flex:none;display:flex}
+.grs{display:flex;align-items:center;gap:9px;margin:9px 0 7px}
+/* Las estrellas van PEGADAS entre sí, como en la app; el hueco es solo con la
+   antigüedad de la opinión. */
+.gstars{display:inline-flex;gap:0;line-height:0}
+.grs .gst{display:block}
+.gago{font-size:12.5px;color:var(--g-sub)}
+.grt{position:relative;margin:0;font-size:14.2px;line-height:1.5;color:var(--g-tx);text-align:left;
+  text-wrap:pretty;overflow-wrap:break-word;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+/* El «más» de la app: se apoya al final del recorte, sobre el fondo del bloque. */
+.gmas{position:absolute;right:0;bottom:0;padding-left:16px;color:var(--g-sub);font-size:14.2px;
+  text-decoration:underline;background:linear-gradient(90deg,transparent,var(--g-bg) 30%,var(--g-bg));cursor:pointer}
+/* 👆 Al tocar la opinión se despliega COMPLETA (y se vuelve a plegar). Es la
+   única interacción viva del bloque: el resto sigue bloqueado. */
+.grev{cursor:pointer}
+.grev.abierta .grt{-webkit-line-clamp:unset;display:block;overflow:visible}
+.grev.abierta .gmas{position:static;padding-left:6px;background:none}
+.gph{display:flex;gap:6px;margin-top:9px}
+.gph-i{display:block;width:84px;height:84px;border-radius:9px;overflow:hidden;flex:none;background:#303134}
+.gph-i img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.gract{display:flex;align-items:center;gap:12px;margin-top:10px;color:var(--g-sub)}
+.ghrt{display:flex}
+.grx{display:inline-flex;align-items:center;gap:5px}
+.gemo{font-size:13px}
+.gnum{font-size:12.5px;color:var(--g-sub)}
+/* anti-copia */
+.gmw-guard{position:absolute;inset:0;z-index:5;background:transparent}
+.gmw-card img,.gmw-card svg{-webkit-user-drag:none;user-drag:none;pointer-events:none}
+@media (max-width:420px){.gmw-card{border-radius:14px}.gsc-n{font-size:34px}.gph-i{width:74px;height:74px}}
+
+.gmw-wrap{padding:20px 0 24px;text-align:center}
+.gmw-title-h,.gmw-galhead{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-weight:700;font-size:16px;color:inherit;opacity:.92;margin:0 auto 14px;max-width:90%}
+.gmw-viewport{overflow:hidden;max-width:100%}
+.gmw-track{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.gmw-dots{display:flex;gap:6px;justify-content:center;margin-top:14px}
+.gmw-dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.25}
+.gmw-dot.on{opacity:.9;transform:scale(1.25)}
+.gmw-galhead{display:inline-flex;align-items:center;gap:8px;cursor:pointer;background:none;border:0;padding:6px 10px}
+.gmw-chev{font-size:13px;opacity:.7}
+.gmw-galbody{overflow:hidden;transition:max-height .45s ease}
+.gmw-grid{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;padding:8px 10px 4px;max-width:100%}
+/* min-width:0 es lo que impide que el contenido ancho (los chips) estire la
+   celda por encima del ancho de la pantalla. */
+.gmw-cell{flex:1 1 300px;min-width:0;max-width:520px}
+.gmw-slide{min-width:100%;max-width:100%;padding:0 10px}
+</style><div class="gmw-wrap" data-fmt="list" data-secs="7"><div class="gmw-title-h">Opiniones de nuestros consultantes</div><div class="gmw-grid"><div class="gmw-cell"><div class="gmw-card"><div class="gmw-head"><div class="gmw-title">Sebastián</div><div class="gmw-tabs"><span>Información</span><span class="on">Opiniones</span><span>Fotos</span><span>Novedades</span></div></div><div class="gmw-score"><div class="gsc-l"><div class="gsc-n">4,7</div><div class="gsc-s"><svg class="gst" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><defs><linearGradient id="gh"><stop offset="50%" stop-color="#fbbc04"></stop><stop offset="50%" stop-color="#5f6368"></stop></linearGradient></defs><path fill="url(#gh)" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></div><div class="gsc-t">(63)</div></div><div class="gsc-bars"><span class="gbar"><span class="gbarf" style="width:100%"></span></span><span class="gbar"><span class="gbarf" style="width:2%"></span></span><span class="gbar"><span class="gbarf" style="width:2%"></span></span><span class="gbar"><span class="gbarf" style="width:2%"></span></span><span class="gbar"><span class="gbarf" style="width:2%"></span></span></div></div><div class="gmw-chips"><span class="gchip gchip-i"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.7.7l.3.3v.8l5 5 1.5-1.5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9"></path></svg></span><span class="gchip"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M3 17v2h6v-2zM3 5v2h10V5zm10 16v-2h8v-2h-8v-2h-2v6zM7 9v2H3v2h4v2h2V9zm14 4v-2H11v2zm-6-4h2V7h4V5h-4V3h-2z"></path></svg> Filtros</span><span class="gchip on"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"></path></svg> Relevantes</span><span class="gchip">Recientes</span><span class="gchip">Más altas</span></div><div class="gmw-list"><article class="grev"><div class="grh"><span class="gav gav-l" style="background:#ef6c00">S</span><div class="grn"><div class="gnm">Sonia Campos</div><div class="gsub">16 opiniones</div></div><span class="gdots"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div><div class="grs"><span class="gstars"><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span><span class="gago">Hace un mes</span></div><p class="grt">Funciono el amarre, mi ex volvio rogandome. Gracias maestro Josue.</p><div class="gract"><span class="ghrt"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"></path></svg></span><span class="grx"><span class="gemo">🙏❤️</span><span class="gnum">2</span></span></div></article><article class="grev"><div class="grh"><span class="gav gav-l" style="background:#455a64">I</span><div class="grn"><div class="gnm">Ignacio Ramírez</div><div class="gsub">11 opiniones</div></div><span class="gdots"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div><div class="grs"><span class="gstars"><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span><span class="gago">Hace 2 años</span></div><p class="grt">Llevaba tiempo sintiendome agotada y con malas rachas, como si alguien me hubiera hecho algo. Le conte al maestro, me hizo una limpieza espiritual fuerte y de verdad que senti como se me quitaba una carga. Ahora estoy mucho mas tranquila y las cosas van mejorando.<span class="gmas">más</span></p><div class="gph"><span class="gph-i"><img src="https://googleads.mkinnovador.com/banco/fachada-de-templo-de-sanacion-espiritual.webp" alt="" draggable="false" loading="lazy"></span><span class="gph-i"><img src="https://googleads.mkinnovador.com/banco/ritual-con-puro-y-velas.webp" alt="" draggable="false" loading="lazy"></span><span class="gph-i"><img src="https://googleads.mkinnovador.com/banco/banner-amarres-amor-mismo-sexo.webp" alt="" draggable="false" loading="lazy"></span></div><div class="gract"><span class="ghrt"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"></path></svg></span><span class="grx"><span class="gemo">🙏</span><span class="gnum">15</span></span></div></article><article class="grev"><div class="grh"><span class="gav gav-l" style="background:#ef6c00">C</span><div class="grn"><div class="gnm">Claudia Vargas</div><div class="gsub">6 opiniones</div></div><span class="gdots"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div><div class="grs"><span class="gstars"><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span><span class="gago">Hace 8 años</span></div><p class="grt">Se sintio un ambiente pesado en la casa desde que nos mudamos. Josue hizo la limpieza y todo volvio a la normalidad. Gracias 🙏</p><div class="gract"><span class="ghrt"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"></path></svg></span><span class="grx"><span class="gemo">👍</span><span class="gnum">8</span></span></div></article><article class="grev"><div class="grh"><span class="gav gav-l" style="background:#c2185b">R</span><div class="grn"><div class="gnm">Ramón Rojas</div><div class="gsub">Local Guide · 1 opiniones</div></div><span class="gdots"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div><div class="grs"><span class="gstars"><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span><span class="gago">Hace un año</span></div><p class="grt">Despues de meses sin encontrar chamba, hable con el Maestro. Hizo un trabajo para abrirme los caminos y a los pocos dias me llamaron de un lugar donde ya habia ido a entrevista. Excelente persona.<span class="gmas">más</span></p><div class="gract"><span class="ghrt"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"></path></svg></span></div></article><article class="grev"><div class="grh"><span class="gav gav-l" style="background:#ef6c00">T</span><div class="grn"><div class="gnm">Teresa Hernández</div><div class="gsub">14 opiniones</div></div><span class="gdots"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div><div class="grs"><span class="gstars"><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span><span class="gago">Hace 7 años</span></div><p class="grt">Todo me salia mal hasta que me hizo el trabajo. Ahora las cosas fluyen mejor. ✨</p><div class="gph"><span class="gph-i"><img src="https://googleads.mkinnovador.com/banco/banner-amarres-amor-mismo-sexo.webp" alt="" draggable="false" loading="lazy"></span><span class="gph-i"><img src="https://googleads.mkinnovador.com/banco/cupido-sensual-con-amarres-sexuales.webp" alt="" draggable="false" loading="lazy"></span><span class="gph-i"><img src="https://googleads.mkinnovador.com/banco/imagen-completamente-negra.webp" alt="" draggable="false" loading="lazy"></span></div><div class="gract"><span class="ghrt"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"></path></svg></span><span class="grx"><span class="gemo">✨</span><span class="gnum">14</span></span></div></article><article class="grev"><div class="grh"><span class="gav gav-l" style="background:#c2185b">F</span><div class="grn"><div class="gnm">Fabián Ibarra</div><div class="gsub">9 opiniones</div></div><span class="gdots"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div><div class="grs"><span class="gstars"><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg><svg class="gst" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="#fbbc04" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg></span><span class="gago">Hace 5 meses</span></div><p class="grt">Mi pareja se habia ido con otra persona. Yo estaba destrozada pero el Maestro Josue me ayudo a recuperarlo. Ahora el no se quiere separar de mi ni un segundo. Muy agradecida.<span class="gmas">más</span></p><div class="gract"><span class="ghrt"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 20.3 4.6 13a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13z"></path></svg></span><span class="grx"><span class="gemo">🙏❤️</span><span class="gnum">7</span></span></div></article></div><span class="gmw-guard" aria-hidden="true"></span></div></div></div></div><script>(function(){var W=document.querySelectorAll('.gmw-wrap');if(!W.length)return;
+  function stop(e){e.preventDefault();e.stopPropagation();return false}
+  W.forEach(function(w){['contextmenu','dragstart','selectstart','copy','cut'].forEach(function(ev){w.addEventListener(ev,stop)});
+    /* 👆 Desplegar la opinión completa. La capa anti-copia se come los clics,
+       así que se localiza la reseña por la posición del toque. Al abrirla, el
+       «más» pasa a «menos». */
+    w.querySelectorAll('.gmw-card').forEach(function(card){
+      card.addEventListener('click',function(ev){
+        var y=ev.clientY,revs=card.querySelectorAll('.grev');
+        for(var i=0;i<revs.length;i++){var r=revs[i].getBoundingClientRect();
+          if(y>=r.top&&y<=r.bottom){var ab=revs[i].classList.toggle('abierta');
+            var m=revs[i].querySelector('.gmas');if(m)m.textContent=ab?'menos':'más';break}}
+      })});
+    var head=w.querySelector('.gmw-galhead');var body=w.querySelector('.gmw-galbody');
+    if(head&&body){head.addEventListener('click',function(){var o=w.classList.toggle('gmw-open');body.style.maxHeight=o?body.scrollHeight+'px':'0px';var c=w.querySelector('.gmw-chev');if(c)c.textContent=o?'▴':'▾'})}
+    var track=w.querySelector('.gmw-track');var slides=w.querySelectorAll('.gmw-slide');
+    if(track&&slides.length>1){var i=0;var s=Number(w.getAttribute('data-secs'))||7;
+      setInterval(function(){i=(i+1)%slides.length;track.style.transform='translateX(-'+(i*100)+'%)';
+        w.querySelectorAll('.gmw-dot').forEach(function(d,k){d.className='gmw-dot'+(k===i?' on':'')})},s*1000)}
+  });})();</script></section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section reveal" id="testimonios">
+        <h2 class="section__title">Historias reales, resultados reales</h2>
+        <p class="section__subtitle">Personas que dieron el paso y hoy viven otra realidad. Estos son sus testimonios.</p>
+        <div class="divider"></div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <span class="testimonial__first">La verdad yo no creía en estas cosas, pero estaba tan desesperada que decidí intentarlo.</span> Llevaba ocho meses separada de mi pareja y ya había ido a terapia, había hablado con su familia… nada funcionaba. A las tres semanas del ritual de amarre que hizo el Maestro Sebastián, él me escribió de la nada. Hoy estamos juntos otra vez. No sé cómo explicarlo, pero funcionó.
+                <div class="testimonial__author"><span class="testimonial__stars">★★★★★</span> — Yolanda R., Houston, TX</div>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial__first">Se lo juro que yo ya había gastado dinero con otros brujos y nada.</span> Llegué al Maestro Sebastián por recomendación de una amiga. Hizo un trabajo de brujería para limpiar una energía negativa que me estaban echando y a los pocos días dejé de tener pesadillas y mi negocio empezó a levantar. Este hombre sí sabe lo que hace.
+                <div class="testimonial__author"><span class="testimonial__stars">★★★★★</span> — Carlos M., Phoenix, AZ</div>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial__first">Tenía mi vida estancada y sin dirección.</span> Hoy tengo paz, trabajo y claridad. La consulta de brujería con el Maestro Sebastián me abrió los ojos sobre cosas que ni yo misma veía. Recomiendo su honestidad.
+                <div class="testimonial__author"><span class="testimonial__stars">★★★★★</span> — Lucía G., Orlando, FL</div>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial__first">Lo que más valoro es que nunca me juzgó.</span> Fui con mucha vergüenza por mi situación amorosa — un hombre casado del que no podía despegarme. El Maestro Sebastián me orientó sin moralismos, hizo un trabajo de reconciliación con mucho respeto y las cosas se acomodaron de una forma que jamás imaginé.
+                <div class="testimonial__author"><span class="testimonial__stars">★★★★★</span> — Daniela R., Charlotte, NC</div>
+            </div>
+            <div class="testimonial">
+                <span class="testimonial__first">Mi hermana me dijo "estás loca" cuando le conté.</span> Pero yo necesitaba respuestas. La consulta con el Maestro Sebastián fue reveladora: supo decirme exactamente quién me estaba haciendo brujería y cómo cortarlo. En menos de un mes mi salud mejoró y la relación tóxica que tenía se disolvió sola. Agradecida de por vida.
+                <div class="testimonial__author"><span class="testimonial__stars">★★★★★</span> — Maribel S., Fresno, CA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER 2: SERVICIOS ADICIONALES -->
+    <section class="section reveal" id="servicios-adicionales">
+        <h2 class="section__title">Otros trabajos del maestro</h2>
+        <p class="section__subtitle">Cada situación requiere un abordaje distinto. Estos rituales complementan mi práctica espiritual y responden a las búsquedas más frecuentes de quienes me consultan.</p>
+        <div class="divider"></div>
+        <div class="slider-wrapper">
+            <div class="slider" id="slider2" role="region" aria-label="Servicios adicionales">
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-craneo-decorado-con-velas-y-flores.webp" alt="Cráneo decorado con velas para hacer brujería" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Hacer brujería</h3>
+                        <p class="slider__card-text">Si necesitas un trabajo serio, bien ejecutado y con respeto por las fuerzas oscuras y luminosas, estás en el lugar correcto. No improviso: cada paso del ritual está respaldado por años de oficio.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20saber%20c%C3%B3mo%20hacer%20brujer%C3%ADa%20con%20ayuda%20profesional" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-veladoras-encendidas-para-ritual.webp" alt="Veladoras encendidas para hechizos y brujería" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Hechizos y brujería</h3>
+                        <p class="slider__card-text">Hechizos canalizados con precisión para atraer, proteger o disolver. Combino elementos rituales consagrados con la lectura energética de tu caso para que el hechizo dé en el blanco.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20necesito%20informaci%C3%B3n%20sobre%20hechizos%20y%20brujer%C3%ADa" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-sombras-de-pareja-formando-corazon.webp" alt="Sombras de pareja formando corazón para brujería del amor" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">Brujería del amor</h3>
+                        <p class="slider__card-text">Rituales específicos para el amor: atraer a esa persona especial, despertar su interés y deseo, o restaurar la armonía en relaciones que han sufrido distanciamiento. La energía del amor es la más poderosa.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20consultar%20sobre%20brujer%C3%ADa%20del%20amor" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="slider__card">
+                    <img src="/amarresdeamor/optimizado/ag-161324027963/banco-lamparas-votivas-y-flores-rituales.webp" alt="Lámparas votivas para saber si te están haciendo brujería" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="slider__card-body">
+                        <h3 class="slider__card-title">¿Te están haciendo brujería?</h3>
+                        <p class="slider__card-text">Si sospechas que alguien te está trabajando, no te quedes con la duda. Puedo leer tu energía, identificar si hay un ataque y cortarlo de raíz antes de que sea tarde. La detección temprana lo es todo.</p>
+                        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20creo%20que%20me%20est%C3%A1n%20haciendo%20brujer%C3%ADa%20y%20necesito%20ayuda" class="slider__card-cta">Escríbeme por WhatsApp →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__dots" id="dots2"></div>
+        </div>
+        <!-- Servicios adicionales sin tarjeta -->
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;font-size:0.8rem;color:var(--text-dim);justify-content:center;">
+            <span style="background:var(--card);padding:5px 10px;border-radius:4px;">† Cómo dominar un hombre</span>
+            <span style="background:var(--card);padding:5px 10px;border-radius:4px;">† Curanderos espirituales</span>
+            <span style="background:var(--card);padding:5px 10px;border-radius:4px;">† Brujo gratis para hacer preguntas</span>
+            <span style="background:var(--card);padding:5px 10px;border-radius:4px;">† Brujos cerca de mí</span>
+            <span style="background:var(--card);padding:5px 10px;border-radius:4px;">† Brujos consulta</span>
+            <span style="background:var(--card);padding:5px 10px;border-radius:4px;">† Consultas de brujos</span>
+        </div>
+    </section>
+
+    <!-- MÉTODOS DE PAGO -->
+    <section class="section reveal" id="pagos">
+        <h2 class="section__title">Métodos de pago</h2>
+        <p class="section__subtitle">Facilidad y discreción para que solo te preocupes por lo importante: tu transformación.</p>
+        <div class="divider"></div>
+        <div class="payments">
+            <span>Efectivo</span><span>Transferencia bancaria</span><span>Zelle</span><span>PayPal</span><span>Western Union</span><span>MoneyGram</span>
+        </div>
+        <p style="text-align:center;font-size:0.75rem;color:var(--text-dim);margin-top:10px;">La consulta inicial es <strong style="color:#e0c090;">gratuita y sin compromiso</strong>. Solo pagas si decides avanzar con un ritual.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section reveal" id="faq">
+        <h2 class="section__title">Preguntas frecuentes</h2>
+        <p class="section__subtitle">Respuestas directas a lo que más me preguntan antes de una consulta.</p>
+        <div class="divider"></div>
+        <div class="faq">
+            <details>
+                <summary>¿Cómo sé si realmente me están haciendo brujería?</summary>
+                <div>Hay señales que no mienten: mala racha repentina, insomnio sin causa, dolores que los médicos no explican, relaciones que se rompen de la noche a la mañana. En consulta puedo leer tu energía y confirmarlo con precisión. No te quedes con la duda.</div>
+            </details>
+            <details>
+                <summary>¿Funciona un amarre de amor si la otra persona está lejos?</summary>
+                <div>La energía no entiende de distancias. Un amarre bien ejecutado trabaja sobre el alma y el vínculo energético, no sobre el cuerpo físico. He realizado trabajos efectivos con parejas en diferentes estados e incluso en diferentes países.</div>
+            </details>
+            <details>
+                <summary>¿Qué diferencia hay entre un brujo y un curandero espiritual?</summary>
+                <div>El curandero se enfoca en sanar y limpiar energías; el brujo, en transformar realidades mediante rituales. Yo integro ambas tradiciones: curo tu campo energético primero y luego obro el ritual que necesitas, sea de amor, protección o dominio.</div>
+            </details>
+            <details>
+                <summary>¿Hay garantía en los trabajos de brujería?</summary>
+                <div>La brujería seria no promete lo imposible, pero cuando se hace con conocimiento y respeto, los resultados hablan solos. Mi historial de más de cinco mil consultas y veinticinco años de oficio me respalda. Lo que sí te garantizo es honestidad: si tu caso no es viable, te lo diré desde el primer momento.</div>
+            </details>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-final reveal" id="cta-final">
+        <h2>† Basta de esperar a que el destino decida por ti</h2>
+        <p>Toma hoy la decisión que llevas meses posponiendo. El Maestro Sebastián está listo para escucharte, orientarte y obrar el ritual que transformará tu vida.</p>
+        <a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20estoy%20listo%2Flista%20para%20mi%20consulta%20gratuita%20y%20tomar%20las%20riendas%20de%20mi%20destino" class="cta-final__btn">Escríbele al Maestro Sebastián ahora</a>
+        <p style="font-size:0.72rem;color:var(--text-dim);margin-top:12px;">Respuesta inmediata · 100% confidencial · Consulta inicial gratuita</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal">
+        <p>© 2026 <span>Maestro Sebastián</span> · Guía espiritual. Todos los derechos reservados.</p>
+        <p style="margin-top:4px;">Sitio protegido con energía y sabiduría ancestral · † Catemaco, Veracruz</p>
+    </footer>
+
+    <script>
+        (function() {
+            // ========== REVEAL ON SCROLL ==========
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+            reveals.forEach((el, i) => {
+                el.style.transitionDelay = (i * 0.03) + 's';
+                observer.observe(el);
+            });
+
+            // ========== AUTOPLAY SLIDERS ==========
+            function setupSlider(sliderId, dotsId, intervalMs) {
+                const slider = document.getElementById(sliderId);
+                const dotsContainer = document.getElementById(dotsId);
+                if (!slider || !dotsContainer) return;
+                const cards = slider.querySelectorAll('.slider__card');
+                if (cards.length === 0) return;
+
+                // Crear dots
+                dotsContainer.innerHTML = '';
+                cards.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    dot.className = 'slider__dot';
+                    dot.setAttribute('role', 'button');
+                    dot.setAttribute('aria-label', 'Ir a servicio ' + (i + 1));
+                    dot.addEventListener('click', () => {
+                        cards[i].scrollIntoView({ behavior: 'smooth', block: 'nearest',
+                            inline: 'center' });
+                    });
+                    dotsContainer.appendChild(dot);
+                });
+                const dots = dotsContainer.querySelectorAll('.slider__dot');
+
+                function updateDots() {
+                    const scrollLeft = slider.scrollLeft;
+                    const cardWidth = cards[0].offsetWidth + 12; // gap
+                    const activeIndex = Math.round(scrollLeft / cardWidth);
+                    dots.forEach((d, i) => {
+                        d.classList.toggle('active', i === activeIndex);
+                    });
+                }
+
+                slider.addEventListener('scroll', updateDots, { passive: true });
+                updateDots();
+
+                let autoplayPaused = false;
+                let pauseTimeout;
+                const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                function advanceSlide() {
+                    if (reducedMotion || autoplayPaused) return;
+                    const cardWidth = cards[0].offsetWidth + 12;
+                    const currentScroll = slider.scrollLeft;
+                    const maxScroll = slider.scrollWidth - slider.clientWidth;
+                    let nextScroll = currentScroll + cardWidth;
+                    if (nextScroll >= maxScroll - 4) {
+                        nextScroll = 0;
+                    }
+                    slider.scrollTo({ left: nextScroll, behavior: 'smooth' });
+                }
+
+                if (!reducedMotion) {
+                    let autoplay = setInterval(advanceSlide, intervalMs);
+
+                    slider.addEventListener('touchstart', () => {
+                        autoplayPaused = true;
+                        clearTimeout(pauseTimeout);
+                        pauseTimeout = setTimeout(() => { autoplayPaused = false; }, 10000);
+                    }, { passive: true });
+
+                    slider.addEventListener('mousedown', () => {
+                        autoplayPaused = true;
+                        clearTimeout(pauseTimeout);
+                        pauseTimeout = setTimeout(() => { autoplayPaused = false; }, 10000);
+                    });
+                }
+
+                // Initial dot state
+                setTimeout(updateDots, 200);
+            }
+
+            setupSlider('slider1', 'dots1', 5000);
+            setupSlider('slider2', 'dots2', 6500);
+        })();
+    </script>
+<script data-sendto="AW-682101450/_IirCMrNuM4cEMqVoMUC" src="https://googleads.mkinnovador.com/wa-tracker.js" defer=""></script>
+<script id="wa-maq-loader">(function(){if(/[?&]maquetador\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<!--WA-FAB:estrella-guia--><div class="wfab-astro"><style>
+.wfab-astro{position:fixed;right:18px;bottom:18px;z-index:99999}
+.wfab-astro .orb{position:absolute;inset:-10px;animation:wfabAstroOrbit 8s linear infinite;pointer-events:none}
+.wfab-astro .orb::before{content:'✦';position:absolute;top:-4px;left:50%;color:#fcd34d;font-size:14px;text-shadow:0 0 10px rgba(252,211,77,.95)}
+.wfab-astro a{display:inline-flex;align-items:center;gap:10px;height:62px;padding:0 26px 0 18px;border-radius:31px;background:linear-gradient(140deg,#25d366,#0d8a45);color:#fff;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:15px;font-weight:600;letter-spacing:-0.2px;white-space:nowrap;box-shadow:0 6px 24px rgba(13,138,69,.55),0 0 0 6px rgba(37,211,102,.12);animation:wfabAstroHalo 4s ease-in-out infinite;text-decoration:none}
+.wfab-astro a svg{flex-shrink:0}
+@keyframes wfabAstroOrbit{to{transform:rotate(360deg)}}
+@keyframes wfabAstroHalo{0%,100%{box-shadow:0 6px 24px rgba(13,138,69,.55),0 0 0 5px rgba(37,211,102,.1)}50%{box-shadow:0 6px 24px rgba(13,138,69,.6),0 0 0 12px rgba(37,211,102,.05)}}
+@media (prefers-reduced-motion:reduce){.wfab-astro *{animation:none!important}}
+@media (max-width:480px){.wfab-astro a{font-size:13px;padding:0 18px 0 14px;gap:7px;height:54px;border-radius:27px}.wfab-astro a svg{width:22px;height:22px}}
+</style><span class="orb"></span><a href="https://wa.me/19498917311?text=Hola%20Maestro%20Isidro%2C%20quiero%20mi%20consulta%20gratuita%20de%20orientaci%C3%B3n%20espiritual" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>Consulta Gratis por WhatsApp</a></div><!--/WA-FAB-->
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+
+<!--CALL-FAB:marino-pestana--><div class="cfab-mari"><style>
+.cfab-mari{position:fixed!important;top:50%!important;bottom:auto!important;left:auto!important;right:0!important;transform:translateY(-50%);z-index:2147483000;line-height:0;pointer-events:auto}
+.cfab-mari a{-webkit-tap-highlight-color:transparent}
+@media(min-width:768px){.cfab-mari{display:none!important}}
+@media(prefers-reduced-motion:reduce){.cfab-mari,.cfab-mari *,.cfab-mari::before,.cfab-mari::after{animation:none!important}}
+.cfab-mari a{display:flex;align-items:center;gap:8px;padding:12px 12px 12px 15px;border-radius:999px 0 0 999px;background:linear-gradient(150deg,#0e7490,#164e63);color:#ecfeff;text-decoration:none;font:700 13px/1 'Segoe UI',system-ui,sans-serif;box-shadow:-6px 8px 24px rgba(0,0,0,.4)}
+.cfab-mari .ci{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.16);flex:0 0 auto}
+</style><a href="tel:+19498917311" aria-label="Llamar por teléfono" rel="nofollow"><span class="ci"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.2 3h3.3c.5 0 .9.34 1.01.83l.86 3.4c.09.37-.02.76-.3 1.02L7.1 10.2c1.3 2.6 3.4 4.7 6 6l1.95-1.97c.26-.27.65-.38 1.02-.29l3.4.86c.49.12.83.55.83 1.05v3.3c0 .61-.5 1.11-1.11 1.08C10.35 19.83 4.17 13.65 3.12 4.11 3.09 3.5 3.59 3 4.2 3Z"/></svg></span><span>Llamar</span></a></div><!--/CALL-FAB-->
+</body></html>

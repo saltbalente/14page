@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brujos auténticos · Consulta espiritual gratuita con el Maestro Belisario. Amarres de amor, limpieza energética y rituales de alta brujería. Resultados reales, pago al ver resultados.">
+    <title>Brujos Expertos · Maestro Belisario | Consulta Gratis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --negro-abismal: #030303;
+            --negro-panel: #0d0c09;
+            --champan: #e9ddb8;
+            --dorado: #d4a017;
+            --dorado-claro: #f0cd6a;
+            --dorado-oscuro: #b8860b;
+            --dorado-medio: #6b5010;
+            --degradado-dorado: linear-gradient(105deg, #6b5010 0%, #d4a017 25%, #fff3c4 50%, #d4a017 75%, #6b5010 100%);
+            --sombra-dorada: 0 4px 24px rgba(212, 160, 23, .35);
+            --borde-dorado: 1px solid rgba(212, 160, 23, .45);
+            --fuente-titulos: 'Prata', 'Georgia', 'Times New Roman', serif;
+            --fuente-cuerpo: 'Outfit', 'Segoe UI', 'Helvetica Neue', sans-serif;
+            --radio: 14px;
+            --transicion: 0.2s ease-out;
+            --max-ancho: 600px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: transparent;
+            background: var(--negro-abismal);
+        }
+
+        body {
+            font-family: var(--fuente-cuerpo);
+            font-weight: 300;
+            background: var(--negro-abismal);
+            color: var(--champan);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .contenedor {
+            width: 100%;
+            max-width: var(--max-ancho);
+            margin: 0 auto;
+            padding: 0 18px;
+        }
+
+        /* HEADER STICKY */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            max-width: var(--max-ancho);
+            background: rgba(3, 3, 3, .94);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: var(--borde-dorado);
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .header-nombre {
+            font-family: var(--fuente-titulos);
+            font-size: clamp(0.9rem, 2.4vw, 1.1rem);
+            letter-spacing: 0.03em;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: destello-oro 6s ease-in-out infinite;
+            white-space: nowrap;
+        }
+        @keyframes destello-oro {
+            0%,
+            100% {
+                background-position: 0% center;
+            }
+            50% {
+                background-position: 200% center;
+            }
+        }
+        .header-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: #25D366;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 7px 13px;
+            border-radius: 22px;
+            text-decoration: none;
+            letter-spacing: 0.01em;
+            flex-shrink: 0;
+            transition: transform var(--transicion), box-shadow var(--transicion);
+            box-shadow: 0 3px 14px rgba(37, 211, 102, .28);
+        }
+        .header-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, .38);
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 38px 10px 32px;
+            overflow: hidden;
+            isolation: isolate;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 30%, rgba(212, 160, 23, .07) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--negro-panel);
+            border: var(--borde-dorado);
+            color: var(--dorado);
+            font-size: 0.78rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 18px;
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+        }
+        .hero h1 {
+            font-family: var(--fuente-titulos);
+            font-weight: 400;
+            font-size: clamp(1.7rem, 5.6vw, 2.4rem);
+            letter-spacing: 0.02em;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: destello-oro 6s ease-in-out infinite;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.25;
+        }
+        @supports not (-webkit-background-clip: text) {
+            .hero h1,
+            .header-nombre,
+            h2 {
+                color: var(--dorado);
+            }
+        }
+        .hero-sub {
+            font-size: 1rem;
+            color: #c9bfa0;
+            max-width: 460px;
+            margin: 0 auto 22px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.55;
+        }
+        .hero-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #f0cd6a 0%, #d4a017 40%, #b8860b 100%);
+            color: #030303;
+            font-weight: 800;
+            font-size: 1.05rem;
+            padding: 15px 34px;
+            border-radius: 40px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            position: relative;
+            z-index: 1;
+            box-shadow: var(--sombra-dorada);
+            animation: pulso-cta 2.5s ease-in-out infinite;
+            transition: transform var(--transicion);
+        }
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(212, 160, 23, .5);
+        }
+        @keyframes pulso-cta {
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 24px rgba(212, 160, 23, .35);
+            }
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 10px 36px rgba(212, 160, 23, .55);
+            }
+        }
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 28px;
+            position: relative;
+            z-index: 1;
+            font-size: 0.8rem;
+            color: #b8a87c;
+        }
+        .hero-badge-lev {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: var(--negro-panel);
+            padding: 7px 14px;
+            border-radius: 18px;
+            border: 1px solid rgba(180, 140, 60, .35);
+            animation: levitar 6.5s ease-in-out infinite;
+        }
+        .hero-badge-lev:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .hero-badge-lev:nth-child(2) {
+            animation-delay: 1.6s;
+        }
+        .hero-badge-lev:nth-child(3) {
+            animation-delay: 3.2s;
+        }
+        .hero-badge-lev:nth-child(4) {
+            animation-delay: 4.8s;
+        }
+        @keyframes levitar {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+        }
+
+        /* DESTELLOS ESQUINA */
+        .hero .destello {
+            position: absolute;
+            font-size: 1.3rem;
+            color: var(--dorado);
+            opacity: .5;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .hero .destello:nth-child(1) {
+            top: 10px;
+            left: 16px;
+        }
+        .hero .destello:nth-child(2) {
+            top: 10px;
+            right: 16px;
+        }
+        .hero .destello:nth-child(3) {
+            bottom: 10px;
+            left: 16px;
+        }
+        .hero .destello:nth-child(4) {
+            bottom: 10px;
+            right: 16px;
+        }
+
+        /* BARRA URGENCIA */
+        .urgencia {
+            background: #0f0e09;
+            border-top: 1px solid rgba(180, 140, 60, .3);
+            border-bottom: 1px solid rgba(180, 140, 60, .3);
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.85rem;
+            color: #c9b97a;
+            letter-spacing: 0.02em;
+        }
+
+        /* SECCIONES */
+        .seccion {
+            padding: 40px 0;
+            width: 100%;
+        }
+        .seccion h2 {
+            font-family: var(--fuente-titulos);
+            font-weight: 400;
+            font-size: clamp(1.35rem, 4.2vw, 1.75rem);
+            letter-spacing: 0.02em;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: destello-oro 6s ease-in-out infinite;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        @supports not (-webkit-background-clip: text) {
+            .seccion h2 {
+                color: var(--dorado);
+            }
+        }
+
+        /* DIVISOR DORADO */
+        .divisor {
+            width: 70%;
+            max-width: 240px;
+            height: 1px;
+            margin: 0 auto 32px;
+            background: linear-gradient(to right, transparent 0%, #d4a017 25%, #fff3c4 50%, #d4a017 75%, transparent 100%);
+        }
+
+        /* SOBRE EL MAESTRO */
+        .maestro-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 22px;
+            text-align: center;
+        }
+        .maestro-retrato {
+            width: 70%;
+            max-width: 280px;
+            aspect-ratio: 5/6;
+            max-height: 45vh;
+            object-fit: cover;
+            border-radius: var(--radio);
+            border: 2px solid rgba(212, 160, 23, .5);
+            box-shadow: 0 0 30px rgba(180, 130, 30, .18);
+        }
+        .maestro-texto {
+            max-width: 500px;
+            font-size: 0.95rem;
+            color: #c9bfa0;
+            line-height: 1.75;
+        }
+        .maestro-texto p+p {
+            margin-top: 14px;
+        }
+        .maestro-firma {
+            font-family: var(--fuente-titulos);
+            font-size: 1rem;
+            color: var(--dorado);
+            margin-top: 10px;
+            letter-spacing: 0.04em;
+        }
+
+        /* SLIDER SERVICIOS */
+        .slider-servicios {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            gap: 14px;
+            padding: 6px 2px 18px;
+            scrollbar-width: none;
+            cursor: grab;
+        }
+        .slider-servicios::-webkit-scrollbar {
+            display: none;
+        }
+        .slider-servicios:active {
+            cursor: grabbing;
+        }
+        .tarjeta-servicio {
+            flex: 0 0 78%;
+            min-width: 260px;
+            scroll-snap-align: center;
+            background: var(--negro-panel);
+            border: var(--borde-dorado);
+            border-radius: var(--radio);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform var(--transicion), box-shadow var(--transicion);
+        }
+        .tarjeta-servicio:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(180, 140, 50, .16);
+        }
+        .tarjeta-servicio img {
+            width: 100%;
+            aspect-ratio: 5/6;
+            max-height: 38vh;
+            object-fit: cover;
+            display: block;
+        }
+        .tarjeta-servicio .cuerpo-tarjeta {
+            padding: 16px 15px 18px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .tarjeta-servicio h3 {
+            font-family: var(--fuente-titulos);
+            font-size: 1.05rem;
+            letter-spacing: 0.02em;
+            color: var(--dorado);
+            font-weight: 400;
+        }
+        .tarjeta-servicio p {
+            font-size: 0.85rem;
+            color: #b8ae8c;
+            line-height: 1.55;
+            flex: 1;
+        }
+        .tarjeta-servicio .mini-cta {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid var(--dorado);
+            color: var(--dorado);
+            font-weight: 500;
+            font-size: 0.78rem;
+            padding: 7px 16px;
+            border-radius: 20px;
+            text-align: center;
+            text-decoration: none;
+            align-self: flex-start;
+            transition: background var(--transicion), color var(--transicion);
+        }
+        .tarjeta-servicio .mini-cta:hover {
+            background: var(--dorado);
+            color: #030303;
+            font-weight: 700;
+        }
+        .slider-puntos {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .slider-puntos span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(180, 140, 60, .35);
+            transition: background 0.3s;
+        }
+        .slider-puntos span.activo {
+            background: var(--dorado);
+            box-shadow: 0 0 8px rgba(212, 160, 23, .6);
+        }
+
+        /* COMO FUNCIONA */
+        .pasos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            counter-reset: paso;
+        }
+        .paso {
+            background: var(--negro-panel);
+            border: var(--borde-dorado);
+            border-radius: var(--radio);
+            padding: 20px 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            transition: transform var(--transicion);
+        }
+        .paso:hover {
+            transform: translateY(-2px);
+        }
+        .paso-num {
+            counter-increment: paso;
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6b5010 0%, #d4a017 100%);
+            color: #030303;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--fuente-titulos);
+            box-shadow: 0 0 16px rgba(212, 160, 23, .3);
+        }
+        .paso-texto h4 {
+            font-family: var(--fuente-cuerpo);
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--dorado);
+            letter-spacing: 0.02em;
+            margin-bottom: 3px;
+        }
+        .paso-texto p {
+            font-size: 0.85rem;
+            color: #b8ae8c;
+            line-height: 1.55;
+        }
+
+        /* TESTIMONIOS */
+        .testimonios-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .testimonio {
+            background: var(--negro-panel);
+            border: var(--borde-dorado);
+            border-radius: var(--radio);
+            padding: 18px 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: transform var(--transicion);
+        }
+        .testimonio:hover {
+            transform: translateY(-1px);
+        }
+        .testimonio-rombo {
+            flex-shrink: 0;
+            width: 38px;
+            height: 38px;
+            background: var(--negro-panel);
+            border: 2px solid var(--dorado);
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        .testimonio-rombo span {
+            transform: rotate(-45deg);
+            font-family: var(--fuente-titulos);
+            font-size: 1.1rem;
+            color: var(--dorado);
+            font-weight: 400;
+        }
+        .testimonio-contenido {
+            flex: 1;
+        }
+        .testimonio-contenido p {
+            font-size: 0.85rem;
+            color: #c9bfa0;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        .testimonio-nombre {
+            display: block;
+            margin-top: 8px;
+            font-family: var(--fuente-cuerpo);
+            font-weight: 500;
+            font-size: 0.75rem;
+            letter-spacing: 0.06em;
+            color: var(--dorado);
+            text-transform: uppercase;
+            font-style: normal;
+        }
+
+        /* FAQ */
+        .faq details {
+            background: var(--negro-panel);
+            border: var(--borde-dorado);
+            border-radius: var(--radio);
+            margin-bottom: 10px;
+            overflow: hidden;
+            transition: box-shadow var(--transicion);
+        }
+        .faq details[open] {
+            box-shadow: 0 0 18px rgba(180, 140, 50, .1);
+        }
+        .faq summary {
+            padding: 15px 36px 15px 16px;
+            font-weight: 500;
+            font-size: 0.92rem;
+            color: var(--champan);
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            letter-spacing: 0.01em;
+            transition: color var(--transicion);
+        }
+        .faq summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq summary::after {
+            content: '';
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid var(--dorado);
+            border-bottom: 2px solid var(--dorado);
+            transition: transform 0.35s ease;
+        }
+        .faq details[open] summary::after {
+            transform: translateY(-30%) rotate(225deg);
+        }
+        .faq details[open] summary {
+            color: var(--dorado);
+        }
+        .faq .faq-respuesta {
+            padding: 0 16px 16px;
+            font-size: 0.85rem;
+            color: #b8ae8c;
+            line-height: 1.6;
+        }
+
+        /* CTA FINAL */
+        .cta-final {
+            text-align: center;
+            padding: 36px 10px 44px;
+            position: relative;
+            isolation: isolate;
+        }
+        .cta-final::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 60%, rgba(212, 160, 23, .08) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .cta-final h2 {
+            position: relative;
+            z-index: 1;
+        }
+        .cta-final p {
+            position: relative;
+            z-index: 1;
+            color: #c9bfa0;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .cta-final .hero-cta {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 0.72rem;
+            color: #6b6040;
+            border-top: 1px solid rgba(180, 140, 60, .2);
+            letter-spacing: 0.03em;
+            width: 100%;
+        }
+
+        /* REVEAL */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* REDUCED MOTION */
+        @media (prefers-reduced-motion: reduce) {
+            .hero h1,
+            .header-nombre,
+            .seccion h2 {
+                animation: none !important;
+                background-position: 50% center !important;
+            }
+            .hero-cta {
+                animation: none !important;
+            }
+            .hero-badge-lev {
+                animation: none !important;
+            }
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+            .tarjeta-servicio:hover,
+            .paso:hover,
+            .testimonio:hover {
+                transform: none;
+            }
+            .slider-servicios {
+                scroll-behavior: auto;
+            }
+        }
+
+        /* DESKTOP */
+        @media (min-width: 768px) {
+            .contenedor {
+                padding: 0 28px;
+            }
+            .hero {
+                padding: 50px 20px 40px;
+            }
+            .hero h1 {
+                font-size: 2.6rem;
+            }
+            .hero-sub {
+                font-size: 1.1rem;
+            }
+            .maestro-grid {
+                flex-direction: row;
+                text-align: left;
+                gap: 30px;
+            }
+            .maestro-retrato {
+                width: 40%;
+                max-width: 240px;
+                flex-shrink: 0;
+            }
+            .maestro-texto {
+                flex: 1;
+            }
+            .slider-servicios {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+                overflow-x: visible;
+                scroll-snap-type: none;
+                cursor: default;
+                padding: 0;
+            }
+            .tarjeta-servicio {
+                flex: unset;
+                min-width: unset;
+                scroll-snap-align: unset;
+            }
+            .slider-puntos {
+                display: none;
+            }
+            .testimonios-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+            }
+            .pasos {
+                flex-direction: row;
+                gap: 16px;
+            }
+            .paso {
+                flex: 1;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .contenedor {
+                max-width: 680px;
+            }
+            .testimonios-grid {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .slider-servicios {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T4BCC6P');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-672356997"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-672356997');gtag('config','AW-672356997');gtag('config','AW-672356997');</script>
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4BCC6P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- HEADER STICKY -->
+    <header class="header">
+        <span class="header-nombre">Maestro Belisario</span>
+        <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20quiero%20mi%20consulta%20gratuita%20sobre%20brujos" class="header-btn" aria-label="WhatsApp">✦ WhatsApp</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero contenedor reveal">
+        <span class="destello">✦</span>
+        <span class="destello">✦</span>
+        <span class="destello">✦</span>
+        <span class="destello">✦</span>
+        <div class="hero-badge">Disponible hoy</div>
+        <h1>Brujos Auténticos · Soluciones Reales Para Tu Vida</h1>
+        <p class="hero-sub">Lo que sientes es real, y tiene salida. El Maestro Belisario te escucha sin juzgarte y te acompaña a recuperar el amor, la paz y la fortuna que mereces.</p>
+        <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20quiero%20mi%20consulta%20gratuita%20sobre%20brujos" class="hero-cta">Quiero Mi Consulta Gratis</a>
+        <div class="hero-badges">
+            <span class="hero-badge-lev">⭐ 4.9</span>
+            <span class="hero-badge-lev">+5.000 consultas</span>
+            <span class="hero-badge-lev">25 años de experiencia</span>
+            <span class="hero-badge-lev">100% confidencial</span>
+        </div>
+    </section>
+
+    <!-- BARRA URGENCIA -->
+    <div class="urgencia reveal">✨ Consulta gratuita disponible hoy — espacios limitados ✨</div>
+
+    <!-- SOBRE EL MAESTRO -->
+    <section class="seccion contenedor reveal" id="sobre-el-maestro">
+        <h2>Sobre el Maestro</h2>
+        <div class="divisor"></div>
+        <div class="maestro-grid">
+            <img src="/consultadebrujos-8987250/optimizado/ag-182746623030/kw-53687300/banco-brujo-poderoso-con-velas.webp" alt="Retrato del Maestro Belisario, brujo experto con velas rituales" width="800" height="960" class="maestro-retrato" fetchpriority="high" decoding="async">
+            <div class="maestro-texto">
+                <p>Con más de 35 años de práctica en las artes espirituales, el Maestro Belisario ha dedicado su vida a tender puentes entre el mundo visible y las fuerzas que moldean nuestro destino. Desde muy joven fue iniciado en los secretos de la alta brujería, heredando un linaje de conocimiento que pocos <strong>brujos</strong> auténticos conservan hoy. Su camino lo ha llevado a auxiliar a cientos de almas que buscaban respuestas donde otros les cerraron la puerta.</p>
+                <p>No hay caso pequeño ni dolor que no merezca ser escuchado. Cada consulta es un espacio sagrado donde el maestro analiza tu situación con herramientas ancestrales —velas, hierbas, lectura de energías— para diseñar un camino espiritual hecho a tu medida. Donde otros han fracasado, la combinación de experiencia, fe y entrega total del Maestro Belisario abre puertas que parecían selladas para siempre.</p>
+                <p class="maestro-firma">— Maestro Belisario</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER SERVICIOS -->
+    <section class="seccion contenedor reveal" id="servicios">
+        <h2>Servicios de Brujería Especializada</h2>
+        <div class="divisor"></div>
+        <div class="slider-servicios" id="sliderServicios">
+            <div class="tarjeta-servicio">
+                <img src="/consultadebrujos-8987250/optimizado/ag-182746623030/kw-53687300/banco-pareja-apasionada-entre-llamas.webp" alt="Pareja apasionada entre llamas, ritual de amor ardiente con brujos expertos" width="800" height="960" loading="lazy" decoding="async">
+                <div class="cuerpo-tarjeta">
+                    <h3>Amarres de Amor Poderosos</h3>
+                    <p>Atrae y regresa a tu ser querido en pocos días, sin importar edad, distancia ni circunstancias. Un trabajo espiritual que une mente, cuerpo y espíritu, disolviendo la indiferencia, el orgullo y toda tercera persona que interrumpa su camino hacia ti. Hechizos de alta brujería con velas consagradas y hierbas de poder.</p>
+                    <a href="https://wa.me/15042987893?text=Quiero%20informaci%C3%B3n%20sobre%20amarres%20de%20amor%20con%20brujos" class="mini-cta">Consultar</a>
+                </div>
+            </div>
+            <div class="tarjeta-servicio">
+                
+                <div class="cuerpo-tarjeta">
+                    <h3>Limpieza y Protección Espiritual</h3>
+                    <p>Libérate de malas energías, posesiones, espíritus perturbadores y toda negatividad que frena tu vida. El Maestro Belisario realiza limpiezas profundas con rituales ancestrales, desatando entidades, retirando amantes indeseados y creando escudos de protección duraderos para ti y los tuyos.</p>
+                    <a href="https://wa.me/15042987893?text=Necesito%20limpieza%20espiritual%20con%20brujos" class="mini-cta">Consultar</a>
+                </div>
+            </div>
+            <div class="tarjeta-servicio">
+                <img src="/consultadebrujos-8987250/optimizado/ag-182746623030/kw-53687300/banco-altar-esoterico-con-santa-muerte.webp" alt="Altar esotérico con Santa Muerte, rituales de brujería efectiva" width="800" height="960" loading="lazy" decoding="async">
+                <div class="cuerpo-tarjeta">
+                    <h3>Rituales de Alta Brujería</h3>
+                    <p>Magia negra, blanca y roja canalizada con precisión. Endulzamientos, entierros vudú, sanciones espirituales y contrahechizos para cada necesidad. Cada ritual es precedido por una consulta gratuita donde el maestro analiza tu caso y determina el trabajo exacto que abrirá tu camino al amor, dinero o salud.</p>
+                    <a href="https://wa.me/15042987893?text=Quiero%20un%20ritual%20de%20alta%20brujer%C3%ADa" class="mini-cta">Consultar</a>
+                </div>
+            </div>
+            <div class="tarjeta-servicio">
+                <img src="/consultadebrujos-8987250/optimizado/ag-182746623030/kw-53687300/banco-infidelidad-triangulo-amoroso-oculto.webp" alt="Triángulo amoroso e infidelidad, soluciones con brujos efectivos" width="800" height="960" loading="lazy" decoding="async">
+                <div class="cuerpo-tarjeta">
+                    <h3>Recuperación de Pareja</h3>
+                    <p>Si la infidelidad, la distancia emocional o un rival han roto tu relación, no todo está perdido. Con el poder de los <strong>brujos</strong> expertos, el Maestro Belisario doblega la rebeldía y el orgullo, retira a la tercera persona y restaura la conexión profunda que creías extinguida. Resultados que se sienten en el alma.</p>
+                    <a href="https://wa.me/15042987893?text=Ayuda%20para%20recuperar%20mi%20pareja%20con%20brujos" class="mini-cta">Consultar</a>
+                </div>
+            </div>
+            <div class="tarjeta-servicio">
+                <img src="/consultadebrujos-8987250/optimizado/ag-182746623030/kw-53687300/banco-pareja-lesbica-de-jovenes-enamoradas.webp" alt="Pareja de jóvenes enamoradas, unión y armonía con brujería" width="800" height="960" loading="lazy" decoding="async">
+                <div class="cuerpo-tarjeta">
+                    <h3>Unión y Armonía de Pareja</h3>
+                    <p>Fortalece el vínculo con quien amas, sin importar el tipo de relación. Rituales de unión que consolidan el amor, avivan la pasión y crean un lazo indestructible. El Maestro Belisario trabaja con todas las formas del amor, honrando la diversidad y la autenticidad de cada historia.</p>
+                    <a href="https://wa.me/15042987893?text=Quiero%20fortalecer%20mi%20relaci%C3%B3n%20de%20pareja" class="mini-cta">Consultar</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-puntos" id="sliderPuntos">
+            <span class="activo"></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="seccion contenedor reveal" id="como-funciona">
+        <h2>¿Cómo Trabajan los Brujos Expertos?</h2>
+        <div class="divisor"></div>
+        <div class="pasos">
+            <div class="paso">
+                <div class="paso-num">1</div>
+                <div class="paso-texto">
+                    <h4>Consulta Gratuita y Confidencial</h4>
+                    <p>Cuéntale al Maestro Belisario lo que pesa en tu corazón. Sin juicios, sin prisas. Él escucha, analiza tu energía y usa sus herramientas esotéricas para revelar el origen de tu situación. Esta consulta no tiene costo alguno.</p>
+                </div>
+            </div>
+            <div class="paso">
+                <div class="paso-num">2</div>
+                <div class="paso-texto">
+                    <h4>Diagnóstico y Plan Espiritual</h4>
+                    <p>Tras la consulta, el maestro determina qué tipo de trabajo necesita tu caso —amarre, limpieza, ritual o protección— y te explica el proceso con claridad. Solo se avanza cuando hay certeza y plena seguridad del camino a seguir.</p>
+                </div>
+            </div>
+            <div class="paso">
+                <div class="paso-num">3</div>
+                <div class="paso-texto">
+                    <h4>Trabajo Ritual y Seguimiento</h4>
+                    <p>El maestro ejecuta el trabajo con dedicación total, canalizando energía pura hacia tu objetivo. Y no te abandona: hace seguimiento de tu caso, ajusta lo necesario y te acompaña hasta que los resultados se manifiesten. Pagas solo cuando veas resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="seccion contenedor reveal" id="testimonios">
+        <h2>Historias Reales de Quienes Confiaron</h2>
+        <div class="divisor"></div>
+        <div class="testimonios-grid">
+            <div class="testimonio">
+                <div class="testimonio-rombo"><span>E</span></div>
+                <div class="testimonio-contenido">
+                    <p>"La verdad yo no creía en estas cosas, pero cuando mi esposo se fue después de 8 meses de indiferencia, ya no sabía qué hacer. Una amiga me habló de los <strong>brujos</strong> de verdad y encontré al Maestro Belisario. En tres semanas mi esposo me llamó llorando, pidiendo volver. Ahora estamos mejor que nunca."</p>
+                    <span class="testimonio-nombre">Elena Márquez — Houston, TX</span>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-rombo"><span>R</span></div>
+                <div class="testimonio-contenido">
+                    <p>"Se lo juro que yo era el más escéptico del mundo. Pero el amarre que me hizo el maestro funcionó tan rápido que me dejó helado. Mi novia volvió en menos de un mes, y eso que ya estaba con otra persona. Gracias, Maestro Belisario, de corazón."</p>
+                    <span class="testimonio-nombre">Ricky Peña — Phoenix, AZ</span>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-rombo"><span>Y</span></div>
+                <div class="testimonio-contenido">
+                    <p>"Llevaba años sin hablarme con mi hija. El dolor me consumía. El Maestro Belisario me explicó que había una energía negativa alejándonos. Hizo una limpieza y un ritual de unión. A los pocos días mi hija me escribió. Hoy nos vemos cada semana."</p>
+                    <span class="testimonio-nombre">Yolanda R. — Charlotte, NC</span>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-rombo"><span>F</span></div>
+                <div class="testimonio-contenido">
+                    <p>"Mi negocio se caía a pedazos y yo sentía que algo oscuro me perseguía. Probé de todo. Un conocido me recomendó al Maestro Belisario. Me hizo una protección y un destranque. En dos meses todo cambió: clientes nuevos, deudas saldadas. Este hombre sabe lo que hace."</p>
+                    <span class="testimonio-nombre">Francisco Torres — Newark, NJ</span>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-rombo"><span>L</span></div>
+                <div class="testimonio-contenido">
+                    <p>"¡No puedo creer lo rápido que fue! Mi novio se había alejado por completo, ni mis mensajes respondía. Hice la consulta gratuita con el maestro, me explicó todo con una calma que me devolvió la esperanza. A los 5 días mi novio apareció en mi puerta. Estoy feliz."</p>
+                    <span class="testimonio-nombre">Lucía Delgado — Fresno, CA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="seccion contenedor reveal" id="faq">
+        <h2>Preguntas Frecuentes Sobre Brujos</h2>
+        <div class="divisor"></div>
+        <div class="faq">
+            <details>
+                <summary>¿Cómo sé que un brujo es de confianza?</summary>
+                <div class="faq-respuesta">Un <strong>brujo</strong> auténtico no promete imposibles: te escucha, analiza tu caso con herramientas reales y te explica el proceso con claridad. El Maestro Belisario ofrece consulta gratuita sin compromiso, para que tú mismo sientas la diferencia. Además, su política de "pagas al ver resultados" es la mayor prueba de confianza que puede darte.</div>
+            </details>
+            <details>
+                <summary>¿Los trabajos espirituales son seguros para mí?</summary>
+                <div class="faq-respuesta">Todos los trabajos del Maestro Belisario se realizan sin daño alguno para ti ni para terceros inocentes. La energía se canaliza con respeto y precisión, buscando siempre el bien mayor. Antes de cualquier ritual, el maestro te explica exactamente en qué consiste y despeja todas tus dudas.</div>
+            </details>
+            <details>
+                <summary>¿En cuánto tiempo se ven los resultados?</summary>
+                <div class="faq-respuesta">Cada caso es único, pero muchos clientes reportan cambios significativos en los primeros días o semanas tras el trabajo espiritual. La clave está en la correcta canalización de energía y en la fe que deposites en el proceso. El maestro te dará una estimación realista durante tu consulta gratuita.</div>
+            </details>
+            <details>
+                <summary>¿Qué necesito para comenzar mi consulta gratuita?</summary>
+                <div class="faq-respuesta">Solo necesitas abrir tu corazón y contactar al Maestro Belisario por WhatsApp. No hay requisitos complicados: cuéntale tu situación con honestidad y él utilizará su altar y sus herramientas esotéricas para revelarte el camino. La consulta es completamente gratis y confidencial.</div>
+            </details>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final contenedor reveal" id="cta-final">
+        <h2>Da el Primer Paso: Te Escucho Sin Juzgarte</h2>
+        <p>No dejes que el dolor te convenza de que no hay salida. El Maestro Belisario está aquí para ti, con la serenidad de quien ha visto milagros nacer de la fe. Escríbele ahora.</p>
+        <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20quiero%20mi%20consulta%20gratuita%20sobre%20brujos" class="hero-cta">Consulta Gratis por WhatsApp</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Maestro Belisario · Brujos Auténticos · Consulta Espiritual Gratuita</p>
+        <p style="margin-top:4px;">Confidencialidad absoluta · Pagas al ver resultados · +19383135430</p>
+    </footer>
+
+    <!-- INTERSECTION OBSERVER + SLIDER AUTOPLAY -->
+    <script>
+        (function() {
+            // REVEAL ON SCROLL
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.18, rootMargin: '0px 0px -30px 0px' });
+            reveals.forEach(el => observer.observe(el));
+
+            // Escalonar hermanas
+            document.querySelectorAll('.testimonios-grid .testimonio, .pasos .paso, .tarjeta-servicio').forEach(
+            (el, i) => {
+                el.style.transitionDelay = (i * 0.05) + 's';
+            });
+
+            // SLIDER AUTOPLAY
+            const slider = document.getElementById('sliderServicios');
+            const puntos = document.querySelectorAll('#sliderPuntos span');
+            if (slider && puntos.length && window.innerWidth < 768) {
+                let current = 0;
+                const total = slider.children.length;
+                let autoplayTimer;
+                let pauseUntil = 0;
+
+                function updatePuntos(idx) {
+                    puntos.forEach((p, i) => p.classList.toggle('activo', i === idx));
+                }
+
+                function goTo(idx) {
+                    const tarjeta = slider.children[idx];
+                    if (tarjeta) {
+                        slider.scrollTo({ left: tarjeta.offsetLeft - slider.offsetLeft - 10, behavior: 'smooth' });
+                        current = idx;
+                        updatePuntos(current);
+                    }
+                }
+
+                function nextSlide() {
+                    if (Date.now() < pauseUntil) return;
+                    current = (current + 1) % total;
+                    goTo(current);
+                }
+
+                autoplayTimer = setInterval(nextSlide, 5000);
+
+                // Pausar al tocar
+                slider.addEventListener('touchstart', () => {
+                    pauseUntil = Date.now() + 10000;
+                });
+                slider.addEventListener('mousedown', () => {
+                    pauseUntil = Date.now() + 10000;
+                });
+
+                // Detectar scroll manual para sincronizar puntos
+                slider.addEventListener('scroll', () => {
+                    const scrollLeft = slider.scrollLeft;
+                    let idx = 0;
+                    let minDist = Infinity;
+                    for (let i = 0; i < total; i++) {
+                        const dist = Math.abs(slider.children[i].offsetLeft - slider.offsetLeft - 10 -
+                            scrollLeft);
+                        if (dist < minDist) { minDist = dist;
+                            idx = i; }
+                    }
+                    if (idx !== current) {
+                        current = idx;
+                        updatePuntos(current);
+                    }
+                }, { passive: true });
+
+                // Pausar si el usuario prefiere poco movimiento
+                const mqReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+                if (mqReduced.matches) {
+                    clearInterval(autoplayTimer);
+                }
+                mqReduced.addEventListener('change', (e) => {
+                    if (e.matches) {
+                        clearInterval(autoplayTimer);
+                    } else {
+                        autoplayTimer = setInterval(nextSlide, 5000);
+                    }
+                });
+            } else if (slider && window.innerWidth >= 768) {
+                // En desktop no hay autoplay, ocultar puntos
+                const puntosContainer = document.getElementById('sliderPuntos');
+                if (puntosContainer) puntosContainer.style.display = 'none';
+            }
+        })();
+    </script>
+<script data-sendto="AW-672356997/QCpfCPTWos4cEIW1zcAC" src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<!--WA-FAB:fuego-sagrado--><div class="wfab-fuego"><style>
+.wfab-fuego{position:fixed;right:16px;bottom:16px;z-index:99999}
+.wfab-fuego a{display:flex;align-items:center;gap:10px;padding:10px 17px 10px 10px;border-radius:999px;background:linear-gradient(160deg,#3b0d0d,#7f1d1d);border:1.5px solid rgba(251,146,60,.65);color:#fde8d7;font:700 13.5px/1.1 'Segoe UI',sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(127,29,29,.5);position:relative;overflow:hidden}
+.wfab-fuego a::before,.wfab-fuego a::after{content:'';position:absolute;bottom:-4px;width:5px;height:5px;border-radius:50%;background:#fb923c;opacity:0;animation:wfabFuegoUp 3.5s ease-in infinite}
+.wfab-fuego a::before{left:26%}
+.wfab-fuego a::after{left:64%;animation-delay:1.7s}
+.wfab-fuego .wi{display:flex;align-items:center;justify-content:center;width:37px;height:37px;border-radius:50%;background:#17b357;color:#fff;flex:0 0 auto}
+@keyframes wfabFuegoUp{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-46px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wfab-fuego a::before,.wfab-fuego a::after{animation:none!important}}
+</style><a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20quiero%20mi%20consulta%20gratuita%20sobre%20brujos" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><span class="wi"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span><span>Consulta inmediata 🔥</span></a></div><!--/WA-FAB-->
+<!--CALL-FAB:pestana-lateral--><div class="cfab-pest"><style>
+.cfab-pest{position:fixed!important;top:50%!important;bottom:auto!important;left:auto!important;right:0!important;transform:translateY(-50%);z-index:2147483000;line-height:0;pointer-events:auto}
+.cfab-pest a{-webkit-tap-highlight-color:transparent}
+@media(min-width:768px){.cfab-pest{display:none!important}}
+@media(prefers-reduced-motion:reduce){.cfab-pest,.cfab-pest *,.cfab-pest::before,.cfab-pest::after{animation:none!important}}
+.cfab-pest a{display:flex;flex-direction:column;align-items:center;gap:7px;padding:14px 8px;border-radius:14px 0 0 14px;background:linear-gradient(180deg,#0f766e,#134e4a);color:#ecfeff;text-decoration:none;font:700 11px/1 'Segoe UI',system-ui,sans-serif;letter-spacing:.16em;box-shadow:-6px 6px 22px rgba(0,0,0,.45)}
+.cfab-pest span{writing-mode:vertical-rl;text-orientation:mixed}
+</style><a href="tel:+15042987893" aria-label="Llamar por teléfono" rel="nofollow"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.2 3h3.3c.5 0 .9.34 1.01.83l.86 3.4c.09.37-.02.76-.3 1.02L7.1 10.2c1.3 2.6 3.4 4.7 6 6l1.95-1.97c.26-.27.65-.38 1.02-.29l3.4.86c.49.12.83.55.83 1.05v3.3c0 .61-.5 1.11-1.11 1.08C10.35 19.83 4.17 13.65 3.12 4.11 3.09 3.5 3.59 3 4.2 3Z"/></svg><span>LLAMAR</span></a></div><!--/CALL-FAB-->
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+</body>
+</html>

@@ -1,0 +1,1170 @@
+<!DOCTYPE html><html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta espiritual gratis con el Maestro Belisario. Brujo experto en alta brujería para hispanos en USA. Recibe orientación sincera y soluciones a tus problemas de amor, dinero y salud. Paga solo al ver resultados.">
+    <title>Consulta Espiritual Gratis · Maestro Belisario · Brujo Experto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&amp;family=Outfit:wght@300;500&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --negro-abisal: #030303;
+            --negro-card: #0d0c09;
+            --champan: #e9ddb8;
+            --dorado: #d4a017;
+            --dorado-claro: #f0cd6a;
+            --dorado-oscuro: #6b5010;
+            --borde-dorado: #d4a01733;
+            --whatsapp: #25D366;
+            --sombra-dorada: 0 4px 24px rgba(212, 160, 23, 0.35);
+            --degradado-dorado: linear-gradient(105deg, #6b5010 0%, #d4a017 25%, #fff3c4 50%, #d4a017 75%, #6b5010 100%);
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            background: var(--negro-abisal);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            color: var(--champan);
+            background: var(--negro-abisal);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100svh;
+            background-image: radial-gradient(ellipse at 50% 0%, #1a1408 0%, #030303 70%);
+            background-attachment: fixed;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Prata', serif;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 6s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 0% center;
+            }
+            50% {
+                background-position: 200% center;
+            }
+            100% {
+                background-position: 0% center;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            h1,
+            h2,
+            h3 {
+                animation: none;
+                background-position: 0% center;
+                color: var(--dorado);
+                -webkit-text-fill-color: var(--dorado);
+            }
+            * {
+                animation-duration: 0s !important;
+                transition-duration: 0s !important;
+            }
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+
+        @supports not (background-clip: text) {
+            h1,
+            h2,
+            h3 {
+                color: var(--dorado);
+                -webkit-text-fill-color: var(--dorado);
+            }
+        }
+
+        p,
+        li,
+        span,
+        summary,
+        blockquote {
+            color: var(--champan);
+        }
+
+        .header-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(3, 3, 3, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(212, 160, 23, 0.2);
+            padding: 0.6rem 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-nombre {
+            font-family: 'Prata', serif;
+            font-size: 1rem;
+            letter-spacing: 0.03em;
+            background: var(--degradado-dorado);
+            background-size: 150% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 5s ease-in-out infinite;
+        }
+        .header-cta {
+            background: var(--whatsapp);
+            color: #fff;
+            padding: 0.45rem 1rem;
+            border-radius: 999px;
+            font-weight: 500;
+            font-size: 0.8rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: all 0.2s ease;
+            letter-spacing: 0.01em;
+        }
+        .header-cta:hover {
+            filter: brightness(1.15);
+            transform: translateY(-1px);
+        }
+
+        /* HÉROE VIDEO */
+        .hero {
+            position: relative;
+            min-height: 92svh;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 2rem 1.2rem 3rem;
+        }
+        .hero-video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, .20) 0%, rgba(0, 0, 0, .72) 78%);
+            z-index: 1;
+            mix-blend-mode: multiply;
+        }
+        .hero-overlay-2 {
+            position: absolute;
+            inset: 0;
+            background: rgba(3, 3, 3, 0.14);
+            z-index: 2;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .badge-disponible {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 0.35rem 1rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            opacity: 0;
+            transform: translateY(12px);
+            animation: fadeUp 0.6s ease-out 0s forwards;
+        }
+        .hero h1 {
+            font-size: clamp(2.3rem, 9vw, 3.6rem);
+            line-height: 1.05;
+            color: #fff;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: translateY(16px);
+            animation: fadeUp 0.6s ease-out 0.2s forwards;
+            -webkit-text-fill-color: #fff;
+            background: none;
+            font-family: 'Prata', serif;
+        }
+        .hero h1 .keyword-dorada {
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: shimmer 6s ease-in-out infinite;
+        }
+        .hero-subtitle {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            font-weight: 300;
+            max-width: 320px;
+            opacity: 0;
+            transform: translateY(12px);
+            animation: fadeUp 0.6s ease-out 0.4s forwards;
+        }
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: linear-gradient(135deg, #f0cd6a, #b8860b);
+            color: #030303;
+            font-weight: 800;
+            padding: 0.9rem 2.2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 24px rgba(212, 160, 23, 0.35);
+            animation: breathe 2.5s ease-in-out infinite;
+            opacity: 0;
+            transform: translateY(12px);
+            animation: fadeUp 0.6s ease-out 0.6s forwards, breathe 2.5s ease-in-out 0.6s infinite;
+            transition: filter 0.2s ease, transform 0.2s ease;
+        }
+        .hero-cta:hover {
+            filter: brightness(1.2);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(212, 160, 23, 0.5);
+        }
+        @keyframes breathe {
+            0%,
+            100% {
+                box-shadow: 0 4px 24px rgba(212, 160, 23, 0.35);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 6px 32px rgba(240, 205, 106, 0.55);
+                transform: scale(1.04);
+            }
+        }
+        .hero-confianza {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.7);
+            flex-wrap: wrap;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(8px);
+            animation: fadeUp 0.6s ease-out 0.8s forwards;
+        }
+        .hero-confianza span {
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .scroll-flecha {
+            position: absolute;
+            bottom: 0.8rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            opacity: 0.7;
+            animation: pulseDown 2s ease-in-out infinite;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1.4rem;
+        }
+        @keyframes pulseDown {
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(6px);
+            }
+        }
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .hero-cta {
+                animation: none;
+            }
+            .scroll-flecha {
+                display: none;
+            }
+        }
+
+        /* Barra urgencia */
+        .barra-urgencia {
+            background: #0d0c09;
+            border-top: 1px solid rgba(212, 160, 23, 0.25);
+            border-bottom: 1px solid rgba(212, 160, 23, 0.25);
+            padding: 0.6rem 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            color: #d4a017;
+        }
+
+        /* Secciones generales */
+        .section {
+            padding: 3rem 1.2rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .section-titulo {
+            font-size: clamp(1.6rem, 6vw, 2rem);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .divisor {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--dorado) 20%, var(--dorado) 80%, transparent);
+            border: none;
+            margin: 2rem auto;
+            max-width: 180px;
+        }
+
+        /* SLIDER SERVICIOS */
+        .slider-container {
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            display: flex;
+            gap: 1rem;
+            padding: 0.5rem 0 1.5rem;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            cursor: grab;
+        }
+        .slider-container::-webkit-scrollbar {
+            display: none;
+        }
+        .tarjeta-servicio {
+            flex: 0 0 78%;
+            max-width: 78%;
+            scroll-snap-align: center;
+            background: var(--negro-card);
+            border-radius: 1rem;
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+        }
+        .tarjeta-servicio:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(212, 160, 23, 0.2);
+        }
+        .tarjeta-servicio img {
+            width: 100%;
+            height: auto;
+            max-height: 45vh;
+            aspect-ratio: 5 / 6;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid rgba(212, 160, 23, 0.2);
+        }
+        .tarjeta-servicio .contenido {
+            padding: 1rem 1.2rem 1.2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .tarjeta-servicio h3 {
+            font-size: 1.2rem;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .tarjeta-servicio p {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .mini-cta {
+            display: inline-block;
+            margin-top: 0.4rem;
+            background: linear-gradient(135deg, #f0cd6a, #b8860b);
+            color: #030303;
+            font-weight: 700;
+            padding: 0.5rem 1.2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-align: center;
+            align-self: flex-start;
+            transition: filter 0.2s;
+        }
+        .mini-cta:hover {
+            filter: brightness(1.2);
+        }
+        .dots-slider {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(212, 160, 23, 0.35);
+            transition: background 0.3s;
+        }
+        .dot.active {
+            background: var(--dorado);
+            box-shadow: 0 0 8px rgba(212, 160, 23, 0.6);
+        }
+        @media(min-width:768px) {
+            .slider-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.2rem;
+                overflow-x: visible;
+                scroll-snap-type: none;
+                padding: 0;
+            }
+            .tarjeta-servicio {
+                flex: unset;
+                max-width: 100%;
+            }
+            .dots-slider {
+                display: none;
+            }
+        }
+
+        /* SOBRE EL MAESTRO */
+        .sobre-maestro {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            align-items: center;
+            text-align: center;
+        }
+        .sobre-maestro img {
+            width: 180px;
+            height: 216px;
+            aspect-ratio: 5 / 6;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 2px solid rgba(212, 160, 23, 0.4);
+            box-shadow: 0 0 30px rgba(212, 160, 23, 0.15);
+            max-height: 40vh;
+        }
+        .sobre-maestro .texto {
+            max-width: 400px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        /* Pasos */
+        .pasos {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .paso {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .paso-numero {
+            font-family: 'Prata', serif;
+            font-size: 2rem;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            line-height: 1;
+            flex-shrink: 0;
+            min-width: 2.5rem;
+            text-align: center;
+        }
+        .paso-texto h4 {
+            font-family: 'Prata', serif;
+            font-size: 1rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.2rem;
+            background: var(--degradado-dorado);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .paso-texto p {
+            font-size: 0.85rem;
+        }
+
+        /* Testimonios */
+        .testimonios-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .testimonio-card {
+            background: var(--negro-card);
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            border-radius: 1rem;
+            padding: 1.2rem;
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+            transition: transform 0.2s;
+        }
+        .testimonio-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(212, 160, 23, 0.15);
+        }
+        .rombo-inicial {
+            width: 36px;
+            height: 36px;
+            background: var(--negro-card);
+            border: 1.5px solid var(--dorado);
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+        .rombo-inicial span {
+            transform: rotate(-45deg);
+            font-family: 'Prata', serif;
+            color: var(--dorado);
+            font-size: 1rem;
+        }
+        .testimonio-contenido blockquote {
+            font-size: 0.85rem;
+            font-style: italic;
+            line-height: 1.5;
+            margin-bottom: 0.3rem;
+            color: #d5cdb0;
+        }
+        .testimonio-nombre {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--dorado);
+            font-weight: 500;
+        }
+
+        /* FAQ */
+        details {
+            background: var(--negro-card);
+            border: 1px solid rgba(212, 160, 23, 0.3);
+            border-radius: 0.8rem;
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.6rem;
+            transition: all 0.2s;
+        }
+        details[open] {
+            border-color: rgba(212, 160, 23, 0.6);
+        }
+        summary {
+            font-weight: 500;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #f0e6c8;
+        }
+        summary::after {
+            content: '▾';
+            font-size: 1rem;
+            color: var(--dorado);
+            transition: transform 0.25s;
+        }
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        details p {
+            padding-top: 0.5rem;
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+
+        /* CTA FINAL */
+        .cta-final {
+            text-align: center;
+            padding: 2.5rem 1.2rem;
+            background: var(--negro-card);
+            border-top: 1px solid rgba(212, 160, 23, 0.3);
+            border-bottom: 1px solid rgba(212, 160, 23, 0.3);
+            margin: 2rem 0;
+        }
+        .cta-final h2 {
+            margin-bottom: 1rem;
+        }
+        .cta-final .btn-dorado {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: linear-gradient(135deg, #f0cd6a, #b8860b);
+            color: #030303;
+            font-weight: 800;
+            padding: 0.9rem 2.2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            box-shadow: var(--sombra-dorada);
+            transition: filter 0.2s, transform 0.2s;
+        }
+        .cta-final .btn-dorado:hover {
+            filter: brightness(1.2);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 32px rgba(240, 205, 106, 0.55);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.7rem;
+            color: rgba(233, 221, 184, 0.5);
+            border-top: 1px solid rgba(212, 160, 23, 0.15);
+        }
+
+        /* REVEAL */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @media(prefers-reduced-motion:reduce) {
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+
+        /* Util */
+        .text-center {
+            text-align: center;
+        }
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-55TQ628G');</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-672356997"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-672356997');gtag('config','AW-672356997');gtag('config','AW-672356997');gtag('config','AW-672356997');gtag('config','AW-672356997');gtag('config','AW-672356997');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23b8860b'/><text x='32' y='44' font-size='34' text-anchor='middle'>✨</text></svg>">
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55TQ628G" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="header-sticky">
+        <span class="header-nombre">✦ Maestro Belisario</span>
+        <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20quiero%20mi%20consulta%20espiritual%20gratis" class="header-cta" aria-label="WhatsApp consulta gratis">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            Consulta
+        </a>
+    </header>
+
+    <main>
+        <!-- HÉROE -->
+        <section class="hero" aria-labelledby="hero-titulo">
+            <video class="hero-video" autoplay="" muted="" loop="" playsinline="" preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-con-flores-y-estatuas-caratula.webp">
+                <source src="https://googleads.mkinnovador.com/banco/videos/ritual-con-flores-y-estatuas.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-overlay-2"></div>
+            <div class="hero-content">
+                <span class="badge-disponible">✦ Maestro disponible ahora</span>
+                <h1 id="hero-titulo">Tu <span class="keyword-dorada">Consulta Espiritual</span> Gratis</h1>
+                <p class="hero-subtitle">Lo que sientes es real, y tiene salida. El Maestro Belisario te escucha sin juzgarte.</p>
+                <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20deseo%20mi%20consulta%20espiritual%20gratis" class="hero-cta">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                    Quiero mi consulta gratis
+                </a>
+                <div class="hero-confianza">
+                    <span>⭐ 4.9</span>
+                    <span>·</span>
+                    <span>+5.000 consultas</span>
+                    <span>·</span>
+                    <span>35 años de experiencia</span>
+                </div>
+            </div>
+            <span class="scroll-flecha" aria-hidden="true">⌄</span>
+        </section><section id="wa-testimonios"><style>
+.watm-wrap{--wa-hd-ios:#008069;--wa-hd-and:#075e54;--wa-bg:#e5ddd5;--wa-me:#d9fdd3;--wa-you:#fff;--wa-tx:#111b21;--wa-mt:#667781;--wa-blue:#53bdeb;
+  box-sizing:border-box;width:100%;-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-touch-callout:none}
+.watm-wrap *,.watm-wrap *::before,.watm-wrap *::after{box-sizing:border-box}
+/* 🛡️ BLINDAJE: cada landing trae su propio CSS global (mayúsculas, espaciado
+   de letras, itálicas, interlineados enormes, sombras de texto). Sin esto, el
+   pantallazo se deforma y deja de parecer WhatsApp. El teléfono queda aislado
+   de todo eso, pase lo que pase en la página que lo aloja. */
+.watm-phone,.watm-phone *{text-transform:none;letter-spacing:normal;word-spacing:normal;
+  font-style:normal;font-variant:normal;text-shadow:none;text-indent:0;text-decoration:none;
+  animation:none;transition:none;
+  /* inherit (y no un valor fijo) para que cada parte del chat mande sobre sus
+     hijos: así un interlineado global enorme de la landing no separa las
+     líneas de las burbujas, pero .wb sigue pudiendo fijar el suyo. */
+  line-height:inherit}
+/* 📐 PROPORCIÓN REAL DE UN TELÉFONO: la altura NO es un número fijo — se deriva
+   del ancho con la relación de pantalla de cada familia (iPhone 19.5:9,
+   Android 20:9). Todo el marco (padding, radios, botón lateral) escala con
+   --pw, así el teléfono se ve correcto en móvil, tablet y escritorio. */
+.watm-phone{position:relative;--pw:min(300px,86vw);width:var(--pw);margin:0 auto;
+  border-radius:calc(var(--pw)*.147);padding:calc(var(--pw)*.037);
+  background:linear-gradient(150deg,#3a3d45 0%,#0e0f12 42%,#22242a 100%);
+  box-shadow:0 2px 3px rgba(255,255,255,.25) inset,0 26px 50px -12px rgba(0,0,0,.6),0 8px 18px rgba(0,0,0,.4);}
+.watm-phone::before{content:"";position:absolute;inset:calc(var(--pw)*.017);border-radius:calc(var(--pw)*.133);border:1px solid rgba(255,255,255,.06);pointer-events:none}
+.watm-phone::after{content:"";position:absolute;top:calc(var(--pw)*.24);right:-2px;width:2px;height:calc(var(--pw)*.187);border-radius:2px;background:linear-gradient(#4a4d55,#17181c);box-shadow:-1px 0 0 rgba(0,0,0,.5)}
+.watm-screen{position:relative;border-radius:calc(var(--pw)*.113);overflow:hidden;background:var(--wa-bg);
+  aspect-ratio:9/19.5;display:flex;flex-direction:column;line-height:1.35;
+  box-shadow:0 0 0 2px #000, 0 0 1px 3px rgba(255,255,255,.04) inset}
+.watm-android .watm-screen{aspect-ratio:9/20}
+/* fondo doodle sutil */
+/* Los mensajes se anclan ABAJO, como en un chat real con historial: si sobran,
+   se cortan por arriba (igual que un pantallazo de verdad) y nunca queda un
+   hueco vacío al pie cuando la conversación es corta. */
+.wbody{flex:1;min-height:0;overflow:hidden;padding:8px 7px 4px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;position:relative;
+  background-image:radial-gradient(rgba(0,0,0,.028) 1px,transparent 1px);background-size:22px 22px}
+.wbody>*{flex:none}
+/* cabecera */
+.whead{display:flex;align-items:center;gap:7px;padding:9px 8px;color:#fff}
+.watm-ios .whead{background:var(--wa-hd-ios)}
+.watm-android .whead{background:var(--wa-hd-and)}
+.whback{display:flex;color:#fff;opacity:.95;margin-right:-2px}
+.whav{width:34px;height:34px;border-radius:50%;flex:none;overflow:hidden;background:#c9d2d9;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:15px}
+.whav img{width:100%;height:100%;object-fit:cover;filter:blur(5px) brightness(.96);transform:scale(1.25);pointer-events:none}
+.whname{min-width:0;flex:1;line-height:1.1}
+.whn{font-size:16px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.whsub{font-size:12px;opacity:.85;margin-top:1px}
+.whicons{display:flex;align-items:center;gap:13px}
+.whic{display:flex;color:#fff;opacity:.96}
+/* fecha */
+.wdate{display:flex;justify-content:center;margin:4px 0 6px}
+.wdate span{background:#fff;color:#54656f;font-size:12px;padding:4px 11px;border-radius:8px;box-shadow:0 1px .5px rgba(0,0,0,.13)}
+/* burbujas */
+.wm{display:flex;margin:1px 0}
+.wm.me{justify-content:flex-end}
+.wm.you{justify-content:flex-start}
+.wb{max-width:78%;position:relative;padding:6px 8px 8px;border-radius:8px;font-size:14.2px;line-height:1.32;color:var(--wa-tx);
+  box-shadow:0 1px .5px rgba(0,0,0,.13);
+  /* El texto del chat SIEMPRE va a la izquierda, como en WhatsApp real. La
+     landing puede tener text-align:center global (y lo heredaba: dejaba huecos
+     raros a la izquierda de cada línea). Aquí se corta esa herencia. */
+  text-align:left;
+  /* Reparto de líneas «bonito»: evita dejar una palabra sola en la última
+     línea y parte bien las palabras largas o las URLs. */
+  text-wrap:pretty;overflow-wrap:break-word;word-break:normal;hyphens:none}
+.wm.me .wb{background:var(--wa-me);border-top-right-radius:2px}
+.wm.you .wb{background:var(--wa-you);border-top-left-radius:2px}
+.wb.has-img{padding:3px 3px 3px}
+.wtx{white-space:pre-wrap}
+.wmeta{display:inline-flex;align-items:center;gap:3px;float:right;margin:6px 0 -2px 8px;transform:translateY(2px)}
+.wt{font-size:11px;color:var(--wa-mt)}
+.wtk{margin-bottom:-1px}
+.wimg{display:block;position:relative;border-radius:6px;overflow:hidden}
+.wimg img{display:block;width:210px;max-width:60vw;height:auto;pointer-events:none}
+.wimg .wmeta{position:absolute;right:6px;bottom:5px;margin:0;padding:1px 5px;border-radius:8px;background:rgba(0,0,0,.35)}
+.wimg .wt{color:#eef}
+/* pie / barra de escritura */
+.wfoot{display:flex;align-items:center;gap:7px;padding:6px 8px;background:#f0f2f5}
+.watm-android .wfoot{background:#eef0f1}
+.wemoji,.wmic{display:flex;color:#8696a0;flex:none}
+.winp{flex:1;display:flex;align-items:center;gap:8px;background:#fff;border-radius:22px;padding:8px 10px;min-width:0}
+.winp-ph{flex:1;color:#8b98a5;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wclip,.wcam{display:flex;color:#8696a0;flex:none}
+.wmic{width:38px;height:38px;border-radius:50%;background:var(--wa-hd-ios);align-items:center;justify-content:center}
+.watm-android .wmic{background:#00a884}
+/* fuentes de fábrica */
+.watm-ios .watm-screen{font-family:-apple-system,"SF Pro Text","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif}
+.watm-android .watm-screen{font-family:Roboto,"Noto Sans","Segoe UI",Arial,sans-serif}
+/* anti-copia: capa transparente encima que se come cualquier interacción */
+.watm-guard{position:absolute;inset:0;z-index:5;background:transparent}
+.watm-phone img,.watm-phone svg{-webkit-user-drag:none;user-drag:none}
+/* 🛡 BLINDAJE: el CSS de la landing (textos crema, fuentes decorativas,
+   sombras, mayúsculas) NO puede tocar la pantalla del teléfono. Sin esto,
+   una landing con p/span de color claro dejaba los mensajes ilegibles
+   (crema sobre burbuja blanca — pasó en vidente.linkdeamor.com). */
+.watm-wrap .watm-screen *{text-shadow:none!important;letter-spacing:normal!important;text-transform:none!important}
+.watm-ios .watm-screen,.watm-ios .watm-screen *{font-family:-apple-system,"SF Pro Text","SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif!important}
+.watm-android .watm-screen,.watm-android .watm-screen *{font-family:Roboto,"Noto Sans","Segoe UI",Arial,sans-serif!important}
+.watm-wrap .wb,.watm-wrap .wtx{color:var(--wa-tx)!important;font-size:14.2px!important;line-height:1.32!important}
+.watm-wrap .wt{color:var(--wa-mt)!important;font-size:11px!important}
+.watm-wrap .wimg .wt{color:#eef!important}
+.watm-wrap .whead,.watm-wrap .whead *{color:#fff!important}
+.watm-wrap .wdate span{color:#54656f!important;background:#fff!important}
+.watm-wrap .winp-ph{color:#8b98a5!important}
+.watm-wrap .wm.me .wb{background:var(--wa-me)!important}
+.watm-wrap .wm.you .wb{background:var(--wa-you)!important}
+
+.watm-wrap{padding:18px 0 22px;text-align:center}
+.watm-title,.watm-galhead{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-weight:700;font-size:16px;color:inherit;opacity:.92;margin:0 auto 14px;max-width:90%}
+.watm-viewport{overflow:hidden;max-width:100%}
+.watm-track{display:flex;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.watm-slide{min-width:100%;display:flex;justify-content:center;padding:0 6px}
+.watm-dots{display:flex;gap:6px;justify-content:center;margin-top:14px}
+.watm-dot{width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.25;transition:opacity .3s,transform .3s}
+.watm-dot.on{opacity:.9;transform:scale(1.25)}
+.watm-galhead{display:inline-flex;align-items:center;gap:8px;cursor:pointer;background:none;border:0;padding:6px 10px}
+.watm-chev{font-size:13px;opacity:.7}
+.watm-galbody{overflow:hidden;transition:max-height .45s ease}
+.watm-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:16px 6px 4px}
+</style><div class="watm-wrap" data-fmt="slider" data-secs="6"><div class="watm-title">Lo que dicen quienes ya confiaron 🙏</div><div class="watm-viewport"><div class="watm-track"><div class="watm-slide"><div class="watm-phone watm-ios" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/women/48.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Rosalba Miami</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro buenas noches soy rosalba la de miami. no sé si me recuerda pero quería contarle 🙏</span><span class="wmeta"><span class="wt">01:31</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">hola rosalba claro que te recuerdo. dime cómo va todo</span><span class="wmeta"><span class="wt">01:37</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">pues mire él volvió a casa hace una semana y ya no andamos peleando</span><span class="wmeta"><span class="wt">01:46</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">me alegra mucho. eso es señal de que la energía se está acomodando</span><span class="wmeta"><span class="wt">01:50</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">hasta ayer me invitó a cenar y hablamos tranquilos. no lo hacía desde hace años 😭</span><span class="wmeta"><span class="wt">01:57</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">sigue con fe y en calma. vamos paso a paso ✨</span><span class="wmeta"><span class="wt">01:59</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">gracias maestro de verdad. no sabes lo que significa esto para mí ❤️</span><span class="wmeta"><span class="wt">02:04</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-android" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/men/26.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Hipólito Los Angeles</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">hola maestro le escribe yolanda. quería agradecerle porque mi esposo cambió mucho</span><span class="wmeta"><span class="wt">12:32</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">hola yolanda, cuéntame qué está pasando</span><span class="wmeta"><span class="wt">12:39</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">ya no llega buscando pelea. se sienta a comer conmigo y hasta me ayuda en la casa</span><span class="wmeta"><span class="wt">12:41</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">que bonito escuchar eso. cuando la armonía vuelve todo se siente más ligero</span><span class="wmeta"><span class="wt">12:46</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">sí, hace meses no vivíamos así. le juro que lloré de la emoción 🙏</span><span class="wmeta"><span class="wt">12:54</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">sigue en esa energía, no dejes que la duda te gane. estoy aquí para acompañarte</span><span class="wmeta"><span class="wt">12:57</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">gracias maestro, la verdad le estoy muy agradecida ❤️</span><span class="wmeta"><span class="wt">13:03</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-ios" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/women/62.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Ysabel Chicago</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro no sé si se acuerda de mí, soy patricia. le hice caso con lo del hechizo de pareja</span><span class="wmeta"><span class="wt">11:33</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">hola patricia, sí me acuerdo. cómo te ha ido</span><span class="wmeta"><span class="wt">11:41</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">pues que él empezó a buscarme otra vez. me dijo que extrañaba lo que teníamos</span><span class="wmeta"><span class="wt">11:44</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">eso es muy bueno. el vínculo se está reactivando</span><span class="wmeta"><span class="wt">11:50</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">ya no hablamos de separación. ayer incluso me abrazó sin que yo dijera nada 😭</span><span class="wmeta"><span class="wt">11:59</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">qué hermoso. abre tu corazón y recíbelo con calma, sin presionar</span><span class="wmeta"><span class="wt">12:03</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">se lo agradezco mucho maestro. de verdad siento que volvimos a empezar ✨</span><span class="wmeta"><span class="wt">12:10</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-android" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/men/78.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Bautista Dallas</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">hola maestro, soy marta. quería contarle que el ambiente en mi casa cambió un montón</span><span class="wmeta"><span class="wt">10:34</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">hola marta, me alegra que me escribas. cuéntame</span><span class="wmeta"><span class="wt">10:43</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">mi esposo volvió a dormir en nuestra habitación. ya no se queda en el sofá</span><span class="wmeta"><span class="wt">10:47</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">eso es un paso grande. la cercanía física también ayuda a sanar</span><span class="wmeta"><span class="wt">10:54</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">la familia se sintió más tranquila. los niños lo notaron y hasta me preguntaron si ya no íbamos a pelear</span><span class="wmeta"><span class="wt">10:56</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">los niños sienten todo. sigue cuidando ese espacio de paz</span><span class="wmeta"><span class="wt">11:01</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">gracias maestro. le estaré eternamente agradecida 🙏</span><span class="wmeta"><span class="wt">11:09</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-ios" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/women/52.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Irma New York</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">maestro le escribo después de tiempo. quería darle las gracias por el trabajo que hicimos</span><span class="wmeta"><span class="wt">09:35</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">hola elena, gracias por volver a escribir. dime cómo sigues</span><span class="wmeta"><span class="wt">09:37</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">después de meses frío, él me mandó un mensaje lindo. no me lo esperaba</span><span class="wmeta"><span class="wt">09:42</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">el corazón se está abriendo otra vez. recibe todo con calma</span><span class="wmeta"><span class="wt">09:50</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">hemos salido dos veces y se sintió como antes. hasta se rió de mis chistes</span><span class="wmeta"><span class="wt">09:53</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">me alegra mucho, elena. eso es parte del reencuentro de almas</span><span class="wmeta"><span class="wt">09:59</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">muchas gracias maestro, de corazón ❤️✨</span><span class="wmeta"><span class="wt">10:08</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div><div class="watm-slide"><div class="watm-phone watm-android" aria-label="Conversación de WhatsApp"><div class="watm-screen"><div class="whead"><span class="whback"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"></path></svg></span><span class="whav"><img src="https://randomuser.me/api/portraits/men/13.jpg" alt="" draggable="false"></span><div class="whname"><div class="whn">Genaro Phoenix</div><div class="whsub">en línea</div></div><div class="whicons"><span class="whic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 15.5a12.7 12.7 0 0 1-4-.6 1.1 1.1 0 0 0-1.1.3l-1.8 1.8a16.6 16.6 0 0 1-7.3-7.3l1.8-1.8a1.1 1.1 0 0 0 .3-1.1A12.7 12.7 0 0 1 8.5 4 1 1 0 0 0 7.5 3H4.5A1 1 0 0 0 3.5 4 17.5 17.5 0 0 0 20 20.5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z"></path></svg></span><span class="whic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path></svg></span></div></div><div class="wbody"><div class="wdate"><span>Hoy</span></div><div class="wm you"><div class="wb "><span class="wtx">hola maestro soy gabriela. no quiero dejar pasar más tiempo sin agradecerle</span><span class="wmeta"><span class="wt">08:36</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">hola gabriela, gracias por escribir. cómo está tu familia</span><span class="wmeta"><span class="wt">08:39</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">mi esposo ya pasa tiempo con los niños. juega con ellos y eso no pasaba desde hacía mucho</span><span class="wmeta"><span class="wt">08:45</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">qué lindo. cuando el hombre se conecta con su hogar las cosas cambian de raíz</span><span class="wmeta"><span class="wt">08:54</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">se siente otra vez como familia. hasta yo estoy más tranquila</span><span class="wmeta"><span class="wt">08:58</span></span></div></div><div class="wm me"><div class="wb "><span class="wtx">me da mucha paz escucharte. sigue confiando en ese proceso</span><span class="wmeta"><span class="wt">09:05</span><svg class="wtk" viewBox="0 0 16 11" width="16" height="11" aria-hidden="true"><path fill="#53bdeb" d="M11.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.92.08L1.5 5.9a.5.5 0 1 1 .7-.72l2.9 2.83L10.37.78a.5.5 0 0 1 .7-.13Z"></path><path fill="#53bdeb" d="M15.07.65a.5.5 0 0 1 .13.7l-5.4 7.68a.6.6 0 0 1-.9.09l-.42-.4a.6.6 0 0 1 .06-.78l.06-.06L14.37.78a.5.5 0 0 1 .7-.13Z"></path></svg></span></div></div><div class="wm you"><div class="wb "><span class="wtx">gracias por ayudarme a recuperar mi hogar 🙏</span><span class="wmeta"><span class="wt">09:07</span></span></div></div></div><div class="wfoot"><span class="wemoji"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m-3.5 7a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3M12 17.5c-2.3 0-4.3-1.4-5-3.5h10c-.7 2.1-2.7 3.5-5 3.5"></path></svg></span><div class="winp"><span class="winp-ph">Escribir mensaje</span><span class="wclip"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M16.5 6v11.5a4 4 0 0 1-8 0V5a2.5 2.5 0 0 1 5 0v10.5a1 1 0 0 1-2 0V6H10v9.5a2.5 2.5 0 0 0 5 0V5a4 4 0 0 0-8 0v12.5a5.5 5.5 0 0 0 11 0V6z"></path></svg></span><span class="wcam"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M9.4 3h5.2l1.8 2H20a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3.6zM4 7v11h16V7h-4.5l-1.8-2h-3.4L8.5 7zm8 1.6a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4"></path></svg></span></div><span class="wmic"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#fff" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3m5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"></path></svg></span></div></div><span class="watm-guard" aria-hidden="true"></span></div></div></div></div><div class="watm-dots"><span class="watm-dot on"></span><span class="watm-dot"></span><span class="watm-dot"></span><span class="watm-dot"></span><span class="watm-dot"></span><span class="watm-dot"></span></div></div><script>(function(){var W=document.querySelectorAll('.watm-wrap');if(!W.length)return;
+  function stop(e){e.preventDefault();e.stopPropagation();return false}
+  W.forEach(function(w){['contextmenu','dragstart','selectstart','copy','cut'].forEach(function(ev){w.addEventListener(ev,stop)});
+    var track=w.querySelector('.watm-track');var slides=w.querySelectorAll('.watm-slide');
+    if(w.getAttribute('data-fmt')==='gallery'){var head=w.querySelector('.watm-galhead');var body=w.querySelector('.watm-galbody');
+      if(head&&body){head.addEventListener('click',function(){var open=w.classList.toggle('watm-open');body.style.maxHeight=open?body.scrollHeight+'px':'0px';var c=w.querySelector('.watm-chev');if(c)c.textContent=open?'▴':'▾'})}
+    } else if(track&&slides.length>1){var i=0;var secs=Number(w.getAttribute('data-secs'))||6;
+      setInterval(function(){i=(i+1)%slides.length;track.style.transform='translateX(-'+(i*100)+'%)';var dots=w.querySelectorAll('.watm-dot');dots.forEach(function(d,k){d.className='watm-dot'+(k===i?' on':'')})},secs*1000)}
+  });})();</script></section>
+
+        <!-- Barra urgencia -->
+        <div class="barra-urgencia reveal">
+            ✦ Atiendo por WhatsApp a hispanos en todo Estados Unidos — Houston, Phoenix, Los Ángeles, Chicago y más ✦
+        </div>
+
+        <!-- Servicios Slider -->
+        <section class="section reveal" aria-labelledby="servicios-titulo">
+            <h2 class="section-titulo" id="servicios-titulo">Tu <span style="background:var(--degradado-dorado);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;">Consulta Espiritual</span> te abre el camino</h2>
+            <div class="slider-container" id="slider-servicios" role="region" aria-label="Servicios de consulta espiritual">
+                <article class="tarjeta-servicio" style="transition-delay:0s">
+                    <img src="/consulta-espiritual-5828091/optimizado/ag-199456377311/kw-599156189/banco-mujeres-preparando-altar-de-santa-muerte.webp" alt="Mujeres preparando altar de Santa Muerte durante consulta espiritual" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="contenido">
+                        <h3>Lectura de tu situación</h3>
+                        <p>En tu consulta espiritual gratuita, el Maestro Belisario analiza tu caso con sus herramientas sagradas. Descubrirás la raíz oculta de tu dolor y el camino hacia la paz.</p>
+                        <a href="https://wa.me/15042987893?text=Maestro%20Belisario%2C%20quiero%20saber%20qu%C3%A9%20est%C3%A1%20pasando%20conmigo" class="mini-cta">Hablar ahora</a>
+                    </div>
+                </article>
+                <article class="tarjeta-servicio" style="transition-delay:0.05s">
+                    <img src="/consulta-espiritual-5828091/optimizado/ag-199456377311/kw-599156189/banco-velas-rituales-rojas-y-blancas.webp" alt="Velas rituales rojas y blancas para consulta espiritual" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="contenido">
+                        <h3>Limpieza energética</h3>
+                        <p>Durante la consulta espiritual se detectan bloqueos, malas energías o influencias negativas. Belisario te explicará cómo liberarte con rituales personalizados.</p>
+                        <a href="https://wa.me/15042987893?text=Maestro%20Belisario%2C%20necesito%20una%20limpieza%20espiritual%20urgente" class="mini-cta">Solicitar limpieza</a>
+                    </div>
+                </article>
+                <article class="tarjeta-servicio" style="transition-delay:0.1s">
+                    <img src="/consulta-espiritual-5828091/optimizado/ag-199456377311/kw-599156189/banco-lamparas-votivas-y-flores-rituales.webp" alt="Lámparas votivas y flores rituales para consulta espiritual" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="contenido">
+                        <h3>Orientación en amor</h3>
+                        <p>Si tu corazón está herido, la consulta espiritual te revelará si hay reconciliación posible y cómo atraer de vuelta a quien amas, sin forzar destinos.</p>
+                        <a href="https://wa.me/15042987893?text=Maestro%20Belisario%2C%20quiero%20recuperar%20a%20mi%20pareja%20%C2%BFme%20ayudas%3F" class="mini-cta">Hablar de amor</a>
+                    </div>
+                </article>
+                <article class="tarjeta-servicio" style="transition-delay:0.15s">
+                    <img src="/consulta-espiritual-5828091/optimizado/ag-199456377311/kw-599156189/banco-sombras-de-pareja-formando-corazon.webp" alt="Sombras de pareja formando corazón, símbolo de unión" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="contenido">
+                        <h3>Guía para decisiones</h3>
+                        <p>El Maestro Belisario canaliza respuestas claras en tu consulta espiritual. Salud, dinero, familia: ninguna pregunta se queda sin orientación sincera.</p>
+                        <a href="https://wa.me/15042987893?text=Maestro%20Belisario%2C%20necesito%20orientaci%C3%B3n%20para%20una%20decisi%C3%B3n%20importante" class="mini-cta">Pedir orientación</a>
+                    </div>
+                </article>
+                <article class="tarjeta-servicio" style="transition-delay:0.2s">
+                    <img src="/consulta-espiritual-5828091/optimizado/ag-199456377311/kw-599156189/banco-silueta-de-pareja-besandose-en-playa.webp" alt="Silueta de pareja besándose en playa al atardecer" width="800" height="960" loading="lazy" decoding="async">
+                    <div class="contenido">
+                        <h3>Trabajo espiritual a medida</h3>
+                        <p>Tras tu consulta espiritual, si decides avanzar, Belisario diseña un plan único con alta brujería. Pagas solo cuando veas resultados reales.</p>
+                        <a href="https://wa.me/15042987893?text=Maestro%20Belisario%2C%20acepto%20mi%20consulta%20espiritual%20y%20quiero%20saber%20m%C3%A1s" class="mini-cta">Avanzar ahora</a>
+                    </div>
+                </article>
+            </div>
+            <div class="dots-slider" id="dots-slider"></div>
+        </section>
+
+        <hr class="divisor reveal" aria-hidden="true">
+
+        <!-- Sobre el maestro -->
+        <section class="section reveal" aria-labelledby="sobre-titulo">
+            <h2 class="section-titulo" id="sobre-titulo">Sobre el Maestro Belisario</h2>
+            <div class="sobre-maestro">
+                <img src="/consulta-espiritual-5828091/optimizado/ag-199456377311/kw-599156189/banco-altar-esoterico-con-devoto.webp" alt="Retrato del Maestro Belisario frente a su altar de consulta espiritual" width="800" height="960" fetchpriority="high" decoding="async">
+                <div class="texto">
+                    <p>Soy Belisario, brujo de linaje con más de 35 años entregado al arte espiritual. Desde mi altar, he guiado a cientos de almas hispanas en Estados Unidos a encontrar la paz que creían perdida. Mi consulta espiritual no es un trámite: es un encuentro sagrado donde miro tu caso con honestidad, sin falsas promesas, y te digo exactamente qué se puede hacer.</p>
+                    <p>Cada consulta espiritual es un primer paso hacia la claridad. No importa si vienes roto por un amor que se fue, por una mala racha que no termina o por una duda que te quita el sueño. Yo te escucho, canalizo y te entrego las herramientas para que retomes las riendas de tu vida con fe.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divisor reveal" aria-hidden="true">
+
+        <!-- Cómo funciona -->
+        <section class="section reveal" aria-labelledby="proceso-titulo">
+            <h2 class="section-titulo" id="proceso-titulo">Tu <span style="background:var(--degradado-dorado);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;">consulta espiritual</span> en 3 pasos</h2>
+            <div class="pasos">
+                <div class="paso">
+                    <div class="paso-numero">1</div>
+                    <div class="paso-texto">
+                        <h4>Cuéntame tu caso</h4>
+                        <p>Escíbele al Maestro Belisario por WhatsApp. Relata con confianza lo que vives: él te leerá sin juzgarte y comenzará a analizar tu energía desde el primer mensaje.</p>
+                    </div>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">2</div>
+                    <div class="paso-texto">
+                        <h4>Recibe tu consulta espiritual</h4>
+                        <p>Belisario utiliza su altar, velas y herramientas esotéricas para revelar la verdad de tu situación. Sabrás qué fuerzas están actuando y qué camino tomar.</p>
+                    </div>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">3</div>
+                    <div class="paso-texto">
+                        <h4>Decide con libertad</h4>
+                        <p>Con la información en tus manos, eliges si deseas un trabajo espiritual. Si avanzas, pagas solo cuando veas resultados. Siempre con seguimiento cercano.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divisor reveal" aria-hidden="true">
+
+        <!-- Testimonios -->
+        <section class="section reveal" aria-labelledby="testimonios-titulo">
+            <h2 class="section-titulo" id="testimonios-titulo">Quienes confiaron en su <span style="background:var(--degradado-dorado);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;">consulta espiritual</span></h2>
+            <div class="testimonios-grid">
+                <div class="testimonio-card" style="transition-delay:0s">
+                    <div class="rombo-inicial"><span>L</span></div>
+                    <div class="testimonio-contenido">
+                        <blockquote>“La verdad yo no creía en esto, pero estaba desesperada. Llamé al Maestro Belisario para una consulta espiritual y me dijo cosas que nadie sabía. A la semana mi esposo volvió a casa.”</blockquote>
+                        <span class="testimonio-nombre">Lorena M. · Houston, TX</span>
+                    </div>
+                </div>
+                <div class="testimonio-card" style="transition-delay:0.05s">
+                    <div class="rombo-inicial"><span>R</span></div>
+                    <div class="testimonio-contenido">
+                        <blockquote>“Se lo juro que intenté de todo: psicólogos, consejeros, hasta otra bruja. Solo el Maestro Belisario en mi consulta espiritual me explicó por qué nada funcionaba. Hoy estoy en paz.”</blockquote>
+                        <span class="testimonio-nombre">Rigoberto S. · Phoenix, AZ</span>
+                    </div>
+                </div>
+                <div class="testimonio-card" style="transition-delay:0.1s">
+                    <div class="rombo-inicial"><span>Y</span></div>
+                    <div class="testimonio-contenido">
+                        <blockquote>“Gracias por todo, Maestro. Vine por una consulta espiritual sin esperanza y salí con un plan claro. Mi negocio levantó, la mala suerte se fue.”</blockquote>
+                        <span class="testimonio-nombre">Yolanda R. · Charlotte, NC</span>
+                    </div>
+                </div>
+                <div class="testimonio-card" style="transition-delay:0.15s">
+                    <div class="rombo-inicial"><span>E</span></div>
+                    <div class="testimonio-contenido">
+                        <blockquote>“Pensé que era imposible recuperar a mi novio después de lo que pasó. La consulta espiritual me mostró que todavía había camino. Llevamos 6 meses juntos otra vez.”</blockquote>
+                        <span class="testimonio-nombre">Estefanía · Newark, NJ</span>
+                    </div>
+                </div>
+                <div class="testimonio-card" style="transition-delay:0.2s">
+                    <div class="rombo-inicial"><span>D</span></div>
+                    <div class="testimonio-contenido">
+                        <blockquote>“El Maestro Belisario no te endulza el oído. En mi consulta espiritual fue directo y honesto. Eso fue lo que más valoro. Su trabajo posterior fue impecable.”</blockquote>
+                        <span class="testimonio-nombre">Donato C. · Fresno, CA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divisor reveal" aria-hidden="true">
+
+        <!-- FAQ -->
+        <section class="section reveal" aria-labelledby="faq-titulo">
+            <h2 class="section-titulo" id="faq-titulo">Preguntas sobre la <span style="background:var(--degradado-dorado);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;">consulta espiritual</span></h2>
+            <details>
+                <summary>¿La primera consulta espiritual es realmente gratis?</summary>
+                <p>Sí. El Maestro Belisario dedica tiempo a escuchar tu caso y canalizar respuestas sin costo alguno. No hay trucos: la consulta espiritual inicial es un gesto de fe para que puedas decidir con claridad.</p>
+            </details>
+            <details>
+                <summary>¿Cómo se hace la consulta si vivo lejos?</summary>
+                <p>Toda la consulta espiritual se realiza por WhatsApp. La energía no entiende de distancias. Belisario trabaja con tu nombre, tu historia y tu fotografía si decides enviarla. Atiende a hispanos en cualquier estado de USA.</p>
+            </details>
+            <details>
+                <summary>¿Puedo confiar en que lo mío tiene solución?</summary>
+                <p>El Maestro no promete lo imposible. Durante tu consulta espiritual te dirá honestamente qué se puede lograr y qué no. Muchas personas que llegaron sin esperanza encontraron alivio porque por fin entendieron su situación real.</p>
+            </details>
+            <details>
+                <summary>¿Qué pasa después de la consulta espiritual?</summary>
+                <p>Si decides seguir adelante con un trabajo espiritual, Belisario te explicará el proceso, los tiempos y el costo. La regla es clara: pagas solo cuando veas resultados. Y él hace seguimiento de tu caso hasta el final.</p>
+            </details>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="cta-final reveal" aria-labelledby="cta-final-titulo">
+            <h2 id="cta-final-titulo" style="background:var(--degradado-dorado);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;">Tu consulta espiritual es el primer paso</h2>
+            <p style="margin-bottom:1.2rem;font-size:0.9rem;">No sigas cargando la duda solo. El Maestro Belisario está listo para escucharte con respeto y guiarte hacia la luz que mereces.</p>
+            <a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20estoy%20listo%20para%20mi%20consulta%20espiritual%20gratis" class="btn-dorado">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                Escríbele al Maestro Belisario
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Maestro Belisario · Consulta Espiritual para hispanos en USA · Todos los derechos reservados.</p>
+        <p style="margin-top:0.3rem;">Resultados varían según cada caso. Nada en esta página sustituye consejo médico o profesional.</p>
+    </footer>
+
+    <script>
+        // IntersectionObserver para reveal
+        (function() {
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            const reveals = document.querySelectorAll('.reveal');
+            if (reducedMotion) {
+                reveals.forEach(el => { el.classList.add('visible');
+                    el.style.transition = 'none'; });
+                return;
+            }
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -30px 0px' });
+            reveals.forEach(el => observer.observe(el));
+        })();
+
+        // Slider autoplay
+        (function() {
+            const slider = document.getElementById('slider-servicios');
+            const dotsContainer = document.getElementById('dots-slider');
+            if (!slider || !dotsContainer) return;
+            const cards = slider.querySelectorAll('.tarjeta-servicio');
+            if (cards.length < 2) { dotsContainer.style.display = 'none';
+                return; }
+            // Crear dots
+            cards.forEach((_, i) => {
+                const dot = document.createElement('span');
+                dot.className = 'dot';
+                if (i === 0) dot.classList.add('active');
+                dot.setAttribute('aria-label', 'Servicio ' + (i + 1));
+                dotsContainer.appendChild(dot);
+            });
+            const dots = dotsContainer.querySelectorAll('.dot');
+            let currentIndex = 0;
+            let autoplayPaused = false;
+            let autoplayTimer;
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            function updateDots(index) {
+                dots.forEach((d, i) => d.classList.toggle('active', i === index));
+            }
+
+            function scrollToIndex(index) {
+                const cardWidth = cards[0].offsetWidth + 16; // 16px gap
+                const scrollPos = index * cardWidth;
+                slider.scrollTo({ left: scrollPos, behavior: 'smooth' });
+                updateDots(index);
+                currentIndex = index;
+            }
+
+            function nextSlide() {
+                if (autoplayPaused || reducedMotion) return;
+                const next = (currentIndex + 1) % cards.length;
+                scrollToIndex(next);
+            }
+
+            function startAutoplay() {
+                if (reducedMotion) return;
+                clearInterval(autoplayTimer);
+                autoplayTimer = setInterval(nextSlide, 5000);
+            }
+
+            // Pausar al interactuar
+            slider.addEventListener('touchstart', () => {
+                autoplayPaused = true;
+                clearInterval(autoplayTimer);
+            });
+            slider.addEventListener('touchend', () => {
+                setTimeout(() => { autoplayPaused = false;
+                    startAutoplay(); }, 10000);
+            });
+            slider.addEventListener('pointerdown', () => {
+                autoplayPaused = true;
+                clearInterval(autoplayTimer);
+            });
+            slider.addEventListener('pointerup', () => {
+                setTimeout(() => { autoplayPaused = false;
+                    startAutoplay(); }, 10000);
+            });
+            slider.addEventListener('scroll', () => {
+                const cardWidth = cards[0].offsetWidth + 16;
+                const idx = Math.round(slider.scrollLeft / cardWidth);
+                if (idx >= 0 && idx < cards.length && idx !== currentIndex) {
+                    updateDots(idx);
+                    currentIndex = idx;
+                }
+            }, { passive: true });
+
+            if (!reducedMotion) startAutoplay();
+            else updateDots(0);
+        })();
+    </script>
+<script data-sendto="AW-672356997/QCpfCPTWos4cEIW1zcAC" src="https://googleads.mkinnovador.com/wa-tracker.js" defer=""></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<script id="wa-img-guard">(function(){function h(t){if(!t||t.tagName!=='IMG')return;t.style.display='none';var f=t.closest&&t.closest('figure');if(f){var alive=false;f.querySelectorAll('img,video,iframe').forEach(function(m){if(m.style.display!=='none')alive=true});if(!alive)f.style.display='none'}}document.addEventListener('error',function(e){h(e.target)},true);window.addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('img').forEach(function(i){if(i.src&&i.complete&&i.naturalWidth===0)h(i)})},400)});})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a.length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--WA-FAB:fuego-sagrado--><div class="wfab-fuego"><style>
+.wfab-fuego{position:fixed;right:16px;bottom:16px;z-index:99999}
+.wfab-fuego a{display:flex;align-items:center;gap:10px;padding:10px 17px 10px 10px;border-radius:999px;background:linear-gradient(160deg,#3b0d0d,#7f1d1d);border:1.5px solid rgba(251,146,60,.65);color:#fde8d7;font:700 13.5px/1.1 'Segoe UI',sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(127,29,29,.5);position:relative;overflow:hidden}
+.wfab-fuego a::before,.wfab-fuego a::after{content:'';position:absolute;bottom:-4px;width:5px;height:5px;border-radius:50%;background:#fb923c;opacity:0;animation:wfabFuegoUp 3.5s ease-in infinite}
+.wfab-fuego a::before{left:26%}
+.wfab-fuego a::after{left:64%;animation-delay:1.7s}
+.wfab-fuego .wi{display:flex;align-items:center;justify-content:center;width:37px;height:37px;border-radius:50%;background:#17b357;color:#fff;flex:0 0 auto}
+@keyframes wfabFuegoUp{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-46px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wfab-fuego a::before,.wfab-fuego a::after{animation:none!important}}
+</style><a href="https://wa.me/15042987893?text=Hola%20Maestro%20Belisario%2C%20quiero%20mi%20consulta%20espiritual%20gratis" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><span class="wi"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></span><span>Consulta inmediata 🔥</span></a></div><!--/WA-FAB-->
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+<!--CALL-FAB:pildora-marfil--><div class="cfab-marf"><style>
+.cfab-marf{position:fixed!important;top:50%!important;bottom:auto!important;left:auto!important;right:max(12px,env(safe-area-inset-right,12px))!important;transform:translateY(-50%);z-index:2147483000;line-height:0;pointer-events:auto}
+.cfab-marf a{-webkit-tap-highlight-color:transparent}
+@media(min-width:768px){.cfab-marf{display:none!important}}
+@media(prefers-reduced-motion:reduce){.cfab-marf,.cfab-marf *,.cfab-marf::before,.cfab-marf::after{animation:none!important}}
+.cfab-marf a{display:flex;align-items:center;gap:8px;padding:11px 16px 11px 12px;border-radius:999px;background:#fafaf9;border:1px solid rgba(0,0,0,.08);color:#1c1917;text-decoration:none;font:700 13px/1 'Segoe UI',system-ui,sans-serif;box-shadow:0 10px 28px rgba(0,0,0,.22)}
+.cfab-marf .ci{display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;flex:0 0 auto}
+</style><a href="tel:+15042987893" aria-label="Llamar por teléfono" rel="nofollow"><span class="ci"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.2 3h3.3c.5 0 .9.34 1.01.83l.86 3.4c.09.37-.02.76-.3 1.02L7.1 10.2c1.3 2.6 3.4 4.7 6 6l1.95-1.97c.26-.27.65-.38 1.02-.29l3.4.86c.49.12.83.55.83 1.05v3.3c0 .61-.5 1.11-1.11 1.08C10.35 19.83 4.17 13.65 3.12 4.11 3.09 3.5 3.59 3 4.2 3Z"></path></svg></span><span>Llamar</span></a></div><!--/CALL-FAB-->
+
+<style id="wa-ancho-guard">html,body{max-width:100%!important;overflow-x:clip!important}.watm-wrap{width:auto!important;max-width:100vw!important;box-sizing:border-box}.watm-viewport{overflow:hidden!important;width:auto!important;max-width:100%!important}.watm-track{width:100%!important;max-width:100%!important;min-width:0!important}.watm-slide{flex:0 0 100%!important;width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box}img,svg,video,iframe{max-width:100%}[class^="wfab-"],[class*=" wfab-"]{right:max(12px,env(safe-area-inset-right,0px))!important;left:auto!important;max-width:calc(100% - 24px)}</style>
+</body></html>

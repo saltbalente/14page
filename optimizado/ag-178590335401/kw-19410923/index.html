@@ -3,150 +3,166 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Brujería para recuperar su pareja | Maestro Abelardo</title>
-  <meta name="description" content="Consulta de brujería con el Maestro Abelardo para quien busca recuperar su pareja, protección espiritual, retiro de mal de ojo o claridad. Atención confidencial por WhatsApp.">
+  <title>Brujería con Brujos Expertos | Maestro Baltazar</title>
+  <meta name="description" content="Consulta de brujería con el Maestro Baltazar. Orientación confidencial para amor, protección espiritual, mal de ojo, tarot y trabajos a distancia.">
   <meta name="theme-color" content="#111111">
   <link rel="canonical" href="https://brujeria.brujoychaman.digital/">
   <style>
-    :root{--bg:#111;--surface:rgba(255,255,255,.06);--surface2:#1a1a1a;--text:#f3f4f6;--muted:#b9bdc5;--green:#25d366;--line:rgba(255,255,255,.13);--radius:14px;--shadow:0 16px 40px rgba(0,0,0,.28)}
+    :root{--bg:#111;--surface:rgba(255,255,255,.06);--surface2:#191919;--text:#f3f4f6;--muted:#b9bdc5;--accent:#25d366;--dark:#111;--line:rgba(255,255,255,.12);--radius:14px;--shadow:0 18px 45px rgba(0,0,0,.32)}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}
-    body.js .test-step:not(.active),body.js .test-result:not(.active){display:none}
     img,video{display:block;max-width:100%}
     a{color:inherit}
-    button,a{font:inherit}
-    h1,h2,h3{font-family:Georgia,serif;line-height:1.12;margin:0 0 .75rem}
-    h1{font-size:clamp(2.45rem,10vw,4.3rem);font-weight:800;text-shadow:0 3px 22px rgba(0,0,0,.65)}
-    h2{font-size:clamp(1.85rem,7vw,3rem)}
-    h3{font-size:1.3rem}
-    p{margin:.45rem 0 1rem}
-    .wrap{width:min(1120px,calc(100% - 32px));margin:auto}
-    .section{padding:70px 0}
-    .section.alt{background:#161616}
-    .eyebrow{display:inline-block;margin-bottom:12px;color:var(--green);font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-    .lead{font-size:1.07rem;color:#d7d9dd;max-width:730px}
+    button,a{touch-action:manipulation}
+    h1,h2,h3{font-family:Georgia,serif;line-height:1.08;margin:0 0 .75rem}
+    h1{font-size:clamp(2.3rem,9vw,3.6rem);font-weight:800}
+    h2{font-size:clamp(1.9rem,7vw,2.7rem)}
+    h3{font-size:1.25rem}
+    p{margin:.55rem 0 1rem}
+    section:not([data-seccion="1-portada"]){padding:4.5rem max(1.15rem,calc((100% - 1120px)/2))}
+    .eyebrow{display:block;color:var(--accent);font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin-bottom:.75rem}
+    .lead{font-size:1.08rem;color:#dde0e5}
     .muted{color:var(--muted)}
     .center{text-align:center}
-    .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 22px;border:1px solid transparent;border-radius:999px;background:var(--green);color:#111;text-decoration:none;font-weight:850;box-shadow:0 8px 24px rgba(37,211,102,.18);transition:transform .2s,box-shadow .2s}
-    .btn:hover,.btn:active{transform:translateY(-2px);box-shadow:0 12px 30px rgba(37,211,102,.27)}
-    .btn.secondary{background:transparent;color:var(--text);border-color:var(--line);box-shadow:none}
-    .btn.small{min-height:42px;padding:9px 15px;font-size:.88rem}
-    .btn.pulse{animation:pulse 2.5s infinite}
-    @keyframes pulse{50%{transform:scale(1.035);box-shadow:0 0 0 9px rgba(37,211,102,.09),0 10px 30px rgba(37,211,102,.3)}}
-    .topbar{position:absolute;z-index:8;top:0;left:0;width:100%;padding:18px 0}
-    .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:15px}
-    .brand{font-family:Georgia,serif;font-weight:700;text-decoration:none;font-size:1.08rem}
-    .top-link{font-size:.84rem;color:#fff;text-decoration:none;border-bottom:1px solid var(--green)}
-    [data-seccion="1-portada"]{min-height:92svh;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:110px 0 42px}
+    .section-head{max-width:690px;margin:0 auto 2rem}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-height:50px;padding:.82rem 1.2rem;border:1px solid transparent;border-radius:999px;background:var(--accent);color:#111;text-decoration:none;font-weight:850;text-align:center;transition:transform .2s,box-shadow .2s,filter .2s}
+    .btn:hover,.btn:active{transform:translateY(-2px);box-shadow:0 12px 30px rgba(37,211,102,.24);filter:brightness(1.05)}
+    .btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}
+    .btn.small{min-height:42px;padding:.65rem .9rem;font-size:.88rem}
+    .btn.xl{width:100%;min-height:58px;font-size:1.05rem;animation:pulse 2.5s infinite}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.15rem;transition:transform .2s,box-shadow .2s}
+    .card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    .tag,.badge{display:inline-flex;align-items:center;border-radius:999px;font-size:.75rem;font-weight:800}
+    .tag{padding:.32rem .62rem;background:rgba(37,211,102,.12);color:#7df0a5;border:1px solid rgba(37,211,102,.25)}
+    .hero{min-height:92svh;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:5.2rem 1.15rem 2.4rem}
     .hero-video,.hero-overlay{position:absolute;inset:0;width:100%;height:100%}
     .hero-video{object-fit:cover}
-    .hero-overlay{background:linear-gradient(180deg,rgba(0,0,0,.24),rgba(0,0,0,.76) 72%,rgba(0,0,0,.93)),rgba(37,211,102,.1)}
-    .hero-content{position:relative;z-index:2}
-    .hero-badge{display:inline-flex;padding:8px 13px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(0,0,0,.34);backdrop-filter:blur(8px);font-size:.78rem;font-weight:800;letter-spacing:.04em}
-    .hero-sub{font-size:1.08rem;color:rgba(255,255,255,.88);max-width:650px}
-    .hero-trust{margin-top:10px;color:#d8dadd;font-size:.83rem}
-    .hero-enter{animation:heroIn .7s both}
-    .hero-enter:nth-child(2){animation-delay:.2s}.hero-enter:nth-child(3){animation-delay:.4s}.hero-enter:nth-child(4){animation-delay:.6s}
-    @keyframes heroIn{from{opacity:0;transform:translateY(20px)}}
-    .quick{display:flex;gap:8px;overflow-x:auto;padding:18px 0 8px;scrollbar-width:none}
-    .quick::-webkit-scrollbar{display:none}
-    .chip{flex:0 0 auto;padding:9px 13px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(0,0,0,.35);color:#fff;text-decoration:none;font-size:.82rem}
-    .master-mini{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center;margin-top:20px;padding:12px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(0,0,0,.45);max-width:650px}
-    .master-mini img{width:84px;height:101px;aspect-ratio:5/6;object-fit:cover;border-radius:11px;max-height:45vh}
-    .master-mini p{font-size:.84rem;margin:0;color:#d9dadd}
-    .scroll-arrow{position:absolute;right:20px;bottom:18px;z-index:3;font-size:1.4rem;animation:arrow 1.8s infinite}
-    @keyframes arrow{50%{transform:translateY(7px);opacity:.5}}
-    .intro{margin-bottom:28px}
-    .catalog-grid,.situation-grid,.trust-grid,.process-grid,.compare-grid{display:grid;gap:15px}
-    .service-card{position:relative;padding:1px;border-radius:var(--radius);overflow:hidden;perspective:1000px;min-height:310px}
-    .service-card:before{content:"";position:absolute;inset:-70%;background:conic-gradient(transparent 30%,var(--green),transparent 47%);animation:borderSpin 6s linear infinite}
-    .service-card:after{content:"";position:absolute;inset:1px;border-radius:13px;background:#181818}
-    @keyframes borderSpin{to{transform:rotate(360deg)}}
-    .card-inner{position:relative;z-index:1;min-height:310px;transition:transform .55s;transform-style:preserve-3d}
-    .service-card.flipped .card-inner{transform:rotateY(180deg)}
-    .card-face{position:absolute;inset:0;padding:17px;backface-visibility:hidden;display:flex;flex-direction:column;background:#181818;border-radius:13px}
-    .card-back{transform:rotateY(180deg);justify-content:center}
-    .service-card img{width:105px;height:126px;aspect-ratio:5/6;object-fit:cover;border-radius:10px;margin-bottom:12px;max-height:45vh}
-    .service-icon{display:grid;place-items:center;width:48px;height:48px;margin-bottom:14px;border-radius:50%;background:rgba(37,211,102,.12);color:var(--green);font-family:Georgia,serif;font-size:1.4rem}
-    .tag{align-self:flex-start;margin-bottom:8px;padding:4px 9px;border-radius:999px;background:rgba(37,211,102,.12);color:#72e89d;font-size:.7rem;font-weight:800;text-transform:uppercase}
-    .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
-    .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.42);pointer-events:none;width:40px;height:40px;transform:translate(-50%,-50%) scale(0);animation:ripple .6s ease-out}
-    @keyframes ripple{to{transform:translate(-50%,-50%) scale(4);opacity:0}}
-    .panel,.situation,.trust-item,.process-item,.compare-card{padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);transition:transform .2s,box-shadow .2s}
-    .panel:hover,.situation:hover,.trust-item:hover,.process-item:hover,.compare-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-    .situation strong,.trust-item strong{display:block;margin-bottom:5px;color:#fff}
-    .number{font-family:Georgia,serif;font-size:2.2rem;color:var(--green)}
-    .diagnosis{padding:22px;border:1px solid rgba(37,211,102,.38);border-radius:var(--radius);background:#171b18}
-    .progress{display:flex;gap:8px;margin:16px 0 22px}
-    .dot{width:34px;height:5px;border-radius:999px;background:#3c413e}
-    .dot.on{background:var(--green)}
-    .options{display:grid;gap:10px}
-    .option,.back{position:relative;overflow:hidden;width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:#202020;color:#fff;text-align:left;cursor:pointer}
-    .option:hover{border-color:var(--green)}
-    .back{width:auto;margin-top:12px;color:var(--muted)}
-    .test-result{padding:18px;border-radius:12px;background:rgba(37,211,102,.09)}
-    .details-stack{display:grid;gap:28px}
-    .detail{scroll-margin-top:20px;padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
-    .detail-layout{display:grid;gap:22px}
-    .detail img,.consult-layout img{width:min(82%,360px);height:auto;aspect-ratio:5/6;object-fit:cover;border-radius:var(--radius);max-height:45vh;margin:auto}
+    .hero-overlay{background:linear-gradient(180deg,rgba(0,0,0,.20),rgba(0,0,0,.72) 72%,rgba(0,0,0,.91)),rgba(37,211,102,.11)}
+    .hero-content{position:relative;z-index:2;width:min(100%,760px);margin:0 auto}
+    .hero-badge{padding:.45rem .8rem;margin-bottom:1rem;color:#fff;background:rgba(0,0,0,.36);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px)}
+    .hero h1{color:#fff;text-shadow:0 4px 20px rgba(0,0,0,.5)}
+    .hero-copy{font-size:1.08rem;color:rgba(255,255,255,.88);max-width:620px}
+    .hero-trust{font-size:.81rem;text-align:center;color:rgba(255,255,255,.76);margin:.65rem 0}
+    .quick-links{display:grid;grid-template-columns:repeat(2,1fr);gap:.48rem;margin:1rem 0}
+    .quick-links a{padding:.55rem .7rem;border-radius:999px;background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.2);font-size:.78rem;text-align:center;text-decoration:none}
+    .master-mini{display:grid;grid-template-columns:78px 1fr;gap:.9rem;align-items:center;margin-top:1rem;padding:.85rem;background:rgba(0,0,0,.48);border:1px solid rgba(255,255,255,.15);border-radius:14px}
+    .master-mini img{width:78px;height:auto;aspect-ratio:5/6;object-fit:cover;border-radius:12px}
+    .master-mini h2{font-size:1.05rem;margin-bottom:.25rem}
+    .master-mini p{font-size:.77rem;line-height:1.42;margin:.18rem 0;color:#d8dade}
+    .scroll-arrow{display:block;width:18px;height:18px;border-right:1px solid #fff;border-bottom:1px solid #fff;transform:rotate(45deg);margin:1rem auto 0;animation:arrow 1.8s infinite}
+    .hero-cascade{animation:heroIn .7s ease-out both}
+    .hero-cascade:nth-child(2){animation-delay:.2s}.hero-cascade:nth-child(3){animation-delay:.4s}.hero-cascade:nth-child(4){animation-delay:.6s}
+    .service-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+    .service-card{position:relative;border:1px solid transparent;background:linear-gradient(#191919,#191919) padding-box,conic-gradient(from var(--angle),rgba(37,211,102,.16),#25d366,rgba(255,255,255,.08),rgba(37,211,102,.16)) border-box;animation:borderSpin 6s linear infinite}
+    .service-card img{width:82%;max-height:38vh;margin:0 auto 1rem;aspect-ratio:5/6;object-fit:cover;border-radius:12px}
+    .service-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(37,211,102,.12);color:var(--accent);font:700 1.2rem Georgia;margin-bottom:.8rem}
+    .service-actions{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:.9rem}
+    .service-actions a{flex:1}
+    .situations,.steps,.trust-grid{display:grid;gap:.85rem}
+    .situation strong{display:block;font-family:Georgia,serif;font-size:1.08rem;margin-bottom:.25rem}
+    .diagnostic{max-width:720px;margin:auto}
+    .progress{display:flex;gap:.45rem;margin-bottom:1.2rem}
+    .progress i{height:5px;flex:1;border-radius:99px;background:#363636}
+    .progress i.active{background:var(--accent)}
+    .diag-step{margin-bottom:1rem}
+    .diag-options{display:grid;gap:.55rem}
+    .diag-options button,.back{width:100%;padding:.82rem;border-radius:12px;border:1px solid var(--line);background:#1d1d1d;color:var(--text);font:inherit;text-align:left;cursor:pointer}
+    .diag-options button:hover,.diag-options button:active{border-color:var(--accent);transform:translateY(-2px)}
+    .back{width:auto;margin-top:.7rem;color:var(--muted)}
+    .diag-result{padding:1.1rem;border-left:3px solid var(--accent)}
+    .js .diag-step,.js .diag-result{display:none}.js .diag-step.active,.js .diag-result.active{display:block}
+    .details-wrap{display:grid;gap:1.25rem}
+    .detail{scroll-margin-top:72px;padding:1.25rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+    .detail img{width:min(82%,360px);height:auto;max-height:45vh;aspect-ratio:5/6;object-fit:cover;border-radius:14px;margin:1rem auto}
     .checklist{padding:0;list-style:none}
-    .checklist li{position:relative;padding-left:25px;margin:7px 0}
-    .checklist li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}
-    .quote{border-left:3px solid var(--green);padding-left:16px;color:#ddd;font-family:Georgia,serif;font-size:1.12rem}
-    .compare-card ul{padding-left:18px;color:#d5d6d9}
-    .compare-card .btn{margin-top:8px}
-    .consult-layout{display:grid;gap:25px;align-items:center}
-    details{border-bottom:1px solid var(--line);padding:15px 0}
-    summary{cursor:pointer;font-weight:800;list-style:none;padding-right:28px;position:relative}
+    .checklist li{position:relative;padding-left:1.45rem;margin:.45rem 0}
+    .checklist li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+    .number{font:700 2rem Georgia;color:var(--accent)}
+    .counter-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin-top:1.2rem}
+    .counter{padding:1rem .5rem;text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+    .counter b{display:block;font:700 1.55rem Georgia;color:var(--accent)}
+    .compare{display:grid;gap:.8rem}
+    .compare-card ul{padding-left:1rem;color:#d9dce1}
+    .compare-card li{margin:.45rem 0}
+    .altar-layout{display:grid;gap:1.2rem;align-items:center}
+    .altar-layout img{width:min(82%,380px);height:auto;max-height:45vh;aspect-ratio:5/6;object-fit:cover;border-radius:14px;margin:auto}
+    details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:0 1rem;margin:.7rem 0}
+    summary{cursor:pointer;padding:1rem 1.8rem 1rem 0;font-weight:800;list-style:none;position:relative}
     summary::-webkit-details-marker{display:none}
-    summary:after{content:"+";position:absolute;right:2px;color:var(--green);font-size:1.35rem;transition:transform .2s}
-    details[open] summary:after{transform:rotate(45deg)}
-    details p{color:var(--muted);margin:.65rem 0 0}
-    .closing{padding:32px 20px;border:1px solid rgba(37,211,102,.32);border-radius:var(--radius);background:linear-gradient(145deg,#182019,#121212);text-align:center}
-    footer{padding:28px 0 90px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;text-align:center}
-    .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out}
-    .reveal.visible{opacity:1;transform:none}
-    .catalog-grid>*:nth-child(2),.situation-grid>*:nth-child(2),.process-grid>*:nth-child(2){transition-delay:.05s}
-    .catalog-grid>*:nth-child(3),.situation-grid>*:nth-child(3),.process-grid>*:nth-child(3){transition-delay:.1s}
-    .catalog-grid>*:nth-child(4),.situation-grid>*:nth-child(4),.process-grid>*:nth-child(4){transition-delay:.15s}
-    @media (min-width:600px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.situation-grid,.trust-grid,.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media (min-width:768px){.section{padding:92px 0}.detail-layout,.consult-layout{grid-template-columns:1.15fr .85fr}.detail:nth-child(even) .detail-layout>img{order:-1}.compare-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.process-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.hero-sub{font-size:1.2rem}}
-    @media (min-width:960px){.catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.situation-grid,.trust-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.hero-enter,.btn.pulse,.scroll-arrow,.service-card:before{animation:none}.card-inner{transition:none}}
+    summary:after{content:"›";position:absolute;right:.2rem;color:var(--accent);font-size:1.5rem;transform:rotate(90deg);transition:transform .2s}
+    details[open] summary:after{transform:rotate(-90deg)}
+    details p{color:#d3d6dc;padding-bottom:.9rem;margin:0}
+    .closing{padding-bottom:7rem!important}
+    .closing-box{max-width:760px;margin:auto;padding:1.5rem;background:var(--surface);border:1px solid rgba(37,211,102,.3);border-radius:14px;text-align:center}
+    header{position:absolute;z-index:10;top:0;left:0;width:100%;padding:.9rem 1rem;display:flex;justify-content:space-between;align-items:center;color:#fff}
+    header a{text-decoration:none}
+    .brand{font:700 1.05rem Georgia}
+    .header-cta{font-size:.78rem;padding:.5rem .75rem;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(0,0,0,.35)}
+    footer{padding:1.8rem 1.1rem;text-align:center;color:#9599a1;font-size:.78rem;border-top:1px solid var(--line)}
+    .js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out}
+    .js .reveal.visible{opacity:1;transform:none}
+    [data-fx="escalonado"] .service-card{transition-delay:calc(var(--i)*70ms)}
+    @property --angle{syntax:"<angle>";initial-value:0deg;inherits:false}
+    @keyframes borderSpin{to{--angle:360deg}}
+    @keyframes pulse{50%{transform:scale(1.04);box-shadow:0 0 28px rgba(37,211,102,.3)}}
+    @keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+    @keyframes arrow{50%{transform:translateY(6px) rotate(45deg);opacity:.45}}
+    @media(min-width:600px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:768px){
+      section:not([data-seccion="1-portada"]){padding-top:6rem;padding-bottom:6rem}
+      .hero{padding-inline:2rem}
+      .hero-content{width:min(100%,1040px)}
+      .quick-links{grid-template-columns:repeat(4,1fr)}
+      .master-mini{max-width:620px}
+      .situations,.steps,.trust-grid,.compare{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .detail{padding:2rem}
+      .detail.with-image{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem;align-items:center}
+      .detail.with-image.reverse .detail-copy{order:2}
+      .detail.with-image.reverse img{order:1}
+      .altar-layout{grid-template-columns:1.2fr .8fr}
+    }
+    @media(min-width:960px){.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.compare{grid-template-columns:repeat(4,minmax(0,1fr))}}
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{animation:none!important;transition:none!important}
+      .reveal,.js .reveal{opacity:1!important;transform:none!important}
+    }
   </style>
-  <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@graph":[
       {
-        "@type":"LocalBusiness",
+        "@type":"ProfessionalService",
         "@id":"https://brujeria.brujoychaman.digital/#negocio",
-        "name":"Maestro Abelardo — Consulta de Brujería",
+        "name":"Maestro Baltazar - Consulta de Brujería",
         "url":"https://brujeria.brujoychaman.digital/",
         "telephone":"+1-504-298-7893",
-        "description":"Consulta espiritual y orientación de brujería en español por WhatsApp para personas en Estados Unidos.",
+        "description":"Consulta espiritual confidencial sobre brujería, protección, mal de ojo, tarot y asuntos sentimentales.",
         "areaServed":{"@type":"Country","name":"Estados Unidos"},
-        "availableLanguage":"Spanish"
+        "availableLanguage":"Spanish",
+        "priceRange":"Consulta inicial sin costo; trabajos cotizados según el caso"
       },
       {
         "@type":"Service",
-        "name":"Consulta de brujería",
+        "@id":"https://brujeria.brujoychaman.digital/#servicio",
+        "name":"Consulta de brujería con el Maestro Baltazar",
         "provider":{"@id":"https://brujeria.brujoychaman.digital/#negocio"},
         "areaServed":{"@type":"Country","name":"Estados Unidos"},
-        "serviceType":"Consulta espiritual, protección, retiro de mal de ojo, tarot y trabajos de amor"
+        "serviceType":"Orientación espiritual y brujería",
+        "description":"Evaluación privada del caso y orientación sobre trabajos espirituales adecuados."
       },
       {
         "@type":"FAQPage",
         "mainEntity":[
-          {"@type":"Question","name":"¿La primera consulta de brujería tiene costo?","acceptedAnswer":{"@type":"Answer","text":"Puede contar brevemente su situación por WhatsApp y recibir una orientación inicial. Si el caso requiere un trabajo, el Maestro Abelardo explica su alcance y costo antes de comenzar."}},
-          {"@type":"Question","name":"¿La brujería puede trabajarse a distancia?","acceptedAnswer":{"@type":"Answer","text":"La consulta puede realizarse a distancia con nombres, fechas y una explicación del caso. El Maestro Abelardo determina primero si esa modalidad es adecuada."}},
-          {"@type":"Question","name":"¿Cuánto tarda un trabajo espiritual?","acceptedAnswer":{"@type":"Answer","text":"No existe un tiempo universal. Depende del objetivo, la situación y el trabajo elegido; por eso no se prometen fechas ni resultados garantizados."}},
-          {"@type":"Question","name":"¿Mi consulta es confidencial?","acceptedAnswer":{"@type":"Answer","text":"Sí. La conversación se atiende de manera privada y no se publica ni comparte el caso del consultante."}},
-          {"@type":"Question","name":"¿Qué necesito enviar para una consulta?","acceptedAnswer":{"@type":"Answer","text":"Generalmente se solicita el nombre, el tiempo que lleva el problema y una explicación breve. Cualquier otro dato se pide únicamente si es necesario."}},
-          {"@type":"Question","name":"¿Qué significa ánima sola en brujería?","acceptedAnswer":{"@type":"Answer","text":"Es una figura de distintas tradiciones populares y su interpretación cambia según el linaje. El Maestro Abelardo no recomienda invocaciones improvisadas ni prácticas destinadas a causar daño."}},
-          {"@type":"Question","name":"¿Cómo se paga un trabajo?","acceptedAnswer":{"@type":"Answer","text":"La forma de pago y el valor se informan directamente después de revisar el caso. No se inicia ningún trabajo sin explicar antes lo que incluye."}}
+          {"@type":"Question","name":"¿La consulta inicial de brujería tiene costo?","acceptedAnswer":{"@type":"Answer","text":"La primera conversación por WhatsApp no tiene costo. El Maestro Baltazar escucha el caso y, si recomienda un trabajo, explica su valor antes de comenzar."}},
+          {"@type":"Question","name":"¿La brujería puede trabajarse a distancia?","acceptedAnswer":{"@type":"Answer","text":"Sí. La consulta puede realizarse por WhatsApp y el trabajo espiritual a distancia se prepara con los datos necesarios para cada caso."}},
+          {"@type":"Question","name":"¿Qué necesito enviar para una consulta?","acceptedAnswer":{"@type":"Answer","text":"Normalmente se solicita tu nombre, una explicación breve y, si corresponde, el nombre de la otra persona. Cualquier dato adicional se pide de forma privada."}},
+          {"@type":"Question","name":"¿En cuánto tiempo se ven cambios?","acceptedAnswer":{"@type":"Answer","text":"No existe un plazo igual para todos. Los tiempos dependen de la situación, su antigüedad y el trabajo recomendado; nunca se prometen resultados asegurados."}},
+          {"@type":"Question","name":"¿Mi consulta es confidencial?","acceptedAnswer":{"@type":"Answer","text":"Sí. La conversación se atiende de manera privada y no se publican nombres, imágenes ni detalles del caso."}},
+          {"@type":"Question","name":"¿Cómo se paga un trabajo espiritual?","acceptedAnswer":{"@type":"Answer","text":"Después de evaluar el caso se informa el costo y las formas de pago disponibles. No se inicia ningún trabajo sin que la persona conozca y acepte las condiciones."}},
+          {"@type":"Question","name":"¿Qué significa el ánima sola en brujería?","acceptedAnswer":{"@type":"Answer","text":"Es una figura de devoción popular presente en distintas tradiciones. Su significado y uso cambian según la práctica; no todos los casos necesitan invocaciones de este tipo."}}
         ]
       }
     ]
@@ -156,7 +172,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11495571750"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11495571750');gtag('config','AW-672356997');</script>
 <style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23b45309'/><text x='32' y='44' font-size='34' text-anchor='middle'>🕯️</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23be123c'/><text x='32' y='44' font-size='34' text-anchor='middle'>🌹</text></svg>">
 <style id="maq-laurel-css">.maq-laurel{display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;margin:0 auto 18px;max-width:440px;filter:drop-shadow(0 1px 6px rgba(0,0,0,.45))}.maq-laurel .ml-mid{display:flex;flex-direction:column;align-items:center;gap:3px}.maq-laurel .ml-title{font-weight:800;font-size:17px;line-height:1.2;letter-spacing:.2px;text-align:center}.maq-laurel .ml-stars{font-size:16px;letter-spacing:3px;line-height:1}.maq-laurel .ml-since{font-weight:700;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;opacity:.95}</style>
 <style id="maq-gallery-css">.maq-gallery{padding:34px 14px}.maq-gallery .mgi{max-width:1080px;margin:0 auto;columns:2;column-gap:10px}@media(min-width:760px){.maq-gallery .mgi{columns:3;column-gap:12px}}.maq-gallery figure{break-inside:avoid;margin:0 0 10px;position:relative;border-radius:16px;overflow:hidden;background:#111;transform:translateZ(0)}.maq-gallery img,.maq-gallery video{width:100%;height:auto;display:block;border-radius:16px;transition:transform .45s ease}.maq-gallery figure:hover img,.maq-gallery figure:hover video{transform:scale(1.04)}.maq-gallery .mgb{position:absolute;top:8px;left:8px;margin:0;padding:3px 9px;border-radius:999px;font:700 10px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}</style>
 <style id="maq-blk-guard">[data-blk]{overflow-x:clip;max-width:100%}[data-blk] *{max-width:100%;box-sizing:border-box;min-width:0}[data-blk] img,[data-blk] video{height:auto}[data-blk] table{display:block;width:100%;overflow-x:auto}</style>
@@ -167,161 +183,112 @@
 <script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
 <script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQW2RL4R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <header class="topbar">
-    <div class="wrap">
-      <a class="brand" href="#inicio">Maestro Abelardo</a>
-      <a class="top-link" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quisiera%20contarle%20mi%20situaci%C3%B3n">Consulta privada</a>
-    </div>
-  </header>
+<header>
+  <a class="brand" href="#inicio">Maestro Baltazar</a>
+  <a class="header-cta" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20consultarle%20mi%20caso%20de%20brujer%C3%ADa">Consulta privada</a>
+</header>
 
-  <main>
-    <section data-seccion="1-portada" id="inicio">
-      <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/hombre-sabio-desmiente-amarres-rapidos-caratula.webp">
-        <source src="https://googleads.mkinnovador.com/banco/videos/hombre-sabio-desmiente-amarres-rapidos.mp4" type="video/mp4">
-      </video>
-      <div class="hero-overlay"></div>
-      <div class="wrap hero-content">
-        <h2 class="eyebrow hero-enter">Para quien ya intentó de todo</h2>
-        <div class="hero-badge hero-enter">Consulta directa con el Maestro Abelardo</div>
-        <div class="maq-laurel"><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg><span class="ml-mid"><span class="ml-title">Brujeria</span><span class="ml-stars">★★★★★</span><span class="ml-since">Resultados Reales</span></span><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true" style="transform:scaleX(-1)"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg></div>
-<h1 class="hero-enter">Brujería para regresar su pareja y abrir un camino claro</h1>
-        <p class="hero-sub hero-enter">Si lleva meses esperando, hay otra persona o siente que todo se cerró, cuénteme su caso antes de tomar otra decisión.</p>
-        <a class="btn pulse hero-enter" data-fx="onda-toque" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20busco%20ayuda%20con%20brujer%C3%ADa%20y%20quiero%20contarle%20mi%20caso">Hablar de mi caso por WhatsApp</a>
-        <p class="hero-trust">Atención en español · Conversación confidencial · Sin prometer lo que no se puede cumplir</p>
-        <nav class="quick" aria-label="Accesos a servicios">
-          <a class="chip" href="#s-brujeria">Brujería</a>
-          <a class="chip" href="#s-proteccion-espiritual">Protección</a>
-          <a class="chip" href="#s-retiro-de-mal-de-ojo">Mal de ojo</a>
-          <a class="chip" href="#s-consulta-espiritual">Consulta</a>
-        </nav>
-        <div class="master-mini">
-          
-          <div>
-            <strong>Sobre el Maestro Abelardo</strong>
-            <p>Hace más de tres décadas escucho casos que otros juzgan con ligereza. Esto que hoy practico me lo enseñó mi abuela, y a ella la suya: primero se observa, luego se habla.</p>
-            <p>No trabajo con amenazas ni certezas falsas. Reviso cada situación con respeto y explico con serenidad qué camino puede considerarse.</p>
-          </div>
-        </div>
+<main>
+<section data-seccion="1-portada" id="inicio" class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra-caratula.webp">
+    <source src="https://googleads.mkinnovador.com/banco/videos/ritual-de-santa-muerte-con-vela-negra.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="badge hero-badge hero-cascade">✦ Maestro disponible para escucharte</span>
+    <div class="maq-laurel"><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg><span class="ml-mid"><span class="ml-title">Brujeria</span><span class="ml-stars">★★★★★</span><span class="ml-since">Resultados Reales</span></span><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true" style="transform:scaleX(-1)"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg></div>
+<h1 class="hero-cascade">Brujos expertos en brujería: hablemos de tu caso hoy</h1>
+    <p class="hero-copy hero-cascade">¿Cuántas noches llevas esperando una señal? Cuéntame ahora qué cambió en tu amor, tu casa o tu camino, y revisaremos con discreción qué clase de ayuda espiritual puede corresponder.</p>
+    <div class="hero-cascade">
+      <a class="btn xl" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20busco%20ayuda%20con%20brujer%C3%ADa%20y%20quiero%20contarle%20lo%20que%20est%C3%A1%20pasando">Cuéntame tu caso por WhatsApp</a>
+      <p class="hero-trust">Consulta inicial sin costo · conversación confidencial · respuesta personal</p>
+    </div>
+    <nav class="quick-links" aria-label="Accesos rápidos">
+      <a href="#s-brujeria">Brujería</a>
+      <a href="#s-proteccion-espiritual">Protección</a>
+      <a href="#s-retiro-de-mal-de-ojo">Mal de ojo</a>
+      <a href="#s-consulta-espiritual">Consulta</a>
+    </nav>
+    <div class="master-mini">
+      
+      <div>
+        <h2>Sobre el Maestro Baltazar</h2>
+        <p>Durante más de 30 años he acompañado a personas que llegan cansadas, confundidas o lastimadas. Primero escucho; después te digo con claridad lo que percibo.</p>
+        <p>No utilizo el miedo para convencerte. Si considero que tu situación requiere otra clase de ayuda, también te lo diré.</p>
       </div>
-      <span class="scroll-arrow" aria-hidden="true">↓</span>
-    </section>
+    </div>
+    <span class="scroll-arrow" aria-hidden="true"></span>
+  </div>
+</section>
 <div id="maq-envivo" class="maq-envivo" role="status"><span class="mev-dot" aria-hidden="true"></span><span class="mev-t">Tu consulta llega directo al WhatsApp del maestro</span><a href="https://wa.me/15042987893?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20consulta%20ahora">Escribir ahora →</a></div><script>(function(){try{var t=document.querySelector('#maq-envivo .mev-t');var h=new Date().toLocaleTimeString('es-US',{hour:'numeric',minute:'2-digit'});t.textContent='Son las '+h+' en tu ciudad · '+t.textContent;}catch(e){}})();</script>
 
 
-    <section class="section" data-seccion="2-servicios" data-tienda="catalogo">
-      <div class="wrap">
-        <div class="intro reveal">
-          <span class="eyebrow">Trabajos y consultas</span>
-          <h2>Brujería según lo que está viviendo</h2>
-          <p class="lead">No toda pena pide el mismo remedio. Mire las opciones con calma; al escribir, el Maestro Abelardo revisará primero cuál corresponde a su situación.</p>
-        </div>
-        <div class="catalog-grid">
-          <article class="service-card reveal" data-servicio="brujeria" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-lamparas-votivas-y-flores-rituales.webp" width="800" height="960" loading="lazy" decoding="async" alt="Lámparas votivas y flores usadas en una consulta de brujería">
-                <span class="tag">Consulta principal</span>
-                <h3>Consulta de brujería</h3>
-                <p class="muted">Para entender bloqueos, distancias afectivas o una racha que no logra explicar.</p>
-                <div class="actions">
-                  <a class="btn secondary small flip-trigger" href="#s-brujeria">Ver detalles</a>
-                  <a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20me%20interesa%20una%20consulta%20de%20brujer%C3%ADa">Consultar</a>
-                </div>
-              </div>
-              <div class="card-face card-back">
-                <h3>¿Para quién es?</h3>
-                <p>Para quien necesita distinguir entre un conflicto humano, un desgaste emocional y una inquietud espiritual.</p>
-                <a class="btn secondary small" href="#s-brujeria">Ir al detalle</a>
-                <a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20necesito%20orientaci%C3%B3n%20sobre%20brujer%C3%ADa">Escribir ahora</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-servicio="proteccion-espiritual" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <div class="service-icon" aria-hidden="true">I</div><span class="tag">A distancia</span>
-                <h3>Protección espiritual</h3>
-                <p class="muted">Para recuperar serenidad y establecer límites después de ambientes pesados o conflictos.</p>
-                <div class="actions"><a class="btn secondary small flip-trigger" href="#s-proteccion-espiritual">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20me%20interesa%20protecci%C3%B3n%20espiritual">Consultar</a></div>
-              </div>
-              <div class="card-face card-back"><h3>Puede orientarle si…</h3><p>Siente intranquilidad repetida y desea una valoración prudente, sin alimentar miedo.</p><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20consultar%20una%20protecci%C3%B3n%20espiritual">Pedir orientación</a></div>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-servicio="retiro-de-mal-de-ojo" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <div class="service-icon" aria-hidden="true">II</div><span class="tag">Discreto</span>
-                <h3>Retiro de mal de ojo</h3>
-                <p class="muted">Una revisión espiritual para quien relaciona su pesadez con envidia o exposición negativa.</p>
-                <div class="actions"><a class="btn secondary small flip-trigger" href="#s-retiro-de-mal-de-ojo">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20consultar%20sobre%20mal%20de%20ojo">Consultar</a></div>
-              </div>
-              <div class="card-face card-back"><h3>Primero se revisa</h3><p>No toda mala temporada es mal de ojo. La consulta ayuda a evitar conclusiones apresuradas.</p><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20siento%20una%20carga%20y%20quiero%20una%20revisi%C3%B3n">Escribir</a></div>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-servicio="consulta-espiritual" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <div class="service-icon" aria-hidden="true">III</div><span class="tag">Primer paso</span>
-                <h3>Consulta espiritual</h3>
-                <p class="muted">Para ordenar lo que sucede y saber si conviene trabajar, esperar o cambiar de rumbo.</p>
-                <div class="actions"><a class="btn secondary small flip-trigger" href="#s-consulta-espiritual">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20deseo%20una%20consulta%20espiritual">Consultar</a></div>
-              </div>
-              <div class="card-face card-back"><h3>Sin juicio</h3><p>Puede explicar su caso amoroso, familiar o personal con sus propias palabras.</p><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20explicarle%20mi%20situaci%C3%B3n">Contar mi caso</a></div>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-servicio="lectura-de-tarot" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <div class="service-icon" aria-hidden="true">IV</div><span class="tag">Claridad</span>
-                <h3>Lectura de tarot</h3>
-                <p class="muted">Para observar tendencias, emociones y decisiones posibles sin presentar el futuro como sentencia.</p>
-                <div class="actions"><a class="btn secondary small flip-trigger" href="#s-lectura-de-tarot">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20me%20interesa%20una%20lectura%20de%20tarot">Consultar</a></div>
-              </div>
-              <div class="card-face card-back"><h3>Una lectura serena</h3><p>Útil cuando necesita comprender una relación o tomar una decisión con más perspectiva.</p><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20pedir%20una%20lectura%20de%20tarot">Pedir lectura</a></div>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-servicio="amarre-de-amor" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <div class="service-icon" aria-hidden="true">V</div><span class="tag">Relaciones</span>
-                <h3>Orientación sobre amarres</h3>
-                <p class="muted">Se revisa la historia de la relación, sus límites y si existe una alternativa respetuosa.</p>
-                <div class="actions"><a class="btn secondary small flip-trigger" href="#s-brujeria">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20orientaci%C3%B3n%20sobre%20un%20amarre%20de%20amor">Consultar</a></div>
-              </div>
-              <div class="card-face card-back"><h3>Antes de proceder</h3><p>Un vínculo no debe tratarse con engaño ni amenazas. Primero se escucha lo ocurrido.</p><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20necesito%20hablar%20de%20mi%20relaci%C3%B3n">Hablar en privado</a></div>
-            </div>
-          </article>
-
-          <article class="service-card reveal" data-servicio="endulzamiento" data-fx="borde-vivo">
-            <div class="card-inner">
-              <div class="card-face">
-                <div class="service-icon" aria-hidden="true">VI</div><span class="tag">Armonía</span>
-                <h3>Endulzamiento</h3>
-                <p class="muted">Para casos de orgullo, discusiones o distancia donde todavía existe comunicación posible.</p>
-                <div class="actions"><a class="btn secondary small flip-trigger" href="#s-brujeria">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20me%20interesa%20un%20endulzamiento">Consultar</a></div>
-              </div>
-              <div class="card-face card-back"><h3>Cuando queda afecto</h3><p>Puede considerarse tras revisar si la relación conserva un terreno sano para el diálogo.</p><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20consultar%20si%20un%20endulzamiento%20es%20para%20mi%20caso">Revisar mi caso</a></div>
-            </div>
-          </article>
-        </div>
+<section data-seccion="2-servicios" data-tienda="catalogo" class="reveal">
+  <div class="section-head center">
+    <span class="eyebrow">Trabajos espirituales</span>
+    <h2>¿Qué clase de brujería estás buscando?</h2>
+    <p class="muted">Cada situación se revisa antes de recomendar un trabajo. Elige lo que más se parece a lo que estás viviendo.</p>
+  </div>
+  <div class="service-grid" data-fx="escalonado">
+    <article class="card service-card reveal" data-servicio="brujeria" data-fx="borde-vivo" style="--i:1">
+      <img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-lamparas-votivas-y-flores-rituales.webp" width="800" height="960" loading="lazy" decoding="async" alt="Lámparas votivas y flores usadas en un trabajo de brujería">
+      <span class="tag">Evaluación personal</span>
+      <h3>Consulta de brujería</h3>
+      <p>Para entender bloqueos, cambios repentinos, conflictos sentimentales o sensaciones que no logras explicar.</p>
+      <div class="service-actions">
+        <a class="btn secondary small" href="#s-brujeria">Ver detalles</a>
+        <a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20me%20interesa%20una%20consulta%20de%20brujer%C3%ADa">Consultar</a>
       </div>
-    </section>
+    </article>
+    <article class="card service-card reveal" data-servicio="proteccion-espiritual" data-fx="borde-vivo" style="--i:2">
+      <span class="service-icon">△</span><span class="tag">A distancia</span>
+      <h3>Protección espiritual</h3>
+      <p>Para fortalecer tu entorno después de conflictos, envidias o una etapa emocionalmente pesada.</p>
+      <div class="service-actions"><a class="btn secondary small" href="#s-proteccion-espiritual">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20me%20interesa%20la%20protecci%C3%B3n%20espiritual">Consultar</a></div>
+    </article>
+    <article class="card service-card reveal" data-servicio="retiro-de-mal-de-ojo" data-fx="borde-vivo" style="--i:3">
+      <span class="service-icon">◉</span><span class="tag">Discreto</span>
+      <h3>Retiro de mal de ojo</h3>
+      <p>Cuando sientes carga, tensión, rachas negativas o inquietud después de tratar con ciertas personas.</p>
+      <div class="service-actions"><a class="btn secondary small" href="#s-retiro-de-mal-de-ojo">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20consultar%20un%20posible%20mal%20de%20ojo">Consultar</a></div>
+    </article>
+    <article class="card service-card reveal" data-servicio="consulta-espiritual" data-fx="borde-vivo" style="--i:4">
+      <span class="service-icon">☾</span><span class="tag">Primer paso</span>
+      <h3>Consulta espiritual</h3>
+      <p>Una conversación privada para ordenar lo sucedido y saber qué camino tiene sentido para ti.</p>
+      <div class="service-actions"><a class="btn secondary small" href="#s-consulta-espiritual">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quisiera%20una%20consulta%20espiritual">Consultar</a></div>
+    </article>
+    <article class="card service-card reveal" data-servicio="lectura-de-tarot" data-fx="borde-vivo" style="--i:5">
+      <span class="service-icon">✦</span><span class="tag">Claridad</span>
+      <h3>Lectura de tarot</h3>
+      <p>Para mirar tendencias, sentimientos y decisiones sin convertir la lectura en una promesa absoluta.</p>
+      <div class="service-actions"><a class="btn secondary small" href="#s-lectura-de-tarot">Ver detalles</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20me%20interesa%20una%20lectura%20de%20tarot">Consultar</a></div>
+    </article>
+    <article class="card service-card reveal" data-servicio="amarre-de-amor" data-fx="borde-vivo" style="--i:6">
+      <span class="service-icon">♡</span><span class="tag">Caso sentimental</span>
+      <h3>Amarre de amor</h3>
+      <p>Evaluación de vínculos con distancia, ruptura, orgullo o una tercera persona, siempre sin engañarte.</p>
+      <div class="service-actions"><a class="btn secondary small" href="#s-brujeria">Cómo se evalúa</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20consultar%20un%20amarre%20de%20amor">Consultar</a></div>
+    </article>
+    <article class="card service-card reveal" data-servicio="endulzamiento" data-fx="borde-vivo" style="--i:7">
+      <span class="service-icon">☿</span><span class="tag">Armonización</span>
+      <h3>Endulzamiento</h3>
+      <p>Se considera cuando todavía existe comunicación, pero predominan el enojo, la frialdad o el orgullo.</p>
+      <div class="service-actions"><a class="btn secondary small" href="#s-brujeria">Cómo se evalúa</a><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20saber%20si%20un%20endulzamiento%20es%20para%20mi%20caso">Consultar</a></div>
+    </article>
+  </div>
+</section>
 
 
-<section class="maq-blk" data-blk="cta-con-imagen-y-servicio"><style data-armonia="cta-con-imagen-y-servicio">[data-blk="cta-con-imagen-y-servicio"],[data-blk="cta-con-imagen-y-servicio"] p,[data-blk="cta-con-imagen-y-servicio"] li,[data-blk="cta-con-imagen-y-servicio"] a,[data-blk="cta-con-imagen-y-servicio"] span{font-family:Georgia,serif !important}[data-blk="cta-con-imagen-y-servicio"] h2,[data-blk="cta-con-imagen-y-servicio"] h3,[data-blk="cta-con-imagen-y-servicio"] h4{font-family:Georgia,serif !important}</style><section class="bkimg-bano">
+<section class="maq-blk" data-blk="cta-con-imagen-y-servicio"><style data-armonia="cta-con-imagen-y-servicio">[data-blk="cta-con-imagen-y-servicio"],[data-blk="cta-con-imagen-y-servicio"] p,[data-blk="cta-con-imagen-y-servicio"] li,[data-blk="cta-con-imagen-y-servicio"] a,[data-blk="cta-con-imagen-y-servicio"] span{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif !important}[data-blk="cta-con-imagen-y-servicio"] h2,[data-blk="cta-con-imagen-y-servicio"] h3,[data-blk="cta-con-imagen-y-servicio"] h4{font-family:Georgia,serif !important}</style><section class="bkimg-bano">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap');
 
 .bkimg-bano {
-    --blue: #111111;
-    --gold: #b9bdc5;
+    --blue: #f3f4f6;
+    --gold: #f3f4f6;
     --gold-light: #d4b87a;
-    --bg: #181818;
+    --bg: #ffffff;
     --text: #333333;
     
     width: 100%;
@@ -813,8 +780,8 @@
                     <path d="M15 0 L18 12 L30 15 L18 18 L15 30 L12 18 L0 15 L12 12 Z"/>
                 </svg>
                 <h2 class="bkimg-bano-title">
-                    <span class="bkimg-bano-title-main">ORIENTACIÓN</span>
-                    <span class="bkimg-bano-title-sub">SOBRE</span>
+                    <span class="bkimg-bano-title-main">BRUJERÍA</span>
+                    <span class="bkimg-bano-title-sub">ESPIRITUAL</span>
                 </h2>
                 <svg class="bkimg-bano-title-star" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                     <path d="M15 0 L18 12 L30 15 L18 18 L15 30 L12 18 L0 15 L12 12 Z"/>
@@ -824,10 +791,10 @@
             <div class="bkimg-bano-subtitle-group">
                 <div class="bkimg-bano-con-wrapper">
                     <div class="bkimg-bano-con-line"></div>
-                    <span class="bkimg-bano-con-text">BRUJERÍA</span>
+                    <span class="bkimg-bano-con-text">CON</span>
                     <div class="bkimg-bano-con-line"></div>
                 </div>
-                <h3 class="bkimg-bano-script-name">Maestro Abelardo</h3>
+                <h3 class="bkimg-bano-script-name">Maestro Baltazar</h3>
             </div>
 
             <div class="bkimg-bano-separator">
@@ -838,7 +805,7 @@
                 <div class="bkimg-bano-sep-line right"></div>
             </div>
 
-            <p class="bkimg-bano-tagline">CONOCE. COMPRENDE.<br>CUIDA TU ENERGÍA.</p>
+            <p class="bkimg-bano-tagline">ORIENTA. PROTEGE.<br>FORTALECE TU ESPÍRITU.</p>
 
             <div class="bkimg-bano-list-box">
                 <svg class="bkimg-bano-corner bkimg-bano-corner-tl" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 20 L0 0 L20 0 L20 2 L2 2 L2 20 Z"/><circle cx="6" cy="6" r="2"/></svg>
@@ -849,43 +816,43 @@
                 <svg class="bkimg-bano-list-title-ornament" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 2 L25 10 L35 12 L28 18 L30 25 L20 20 L10 25 L12 18 L5 12 L15 10 Z" fill="var(--gold)"/>
                 </svg>
-                <h4 class="bkimg-bano-list-title">UNA CONSULTA DE BRUJERÍA<br>PUEDE AYUDARTE A:</h4>
+                <h4 class="bkimg-bano-list-title">LA BRUJERÍA ESPIRITUAL<br>PUEDE AYUDAR A:</h4>
                 
                 <ul class="bkimg-bano-list">
                     <li>
                         <svg class="bkimg-bano-list-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2C12 2 15 7 19 9C15 11 12 16 12 16C12 16 9 11 5 9C9 7 12 2 12 2Z" fill="var(--blue)"/><path d="M12 16C12 16 16 19 21 20C17 21 12 22 12 22C12 22 7 21 3 20C8 19 12 16 12 16Z" fill="var(--blue)"/>
                         </svg>
-                        RECONOCER ENERGÍAS DENSAS
+                        LIMPIAR ENERGÍAS NEGATIVAS
                     </li>
                     <li>
                         <svg class="bkimg-bano-list-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                         </svg>
-                        ACLARAR DUDAS ESPIRITUALES
+                        TRAER SANACIÓN EMOCIONAL
                     </li>
                     <li>
                         <svg class="bkimg-bano-list-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2Zm0 18A8 8 0 1 1 20 12A8 8 0 0 1 12 20Zm0-14A6 6 0 1 0 18 12A6 6 0 0 0 12 6Zm0 10A4 4 0 1 1 16 12A4 4 0 0 1 12 16Z"/>
                         </svg>
-                        RECUPERAR EL EQUILIBRIO<br>Y LA TRANQUILIDAD
+                        RESTABLECER EL EQUILIBRIO<br>Y LA ARMONÍA
                     </li>
                     <li>
                         <svg class="bkimg-bano-list-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5Z"/>
                         </svg>
-                        CONOCER OPCIONES<br>DE LIMPIEZA ESPIRITUAL
+                        ATRAER BENDICIONES<br>POSITIVAS
                     </li>
                     <li>
                         <svg class="bkimg-bano-list-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2c0 0-7 9-7 14a7 7 0 0 0 14 0c0-5-7-14-7-14z"/>
                         </svg>
-                        FORTALECER TU<br>PROTECCIÓN ENERGÉTICA
+                        BRINDAR PROTECCIÓN<br>ESPIRITUAL
                     </li>
                 </ul>
             </div>
 
-            <p class="bkimg-bano-footer-script">Con respeto.<br>Con guía espiritual.</p>
+            <p class="bkimg-bano-footer-script">Hecho con Amor.<br>Guiado por el Espíritu.</p>
             
             <svg class="bkimg-bano-small-sep" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10 15 C30 5, 40 25, 50 15 C55 10, 65 10, 70 15 C80 25, 90 5, 110 15" fill="none" stroke="var(--gold)" stroke-width="2"/>
@@ -904,7 +871,7 @@
                 <svg class="bkimg-bano-badge-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C12 2 15 7 19 9C15 11 12 16 12 16C12 16 9 11 5 9C9 7 12 2 12 2Z" fill="var(--blue)"/><path d="M12 16C12 16 16 19 21 20C17 21 12 22 12 22C12 22 7 21 3 20C8 19 12 16 12 16Z" fill="var(--blue)"/>
                 </svg>
-                <p>CADA CONSULTA<br>ES ATENDIDA CON<br>RESPETO, ESCUCHA Y<br>ENFOQUE ESPIRITUAL<br>SEGÚN TU SITUACIÓN<br>Y TUS INQUIETUDES<br>SOBRE BRUJERÍA.</p>
+                <p>CADA TRABAJO<br>ES REALIZADO CON<br>CUIDADO, ORACIÓN Y<br>PRÁCTICAS ESPIRITUALES<br>ELEGIDAS<br>PARA APOYAR TU<br>CAMINO ÚNICO.</p>
                 <svg class="bkimg-bano-badge-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
@@ -931,13 +898,13 @@
 
         <div class="bkimg-bano-cta-content">
             <a href="https://wa.me/15042987893?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20brujeria" role="button" class="bkimg-bano-cta-reserva">
-                ESCRÍBELE AL
+                CONSULTA SOBRE
                 <svg class="bkimg-bano-cta-arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 12 L20 12 M14 6 L20 12 L14 18" fill="none" stroke="var(--gold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
-            <h3 class="bkimg-bano-cta-title">MAESTRO ABELARDO</h3>
-            <p class="bkimg-bano-cta-sub">POR WHATSAPP HOY</p>
+            <h3 class="bkimg-bano-cta-title">BRUJERÍA ESPIRITUAL</h3>
+            <p class="bkimg-bano-cta-sub">CON MAESTRO BALTAZAR HOY!</p>
         </div>
 
         <svg class="bkimg-bano-floral-side" viewBox="0 0 50 150" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
@@ -956,731 +923,118 @@
 </section></section>
 
 
-    <section class="section alt" data-seccion="3-situaciones" data-modulo="situaciones" id="m-situaciones">
-      <div class="wrap">
-        <div class="intro reveal">
-          <span class="eyebrow">Escuche lo que le inquieta</span>
-          <h2>¿Se identifica con alguna de estas situaciones?</h2>
-        </div>
-        <div class="situation-grid">
-          <div class="situation reveal"><strong>Su pareja se alejó</strong>Dejó de responder, cambió de manera repentina o la relación quedó suspendida sin explicación.</div>
-          <div class="situation reveal"><strong>Apareció otra persona</strong>Hay sospechas, secretos o una influencia externa que ha quebrado la confianza.</div>
-          <div class="situation reveal"><strong>Todo parece detenido</strong>Los asuntos de amor, hogar o trabajo se traban al mismo tiempo y usted no encuentra la causa.</div>
-          <div class="situation reveal"><strong>Ya consultó sin claridad</strong>Le pidieron dinero con prisa, le hablaron de peligros o no le explicaron qué estaban haciendo.</div>
-          <div class="situation reveal"><strong>Siente envidia alrededor</strong>Busca protección y una lectura prudente, no palabras que aumenten su temor.</div>
-          <div class="situation reveal"><strong>Necesita saber qué hacer</strong>No quiere seguir actuando desde la angustia y necesita una orientación privada.</div>
-        </div>
-        <p class="lead reveal">El agua revuelta no deja ver el fondo. Cuénteme primero lo ocurrido y pongamos cada cosa en su lugar.</p>
-        <a class="btn reveal" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20me%20identifiqu%C3%A9%20con%20estas%20situaciones%20y%20quiero%20contarle%20la%20m%C3%ADa">Contarle mi situación</a>
+<section data-seccion="3-situaciones" data-modulo="situaciones" id="m-situaciones" class="reveal">
+  <div class="section-head">
+    <span class="eyebrow">Habla con confianza</span>
+    <h2>¿Te identificas con algo de esto?</h2>
+    <p class="muted">Tal vez has guardado silencio porque temes que nadie te crea. Aquí puedes explicar lo que sientes sin ser juzgado.</p>
+  </div>
+  <div class="situations">
+    <div class="card situation"><strong>Tu pareja cambió de repente</strong>Antes era cercana y ahora evita hablar, se muestra fría o parece influenciada por alguien más.</div>
+    <div class="card situation"><strong>Nada termina de avanzar</strong>El amor, el dinero o los planes se traban una y otra vez, aunque haces todo lo posible.</div>
+    <div class="card situation"><strong>Sientes una carga extraña</strong>Tu casa se percibe pesada, tienes inquietud o relacionas el cambio con envidia o mal de ojo.</div>
+    <div class="card situation"><strong>Ya te hicieron falsas promesas</strong>Pagaste sin entender el proceso y ahora necesitas una explicación clara antes de decidir.</div>
+  </div>
+  <p class="center"><a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20me%20identifiqu%C3%A9%20con%20estas%20situaciones%20y%20quiero%20explicarle%20mi%20caso">Quiero contarte lo que sucede</a></p>
+</section>
+
+<section data-seccion="4-diagnostico" data-modulo="diagnostico" id="m-diagnostico" class="reveal">
+  <div class="section-head center">
+    <span class="eyebrow">Tres preguntas</span>
+    <h2>Descubre por dónde empezar</h2>
+    <p class="muted">Marca tus respuestas. Al terminar, tu mensaje quedará preparado para enviarlo directamente.</p>
+  </div>
+  <div class="diagnostic card">
+    <div class="progress" aria-label="Progreso"><i class="active"></i><i></i><i></i></div>
+    <div class="diag-step active" data-paso="1">
+      <h3>1. ¿Qué está pasando?</h3>
+      <div class="diag-options">
+        <button type="button" data-opcion="mi pareja se fue y no responde" data-service="brujeria">Mi pareja se fue y no responde</button>
+        <button type="button" data-opcion="sospecho que hay otra persona" data-service="consulta-espiritual">Hay otra persona</button>
+        <button type="button" data-opcion="siento envidia o una carga negativa" data-service="retiro-de-mal-de-ojo">Siento una carga negativa</button>
+        <button type="button" data-opcion="necesito claridad sobre mi camino" data-service="lectura-de-tarot">Necesito claridad</button>
       </div>
-    </section>
-
-    <section class="section" data-seccion="4-diagnostico" data-modulo="diagnostico" id="m-diagnostico">
-      <div class="wrap">
-        <div class="intro reveal">
-          <span class="eyebrow">Tres respuestas sencillas</span>
-          <h2>Descubra qué consulta puede orientarle</h2>
-          <p class="lead">Responda con calma. Al terminar, su mensaje quedará preparado para enviarlo al Maestro Abelardo.</p>
-        </div>
-        <div class="diagnosis reveal">
-          <div class="progress" aria-label="Progreso del diagnóstico"><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
-          <div class="test-step active" data-paso="1">
-            <h3>1. ¿Qué está pasando?</h3>
-            <div class="options">
-              <button class="option" type="button" data-opcion="mi pareja se fue y no responde" data-service="brujeria">Mi pareja se fue y no responde</button>
-              <button class="option" type="button" data-opcion="creo que hay otra persona" data-service="brujeria">Creo que hay otra persona</button>
-              <button class="option" type="button" data-opcion="siento envidia o mal de ojo" data-service="retiro-de-mal-de-ojo">Siento envidia o mal de ojo</button>
-              <button class="option" type="button" data-opcion="necesito claridad para decidir" data-service="consulta-espiritual">Necesito claridad para decidir</button>
-            </div>
-          </div>
-          <div class="test-step" data-paso="2">
-            <h3>2. ¿Desde hace cuánto?</h3>
-            <div class="options"><button class="option" type="button" data-opcion="días">Días</button><button class="option" type="button" data-opcion="semanas">Semanas</button><button class="option" type="button" data-opcion="meses">Meses</button><button class="option" type="button" data-opcion="más de un año">Más de un año</button></div>
-            <button class="back" type="button">Volver</button>
-          </div>
-          <div class="test-step" data-paso="3">
-            <h3>3. ¿Qué tan urgente es para usted?</h3>
-            <div class="options"><button class="option" type="button" data-opcion="quiero orientación hoy">Quiero orientación hoy</button><button class="option" type="button" data-opcion="puedo esperar unos días">Puedo esperar unos días</button><button class="option" type="button" data-opcion="solo quiero entender lo que pasa">Solo quiero entender lo que pasa</button></div>
-            <button class="back" type="button">Volver</button>
-          </div>
-          <div class="test-result">
-            <h3>Su primer paso es una revisión personal</h3>
-            <p>La respuesta orienta, pero no sustituye escuchar su historia completa.</p>
-            <a class="btn secondary result-link" href="#s-brujeria">Leer sobre la consulta recomendada</a>
-            <a class="btn" data-diagnostico-wa href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20una%20consulta">Enviar mis respuestas</a>
-            <button class="back" type="button">Volver</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" data-seccion="5-detalle">
-      <div class="wrap">
-        <div class="intro reveal">
-          <span class="eyebrow">Antes de elegir</span>
-          <h2>Cómo se atiende cada necesidad espiritual</h2>
-        </div>
-        <div class="details-stack">
-          <article class="detail reveal" data-detalle="brujeria" id="s-brujeria">
-            <div class="detail-layout">
-              <div>
-                <h2>Brujería para quien necesita comprender y actuar con serenidad</h2>
-                <p>Esta consulta es para quien lleva tiempo sintiendo que su relación, su hogar o su camino perdió el orden. Puede haber una separación, una tercera persona, discusiones repetidas o una sensación de bloqueo. También es para quien buscó “brujo efectivo”, “brujería gratis” o “brujería vudú” y desea distinguir una orientación responsable de una promesa apresurada.</p>
-                <p>Primero le pido que narre los hechos: qué cambió, desde cuándo y qué ha intentado. Después realizo una lectura del caso con los datos estrictamente necesarios. Si encuentro una vía de trabajo, explico su intención, los elementos que podría requerir y el seguimiento. Si no considero prudente trabajar, también lo digo. Saber detenerse es parte del oficio.</p>
-                <ul class="checklist"><li>Conversación inicial privada por WhatsApp.</li><li>Revisión del objetivo y de sus límites.</li><li>Explicación del trabajo antes de cualquier pago.</li><li>Seguimiento acordado según el caso.</li></ul>
-                <p>No hay un plazo igual para todos ni resultado que pueda garantizarse. Los cambios dependen de la situación y de las decisiones de las personas involucradas. La consulta sirve para obtener una lectura clara y evitar actuar desde el miedo.</p>
-                <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20una%20consulta%20espec%C3%ADfica%20de%20brujer%C3%ADa">Consultar mi caso de brujería</a>
-              </div>
-              
-            </div>
-          </article>
-
-          <article class="detail reveal" data-detalle="proteccion-espiritual" id="s-proteccion-espiritual">
-            <div class="detail-layout">
-              <div>
-                <h2>Protección espiritual para recuperar calma y límites</h2>
-                <p>La protección puede considerarse cuando usted sale agotado de ciertos lugares, atraviesa conflictos insistentes o desea cerrar una etapa. No significa declarar que toda dificultad proviene de un daño. Primero se revisan los hechos y se evita alimentar ideas que aumenten la angustia.</p>
-                <p>El proceso comienza con una conversación, continúa con una valoración y, si corresponde, se propone una limpia o una práctica de resguardo. Se explica qué debe enviar y cómo acompañar el trabajo desde su casa. La duración varía según el caso; no se fijan plazos artificiales. Si existe un problema de salud, seguridad o violencia, esta orientación no sustituye la ayuda profesional.</p>
-                <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20necesito%20saber%20si%20una%20protecci%C3%B3n%20espiritual%20es%20adecuada%20para%20m%C3%AD">Preguntar por protección</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="detail reveal" data-detalle="retiro-de-mal-de-ojo" id="s-retiro-de-mal-de-ojo">
-            <div class="detail-layout">
-              <div>
-                <h2>Retiro de mal de ojo sin amenazas ni temor</h2>
-                <p>Quien consulta por mal de ojo suele hablar de cansancio, tensión, envidia o una mala racha. La tradición enseña a observar antes de nombrar. Por eso no afirmo que exista una carga sin revisar el contexto ni le digo que está en peligro para obligarle a pagar.</p>
-                <p>La atención incluye escuchar cuándo comenzó, revisar los cambios y explicar si una limpia tradicional puede ser apropiada. Si se realiza, acordamos los elementos y el seguimiento. Usted sabrá qué se hace y por qué. Lo esperado es una orientación ordenada; no una promesa de que todos los problemas desaparecerán en una fecha exacta.</p>
-                <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20una%20revisi%C3%B3n%20por%20posible%20mal%20de%20ojo">Solicitar revisión</a>
-              </div>
-              
-            </div>
-          </article>
-
-          <article class="detail reveal" data-detalle="consulta-espiritual" id="s-consulta-espiritual">
-            <div class="detail-layout">
-              <div>
-                <h2>Consulta espiritual para poner en orden lo que vive</h2>
-                <p>Esta es la opción más prudente cuando no sabe qué servicio elegir. Puede hablar de amor, familia, trabajo o de una inquietud que no logra nombrar. Basta con su nombre, cuánto tiempo lleva el problema y una explicación sincera. No necesita comprar materiales antes de ser atendido.</p>
-                <p>El Maestro Abelardo escucha, formula preguntas y le indica si conviene una lectura, una protección, un trabajo afectivo o simplemente esperar. La orientación inicial no le obliga a contratar nada. Si se propone un trabajo, recibirá por WhatsApp su alcance, costo, forma de pago y seguimiento antes de decidir.</p>
-                <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20no%20s%C3%A9%20qu%C3%A9%20trabajo%20necesito%20y%20quiero%20una%20consulta%20espiritual">Empezar por una consulta</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="detail reveal" data-detalle="lectura-de-tarot" id="s-lectura-de-tarot">
-            <div class="detail-layout">
-              <div>
-                <h2>Lectura de tarot para ver posibilidades con claridad</h2>
-                <p>El tarot puede ayudar cuando hay silencio en una relación, decisiones cruzadas o preguntas sobre lo que siente otra persona. Las cartas se leen como símbolos y tendencias, no como una condena inmutable. Usted conserva siempre su criterio y su libertad para decidir.</p>
-                <p>Se define una pregunta concreta, se realiza la tirada y se explican los mensajes con palabras sencillas. La consulta incluye espacio para aclarar lo observado. No se ofrecen fechas seguras ni certezas absolutas; se busca comprender el momento y reconocer acciones posibles.</p>
-                <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20una%20lectura%20de%20tarot%20sobre%20mi%20situaci%C3%B3n">Pedir lectura de tarot</a>
-              </div>
-              
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" data-seccion="6-proceso" data-modulo="proceso" id="m-proceso">
-      <div class="wrap">
-        <div class="intro reveal"><span class="eyebrow">Así será atendido</span><h2>Cuatro pasos, sin prisa y sin secretos</h2></div>
-        <div class="process-grid">
-          <div class="process-item reveal"><span class="number">01</span><h3>Usted escribe</h3><p>Cuenta qué sucede, desde cuándo y qué espera resolver. Puede hacerlo en un solo mensaje.</p></div>
-          <div class="process-item reveal"><span class="number">02</span><h3>Se revisa</h3><p>El Maestro Abelardo hace preguntas y determina qué tipo de consulta puede orientarle.</p></div>
-          <div class="process-item reveal"><span class="number">03</span><h3>Recibe explicación</h3><p>Antes de comenzar conocerá el alcance, los datos necesarios, el costo y la forma de pago.</p></div>
-          <div class="process-item reveal"><span class="number">04</span><h3>Hay seguimiento</h3><p>Si acepta un trabajo, se acuerda cómo informar avances. Los tiempos dependen de cada caso.</p></div>
-        </div>
-        <a class="btn reveal" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20iniciar%20el%20proceso%20y%20explicarle%20mi%20caso">Dar el primer paso</a>
-      </div>
-    </section>
-
-    <section class="section alt" data-seccion="7-comparativa" data-modulo="comparativa" id="m-comparativa">
-      <div class="wrap">
-        <div class="intro reveal"><span class="eyebrow">Elija con conocimiento</span><h2>¿Cuál consulta es para usted?</h2></div>
-        <div class="compare-grid">
-          <article class="compare-card reveal"><h3>Brujería</h3><ul><li><strong>Ideal si:</strong> hay bloqueos o distancia.</li><li><strong>Enviar:</strong> relato y nombres.</li><li><strong>A distancia:</strong> se evalúa.</li><li><strong>Tiempo:</strong> varía.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20comparar%20mi%20caso%20con%20una%20consulta%20de%20brujer%C3%ADa">Elegir brujería</a></article>
-          <article class="compare-card reveal"><h3>Protección</h3><ul><li><strong>Ideal si:</strong> busca resguardo.</li><li><strong>Enviar:</strong> contexto personal.</li><li><strong>A distancia:</strong> posible.</li><li><strong>Tiempo:</strong> según valoración.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20saber%20si%20necesito%20protecci%C3%B3n">Elegir protección</a></article>
-          <article class="compare-card reveal"><h3>Mal de ojo</h3><ul><li><strong>Ideal si:</strong> siente una carga.</li><li><strong>Enviar:</strong> cuándo comenzó.</li><li><strong>A distancia:</strong> se consulta.</li><li><strong>Tiempo:</strong> variable.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20consultar%20por%20mal%20de%20ojo">Elegir revisión</a></article>
-          <article class="compare-card reveal"><h3>Tarot</h3><ul><li><strong>Ideal si:</strong> necesita claridad.</li><li><strong>Enviar:</strong> una pregunta.</li><li><strong>A distancia:</strong> sí.</li><li><strong>Tiempo:</strong> se agenda.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Maestro%20Abelardo%2C%20quiero%20elegir%20una%20lectura%20de%20tarot">Elegir tarot</a></article>
-        </div>
-      </div>
-    </section>
-
-
-<section class="maq-blk" data-blk="cta-con-morado"><style data-armonia="cta-con-morado">[data-blk="cta-con-morado"],[data-blk="cta-con-morado"] p,[data-blk="cta-con-morado"] li,[data-blk="cta-con-morado"] a,[data-blk="cta-con-morado"] span{font-family:Georgia,serif !important}[data-blk="cta-con-morado"] h2,[data-blk="cta-con-morado"] h3,[data-blk="cta-con-morado"] h4{font-family:Georgia,serif !important}</style><section class="bkimg-TRT1">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
-
-        .bkimg-TRT1 {
-            --bg-dark: #1a0530;
-            --bg-mid: #4a1575;
-            --bg-light: #7e22ce;
-            --accent-orange: #f27a22;
-            --text-main: #181818;
-            --text-muted: #b9bdc5;
-            --border-purple: #a855f7;
-            --box-bg: rgba(26, 5, 48, 0.6);
-            
-            width: 100%;
-            background: radial-gradient(circle at 50% 40%, var(--bg-mid) 0%, var(--bg-dark) 70%, #0f021c 100%);
-            position: relative;
-            overflow: hidden;
-            font-family: 'Montserrat', sans-serif;
-            color: var(--text-main);
-            padding: 3rem 1rem;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            line-height: 1.4;
-        }
-
-        .bkimg-TRT1 * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Background Geometry */
-        .bkimg-TRT1-bg-geo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 120%;
-            height: 120%;
-            max-width: 1200px;
-            pointer-events: none;
-            z-index: 1;
-            opacity: 0.3;
-        }
-
-        .bkimg-TRT1-container {
-            width: 100%;
-            max-width: 1080px;
-            position: relative;
-            z-index: 10;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Header */
-        .bkimg-TRT1-header {
-            text-align: center;
-            position: relative;
-            z-index: 20;
-            margin-bottom: 2rem;
-            width: 100%;
-        }
-
-        .bkimg-TRT1-title {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(3.5rem, 10vw, 8rem);
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            color: #181818;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.8), 0 0 40px rgba(126, 34, 206, 0.6);
-            line-height: 0.9;
-            text-transform: uppercase;
-        }
-
-        .bkimg-TRT1-subtitle {
-            font-family: 'Great Vibes', cursive;
-            font-size: clamp(3rem, 8vw, 6rem);
-            color: var(--accent-orange);
-            font-weight: 400;
-            position: absolute;
-            bottom: -1.5rem;
-            left: 50%;
-            transform: translateX(-50%) rotate(-3deg);
-            width: 100%;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-            white-space: nowrap;
-        }
-
-        /* Hero Image & Masking */
-        .bkimg-TRT1-hero-wrapper {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-            height: 400px;
-            margin: 0 auto 2rem auto;
-            z-index: 5;
-        }
-
-        .bkimg-TRT1-hero-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center 20%;
-            mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 75%);
-            -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 75%);
-            filter: drop-shadow(0 0 30px rgba(126, 34, 206, 0.5));
-        }
-
-        /* Floating Cards */
-        .bkimg-TRT1-card {
-            position: absolute;
-            width: 60px;
-            height: 100px;
-            background: linear-gradient(135deg, #b9bdc5, #a855f7);
-            border: 2px solid rgba(255,255,255,0.8);
-            border-radius: 4px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.6), 0 0 15px rgba(168, 85, 247, 0.4);
-            z-index: 15;
-            opacity: 0.9;
-        }
-        
-        .bkimg-TRT1-card::after {
-            content: '';
-            position: absolute;
-            top: 4px; left: 4px; right: 4px; bottom: 4px;
-            border: 1px solid rgba(255,255,255,0.5);
-            background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.1) 5px, rgba(255,255,255,0.1) 10px);
-        }
-
-        .bkimg-TRT1-card-1 { top: 20%; left: 10%; transform: rotate(-20deg); }
-        .bkimg-TRT1-card-2 { top: 60%; right: 15%; transform: rotate(30deg); }
-        .bkimg-TRT1-card-3 { bottom: 10%; left: 25%; transform: rotate(60deg) scale(0.8); filter: blur(2px); }
-
-        /* Ribbon */
-        .bkimg-TRT1-ribbon-container {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(90deg, rgba(74,21,117,0.1) 0%, rgba(126,34,206,0.5) 20%, rgba(126,34,206,0.5) 80%, rgba(74,21,117,0.1) 100%);
-            border-top: 1px solid rgba(168, 85, 247, 0.5);
-            border-bottom: 1px solid rgba(168, 85, 247, 0.5);
-            backdrop-filter: blur(4px);
-            padding: 1rem 0;
-            margin-bottom: 2rem;
-            z-index: 4;
-        }
-
-        .bkimg-TRT1-ribbon-content {
-            max-width: 1080px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            padding: 0 1rem;
-        }
-
-        .bkimg-TRT1-stat {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            justify-content: center;
-        }
-
-        .bkimg-TRT1-stat-num {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3.5rem;
-            color: var(--text-main);
-            line-height: 1;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-        }
-
-        .bkimg-TRT1-stat-text {
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            line-height: 1.2;
-        }
-
-        .bkimg-TRT1-stat-right {
-            text-align: right;
-        }
-
-        .bkimg-TRT1-stat-vert {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            font-size: 0.7rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            transform: rotate(180deg);
-        }
-
-        /* Content Grid */
-        .bkimg-TRT1-content-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            width: 100%;
-            z-index: 10;
-        }
-
-        .bkimg-TRT1-col {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        /* Lists */
-        .bkimg-TRT1-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            width: 100%;
-            max-width: 300px;
-        }
-
-        .bkimg-TRT1-list li {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            font-size: 1rem;
-            font-weight: 400;
-        }
-
-        .bkimg-TRT1-icon-spiral {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
-
-        /* Boxes */
-        .bkimg-TRT1-box {
-            background: var(--box-bg);
-            border: 1px solid var(--border-purple);
-            border-radius: 12px;
-            padding: 1.2rem;
-            text-align: center;
-            font-size: 0.95rem;
-            font-weight: 500;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3), inset 0 0 15px rgba(168, 85, 247, 0.2);
-            backdrop-filter: blur(5px);
-            width: 100%;
-            max-width: 280px;
-        }
-
-        .bkimg-TRT1-box-moon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .bkimg-TRT1-moon-phases {
-            width: 120px;
-            height: 24px;
-        }
-
-        /* Decks Section */
-        .bkimg-TRT1-decks {
-            text-align: center;
-        }
-
-        .bkimg-TRT1-decks h4 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.05em;
-        }
-
-        .bkimg-TRT1-decks p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* Footer / CTA */
-        .bkimg-TRT1-footer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 3rem;
-            width: 100%;
-            position: relative;
-            z-index: 20;
-        }
-
-        .bkimg-TRT1-btn {
-            background: linear-gradient(90deg, #7e22ce, #a855f7);
-            color: #181818;
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            letter-spacing: 0.05em;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            box-shadow: 0 10px 25px rgba(126, 34, 206, 0.5), inset 0 2px 5px rgba(255,255,255,0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .bkimg-TRT1-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(126, 34, 206, 0.7), inset 0 2px 5px rgba(255,255,255,0.4);
-        }
-
-        .bkimg-TRT1-icon-fingerprint {
-            width: 28px;
-            height: 28px;
-            fill: rgba(255,255,255,0.8);
-        }
-
-        .bkimg-TRT1-footer-icon {
-            width: 50px;
-            height: 50px;
-            fill: none;
-            stroke: var(--border-purple);
-            stroke-width: 1.5;
-            filter: drop-shadow(0 0 5px rgba(168, 85, 247, 0.5));
-        }
-
-        /* Desktop Layout */
-        @media (min-width: 850px) {
-            .bkimg-TRT1 {
-                padding: 4rem 2rem;
-            }
-
-            .bkimg-TRT1-header {
-                margin-bottom: 0;
-            }
-
-            .bkimg-TRT1-subtitle {
-                bottom: -2.5rem;
-            }
-
-            .bkimg-TRT1-hero-wrapper {
-                position: absolute;
-                top: 15%;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 600px;
-                height: 700px;
-                margin: 0;
-            }
-
-            .bkimg-TRT1-ribbon-container {
-                position: absolute;
-                top: 45%;
-                margin: 0;
-            }
-
-            .bkimg-TRT1-ribbon-content {
-                flex-direction: row;
-                justify-content: space-between;
-                padding: 0 2rem;
-            }
-
-            .bkimg-TRT1-content-grid {
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 25rem; /* Push below header */
-                min-height: 400px;
-            }
-
-            .bkimg-TRT1-col {
-                width: 30%;
-                align-items: flex-start;
-            }
-
-            .bkimg-TRT1-col-right {
-                align-items: flex-end;
-                text-align: right;
-            }
-
-            .bkimg-TRT1-box {
-                text-align: left;
-            }
-
-            .bkimg-TRT1-col-right .bkimg-TRT1-box {
-                text-align: right;
-                align-items: flex-end;
-            }
-
-            .bkimg-TRT1-decks {
-                text-align: right;
-            }
-
-            .bkimg-TRT1-footer {
-                margin-top: 2rem;
-            }
-        }
-    </style>
-
-    <!-- Background SVG Geometry -->
-    <svg class="bkimg-TRT1-bg-geo" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="500" cy="500" r="400" fill="none" stroke="rgba(168, 85, 247, 0.2)" stroke-width="2"/>
-        <circle cx="500" cy="500" r="380" fill="none" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
-        <polygon points="500,100 846,300 846,700 500,900 154,700 154,300" fill="none" stroke="rgba(168, 85, 247, 0.15)" stroke-width="2"/>
-        <polygon points="500,900 154,300 846,300" fill="none" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
-        <polygon points="500,100 846,700 154,700" fill="none" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
-        <line x1="100" y1="500" x2="900" y2="500" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
-        <line x1="500" y1="100" x2="500" y2="900" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
-    </svg>
-
-    <div class="bkimg-TRT1-container">
-        
-        <header class="bkimg-TRT1-header">
-            <h2 class="bkimg-TRT1-title">MAESTRO EN BRUJERÍA</h2>
-            <h3 class="bkimg-TRT1-subtitle">Maestro Abelardo</h3>
-        </header>
-
-        <div class="bkimg-TRT1-hero-wrapper">
-            <!-- Floating Cards -->
-            <div class="bkimg-TRT1-card bkimg-TRT1-card-1"></div>
-            <div class="bkimg-TRT1-card bkimg-TRT1-card-2"></div>
-            <div class="bkimg-TRT1-card bkimg-TRT1-card-3"></div>
-            
-            <img class="bkimg-TRT1-hero-img" src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-vela-ritual-con-fotos-y-hierbas.webp" alt="Tarotista Esotérica" loading="lazy">
-        </div>
-
-        <div class="bkimg-TRT1-ribbon-container">
-            <div class="bkimg-TRT1-ribbon-content">
-                <div class="bkimg-TRT1-stat">
-                    <span class="bkimg-TRT1-stat-num">CONSULTAS</span>
-                    <span class="bkimg-TRT1-stat-text">DE<br>BRUJERÍA</span>
-                </div>
-                <div class="bkimg-TRT1-stat bkimg-TRT1-stat-right">
-                    <span class="bkimg-TRT1-stat-text">RITUALES<br>DE BRUJERÍA</span>
-                    <span class="bkimg-TRT1-stat-num">2</span>
-                    <span class="bkimg-TRT1-stat-vert">PERSONALIZADOS</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="bkimg-TRT1-content-grid">
-            
-            <div class="bkimg-TRT1-col bkimg-TRT1-col-left">
-                <ul class="bkimg-TRT1-list">
-                    <li>
-                        <svg class="bkimg-TRT1-icon-spiral" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="var(--border-purple)" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="6" stroke="var(--border-purple)" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="2" fill="var(--border-purple)"/>
-                        </svg>
-                        Consultas de brujería
-                    </li>
-                    <li>
-                        <svg class="bkimg-TRT1-icon-spiral" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="var(--border-purple)" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="6" stroke="var(--border-purple)" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="2" fill="var(--border-purple)"/>
-                        </svg>
-                        Velas programadas
-                    </li>
-                    <li>
-                        <svg class="bkimg-TRT1-icon-spiral" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" stroke="var(--border-purple)" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="6" stroke="var(--border-purple)" stroke-width="1.5"/>
-                            <circle cx="12" cy="12" r="2" fill="var(--border-purple)"/>
-                        </svg>
-                        Rituales de protección
-                    </li>
-                </ul>
-                <div class="bkimg-TRT1-box">
-                    Te orientaré<br>sobre tu situación
-                </div>
-            </div>
-
-            <div class="bkimg-TRT1-col bkimg-TRT1-col-right">
-                <div class="bkimg-TRT1-box bkimg-TRT1-box-moon">
-                    <svg class="bkimg-TRT1-moon-phases" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--border-purple)" stroke-width="1.5"/>
-                        <path d="M12 22C14.7614 22 17 17.5228 17 12C17 6.47715 14.7614 2 12 2V22Z" fill="var(--border-purple)"/>
-                        
-                        <path d="M44 22C49.5228 22 54 17.5228 54 12C54 6.47715 49.5228 2 44 2C38.4772 2 34 6.47715 34 12C34 17.5228 38.4772 22 44 22Z" stroke="var(--border-purple)" stroke-width="1.5"/>
-                        <path d="M44 22C46.7614 22 49 17.5228 49 12C49 6.47715 46.7614 2 44 2C41.2386 2 39 6.47715 39 12C39 17.5228 41.2386 22 44 22Z" fill="var(--border-purple)"/>
-                        
-                        <circle cx="76" cy="12" r="10" fill="var(--border-purple)"/>
-                        
-                        <path d="M108 22C113.523 22 118 17.5228 118 12C118 6.47715 113.523 2 108 2C102.477 2 98 6.47715 98 12C98 17.5228 102.477 22 108 22Z" stroke="var(--border-purple)" stroke-width="1.5"/>
-                        <path d="M108 22C105.239 22 103 17.5228 103 12C103 6.47715 105.239 2 108 2V22Z" fill="var(--border-purple)"/>
-                    </svg>
-                    Revisaré tu<br>caso de brujería<br>paso a paso
-                </div>
-                <div class="bkimg-TRT1-decks">
-                    <h4>Prácticas</h4>
-                    <p>Limpieza espiritual<br>Protección<br>Grimorio<br>Rituales</p>
-                </div>
-            </div>
-
-        </div>
-
-        <footer class="bkimg-TRT1-footer">
-            <svg class="bkimg-TRT1-footer-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="32" cy="32" r="12" fill="none"/>
-                <path d="M32 10 L32 4 M32 60 L32 54 M10 32 L4 32 M60 32 L54 32 M16.5 16.5 L12 12 M52 52 L47.5 47.5 M16.5 47.5 L12 52 M52 12 L47.5 16.5" stroke-linecap="round"/>
-                <path d="M28 30 Q32 34 36 30" fill="none"/>
-                <circle cx="29" cy="28" r="1" fill="var(--border-purple)"/>
-                <circle cx="35" cy="28" r="1" fill="var(--border-purple)"/>
-            </svg>
-
-            <a href="https://wa.me/15042987893?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20brujeria" class="bkimg-TRT1-btn">
-                ESCRÍBELE AL MAESTRO
-                <svg class="bkimg-TRT1-icon-fingerprint" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v4h-2zm0 6h2v2h-2z" opacity="0.3"/>
-                    <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
-                    <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
-                    <path d="M12 9c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
-                </svg>
-            </a>
-
-            <svg class="bkimg-TRT1-footer-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 12 A 20 20 0 1 0 52 32 A 16 16 0 1 1 32 12 Z" fill="none"/>
-                <path d="M24 30 Q28 34 24 36" fill="none"/>
-                <circle cx="22" cy="28" r="1" fill="var(--border-purple)"/>
-            </svg>
-        </footer>
-
     </div>
-</section></section>
+    <div class="diag-step" data-paso="2">
+      <h3>2. ¿Desde hace cuánto?</h3>
+      <div class="diag-options"><button type="button" data-opcion="días">Días</button><button type="button" data-opcion="semanas">Semanas</button><button type="button" data-opcion="meses">Meses</button><button type="button" data-opcion="más de un año">Más de un año</button></div>
+      <button class="back" type="button">Volver</button>
+    </div>
+    <div class="diag-step" data-paso="3">
+      <h3>3. ¿Qué tan urgente es para ti?</h3>
+      <div class="diag-options"><button type="button" data-opcion="necesito orientación hoy">Necesito orientación hoy</button><button type="button" data-opcion="quiero resolverlo pronto">Quiero resolverlo pronto</button><button type="button" data-opcion="primero quiero entenderlo">Primero quiero entenderlo</button></div>
+      <button class="back" type="button">Volver</button>
+    </div>
+    <div class="diag-result">
+      <h3>Tu siguiente paso</h3>
+      <p>Por lo que marcaste, conviene comenzar con una evaluación personal. <a data-result-link href="#s-brujeria">Conoce el servicio sugerido</a>.</p>
+      <a class="btn xl" data-diagnostico-wa href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20una%20consulta">Enviar mis respuestas</a>
+      <button class="back" type="button">Volver</button>
+    </div>
+  </div>
+</section>
 
-
-    <section class="section" data-seccion="8-confianza" data-modulo="confianza" id="m-confianza">
-      <div class="wrap">
-        <div class="intro reveal"><span class="eyebrow">Compromisos claros</span><h2>Confianza y discreción antes de cualquier trabajo</h2></div>
-        <div class="trust-grid">
-          <div class="trust-item reveal"><strong>Privacidad</strong>Su conversación no se publica ni se usa como testimonio. Puede escribir sin exponer su historia.</div>
-          <div class="trust-item reveal"><strong>Pago informado</strong>Si se recomienda un trabajo, primero se explica qué incluye y cuánto cuesta. Usted decide.</div>
-          <div class="trust-item reveal"><strong>Atención en español</strong>La comunicación se realiza en palabras claras, por WhatsApp, para personas dentro de Estados Unidos.</div>
-          <div class="trust-item reveal"><strong>Horario acordado</strong>Los mensajes se responden según disponibilidad. Si hace falta llamada o videollamada, se coordina.</div>
-          <div class="trust-item reveal"><strong>Seguimiento definido</strong>Antes de comenzar se indica cómo y cuándo se revisará el proceso.</div>
-          <div class="trust-item reveal"><strong>Sin certezas falsas</strong>No se garantizan resultados ni se usan amenazas espirituales. La verdad pesa más que una promesa.</div>
-        </div>
+<section data-seccion="5-detalle" class="reveal">
+  <div class="section-head">
+    <span class="eyebrow">Antes de tomar una decisión</span>
+    <h2>Brujería, ánima sola y trabajos espirituales explicados con claridad</h2>
+    <p class="muted">No todo problema requiere el mismo ritual. Primero hay que escuchar, revisar el contexto y separar una preocupación real de una conclusión nacida del miedo.</p>
+  </div>
+  <div class="details-wrap">
+    <article data-detalle="brujeria" id="s-brujeria" class="detail with-image">
+      <div class="detail-copy">
+        <h2>Consulta de brujería para entender qué está pasando</h2>
+        <p>Si llegaste buscando brujería, seguramente no buscas una definición: necesitas saber por qué tu vida cambió y qué puedes hacer ahora. Tal vez alguien se alejó sin explicación, empezaron discusiones constantes o sientes que cada intento termina bloqueado.</p>
+        <p>Mi trabajo comienza escuchando los hechos, no alimentando tu temor. Te preguntaré cuándo comenzó el cambio, qué ha ocurrido desde entonces y qué deseas recuperar. Después puedo apoyarme en una lectura espiritual para valorar si conviene protección, limpieza, orientación sentimental u otro camino.</p>
+        <ul class="checklist">
+          <li>La consulta incluye una revisión inicial y una explicación privada.</li>
+          <li>Solo se solicitan los datos necesarios para comprender el caso.</li>
+          <li>Si se propone un trabajo, conocerás su proceso y costo antes de aceptarlo.</li>
+        </ul>
+        <p>Algunas personas preguntan por brujería vudú, hechizos para enamorar o el ánima sola en brujería. Son términos de tradiciones distintas y no deben mezclarse automáticamente. Te explicaré qué tiene sentido en tu situación y qué no recomiendo. Los tiempos varían; ningún practicante responsable puede asegurar un resultado idéntico para todos.</p>
+        <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20una%20evaluaci%C3%B3n%20de%20brujer%C3%ADa%20para%20entender%20mi%20caso">Hablar de mi caso de brujería</a>
       </div>
-    </section>
+      
+    </article>
 
-    <section class="section alt" data-seccion="9-otra">
-      <div class="wrap">
-        <div class="consult-layout">
-          <div class="reveal">
-            <span class="eyebrow">Consulta directa</span>
-            <h2>Aquí comienza el trabajo: escuchando su verdad</h2>
-            <p>Puede ser atendido por mensaje y, cuando el caso lo requiera, acordar llamada o videollamada. El altar, las cartas y los elementos no sustituyen la conversación; la acompañan.</p>
-            <p class="quote">“Lo antiguo no debe usarse para asustar. Debe servir para alumbrar el siguiente paso.” — Maestro Abelardo</p>
-            <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quiero%20coordinar%20una%20consulta%20privada">Coordinar una consulta</a>
-          </div>
-          
-        </div>
+    <article data-detalle="proteccion-espiritual" id="s-proteccion-espiritual" class="detail">
+      <span class="number">02</span>
+      <h2>Protección espiritual cuando tu entorno se siente pesado</h2>
+      <p>Puede ayudarte si atraviesas conflictos repetidos, visitas que te dejan intranquilo o una etapa en la que necesitas recuperar calma y límites. Primero se revisa qué sucede y desde cuándo; después se define si basta una orientación o conviene un trabajo de protección.</p>
+      <p>La preparación puede hacerse a distancia con tu nombre y los datos acordados. Recibes una explicación de los elementos utilizados, cuidados posteriores y seguimiento por WhatsApp. La protección espiritual no sustituye medidas de seguridad, atención médica ni apoyo profesional cuando sean necesarios.</p>
+      <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20saber%20si%20necesito%20protecci%C3%B3n%20espiritual">Consultar protección espiritual</a>
+    </article>
+
+    <article data-detalle="retiro-de-mal-de-ojo" id="s-retiro-de-mal-de-ojo" class="detail">
+      <span class="number">03</span>
+      <h2>Retiro de mal de ojo y limpieza de cargas</h2>
+      <p>Si relacionas tu malestar con envidia o mal de ojo, no tienes que asumir lo peor. Revisamos cambios concretos: cuándo empezó la sensación, qué ambientes frecuentas y qué eventos coincidieron con ella. Esa información evita recomendar algo innecesario.</p>
+      <p>Si procede una limpieza, se prepara de manera individual y se indican acciones sencillas para cuidar tu espacio. No se acusa a ninguna persona sin fundamento ni se utiliza el miedo para presionarte. El seguimiento sirve para comentar lo que notas y resolver dudas.</p>
+      <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20consultar%20sobre%20retiro%20de%20mal%20de%20ojo">Revisar un posible mal de ojo</a>
+    </article>
+
+    <article data-detalle="consulta-espiritual" id="s-consulta-espiritual" class="detail">
+      <span class="number">04</span>
+      <h2>Consulta espiritual privada, sin juicios ni presión</h2>
+      <p>Es el punto de partida cuando no sabes cómo nombrar lo que estás viviendo. Me cuentas qué cambió, quiénes están involucrados y qué resultado esperas. Puedes escribir desde cualquier lugar de Estados Unidos y recibir atención en español.</p>
+      <p>La conversación inicial no te obliga a contratar nada. Si el caso admite un trabajo, te explico qué necesitaría, cuánto puede durar su preparación y cómo se realiza el seguimiento. Si no considero adecuado intervenir, también lo sabrás.</p>
+      <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20necesito%20una%20consulta%20espiritual%20privada">Pedir mi consulta espiritual</a>
+    </article>
+
+    <article data-detalle="lectura-de-tarot" id="s-lectura-de-tarot" class="detail with-image reverse">
+      <div class="detail-copy">
+        <h2>Lectura de tarot para mirar tu situación con más claridad</h2>
+        <p>El tarot puede ayudarte a ordenar preguntas sobre sentimientos, decisiones o próximos pasos. La lectura se enfoca en tu pregunta y en las tendencias que aparecen; no presenta el futuro como algo fijo ni reemplaza tus decisiones.</p>
+        <p>Antes de comenzar acordamos el tema. Después recibes una interpretación directa, oportunidad de preguntar y una orientación final. Puede realizarse a distancia. El tiempo de la sesión y su valor se confirman previamente, sin cargos inesperados.</p>
+        <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20una%20lectura%20de%20tarot%20sobre%20mi%20situaci%C3%B3n">Solicitar lectura de tarot</a>
       </div>
-    </section>
-
-    <section class="section" data-seccion="10-otra">
-      <div class="wrap center reveal">
-        <span class="eyebrow">No alimente la incertidumbre</span>
-        <h2>El tiempo no siempre aleja; a veces aclara lo que debe hacerse</h2>
-        <p class="lead" style="margin-left:auto;margin-right:auto">Si su pareja se apartó o lleva meses cargando una preocupación, no actúe por desesperación. Una consulta hoy puede ayudarle a comprender si conviene trabajar, conversar, protegerse o soltar.</p>
-        <a class="btn pulse" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20no%20quiero%20seguir%20con%20esta%20incertidumbre%20y%20necesito%20orientaci%C3%B3n">Escríbele al Maestro Abelardo</a>
-      </div>
-    </section>
+      
+    </article>
+  </div>
+</section>
 
 
-<section class="maq-blk" data-blk="lectura-de-tarot"><style data-armonia="lectura-de-tarot">[data-blk="lectura-de-tarot"],[data-blk="lectura-de-tarot"] p,[data-blk="lectura-de-tarot"] li,[data-blk="lectura-de-tarot"] a,[data-blk="lectura-de-tarot"] span{font-family:Georgia,serif !important}[data-blk="lectura-de-tarot"] h2,[data-blk="lectura-de-tarot"] h3,[data-blk="lectura-de-tarot"] h4{font-family:Georgia,serif !important}</style><section class="bkimg-tr0t">
+<section class="maq-blk" data-blk="lectura-de-tarot"><style data-armonia="lectura-de-tarot">[data-blk="lectura-de-tarot"],[data-blk="lectura-de-tarot"] p,[data-blk="lectura-de-tarot"] li,[data-blk="lectura-de-tarot"] a,[data-blk="lectura-de-tarot"] span{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif !important}[data-blk="lectura-de-tarot"] h2,[data-blk="lectura-de-tarot"] h3,[data-blk="lectura-de-tarot"] h4{font-family:Georgia,serif !important}</style><section class="bkimg-tr0t">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;800;900&display=swap');
 
@@ -1688,7 +1042,7 @@
             --bg-color-light: #6b2c91;
             --bg-color-dark: #3a1054;
             --text-white: #ffffff;
-            --text-yellow: #b9bdc5;
+            --text-yellow: #f3f4f6;
             --footer-bg: #25063b;
             
             width: 100%;
@@ -1972,7 +1326,7 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(to right, #25d366, #128c7e);
+            background: linear-gradient(to right, #ffffff, #128c7e);
             color: white;
             text-decoration: none;
             padding: 12px 24px;
@@ -2037,7 +1391,7 @@
                 </div>
                 <span class="bkimg-tr0t-handle">@consultas_brujeria</span>
             </div>
-            <div class="bkimg-tr0t-consultant-name">Consultor en Brujería</div>
+            <div class="bkimg-tr0t-consultant-name">Consultor Espiritual en Brujería</div>
         </header>
 
         <main class="bkimg-tr0t-main">
@@ -2045,7 +1399,7 @@
                 <h2 class="bkimg-tr0t-title-gold">BRUJERÍA</h2>
                 <h3 class="bkimg-tr0t-title-script">Consulta de</h3>
                 <p class="bkimg-tr0t-description">
-                    La consulta de brujería puede orientarte en situaciones de tu vida y dar claridad a tus inquietudes. La brujería es una <span class="bkimg-tr0t-highlight">práctica espiritual ancestral</span> que recurre a rituales y orientación personalizada para ayudarte a explorar respuestas a tus preguntas sobre <span class="bkimg-tr0t-highlight">Amor, relaciones, protección y más.</span>
+                    Una consulta de brujería puede orientarte ante tus inquietudes y ayudarte a ver tu situación con mayor claridad. La brujería es una <span class="bkimg-tr0t-highlight">práctica espiritual ancestral</span> que emplea rituales y saberes tradicionales para brindarte orientación en temas de <span class="bkimg-tr0t-highlight">Amor, Relaciones, Bienestar y más.</span>
                 </p>
             </div>
             
@@ -2066,15 +1420,15 @@
         <div class="bkimg-tr0t-footer-bg">
             <div class="bkimg-tr0t-footer-content">
                 <div class="bkimg-tr0t-contact-area">
-                    <span class="bkimg-tr0t-contact-label">Escribe para más información:</span>
+                    <span class="bkimg-tr0t-contact-label">Llama para más información:</span>
                     <a href="https://wa.me/15042987893?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20brujeria" class="bkimg-tr0t-wa-btn">
                         💬 WhatsApp directo
                     </a>
                 </div>
                 <div class="bkimg-tr0t-author-area">
-                    <div class="bkimg-tr0t-author-name">Maestro Abelardo</div>
+                    <div class="bkimg-tr0t-author-name">Maestro Baltazar</div>
                     <div class="bkimg-tr0t-author-award">( Orientación en Brujería )</div>
-                    <div class="bkimg-tr0t-author-title">Maestro y Consultor en Brujería y Rituales</div>
+                    <div class="bkimg-tr0t-author-title">Maestro y Consultor en Brujería y Espiritualidad</div>
                 </div>
             </div>
         </div>
@@ -2082,53 +1436,681 @@
 </section></section>
 
 
-    <section class="section alt" data-seccion="11-faq" data-modulo="faq" id="m-faq">
-      <div class="wrap">
-        <div class="intro reveal"><span class="eyebrow">Preguntas honestas</span><h2>Lo que conviene saber antes de consultar sobre brujería</h2></div>
-        <div class="reveal">
-          <details><summary>¿La primera consulta de brujería tiene costo?</summary><p>Puede enviar un resumen del caso y recibir una orientación inicial. Si se recomienda un trabajo, su costo se explica antes de comenzar y usted decide libremente.</p></details>
-          <details><summary>¿La brujería se puede trabajar a distancia?</summary><p>Algunas consultas y prácticas pueden atenderse a distancia con nombres y contexto. Primero se determina si esa modalidad tiene sentido para su situación.</p></details>
-          <details><summary>¿Cuánto tiempo tarda un trabajo?</summary><p>No existe un plazo universal. El tiempo varía según el objetivo, la historia y el tipo de atención. No se ofrecen fechas exactas ni resultados asegurados.</p></details>
-          <details><summary>¿Qué necesito enviar por WhatsApp?</summary><p>Comience con su nombre, qué está ocurriendo y desde cuándo. Si se requiere una fotografía, fecha u otro dato, se le explicará la razón.</p></details>
-          <details><summary>¿Mi pareja o mi familia sabrán que consulté?</summary><p>No. La conversación es privada y no se comparte con terceros. Evite enviar información ajena que no sea necesaria para comprender el caso.</p></details>
-          <details><summary>¿Cómo se paga si decido hacer un trabajo?</summary><p>El valor y la forma de pago se informan después de revisar el caso. No se inicia nada sin que usted conozca el alcance y acepte las condiciones.</p></details>
-          <details><summary>¿Qué es el ánima sola en brujería?</summary><p>Es una figura presente en diversas tradiciones populares, con interpretaciones distintas según el linaje. No aconsejo invocaciones improvisadas ni prácticas destinadas a someter o dañar.</p></details>
-          <details><summary>Busqué “Antoni Santo brujería”, ¿esta es su página?</summary><p>No. Esta página pertenece al Maestro Abelardo y no afirma representar a Antoni Santo ni a otro practicante. Aquí recibirá atención directa bajo el nombre indicado.</p></details>
-          <details><summary>¿Qué pasa después de la consulta?</summary><p>Recibirá una explicación de las opciones. Puede aceptar, pedir tiempo para pensarlo o no continuar. Si inicia un trabajo, se acuerda el seguimiento desde el principio.</p></details>
-        </div>
-        <p class="reveal">Si su pregunta no aparece aquí, escríbala tal como le nace. Una pregunta clara abre mejor camino que una suposición.</p>
-        <a class="btn reveal" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20tengo%20una%20pregunta%20sobre%20brujer%C3%ADa%20antes%20de%20consultar">Hacer una pregunta privada</a>
-      </div>
-    </section>
+<section data-seccion="6-proceso" data-modulo="proceso" id="m-proceso" class="reveal">
+  <div class="section-head center">
+    <span class="eyebrow">Atención de principio a fin</span>
+    <h2>Así trabajo tu caso de brujería</h2>
+  </div>
+  <div class="steps">
+    <article class="card"><span class="number">I</span><h3>Me escribes</h3><p>Envías un resumen por WhatsApp. Puedes incluir tu nombre y explicar desde cuándo ocurre la situación.</p></article>
+    <article class="card"><span class="number">II</span><h3>Revisamos el caso</h3><p>Te hago preguntas concretas y te digo si necesito nombres, fechas, fotografías u otra información.</p></article>
+    <article class="card"><span class="number">III</span><h3>Conoces la propuesta</h3><p>Te explico el trabajo, su preparación, el costo y el tiempo estimado antes de que decidas.</p></article>
+    <article class="card"><span class="number">IV</span><h3>Recibes seguimiento</h3><p>Después del trabajo seguimos en contacto para responder dudas y observar la evolución sin crear falsas garantías.</p></article>
+  </div>
+  <div class="counter-strip" data-fx="contadores">
+    <div class="counter"><b data-count="30" data-suffix="+">30+</b><span>años de experiencia</span></div>
+    <div class="counter"><b data-count="100" data-suffix="%">100%</b><span>conversación privada</span></div>
+    <div class="counter"><b data-count="1" data-suffix="">1</b><span>trato personal</span></div>
+  </div>
+  <p class="center"><a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20empezar%20la%20evaluaci%C3%B3n%20de%20mi%20caso">Empezar la evaluación</a></p>
+</section>
 
-    <section class="section" data-seccion="12-cierre" data-modulo="cierre" id="m-cierre">
-      <div class="wrap">
-        <div class="closing reveal">
-          <span class="eyebrow">Su historia merece ser escuchada</span>
-          <h2>Cuénteme su caso; hay saberes antiguos para mirar lo que le pasa</h2>
-          <p>No necesita elegir el trabajo perfecto ni conocer palabras especiales. Explique qué cambió, cuánto tiempo lleva así y qué desea comprender. El Maestro Abelardo le responderá con discreción y sin juzgar.</p>
-          <a class="btn pulse" data-fx="onda-toque" href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20llegu%C3%A9%20por%20su%20p%C3%A1gina%20de%20brujer%C3%ADa%20y%20quiero%20contarle%20mi%20caso">Escríbele al Maestro Abelardo</a>
-          <p class="muted">Consulta inicial por WhatsApp · Atención en español · Privacidad</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<section data-seccion="7-comparativa" data-modulo="comparativa" id="m-comparativa" class="reveal">
+  <div class="section-head center">
+    <span class="eyebrow">Elige con calma</span>
+    <h2>¿Cuál trabajo puede ser para ti?</h2>
+  </div>
+  <div class="compare">
+    <article class="card compare-card"><h3>Brujería</h3><ul><li><b>Ideal si:</b> hay cambios difíciles de explicar.</li><li><b>Envías:</b> relato y nombres.</li><li><b>A distancia:</b> sí.</li><li><b>Tiempo:</b> varía según el caso.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20comparar%20opciones%20para%20mi%20caso%20de%20brujer%C3%ADa">Consultar</a></article>
+    <article class="card compare-card"><h3>Protección</h3><ul><li><b>Ideal si:</b> buscas fortalecer tu entorno.</li><li><b>Envías:</b> nombre y situación.</li><li><b>A distancia:</b> sí.</li><li><b>Tiempo:</b> según preparación.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20informaci%C3%B3n%20sobre%20protecci%C3%B3n%20espiritual">Consultar</a></article>
+    <article class="card compare-card"><h3>Mal de ojo</h3><ul><li><b>Ideal si:</b> percibes una carga persistente.</li><li><b>Envías:</b> síntomas y contexto.</li><li><b>A distancia:</b> sí.</li><li><b>Tiempo:</b> varía.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20evaluar%20un%20posible%20mal%20de%20ojo">Consultar</a></article>
+    <article class="card compare-card"><h3>Tarot</h3><ul><li><b>Ideal si:</b> necesitas claridad.</li><li><b>Envías:</b> una pregunta concreta.</li><li><b>A distancia:</b> sí.</li><li><b>Tiempo:</b> se confirma antes.</li></ul><a class="btn small" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20consultar%20el%20tarot">Consultar</a></article>
+  </div>
+</section>
 
-  
-<section class="maq-gallery" id="maq-gal-auto"><div class="mgi"><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-brujeria-efectiva.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-brujeria-para-enamorar.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-brujeriapoderosa.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-mesa-de-brujeria-con-velas-y-libro.webp" alt="" loading="lazy" decoding="async"></figure><figure><video src="https://googleads.mkinnovador.com/banco/videos/ritual-de-justicia-con-vela-negra.mp4" poster="https://googleads.mkinnovador.com/banco/videos/ritual-de-justicia-con-vela-negra-caratula.webp" muted loop playsinline preload="none"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-ritual-de-brujeria-con-figura-y-altar.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-ritual-de-brujeria-con-santa-muerte.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-vela-ritual-con-fotos-y-hierbas.webp" alt="" loading="lazy" decoding="async"></figure><figure><video src="https://googleads.mkinnovador.com/banco/videos/lectura-de-tarot-de-obsesion-sexual.mp4" poster="https://googleads.mkinnovador.com/banco/videos/lectura-de-tarot-de-obsesion-sexual-caratula.webp" muted loop playsinline preload="none"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure></div></section>
+<section data-seccion="8-confianza" data-modulo="confianza" id="m-confianza" class="reveal">
+  <div class="section-head">
+    <span class="eyebrow">Compromisos concretos</span>
+    <h2>Tu privacidad importa tanto como tu caso</h2>
+  </div>
+  <div class="trust-grid">
+    <div class="card"><h3>Conversación confidencial</h3><p>No publico tu nombre, fotografías ni detalles. La atención se realiza directamente por WhatsApp.</p></div>
+    <div class="card"><h3>Precio explicado antes</h3><p>La conversación inicial es sin costo. Si aceptas un trabajo, conocerás primero el valor y las formas de pago disponibles.</p></div>
+    <div class="card"><h3>Atención en español</h3><p>Puedes escribir desde Estados Unidos y explicar tu situación con tus propias palabras, sin términos complicados.</p></div>
+    <div class="card"><h3>Sin resultados inventados</h3><p>Te acompaño con seriedad, pero no prometo fechas exactas ni resultados asegurados. Cada caso evoluciona de manera distinta.</p></div>
+  </div>
+</section>
+
+<section data-seccion="9-otra" class="reveal">
+  <div class="altar-layout">
+    <div>
+      <span class="eyebrow">El lugar del trabajo</span>
+      <h2>Aquí preparo cada consulta y trabajo espiritual</h2>
+      <p class="lead">Nada se elige de forma automática. Los elementos, la intención y el proceso dependen de lo que revisemos juntos.</p>
+      <p>Cuando corresponde, puedo mostrarte parte del proceso por videollamada o enviarte una explicación de lo realizado. Mi intención es que sepas qué se está haciendo y no tengas que avanzar a ciegas.</p>
+      <a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20saber%20c%C3%B3mo%20se%20realizar%C3%ADa%20mi%20trabajo%20espiritual">Preguntar cómo sería mi trabajo</a>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="maq-blk" data-blk="cta-con-morado"><style data-armonia="cta-con-morado">[data-blk="cta-con-morado"],[data-blk="cta-con-morado"] p,[data-blk="cta-con-morado"] li,[data-blk="cta-con-morado"] a,[data-blk="cta-con-morado"] span{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif !important}[data-blk="cta-con-morado"] h2,[data-blk="cta-con-morado"] h3,[data-blk="cta-con-morado"] h4{font-family:Georgia,serif !important}</style><section class="bkimg-TRT1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap');
+
+        .bkimg-TRT1 {
+            --bg-dark: #1a0530;
+            --bg-mid: #4a1575;
+            --bg-light: #7e22ce;
+            --accent-orange: #f27a22;
+            --text-main: #ffffff;
+            --text-muted: #f3f4f6;
+            --border-purple: #a855f7;
+            --box-bg: rgba(26, 5, 48, 0.6);
+            
+            width: 100%;
+            background: radial-gradient(circle at 50% 40%, var(--bg-mid) 0%, var(--bg-dark) 70%, #0f021c 100%);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-main);
+            padding: 3rem 1rem;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            line-height: 1.4;
+        }
+
+        .bkimg-TRT1 * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Background Geometry */
+        .bkimg-TRT1-bg-geo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            max-width: 1200px;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.3;
+        }
+
+        .bkimg-TRT1-container {
+            width: 100%;
+            max-width: 1080px;
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header */
+        .bkimg-TRT1-header {
+            text-align: center;
+            position: relative;
+            z-index: 20;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .bkimg-TRT1-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(3.5rem, 10vw, 8rem);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8), 0 0 40px rgba(126, 34, 206, 0.6);
+            line-height: 0.9;
+            text-transform: uppercase;
+        }
+
+        .bkimg-TRT1-subtitle {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(3rem, 8vw, 6rem);
+            color: var(--accent-orange);
+            font-weight: 400;
+            position: absolute;
+            bottom: -1.5rem;
+            left: 50%;
+            transform: translateX(-50%) rotate(-3deg);
+            width: 100%;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            white-space: nowrap;
+        }
+
+        /* Hero Image & Masking */
+        .bkimg-TRT1-hero-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
+            margin: 0 auto 2rem auto;
+            z-index: 5;
+        }
+
+        .bkimg-TRT1-hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 75%);
+            -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 75%);
+            filter: drop-shadow(0 0 30px rgba(126, 34, 206, 0.5));
+        }
+
+        /* Floating Cards */
+        .bkimg-TRT1-card {
+            position: absolute;
+            width: 60px;
+            height: 100px;
+            background: linear-gradient(135deg, #f3f4f6, #a855f7);
+            border: 2px solid rgba(255,255,255,0.8);
+            border-radius: 4px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6), 0 0 15px rgba(168, 85, 247, 0.4);
+            z-index: 15;
+            opacity: 0.9;
+        }
+        
+        .bkimg-TRT1-card::after {
+            content: '';
+            position: absolute;
+            top: 4px; left: 4px; right: 4px; bottom: 4px;
+            border: 1px solid rgba(255,255,255,0.5);
+            background: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,0.1) 5px, rgba(255,255,255,0.1) 10px);
+        }
+
+        .bkimg-TRT1-card-1 { top: 20%; left: 10%; transform: rotate(-20deg); }
+        .bkimg-TRT1-card-2 { top: 60%; right: 15%; transform: rotate(30deg); }
+        .bkimg-TRT1-card-3 { bottom: 10%; left: 25%; transform: rotate(60deg) scale(0.8); filter: blur(2px); }
+
+        /* Ribbon */
+        .bkimg-TRT1-ribbon-container {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, rgba(74,21,117,0.1) 0%, rgba(126,34,206,0.5) 20%, rgba(126,34,206,0.5) 80%, rgba(74,21,117,0.1) 100%);
+            border-top: 1px solid rgba(168, 85, 247, 0.5);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.5);
+            backdrop-filter: blur(4px);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            z-index: 4;
+        }
+
+        .bkimg-TRT1-ribbon-content {
+            max-width: 1080px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .bkimg-TRT1-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            justify-content: center;
+        }
+
+        .bkimg-TRT1-stat-num {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            color: var(--text-main);
+            line-height: 1;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .bkimg-TRT1-stat-text {
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .bkimg-TRT1-stat-right {
+            text-align: right;
+        }
+
+        .bkimg-TRT1-stat-vert {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-size: 0.7rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            transform: rotate(180deg);
+        }
+
+        /* Content Grid */
+        .bkimg-TRT1-content-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .bkimg-TRT1-col {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        /* Lists */
+        .bkimg-TRT1-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .bkimg-TRT1-list li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .bkimg-TRT1-icon-spiral {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        /* Boxes */
+        .bkimg-TRT1-box {
+            background: var(--box-bg);
+            border: 1px solid var(--border-purple);
+            border-radius: 12px;
+            padding: 1.2rem;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3), inset 0 0 15px rgba(168, 85, 247, 0.2);
+            backdrop-filter: blur(5px);
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .bkimg-TRT1-box-moon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .bkimg-TRT1-moon-phases {
+            width: 120px;
+            height: 24px;
+        }
+
+        /* Decks Section */
+        .bkimg-TRT1-decks {
+            text-align: center;
+        }
+
+        .bkimg-TRT1-decks h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .bkimg-TRT1-decks p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Footer / CTA */
+        .bkimg-TRT1-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            width: 100%;
+            position: relative;
+            z-index: 20;
+        }
+
+        .bkimg-TRT1-btn {
+            background: linear-gradient(90deg, #7e22ce, #a855f7);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 10px 25px rgba(126, 34, 206, 0.5), inset 0 2px 5px rgba(255,255,255,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .bkimg-TRT1-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(126, 34, 206, 0.7), inset 0 2px 5px rgba(255,255,255,0.4);
+        }
+
+        .bkimg-TRT1-icon-fingerprint {
+            width: 28px;
+            height: 28px;
+            fill: rgba(255,255,255,0.8);
+        }
+
+        .bkimg-TRT1-footer-icon {
+            width: 50px;
+            height: 50px;
+            fill: none;
+            stroke: var(--border-purple);
+            stroke-width: 1.5;
+            filter: drop-shadow(0 0 5px rgba(168, 85, 247, 0.5));
+        }
+
+        /* Desktop Layout */
+        @media (min-width: 850px) {
+            .bkimg-TRT1 {
+                padding: 4rem 2rem;
+            }
+
+            .bkimg-TRT1-header {
+                margin-bottom: 0;
+            }
+
+            .bkimg-TRT1-subtitle {
+                bottom: -2.5rem;
+            }
+
+            .bkimg-TRT1-hero-wrapper {
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 600px;
+                height: 700px;
+                margin: 0;
+            }
+
+            .bkimg-TRT1-ribbon-container {
+                position: absolute;
+                top: 45%;
+                margin: 0;
+            }
+
+            .bkimg-TRT1-ribbon-content {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0 2rem;
+            }
+
+            .bkimg-TRT1-content-grid {
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 25rem; /* Push below header */
+                min-height: 400px;
+            }
+
+            .bkimg-TRT1-col {
+                width: 30%;
+                align-items: flex-start;
+            }
+
+            .bkimg-TRT1-col-right {
+                align-items: flex-end;
+                text-align: right;
+            }
+
+            .bkimg-TRT1-box {
+                text-align: left;
+            }
+
+            .bkimg-TRT1-col-right .bkimg-TRT1-box {
+                text-align: right;
+                align-items: flex-end;
+            }
+
+            .bkimg-TRT1-decks {
+                text-align: right;
+            }
+
+            .bkimg-TRT1-footer {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <!-- Background SVG Geometry -->
+    <svg class="bkimg-TRT1-bg-geo" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="500" cy="500" r="400" fill="none" stroke="rgba(168, 85, 247, 0.2)" stroke-width="2"/>
+        <circle cx="500" cy="500" r="380" fill="none" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
+        <polygon points="500,100 846,300 846,700 500,900 154,700 154,300" fill="none" stroke="rgba(168, 85, 247, 0.15)" stroke-width="2"/>
+        <polygon points="500,900 154,300 846,300" fill="none" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
+        <polygon points="500,100 846,700 154,700" fill="none" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
+        <line x1="100" y1="500" x2="900" y2="500" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
+        <line x1="500" y1="100" x2="500" y2="900" stroke="rgba(168, 85, 247, 0.1)" stroke-width="1"/>
+    </svg>
+
+    <div class="bkimg-TRT1-container">
+        
+        <header class="bkimg-TRT1-header">
+            <h2 class="bkimg-TRT1-title">MAESTRO EN BRUJERÍA</h2>
+            <h3 class="bkimg-TRT1-subtitle">Maestro Baltazar</h3>
+        </header>
+
+        <div class="bkimg-TRT1-hero-wrapper">
+            <!-- Floating Cards -->
+            <div class="bkimg-TRT1-card bkimg-TRT1-card-1"></div>
+            <div class="bkimg-TRT1-card bkimg-TRT1-card-2"></div>
+            <div class="bkimg-TRT1-card bkimg-TRT1-card-3"></div>
+            
+            <img class="bkimg-TRT1-hero-img" src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-vela-ritual-con-fotos-y-hierbas.webp" alt="Tarotista Esotérica" loading="lazy">
+        </div>
+
+        <div class="bkimg-TRT1-ribbon-container">
+            <div class="bkimg-TRT1-ribbon-content">
+                <div class="bkimg-TRT1-stat">
+                    <span class="bkimg-TRT1-stat-num">CONSULTAS</span>
+                    <span class="bkimg-TRT1-stat-text">DE BRUJERÍA<br>PERSONALIZADAS</span>
+                </div>
+                <div class="bkimg-TRT1-stat bkimg-TRT1-stat-right">
+                    <span class="bkimg-TRT1-stat-text">GUÍA<br>EN BRUJERÍA</span>
+                    <span class="bkimg-TRT1-stat-num">2</span>
+                    <span class="bkimg-TRT1-stat-vert">Y RITUALES</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bkimg-TRT1-content-grid">
+            
+            <div class="bkimg-TRT1-col bkimg-TRT1-col-left">
+                <ul class="bkimg-TRT1-list">
+                    <li>
+                        <svg class="bkimg-TRT1-icon-spiral" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="var(--border-purple)" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="6" stroke="var(--border-purple)" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="2" fill="var(--border-purple)"/>
+                        </svg>
+                        Consultas de BRUJERÍA
+                    </li>
+                    <li>
+                        <svg class="bkimg-TRT1-icon-spiral" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="var(--border-purple)" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="6" stroke="var(--border-purple)" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="2" fill="var(--border-purple)"/>
+                        </svg>
+                        Velas programadas
+                    </li>
+                    <li>
+                        <svg class="bkimg-TRT1-icon-spiral" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" stroke="var(--border-purple)" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="6" stroke="var(--border-purple)" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="2" fill="var(--border-purple)"/>
+                        </svg>
+                        Rituales esotéricos
+                    </li>
+                </ul>
+                <div class="bkimg-TRT1-box">
+                    Conoce opciones<br>de brujería
+                </div>
+            </div>
+
+            <div class="bkimg-TRT1-col bkimg-TRT1-col-right">
+                <div class="bkimg-TRT1-box bkimg-TRT1-box-moon">
+                    <svg class="bkimg-TRT1-moon-phases" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--border-purple)" stroke-width="1.5"/>
+                        <path d="M12 22C14.7614 22 17 17.5228 17 12C17 6.47715 14.7614 2 12 2V22Z" fill="var(--border-purple)"/>
+                        
+                        <path d="M44 22C49.5228 22 54 17.5228 54 12C54 6.47715 49.5228 2 44 2C38.4772 2 34 6.47715 34 12C34 17.5228 38.4772 22 44 22Z" stroke="var(--border-purple)" stroke-width="1.5"/>
+                        <path d="M44 22C46.7614 22 49 17.5228 49 12C49 6.47715 46.7614 2 44 2C41.2386 2 39 6.47715 39 12C39 17.5228 41.2386 22 44 22Z" fill="var(--border-purple)"/>
+                        
+                        <circle cx="76" cy="12" r="10" fill="var(--border-purple)"/>
+                        
+                        <path d="M108 22C113.523 22 118 17.5228 118 12C118 6.47715 113.523 2 108 2C102.477 2 98 6.47715 98 12C98 17.5228 102.477 22 108 22Z" stroke="var(--border-purple)" stroke-width="1.5"/>
+                        <path d="M108 22C105.239 22 103 17.5228 103 12C103 6.47715 105.239 2 108 2V22Z" fill="var(--border-purple)"/>
+                    </svg>
+                    Analizaré tu<br>situación con<br>claridad
+                </div>
+                <div class="bkimg-TRT1-decks">
+                    <h4>Prácticas</h4>
+                    <p>Protección espiritual<br>Limpieza energética<br>Grimorio<br>Oráculo</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bkimg-TRT1-footer">
+            <svg class="bkimg-TRT1-footer-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="12" fill="none"/>
+                <path d="M32 10 L32 4 M32 60 L32 54 M10 32 L4 32 M60 32 L54 32 M16.5 16.5 L12 12 M52 52 L47.5 47.5 M16.5 47.5 L12 52 M52 12 L47.5 16.5" stroke-linecap="round"/>
+                <path d="M28 30 Q32 34 36 30" fill="none"/>
+                <circle cx="29" cy="28" r="1" fill="var(--border-purple)"/>
+                <circle cx="35" cy="28" r="1" fill="var(--border-purple)"/>
+            </svg>
+
+            <a href="https://wa.me/15042987893?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20brujeria" class="bkimg-TRT1-btn">
+                ESCRÍBELE AL MAESTRO
+                <svg class="bkimg-TRT1-icon-fingerprint" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v4h-2zm0 6h2v2h-2z" opacity="0.3"/>
+                    <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                    <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z"/>
+                    <path d="M12 9c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+            </a>
+
+            <svg class="bkimg-TRT1-footer-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 12 A 20 20 0 1 0 52 32 A 16 16 0 1 1 32 12 Z" fill="none"/>
+                <path d="M24 30 Q28 34 24 36" fill="none"/>
+                <circle cx="22" cy="28" r="1" fill="var(--border-purple)"/>
+            </svg>
+        </footer>
+
+    </div>
+</section></section>
+
+
+<section data-seccion="10-otra" class="reveal">
+  <div class="closing-box">
+    <span class="eyebrow">El momento es ahora</span>
+    <h2>No dejes que la duda siga hablando por ti</h2>
+    <p>Escribir hoy no significa contratar un trabajo. Significa dejar de imaginar respuestas y contarle tu situación a alguien que puede orientarte con calma.</p>
+    <a class="btn xl" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20he%20decidido%20hablar%20hoy%20sobre%20lo%20que%20me%20est%C3%A1%20pasando">Escríbele hoy al Maestro Baltazar</a>
+  </div>
+</section>
+
+<section data-seccion="11-faq" data-modulo="faq" id="m-faq" class="reveal">
+  <div class="section-head">
+    <span class="eyebrow">Antes de escribir</span>
+    <h2>Preguntas frecuentes sobre brujería</h2>
+  </div>
+  <details><summary>¿La primera consulta tiene costo?</summary><p>No. Puedes contarme brevemente tu situación sin costo. Si recomiendo un trabajo espiritual, conocerás su precio y condiciones antes de decidir.</p></details>
+  <details><summary>¿La brujería funciona a distancia?</summary><p>La consulta y ciertos trabajos pueden realizarse a distancia con la información necesaria. La conveniencia del proceso se evalúa de manera individual.</p></details>
+  <details><summary>¿Qué necesito enviar?</summary><p>Comienza con tu nombre y un relato breve. Dependiendo del caso, podría solicitar nombres, fechas o fotografías; nunca envíes información que no te haya pedido.</p></details>
+  <details><summary>¿En cuánto tiempo puedo notar cambios?</summary><p>No existe un plazo universal. Depende de la situación, su antigüedad y el tipo de trabajo. No ofrezco resultados garantizados ni fechas inventadas.</p></details>
+  <details><summary>¿Alguien sabrá que consulté?</summary><p>No se comparten nombres, conversaciones ni imágenes. Tu consulta se mantiene privada y se atiende directamente por WhatsApp.</p></details>
+  <details><summary>¿Cómo se paga un trabajo?</summary><p>Después de revisar el caso se informan el costo y las formas de pago disponibles. Nada comienza sin que entiendas y aceptes la propuesta.</p></details>
+  <details><summary>¿Esta página es de Antoni Santo Brujería?</summary><p>No. Esta es la página oficial de consulta del Maestro Baltazar, quien trabaja de manera independiente y responde personalmente sus mensajes.</p></details>
+  <details><summary>¿Qué significa ánima sola en brujería?</summary><p>Es una figura de devoción popular interpretada de distintas maneras según la tradición. No todos los casos la necesitan y no conviene invocarla sin comprender el contexto.</p></details>
+  <p class="center"><a class="btn" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20tengo%20una%20pregunta%20sobre%20brujer%C3%ADa%20que%20no%20aparece%20en%20la%20p%C3%A1gina">Hacer otra pregunta</a></p>
+</section>
+
+<section data-seccion="12-cierre" data-modulo="cierre" id="m-cierre" class="closing reveal">
+  <div class="closing-box">
+    <span class="eyebrow">Consulta confidencial</span>
+    <h2>Cuéntame qué cambió y revisemos tu caso</h2>
+    <p>No necesitas saber qué trabajo pedir. Solo dime qué estás viviendo, desde cuándo ocurre y qué deseas recuperar. Yo te responderé personalmente.</p>
+    <a class="btn xl" href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20contarle%20mi%20caso%20de%20brujer%C3%ADa%20y%20recibir%20orientaci%C3%B3n">Escríbele al Maestro Baltazar</a>
+    <p class="muted">Sin compromiso · atención en español · tus datos permanecen privados</p>
+  </div>
+</section>
+</main>
+
+
+<section class="maq-gallery" id="maq-gal-auto"><div class="mgi"><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-brujeria-efectiva.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-brujeria-para-enamorar.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-brujeriapoderosa.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-mesa-de-brujeria-con-velas-y-libro.webp" alt="" loading="lazy" decoding="async"></figure><figure><video src="https://googleads.mkinnovador.com/banco/videos/ritual-con-velas-y-cuenco-de-cenizas.mp4" poster="https://googleads.mkinnovador.com/banco/videos/ritual-con-velas-y-cuenco-de-cenizas-caratula.webp" muted loop playsinline preload="none"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-ritual-de-brujeria-con-figura-y-altar.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-ritual-de-brujeria-con-santa-muerte.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujeria.brujoychaman.digital/optimizado/ag-178590335401/kw-19410923/banco-vela-ritual-con-fotos-y-hierbas.webp" alt="" loading="lazy" decoding="async"></figure><figure><video src="https://googleads.mkinnovador.com/banco/videos/altar-esoterico-con-velas-encendidas.mp4" poster="https://googleads.mkinnovador.com/banco/videos/altar-esoterico-con-velas-encendidas-caratula.webp" muted loop playsinline preload="none"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure></div></section>
 <footer>
-    <div class="wrap">Maestro Abelardo · Orientación espiritual para adultos · Estados Unidos<br>Los servicios espirituales no sustituyen atención médica, psicológica, legal o de seguridad.</div>
-  </footer>
+  <p>© Maestro Baltazar · Orientación espiritual para adultos. Los servicios espirituales no sustituyen atención médica, psicológica, legal o financiera.</p>
+</footer>
 
-  <script>
-    (()=>{const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches,items=document.querySelectorAll('.reveal');if(reduced){items.forEach(x=>x.classList.add('visible'))}else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});items.forEach(x=>io.observe(x))}})();
-
-    document.querySelectorAll('.flip-trigger').forEach(a=>a.addEventListener('click',e=>{if(!document.documentElement.classList.contains('js'))return;e.preventDefault();a.closest('.service-card').classList.toggle('flipped')}));
-
-    document.addEventListener('pointerdown',e=>{const el=e.target.closest('a,button,.service-card');if(!el)return;const r=el.getBoundingClientRect(),s=document.createElement('span');s.className='ripple';s.style.left=(e.clientX-r.left)+'px';s.style.top=(e.clientY-r.top)+'px';el.style.position='relative';el.style.overflow='hidden';el.appendChild(s);s.addEventListener('animationend',()=>s.remove())});
-
-    (()=>{const box=document.querySelector('.diagnosis');if(!box)return;const steps=[...box.querySelectorAll('.test-step')],result=box.querySelector('.test-result'),dots=[...box.querySelectorAll('.dot')],answers=[],link=box.querySelector('.result-link'),wa=box.querySelector('[data-diagnostico-wa]');let current=0,service='brujeria';function show(n){current=n;steps.forEach((s,i)=>s.classList.toggle('active',i===n));result.classList.toggle('active',n===3);dots.forEach((d,i)=>d.classList.toggle('on',i<=Math.min(n,2)))}box.querySelectorAll('.option').forEach(b=>b.addEventListener('click',()=>{answers[current]=b.dataset.opcion;if(current===0)service=b.dataset.service||'brujeria';if(current<2)show(current+1);else{link.href='#s-'+service;wa.href='https://wa.me/15042987893?text='+encodeURIComponent('Hola Maestro Abelardo, hice el test: '+answers[0]+', desde hace '+answers[1]+', urgencia '+answers[2]+'. ¿Me puede ayudar?');show(3)}}));box.querySelectorAll('.back').forEach(b=>b.addEventListener('click',()=>show(Math.max(0,current-1))));show(0)})();
-  </script>
+<script>
+document.documentElement.classList.add('js');
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reveals=[...document.querySelectorAll('.reveal')];
+if(reduced) reveals.forEach(e=>e.classList.add('visible'));
+else{
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+  reveals.forEach(e=>io.observe(e));
+}
+const steps=[...document.querySelectorAll('.diag-step')],result=document.querySelector('.diag-result'),dots=[...document.querySelectorAll('.progress i')],answers=[],service={slug:'brujeria'};
+function show(n){
+  steps.forEach((s,i)=>s.classList.toggle('active',i===n));
+  result.classList.toggle('active',n===3);
+  dots.forEach((d,i)=>d.classList.toggle('active',i<=Math.min(n,2)));
+}
+document.querySelectorAll('.diag-options button').forEach(btn=>btn.addEventListener('click',()=>{
+  const step=+btn.closest('.diag-step').dataset.paso-1;
+  answers[step]=btn.dataset.opcion;
+  if(btn.dataset.service) service.slug=btn.dataset.service;
+  if(step<2) show(step+1);
+  else{
+    const text=`Hola Maestro Baltazar, hice el test: ${answers[0]}, desde hace ${answers[1]}, urgencia ${answers[2]}. ¿Me puede ayudar?`;
+    document.querySelector('[data-diagnostico-wa]').href='https://wa.me/15042987893?text='+encodeURIComponent(text);
+    const link=document.querySelector('[data-result-link]');
+    link.href='#s-'+service.slug;
+    show(3);
+  }
+}));
+document.querySelectorAll('.diagnostic .back').forEach(btn=>btn.addEventListener('click',()=>{
+  const active=steps.findIndex(s=>s.classList.contains('active'));
+  show(result.classList.contains('active')?2:Math.max(0,active-1));
+}));
+const strip=document.querySelector('[data-fx="contadores"]');
+if(strip&&!reduced){
+  const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;
+    strip.querySelectorAll('[data-count]').forEach(el=>{
+      const end=+el.dataset.count,start=performance.now(),dur=900;
+      function tick(t){const p=Math.min(1,(t-start)/dur);el.textContent=Math.round(end*p)+(el.dataset.suffix||'');if(p<1)requestAnimationFrame(tick)}
+      requestAnimationFrame(tick);
+    });cio.disconnect();
+  }),{threshold:.4});cio.observe(strip);
+}
+</script>
 <script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
 <script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
 <style id="wa-ancho-guard">html,body{max-width:100%!important;overflow-x:clip!important}.watm-wrap{width:auto!important;max-width:100vw!important;box-sizing:border-box}.watm-viewport{overflow:hidden!important;width:auto!important;max-width:100%!important}.watm-track{width:100%!important;max-width:100%!important;min-width:0!important}.watm-slide{flex:0 0 100%!important;width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box}img,svg,video,iframe{max-width:100%}[class^="wfab-"],[class*=" wfab-"]{right:max(12px,env(safe-area-inset-right,0px))!important;left:auto!important;max-width:calc(100% - 24px)}</style>
@@ -2140,7 +2122,7 @@
 .wfab-humo a{position:relative;display:flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#26d06a,#0b6d3a);color:#fff;border:1.5px solid rgba(203,213,225,.5);box-shadow:0 6px 22px rgba(0,0,0,.5);text-decoration:none}
 @keyframes wfabHumoDrift{0%,100%{transform:translateY(0) scale(1);opacity:.6}50%{transform:translateY(-7px) scale(1.12);opacity:1}}
 @media (prefers-reduced-motion:reduce){.wfab-humo::before{animation:none!important}}
-</style><a href="https://wa.me/15042987893?text=Hola%20Maestro%20Abelardo%2C%20quisiera%20contarle%20mi%20situaci%C3%B3n" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div><!--/WA-FAB-->
+</style><a href="https://wa.me/15042987893?text=Hola%20Maestro%20Baltazar%2C%20quiero%20consultarle%20mi%20caso%20de%20brujer%C3%ADa" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div><!--/WA-FAB-->
 <nav id="maq-barra-srv" aria-label="Servicios"><div class="mbs-in"><a href="#s-brujeria">Consulta de brujería</a><a href="#s-proteccion-espiritual">Protección espiritual</a><a href="#s-retiro-de-mal-de-ojo">Retiro de mal de ojo</a><a href="#s-consulta-espiritual">Consulta espiritual</a><a href="#s-lectura-de-tarot">Lectura de tarot</a><a href="#m-diagnostico">🔮 ¿Qué necesito?</a><a href="#m-faq">Preguntas</a></div></nav>
 <script id="maq-barra-srv-js">(function(){var b=document.getElementById('maq-barra-srv');if(!b)return;try{var cs=getComputedStyle(document.body),bg=cs.backgroundColor;if(!bg||bg==='rgba(0, 0, 0, 0)'||bg==='transparent')bg=getComputedStyle(document.documentElement).backgroundColor;b.style.background=(bg&&bg!=='rgba(0, 0, 0, 0)')?bg:'#111';b.style.color=cs.color||'#fff';var hd=document.querySelector('header');if(hd){var p=getComputedStyle(hd).position;if(p==='fixed'||p==='sticky')b.style.setProperty('--mbs-top',hd.offsetHeight+'px');}}catch(e){}var h1=document.querySelector('h1');var lim=function(){var s=h1&&(h1.closest('section,header')||h1);return s?s.getBoundingClientRect().bottom+window.scrollY:400;};var L=lim();window.addEventListener('scroll',function(){b.classList.toggle('on',window.scrollY>L);},{passive:true});window.addEventListener('resize',function(){L=lim();},{passive:true});var as=b.querySelectorAll('a');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;as.forEach(function(a){var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('act',on);if(on&&a.scrollIntoView&&b.classList.contains('on')){var r=a.getBoundingClientRect(),w=b.firstChild;if(r.left<0||r.right>window.innerWidth)w.scrollTo({left:a.offsetLeft-12,behavior:'smooth'});}});});},{rootMargin:'-40% 0px -55% 0px'});as.forEach(function(a){var t=document.getElementById(a.getAttribute('href').slice(1));if(t)io.observe(t);});}})();</script>
 <script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>

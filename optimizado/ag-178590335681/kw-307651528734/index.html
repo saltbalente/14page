@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brujos Consulta Gratis por WhatsApp | Maestro Genaro</title>
+<meta name="description" content="Brujos consulta gratis por WhatsApp con el Maestro Genaro. Expón tu caso en privado, recibe orientación inicial sin compromiso y conoce qué camino espiritual puede ayudarte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#b88a35;--cream:#f7edd6;--ink:#24180f;--green:#315b45;--blue:#17375e;--white:#fff;--shadow:0 18px 45px rgba(36,24,15,.2)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--gold);color:var(--ink);font-family:'Cinzel Decorative',serif;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%;object-fit:cover}
+a{color:inherit}
+header{position:absolute;z-index:20;top:0;left:0;width:100%;padding:16px 18px;color:#fff;display:flex;justify-content:space-between;align-items:center;text-shadow:0 2px 8px #000}
+.brand{font-weight:900;font-size:.96rem;letter-spacing:.04em}
+.status{font-size:.67rem;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 10px;background:rgba(0,0,0,.25);backdrop-filter:blur(8px)}
+section{padding:64px 18px}
+.wrap{width:min(1120px,100%);margin:auto}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(2.25rem,9vw,3.7rem);line-height:1.04;font-weight:900}
+h2{font-size:clamp(1.72rem,7vw,2.7rem);line-height:1.14;margin-bottom:12px}
+h3{font-size:1.05rem;line-height:1.3}
+.eyebrow{display:inline-block;color:var(--blue);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:9px}
+.lead{font-size:1.02rem;max-width:760px}
+.btn{display:inline-flex;justify-content:center;align-items:center;text-align:center;gap:8px;background:var(--green);color:#fff;text-decoration:none;border-radius:10px;padding:15px 18px;font-weight:900;box-shadow:0 10px 25px rgba(49,91,69,.3);transition:.2s transform,.2s box-shadow}
+.btn:hover,.btn:active{transform:translateY(-2px);box-shadow:0 14px 30px rgba(36,24,15,.32)}
+.btn-xl{width:100%;max-width:520px;padding:18px;font-size:1rem;animation:pulse 2.5s infinite}
+.link{font-size:.76rem;font-weight:900;color:var(--blue)}
+.panel{background:var(--cream);border:1px solid rgba(36,24,15,.12);box-shadow:var(--shadow);border-radius:28px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease-out,transform .6s ease-out}
+.reveal.visible{opacity:1;transform:none}
+.grid>*:nth-child(2){transition-delay:.05s}.grid>*:nth-child(3){transition-delay:.1s}.grid>*:nth-child(4){transition-delay:.15s}.grid>*:nth-child(5){transition-delay:.2s}.grid>*:nth-child(6){transition-delay:.25s}
+.ink{display:block;width:110px;height:13px;margin:3px 0 22px;color:var(--blue)}
+.ink path{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-dasharray:150;stroke-dashoffset:150}
+.visible>.wrap>.ink path,.visible .ink path{animation:draw .9s forwards}
+.hero{min-height:92svh;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:110px 18px 46px;color:#fff}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.72) 78%),rgba(49,91,69,.12)}
+.hero-content{position:relative;z-index:2;width:min(760px,100%);margin:0 auto}
+.hero-badge{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.27);backdrop-filter:blur(8px);font-size:.72rem;margin-bottom:15px}
+.hero-sub{color:rgba(255,255,255,.9);font-size:1rem;max-width:630px}
+.micro{font-size:.7rem;margin:11px 0 16px;color:rgba(255,255,255,.86)}
+.hero-in{opacity:0;animation:heroIn .7s forwards}.hero-in:nth-child(2){animation-delay:.2s}.hero-in:nth-child(3){animation-delay:.4s}.hero-in:nth-child(4){animation-delay:.6s}
+.quick{display:flex;gap:7px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none}
+.quick a{white-space:nowrap;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.28);border-radius:999px;padding:8px 10px;font-size:.65rem}
+.faces{display:flex;margin-top:12px}
+.faces img{width:38px;height:38px;aspect-ratio:1;border-radius:50%;border:2px solid #fff;margin-right:-8px}
+.scrollmark{position:absolute;z-index:3;bottom:8px;left:50%;font-size:1.2rem;animation:bob 1.8s infinite}
+.details{display:grid;gap:24px}
+.detail-card{position:relative;overflow:hidden;background:var(--cream);border-radius:30px;box-shadow:var(--shadow)}
+.detail-card img{width:100%;height:auto;aspect-ratio:5/6;max-height:45vh}
+.detail-copy{padding:24px}
+.detail-copy ul{padding-left:19px}
+.detail-copy li{margin-bottom:7px}
+.fact{border-left:4px solid var(--blue);padding:10px 13px;background:#efe0bf;font-weight:700;font-size:.85rem;margin:16px 0}
+.catalog{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:18px}
+.service{position:relative;padding:24px 19px 20px;background:linear-gradient(145deg,#fff7e6,var(--cream));border-radius:28px;box-shadow:0 14px 35px rgba(36,24,15,.2);isolation:isolate;overflow:hidden;transition:.2s}
+.service:before{content:"";position:absolute;inset:-2px;border-radius:30px;background:conic-gradient(from var(--angle),var(--blue),#d7b666,var(--green),var(--blue));z-index:-2;animation:borderSpin 6s linear infinite}
+.service:after{content:"";position:absolute;inset:2px;background:linear-gradient(145deg,#fff8e9,var(--cream));border-radius:26px;z-index:-1}
+.service:hover{transform:translateY(-2px)}
+.icon{width:50px;height:50px;margin-top:-38px;margin-bottom:12px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;border:4px solid var(--cream);font-size:1.25rem}
+.tag{display:inline-block;background:#e6d2a7;color:var(--ink);padding:4px 8px;border-radius:999px;font-size:.62rem;font-weight:900}
+.actions{display:flex;align-items:center;justify-content:space-between;gap:9px;margin-top:15px}
+.actions .btn{padding:11px 12px;font-size:.68rem}
+.soft{background:#d9c18c}
+.situation-grid,.trust-grid,.steps{display:grid;gap:14px}
+.situation,.trust,.step-card{padding:19px}
+.counterbar{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:26px}
+.counter{padding:14px 7px;text-align:center;background:var(--blue);color:#fff;border-radius:18px}
+.counter strong{display:block;font-size:1.45rem}.counter span{font-size:.58rem}
+.diagnostic{padding:25px}
+.progress{display:flex;gap:7px;margin:12px 0 21px}.dot{width:34px;height:5px;border-radius:5px;background:#cfbc94}.dot.on{background:var(--green)}
+.test-step{margin-bottom:21px}.choices{display:grid;gap:9px}
+.choices button,.back{font:inherit;color:var(--ink);border:1px solid #c8af79;background:#fff8e9;border-radius:10px;padding:12px;text-align:left;cursor:pointer}
+.choices button.selected{background:var(--green);color:#fff}
+.js .test-step{display:none}.js .test-step.active{display:block;animation:heroIn .35s both}
+.result{border-top:1px solid #cbb583;padding-top:18px}.js .result{display:none}.js .result.show{display:block}
+.about{display:grid;gap:24px;align-items:center}
+.about img{width:min(84%,360px);margin:auto;aspect-ratio:5/6;max-height:45vh;border-radius:50% 50% 24px 24px;box-shadow:var(--shadow)}
+.steps{counter-reset:paso}.step-card:before{counter-increment:paso;content:"0" counter(paso);display:block;font-size:2rem;color:var(--gold);font-weight:900}
+.compare{display:grid;gap:15px}.compare article{padding:20px}.compare dl{font-size:.78rem}.compare dt{font-weight:900;color:var(--blue)}.compare dd{margin:0 0 10px}
+details{background:var(--cream);border-radius:16px;padding:16px 18px;margin-bottom:10px;box-shadow:0 8px 20px rgba(36,24,15,.12)}
+summary{cursor:pointer;font-weight:900;list-style:none;padding-right:25px;position:relative}
+summary:after{content:"+";position:absolute;right:0;transition:.2s transform}
+details[open] summary:after{transform:rotate(45deg)}
+details p{margin:12px 0 0;font-size:.86rem}
+.center{text-align:center}.center .ink{margin-left:auto;margin-right:auto}
+.closing{padding:72px 18px;background:var(--blue);color:#fff}
+footer{background:#1d140e;color:#eadfc9;padding:28px 18px;text-align:center;font-size:.68rem}
+@keyframes pulse{50%{transform:scale(1.04);box-shadow:0 0 28px rgba(255,255,255,.25),0 12px 30px rgba(0,0,0,.3)}}
+@keyframes heroIn{to{opacity:1;transform:none}}
+@keyframes bob{50%{transform:translateY(5px)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@property --angle{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes borderSpin{to{--angle:360deg}}
+@media(min-width:600px){.catalog{grid-template-columns:repeat(2,1fr)}.situation-grid,.trust-grid,.steps,.compare{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){section{padding:82px 28px}.detail-card{display:grid;grid-template-columns:.8fr 1.2fr;align-items:stretch}.detail-card:nth-child(even) img{order:2}.detail-card img{height:100%;max-height:none}.about{grid-template-columns:.75fr 1.25fr}.hero-content{margin-left:max(4vw,calc((100% - 1120px)/2))}.btn-xl{width:auto;min-width:430px}.counterbar{max-width:700px}}
+@media(min-width:960px){.catalog{grid-template-columns:repeat(3,1fr)}.situation-grid{grid-template-columns:repeat(3,1fr)}.steps,.compare{grid-template-columns:repeat(4,1fr)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal,.hero-in{opacity:1;transform:none}.ink path{stroke-dashoffset:0}}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+[
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Maestro Genaro — Brujos Consulta Gratis","url":"https://brujos-consulta-gratis.brujoychaman.digital/","telephone":"+12137703537","description":"Consulta espiritual inicial por WhatsApp con el Maestro Genaro para tarot, videncia y orientación privada.","areaServed":["Estados Unidos","New York"],"priceRange":"Consulta inicial sin compromiso"},
+{"@context":"https://schema.org","@type":"Service","name":"Brujos consulta gratis","provider":{"@type":"Person","name":"Maestro Genaro"},"serviceType":"Consulta espiritual, tarot y videncia por WhatsApp","areaServed":{"@type":"Country","name":"Estados Unidos"},"availableChannel":{"@type":"ServiceChannel","serviceUrl":"https://wa.me/12137703537"}},
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿La consulta inicial con el brujo es gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí. Puedes explicar brevemente tu situación por WhatsApp sin compromiso. Si después solicitas un trabajo espiritual, el Maestro Genaro te explicará previamente el alcance y el pago."}},
+{"@type":"Question","name":"¿Cómo se realiza la consulta por WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Envías tu nombre, el asunto que te preocupa y desde cuándo ocurre. El Maestro Genaro revisa la información y coordina contigo la orientación por mensajes, llamada o videollamada."}},
+{"@type":"Question","name":"¿Cuánto tarda en responder?","acceptedAnswer":{"@type":"Answer","text":"Los mensajes pueden enviarse las 24 horas. La respuesta depende de la agenda y de los diez espacios privados atendidos cada día."}},
+{"@type":"Question","name":"¿La consulta es privada?","acceptedAnswer":{"@type":"Answer","text":"Sí. La conversación se maneja con discreción y no se publican nombres, imágenes ni detalles del caso."}},
+{"@type":"Question","name":"¿Puede atenderme si estoy fuera de New York?","acceptedAnswer":{"@type":"Answer","text":"Sí. La orientación puede realizarse a distancia por WhatsApp desde cualquier ciudad de Estados Unidos."}},
+{"@type":"Question","name":"¿Qué debo enviar para comenzar?","acceptedAnswer":{"@type":"Answer","text":"Basta con tu nombre, el tema principal y un resumen sincero. Si hace falta otra información, el Maestro Genaro te la pedirá durante la consulta."}},
+{"@type":"Question","name":"¿Se garantizan resultados?","acceptedAnswer":{"@type":"Answer","text":"No. Cada situación depende de las personas y de sus decisiones. La consulta ofrece orientación y explica posibilidades sin asegurar resultados imposibles."}}
+]}
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PQW2RL4R');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11495571750"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-11495571750');gtag('config','AW-672356997');</script>
+<style id="wa-reveal-guard">@media (prefers-reduced-motion:reduce){.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}}</style><noscript id="wa-reveal-guard-ns"><style>.reveal,.reveal-stagger>*,[data-reveal],[data-aos]{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23334155'/><text x='32' y='44' font-size='34' text-anchor='middle'>⭐</text></svg>">
+<style id="maq-laurel-css">.maq-laurel{display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;margin:0 auto 18px;max-width:440px;filter:drop-shadow(0 1px 6px rgba(0,0,0,.45))}.maq-laurel .ml-mid{display:flex;flex-direction:column;align-items:center;gap:3px}.maq-laurel .ml-title{font-weight:800;font-size:17px;line-height:1.2;letter-spacing:.2px;text-align:center}.maq-laurel .ml-stars{font-size:16px;letter-spacing:3px;line-height:1}.maq-laurel .ml-since{font-weight:700;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;opacity:.95}</style>
+<style id="maq-gallery-css">.maq-gallery{padding:34px 14px}.maq-gallery .mgi{max-width:1080px;margin:0 auto;columns:2;column-gap:10px}@media(min-width:760px){.maq-gallery .mgi{columns:3;column-gap:12px}}.maq-gallery figure{break-inside:avoid;margin:0 0 10px;position:relative;border-radius:16px;overflow:hidden;background:#111;transform:translateZ(0)}.maq-gallery img,.maq-gallery video{width:100%;height:auto;display:block;border-radius:16px;transition:transform .45s ease}.maq-gallery figure:hover img,.maq-gallery figure:hover video{transform:scale(1.04)}.maq-gallery .mgb{position:absolute;top:8px;left:8px;margin:0;padding:3px 9px;border-radius:999px;font:700 10px/1.5 -apple-system,BlinkMacSystemFont,sans-serif;letter-spacing:.5px;color:#fff;background:rgba(0,0,0,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}</style>
+<style id="maq-barra-srv-css">#maq-barra-srv{position:fixed;left:0;right:0;top:var(--mbs-top,0px);z-index:60;transform:translateY(calc(-100% - var(--mbs-top,0px) - 12px));visibility:hidden;transition:transform .28s ease,visibility .28s;box-shadow:0 2px 12px rgba(0,0,0,.18);font:600 13px/1.2 inherit}#maq-barra-srv.on{transform:none;visibility:visible}#maq-barra-srv .mbs-in{display:flex;gap:8px;overflow-x:auto;padding:8px 12px;scrollbar-width:none;max-width:1100px;margin:0 auto}#maq-barra-srv .mbs-in::-webkit-scrollbar{display:none}#maq-barra-srv a{flex:0 0 auto;padding:7px 12px;border-radius:999px;border:1px solid currentColor;opacity:.78;text-decoration:none;color:inherit;white-space:nowrap}#maq-barra-srv a.act{opacity:1;font-weight:800;box-shadow:inset 0 -2px 0 currentColor}[data-detalle],[data-modulo]{scroll-margin-top:72px}@media (prefers-reduced-motion:reduce){#maq-barra-srv{transition:none}}</style>
+<style id="maq-envivo-css">.maq-envivo{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 12px;box-sizing:border-box;width:calc(100% - 32px);max-width:640px;margin:14px auto;padding:10px 14px;border-radius:14px;border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 25%,transparent);font-size:14px;line-height:1.35;text-align:center}.maq-envivo .mev-dot{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:mevp 2s infinite}.maq-envivo a{font-weight:800;color:inherit;text-decoration:underline}@keyframes mevp{0%{box-shadow:0 0 0 0 rgba(34,197,94,.55)}70%{box-shadow:0 0 0 9px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}@media (prefers-reduced-motion:reduce){.maq-envivo .mev-dot{animation:none}}</style>
+</head>
+<body>
+<script id="wa-slider-guard">(function(){if(window.__waSliderGuard)return;window.__waSliderGuard=1;var o=Element.prototype.scrollIntoView;Element.prototype.scrollIntoView=function(){var c=this.parentElement;while(c&&c!==document.body&&!(c.scrollWidth>c.clientWidth+8))c=c.parentElement;if(c&&c!==document.body){var cr=c.getBoundingClientRect(),er=this.getBoundingClientRect();c.scrollTo({left:c.scrollLeft+(er.left-cr.left)-(cr.width-er.width)/2,behavior:'smooth'});return}return o.apply(this,arguments)};})();</script>
+<script id="wa-touch-guard">(function(){if(window.__waTouchGuard)return;window.__waTouchGuard=1;var o=EventTarget.prototype.addEventListener;EventTarget.prototype.addEventListener=function(t,f,x){if(t==='touchmove'||t==='touchstart'){var p=(typeof x==='object'&&x)?x:{capture:x===true};if(p.passive!==true)x={capture:!!p.capture,once:!!p.once,passive:true};}return o.call(this,t,f,x);};addEventListener('DOMContentLoaded',function(){try{var els=document.body.querySelectorAll('*');for(var i=0;i<els.length;i++){var c=getComputedStyle(els[i]).touchAction;if(c==='none'||c==='pan-x'){els[i].style.touchAction='pan-x pan-y pinch-zoom';}}}catch(e){}});})();</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQW2RL4R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header>
+<div class="brand">✦ Maestro Genaro</div>
+<div class="status">Disponible por WhatsApp</div>
+</header>
+
+<main>
+<section data-seccion="1-portada" class="hero">
+<video autoplay muted loop playsinline preload="metadata" poster="https://googleads.mkinnovador.com/banco/videos/lectura-de-tarot-de-obsesion-sexual-caratula.webp">
+<source src="https://googleads.mkinnovador.com/banco/videos/lectura-de-tarot-de-obsesion-sexual.mp4" type="video/mp4">
+</video>
+<div class="hero-content">
+<span class="hero-badge hero-in">✦ Maestro Genaro disponible ahora</span>
+<div class="maq-laurel"><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg><span class="ml-mid"><span class="ml-title">Brujos Consulta Gratis</span><span class="ml-stars">★★★★★</span><span class="ml-since">Resultados Reales</span></span><svg viewBox="0 0 48 100" width="36" height="75" aria-hidden="true" style="transform:scaleX(-1)"><g fill="currentColor"><path d="M41.8 92.8 L 34.6 90.2 L 28.0 86.4 L 22.1 81.5 L 17.2 75.6 L 13.5 68.9 L 11.1 61.6 L 10.0 54.0 L 10.4 46.4 L 12.1 38.9 L 15.1 31.9 L 19.4 25.5 L 24.7 20.0 L 31.0 15.6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/><ellipse cx="28.1" cy="91.2" rx="7.7" ry="2.8" transform="rotate(-189 28.1 91.2)"/><ellipse cx="31.1" cy="84.7" rx="7.7" ry="2.8" transform="rotate(-123 31.1 84.7)"/><ellipse cx="21.6" cy="86.2" rx="7.5" ry="2.7" transform="rotate(-178 21.6 86.2)"/><ellipse cx="25.6" cy="80.6" rx="7.5" ry="2.7" transform="rotate(-112 25.6 80.6)"/><ellipse cx="16.1" cy="80.2" rx="7.2" ry="2.6" transform="rotate(-168 16.1 80.2)"/><ellipse cx="20.9" cy="75.5" rx="7.2" ry="2.6" transform="rotate(-102 20.9 75.5)"/><ellipse cx="11.8" cy="73.3" rx="6.9" ry="2.5" transform="rotate(-157 11.8 73.3)"/><ellipse cx="17.1" cy="69.7" rx="6.9" ry="2.5" transform="rotate(-91 17.1 69.7)"/><ellipse cx="8.8" cy="65.8" rx="6.7" ry="2.4" transform="rotate(-147 8.8 65.8)"/><ellipse cx="14.5" cy="63.3" rx="6.7" ry="2.4" transform="rotate(-81 14.5 63.3)"/><ellipse cx="7.2" cy="57.9" rx="6.4" ry="2.3" transform="rotate(-136 7.2 57.9)"/><ellipse cx="13.0" cy="56.5" rx="6.4" ry="2.3" transform="rotate(-70 13.0 56.5)"/><ellipse cx="7.0" cy="49.8" rx="6.1" ry="2.2" transform="rotate(-126 7.0 49.8)"/><ellipse cx="12.7" cy="49.5" rx="6.1" ry="2.2" transform="rotate(-60 12.7 49.5)"/><ellipse cx="8.3" cy="41.9" rx="5.8" ry="2.1" transform="rotate(-115 8.3 41.9)"/><ellipse cx="13.6" cy="42.6" rx="5.8" ry="2.1" transform="rotate(-49 13.6 42.6)"/><ellipse cx="10.9" cy="34.3" rx="5.6" ry="2.0" transform="rotate(-105 10.9 34.3)"/><ellipse cx="15.8" cy="35.9" rx="5.6" ry="2.0" transform="rotate(-39 15.8 35.9)"/><ellipse cx="14.8" cy="27.4" rx="5.3" ry="1.9" transform="rotate(-94 14.8 27.4)"/><ellipse cx="19.1" cy="29.7" rx="5.3" ry="1.9" transform="rotate(-28 19.1 29.7)"/><ellipse cx="19.8" cy="21.3" rx="5.0" ry="1.8" transform="rotate(-84 19.8 21.3)"/><ellipse cx="23.5" cy="24.2" rx="5.0" ry="1.8" transform="rotate(-18 23.5 24.2)"/><ellipse cx="25.9" cy="16.2" rx="4.8" ry="1.7" transform="rotate(-73 25.9 16.2)"/><ellipse cx="28.8" cy="19.5" rx="4.8" ry="1.7" transform="rotate(-7 28.8 19.5)"/><ellipse cx="32.7" cy="12.2" rx="4.5" ry="1.6" transform="rotate(-63 32.7 12.2)"/><ellipse cx="34.8" cy="15.8" rx="4.5" ry="1.6" transform="rotate(3 34.8 15.8)"/></g></svg></div>
+<h1 class="hero-in">Brujos consulta gratis para encontrar una salida</h1>
+<p class="hero-sub hero-in">Cuéntame qué está cerrando tu camino. Revisaré tu caso con firmeza, privacidad y sin cobrarte la consulta inicial.</p>
+<div class="hero-in">
+<p class="micro">Consulta inicial sin compromiso · 10 espacios privados al día · atención en español</p>
+<a class="btn btn-xl" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20busco%20brujos%20consulta%20gratis%20y%20quiero%20explicarle%20mi%20caso">Escríbeme y dime qué está pasando</a>
+<div class="quick" aria-label="Accesos a servicios">
+<a href="#s-brujos-consulta">Consulta con brujo</a>
+<a href="#s-tarot">Tarot gratis</a>
+<a href="#s-saber-mi-futuro">Saber mi futuro</a>
+<a href="#s-ayuda-espiritual">Ayuda espiritual</a>
+</div>
+<div class="faces" aria-label="Atención privada para mujeres y familias">
+
+
+
+
+</div>
+</div>
+</div>
+<div class="scrollmark" aria-hidden="true">⌄</div>
+</section>
+<div id="maq-envivo" class="maq-envivo" role="status"><span class="mev-dot" aria-hidden="true"></span><span class="mev-t">Atención 24/7 por WhatsApp</span><a href="https://wa.me/12137703537?text=Hola%2C%20vi%20su%20p%C3%A1gina%20y%20quiero%20una%20consulta%20ahora">Escribir ahora →</a></div><script>(function(){try{var t=document.querySelector('#maq-envivo .mev-t');var h=new Date().toLocaleTimeString('es-US',{hour:'numeric',minute:'2-digit'});t.textContent='Son las '+h+' en tu ciudad · '+t.textContent;}catch(e){}})();</script>
+
+
+<section data-seccion="2-detalle" data-blk="tarjetas-de-servicios-premium-con-fotos-" class="reveal">
+<div class="wrap details">
+<article data-detalle="brujos-consulta" id="s-brujos-consulta" class="detail-card">
+<img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-ritual-oscuro-con-pentagrama-de-fuego.webp" width="800" height="960" loading="lazy" decoding="async" alt="Brujos consulta gratis con análisis espiritual del caso">
+<div class="detail-copy">
+<span class="eyebrow">Primera orientación</span>
+<h2>Brujos consulta gratis: dime qué salida buscas</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p>No necesitas llegar con palabras perfectas. Dime si tu pareja se alejó, si sospechas de una tercera persona, si atraviesas una racha pesada o si debes tomar una decisión que no te deja dormir. Primero escucho. Después separo los hechos, el miedo y lo que puede revisarse espiritualmente.</p>
+<p>La consulta inicial sirve para saber qué tipo de orientación corresponde. Te pediré tu nombre, el asunto principal y desde cuándo ocurre. No comienzo rituales sin explicarte antes qué se hará, qué información necesito y qué depende de tus decisiones.</p>
+<div class="fact">Atiendo solo 10 espacios privados al día. Así puedo revisar cada caso con calma.</div>
+<ul>
+<li>Lectura inicial de la situación y sus bloqueos.</li>
+<li>Recomendación clara: tarot, videncia o guía espiritual.</li>
+<li>Explicación previa de tiempos, seguimiento y pago si decides continuar.</li>
+</ul>
+<p>No prometo dominar voluntades ni asegurar fechas. Sí te digo con franqueza si veo un camino razonable o si conviene detenerse. Esa honestidad evita gastos innecesarios.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20una%20consulta%20gratis%20con%20un%20brujo%20para%20revisar%20mi%20situaci%C3%B3n">Revisa mi caso inicial</a>
+</div>
+</article>
+
+<article data-detalle="tarot" id="s-tarot" class="detail-card">
+<img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-propuesta-de-amor-con-velas-rituales.webp" width="800" height="960" loading="lazy" decoding="async" alt="Tarot gratis como parte de una consulta con brujo">
+<div class="detail-copy">
+<span class="eyebrow">Claridad inmediata</span>
+<h2>Tarot gratis para ordenar lo que hoy no entiendes</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p>La tirada inicial ayuda a mirar el presente sin exageraciones. La uso cuando hay dudas amorosas, silencios, cambios de trabajo o decisiones urgentes. Abro las cartas sobre una pregunta concreta y te explico los símbolos con palabras directas.</p>
+<p>Recibes una orientación breve, la posición de los arcanos y las alternativas que aparecen. El tarot no reemplaza tu criterio ni fija un destino inamovible. Muestra tendencias para que actúes con más serenidad.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20solicitar%20mi%20lectura%20inicial%20de%20tarot%20gratis">Pedir mi tirada inicial</a>
+</div>
+</article>
+
+<article data-detalle="saber-mi-futuro" id="s-saber-mi-futuro" class="detail-card">
+<img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-banner-amarres-amor-mismo-sexo.webp" width="800" height="960" loading="lazy" decoding="async" alt="Cómo saber mi futuro real gratis mediante orientación espiritual">
+<div class="detail-copy">
+<span class="eyebrow">Posibilidades reales</span>
+<h2>Cómo saber mi futuro real gratis y sin falsas certezas</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p>El futuro cambia con decisiones, conversaciones y circunstancias. Por eso no invento fechas exactas. Reviso la tendencia actual: qué camino gana fuerza, qué obstáculo se repite y qué acción puede cambiar el rumbo.</p>
+<p>Esta consulta ayuda si dudas entre quedarte o marcharte, retomar una relación o aceptar una oportunidad. Incluye una pregunta central, lectura del momento y una recomendación práctica.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20saber%20mi%20futuro%20real%20gratis%20y%20revisar%20mis%20opciones">Quiero revisar mi camino</a>
+</div>
+</article>
+
+<article data-detalle="ayuda-espiritual" id="s-ayuda-espiritual" class="detail-card">
+<img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-ritual-de-amor-con-velas.webp" width="800" height="960" loading="lazy" decoding="async" alt="Ayuda espiritual gratis con velas y orientación privada">
+<div class="detail-copy">
+<span class="eyebrow">Carga y equilibrio</span>
+<h2>Ayuda espiritual gratis para entender el bloqueo</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p>Hay etapas en las que todo pesa: discusiones, cansancio, pérdidas y sensación de estancamiento. Antes de hablar de limpiezas, reviso qué ocurre y qué parte puede tener una explicación cotidiana.</p>
+<p>Si corresponde un acompañamiento espiritual, explico los pasos, los elementos y el seguimiento. Nada se realiza a escondidas ni se cobra sin tu autorización. Los tiempos varían según el caso.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20necesito%20ayuda%20espiritual%20gratis%20para%20comprender%20un%20bloqueo">Explícame tu bloqueo</a>
+</div>
+</article>
+
+<article data-detalle="brujos-en-new-york" id="s-brujos-en-new-york" class="detail-card">
+<img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-pareja-besandose-en-bola-magica.webp" width="800" height="960" loading="lazy" decoding="async" alt="Brujos en New York con consulta a distancia por WhatsApp">
+<div class="detail-copy">
+<span class="eyebrow">Atención en Estados Unidos</span>
+<h2>Brujos en New York con consulta privada a distancia</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p>No necesitas desplazarte ni mostrar tu situación frente a desconocidos. Atiendo casos de New York y otras ciudades por WhatsApp. Coordinamos mensajes, llamada o videollamada según lo que debamos revisar.</p>
+<p>Puedes escribirme en español a cualquier hora. Respondo conforme se liberan los espacios del día. La distancia no cambia la claridad de la consulta ni el cuidado de tus datos.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20busco%20brujos%20en%20New%20York%20y%20quiero%20una%20consulta%20privada">Consultar desde New York</a>
+</div>
+</article>
+</div>
+</section>
+
+<section data-seccion="3-servicios" data-tienda="catalogo" data-blk="tarjetas-premium-responsivas" class="reveal soft">
+<div class="wrap">
+<span class="eyebrow">Modalidades disponibles</span>
+<h2>Consultas espirituales que puedo aceptar</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<div class="catalog grid" data-fx="borde-vivo">
+<article class="service reveal" data-servicio="brujos-consulta"><div class="icon">✦</div><span class="tag">Primera revisión</span><h3>Consulta con un brujo</h3><p>Expón el problema y recibe una orientación inicial sin compromiso.</p><div class="actions"><a class="link" href="#s-brujos-consulta">Ver detalles</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20interesa%20la%20consulta%20con%20un%20brujo">Escribir</a></div></article>
+<article class="service reveal" data-servicio="tarot"><div class="icon">☉</div><span class="tag">Más consultado</span><h3>Lectura de tarot</h3><p>Ordena dudas de amor, trabajo y decisiones mediante los arcanos.</p><div class="actions"><a class="link" href="#s-tarot">Ver detalles</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20interesa%20una%20lectura%20de%20tarot">Escribir</a></div></article>
+<article class="service reveal" data-servicio="saber-mi-futuro"><div class="icon">☾</div><span class="tag">Sin falsas promesas</span><h3>Orientación del futuro</h3><p>Revisa tendencias y alternativas antes de tomar una decisión importante.</p><div class="actions"><a class="link" href="#s-saber-mi-futuro">Ver detalles</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20interesa%20saber%20qu%C3%A9%20camino%20se%20abre">Escribir</a></div></article>
+<article class="service reveal" data-servicio="ayuda-espiritual"><div class="icon">◆</div><span class="tag">A distancia</span><h3>Ayuda espiritual</h3><p>Comprende cargas, rachas difíciles y bloqueos que se repiten.</p><div class="actions"><a class="link" href="#s-ayuda-espiritual">Ver detalles</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20interesa%20la%20ayuda%20espiritual">Escribir</a></div></article>
+<article class="service reveal" data-servicio="brujos-en-new-york"><div class="icon">NY</div><span class="tag">En español</span><h3>Consulta desde New York</h3><p>Atención confidencial por WhatsApp sin necesidad de desplazarte.</p><div class="actions"><a class="link" href="#s-brujos-en-new-york">Ver detalles</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20solicito%20consulta%20espiritual%20desde%20New%20York">Escribir</a></div></article>
+<article class="service reveal" data-servicio="videncia"><div class="icon">◉</div><span class="tag">Privado</span><h3>Consulta de videncia</h3><p>Explora señales y personas relacionadas con tu situación presente.</p><div class="actions"><a class="link" href="#s-brujos-consulta">Cómo funciona</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20interesa%20una%20consulta%20de%20videncia">Escribir</a></div></article>
+<article class="service reveal" data-servicio="consulta-espiritual"><div class="icon">I</div><span class="tag">Sin juicio</span><h3>Consulta espiritual</h3><p>Habla de tu situación y recibe una mirada serena y directa.</p><div class="actions"><a class="link" href="#s-ayuda-espiritual">Cómo funciona</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20una%20consulta%20espiritual">Escribir</a></div></article>
+<article class="service reveal" data-servicio="lectura-del-destino"><div class="icon">II</div><span class="tag">Orientación</span><h3>Lectura del destino</h3><p>Identifica patrones actuales sin presentar el futuro como algo cerrado.</p><div class="actions"><a class="link" href="#s-saber-mi-futuro">Cómo funciona</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20interesa%20una%20lectura%20del%20destino">Escribir</a></div></article>
+<article class="service reveal" data-servicio="guia-para-decisiones"><div class="icon">III</div><span class="tag">Claridad</span><h3>Guía para decisiones</h3><p>Compara caminos cuando el miedo o la presión no te dejan pensar.</p><div class="actions"><a class="link" href="#s-tarot">Cómo funciona</a><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20necesito%20gu%C3%ADa%20para%20una%20decisi%C3%B3n">Escribir</a></div></article>
+</div>
+</div>
+</section>
+
+<section data-seccion="4-situaciones" data-modulo="situaciones" id="m-situaciones" class="reveal">
+<div class="wrap">
+<span class="eyebrow">Habla sin rodeos</span>
+<h2>¿Te identificas con alguna de estas situaciones?</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<div class="situation-grid grid">
+<div class="situation panel reveal"><h3>Se alejó sin explicar</h3><p>Dejó de responder y no sabes si esperar, hablar o cerrar la historia.</p></div>
+<div class="situation panel reveal"><h3>Hay una tercera persona</h3><p>Notas cambios, secretos o una distancia que antes no existía.</p></div>
+<div class="situation panel reveal"><h3>Todo termina en discusión</h3><p>Aún hay afecto, pero el orgullo y las heridas dominan la relación.</p></div>
+<div class="situation panel reveal"><h3>Sientes una racha pesada</h3><p>Trabajo, dinero y vínculos parecen trabarse al mismo tiempo.</p></div>
+<div class="situation panel reveal"><h3>No sabes qué decidir</h3><p>Tienes dos caminos y temes perder algo importante al escoger.</p></div>
+<div class="situation panel reveal"><h3>Buscas brujos cerca de ti</h3><p>Necesitas atención en español sin trasladarte ni exponer tu caso.</p></div>
+</div>
+<p class="lead">No interpretes señales por tu cuenta. Escríbeme con los hechos y te diré qué consulta corresponde.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20me%20identifico%20con%20una%20de%20estas%20situaciones%20y%20quiero%20orientaci%C3%B3n">Cuéntame cuál es tu situación</a>
+</div>
+</section>
+
+<section data-seccion="5-diagnostico" data-modulo="diagnostico" id="m-diagnostico" class="reveal soft">
+<div class="wrap">
+<div class="diagnostic panel">
+<span class="eyebrow">Tres respuestas</span>
+<h2>Descubre qué consulta necesitas</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<div class="progress"><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+<div class="test-step active" data-paso="1"><h3>¿Qué está pasando?</h3><div class="choices"><button type="button" data-opcion="se fue y no responde">Se fue y no responde</button><button type="button" data-opcion="hay otra persona">Hay otra persona</button><button type="button" data-opcion="peleamos demasiado">Peleamos demasiado</button><button type="button" data-opcion="siento un bloqueo espiritual">Siento un bloqueo espiritual</button></div></div>
+<div class="test-step" data-paso="2"><h3>¿Hace cuánto?</h3><div class="choices"><button type="button" data-opcion="días">Días</button><button type="button" data-opcion="semanas">Semanas</button><button type="button" data-opcion="meses">Meses</button><button type="button" data-opcion="más de un año">Más de un año</button></div><button class="back" type="button">Volver</button></div>
+<div class="test-step" data-paso="3"><h3>¿Qué tan urgente es?</h3><div class="choices"><button type="button" data-opcion="quiero orientación hoy">Quiero orientación hoy</button><button type="button" data-opcion="esta semana">Esta semana</button><button type="button" data-opcion="puedo esperar">Puedo esperar</button></div><button class="back" type="button">Volver</button></div>
+<div class="result"><h3>Tu primer paso es una consulta de evaluación</h3><p>Revisaré lo que ocurre antes de recomendar tarot, videncia o ayuda espiritual.</p><a class="link" href="#s-brujos-consulta">Ver cómo es la consulta</a><br><br><a data-diagnostico-wa class="btn btn-xl" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20una%20consulta">Enviar mis respuestas</a></div>
+</div>
+</div>
+</section>
+
+<section data-seccion="6-sobre" class="reveal">
+<div class="wrap about">
+
+<div>
+<span class="eyebrow">Autoridad sin espectáculo</span>
+<h2>Sobre el Maestro Genaro</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p>Me llamo Genaro. Trabajo con tarot, videncia y orientación espiritual. Mi manera de atender es simple: escucho, reviso y hablo con verdad. No alimento miedo para obligarte a pagar.</p>
+<p>Conservo una práctica de oración, lectura de arcanos y respeto por el libre albedrío. Acepto pocos casos al día porque una consulta privada exige tiempo. Si tu situación no requiere un trabajo espiritual, también te lo diré.</p>
+<div class="counterbar" data-fx="contadores">
+<div class="counter"><strong data-count="10">0</strong><span>cupos diarios</span></div>
+<div class="counter"><strong data-count="24">0</strong><span>horas para escribir</span></div>
+<div class="counter"><strong data-count="1">0</strong><span>atención uno a uno</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-seccion="7-proceso" data-modulo="proceso" id="m-proceso" class="reveal soft">
+<div class="wrap">
+<span class="eyebrow">Atención clara</span>
+<h2>Cómo trabajo tu consulta de principio a fin</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<div class="steps grid">
+<div class="step-card panel reveal"><h3>Escribes</h3><p>Envías tu nombre, el problema principal y desde cuándo ocurre.</p></div>
+<div class="step-card panel reveal"><h3>Reviso</h3><p>Te hago preguntas concretas y determino qué modalidad puede orientarte.</p></div>
+<div class="step-card panel reveal"><h3>Decides</h3><p>Conoces el alcance, el tiempo estimado y cualquier costo antes de continuar.</p></div>
+<div class="step-card panel reveal"><h3>Seguimiento</h3><p>Si acepto el caso, acordamos comunicación y revisiones sin mensajes confusos.</p></div>
+</div>
+<p>Los mensajes se reciben 24/7. La respuesta depende de la agenda diaria y la complejidad del caso.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20iniciar%20el%20proceso%20de%20consulta%20y%20explicarle%20mi%20caso">Iniciar mi consulta</a>
+</div>
+</section>
+
+<section data-seccion="8-comparativa" data-modulo="comparativa" id="m-comparativa" class="reveal">
+<div class="wrap">
+<span class="eyebrow">Elige con claridad</span>
+<h2>¿Cuál consulta es para ti?</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<div class="compare grid">
+<article class="panel reveal"><h3>Consulta con brujo</h3><dl><dt>Ideal si</dt><dd>No sabes por dónde comenzar.</dd><dt>Qué enviar</dt><dd>Nombre y resumen.</dd><dt>A distancia</dt><dd>Sí.</dd><dt>Tiempo</dt><dd>Varía según el caso.</dd></dl><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20elijo%20la%20consulta%20inicial%20con%20un%20brujo">Elegir</a></article>
+<article class="panel reveal"><h3>Tarot</h3><dl><dt>Ideal si</dt><dd>Tienes una pregunta concreta.</dd><dt>Qué enviar</dt><dd>Pregunta y contexto.</dd><dt>A distancia</dt><dd>Sí.</dd><dt>Tiempo</dt><dd>Según agenda.</dd></dl><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20elijo%20la%20lectura%20de%20tarot">Elegir</a></article>
+<article class="panel reveal"><h3>Videncia</h3><dl><dt>Ideal si</dt><dd>Buscas comprender señales.</dd><dt>Qué enviar</dt><dd>Situación principal.</dd><dt>A distancia</dt><dd>Sí.</dd><dt>Tiempo</dt><dd>Varía según el caso.</dd></dl><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20elijo%20la%20consulta%20de%20videncia">Elegir</a></article>
+<article class="panel reveal"><h3>Ayuda espiritual</h3><dl><dt>Ideal si</dt><dd>Sientes carga o estancamiento.</dd><dt>Qué enviar</dt><dd>Hechos y duración.</dd><dt>A distancia</dt><dd>Sí.</dd><dt>Tiempo</dt><dd>Se define al revisar.</dd></dl><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20elijo%20la%20orientaci%C3%B3n%20de%20ayuda%20espiritual">Elegir</a></article>
+</div>
+</div>
+</section>
+
+<section data-seccion="9-confianza" data-modulo="confianza" id="m-confianza" class="reveal soft">
+<div class="wrap">
+<span class="eyebrow">Compromisos concretos</span>
+<h2>Privacidad, pago claro y trato respetuoso</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<div class="trust-grid grid">
+<div class="trust panel reveal"><h3>Conversación privada</h3><p>No publico nombres, capturas, fotografías ni detalles de quienes consultan.</p></div>
+<div class="trust panel reveal"><h3>Precio antes de continuar</h3><p>La orientación inicial es sin compromiso. Cualquier trabajo posterior se explica antes del pago.</p></div>
+<div class="trust panel reveal"><h3>Atención en español</h3><p>Puedes escribir desde cualquier ciudad de Estados Unidos y hablar con claridad.</p></div>
+<div class="trust panel reveal"><h3>Sin resultados inventados</h3><p>No garantizo decisiones ajenas. Explico posibilidades, límites y seguimiento.</p></div>
+</div>
+</div>
+</section>
+
+<section data-seccion="10-otra" class="reveal">
+<div class="wrap center">
+<span class="eyebrow">Tu situación merece claridad</span>
+<h2>Tu consulta con el Maestro Genaro puede comenzar hoy</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p class="lead" style="margin-left:auto;margin-right:auto">No sigas pagando por promesas ni interpretando cada silencio como una señal. Explícame qué sucede. Revisaré si tu caso corresponde a tarot, videncia, ayuda espiritual o una conversación franca.</p>
+<a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20comenzar%20hoy%20mi%20consulta%20inicial%20sin%20compromiso">Solicitar consulta inicial</a>
+</div>
+</section>
+
+<section data-seccion="11-faq" data-modulo="faq" id="m-faq" class="reveal soft">
+<div class="wrap">
+<span class="eyebrow">Respuestas directas</span>
+<h2>Preguntas sobre brujos consulta gratis</h2>
+<svg class="ink" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<details><summary>¿La consulta inicial es realmente gratis?</summary><p>Sí. Puedes explicar brevemente tu situación por WhatsApp sin compromiso. Si solicitas un trabajo adicional, conocerás su alcance y forma de pago antes de decidir.</p></details>
+<details><summary>¿Cómo se hace la consulta por WhatsApp?</summary><p>Envías tu nombre, el asunto y desde cuándo ocurre. Después coordinamos mensajes, llamada o videollamada según lo que deba revisarse.</p></details>
+<details><summary>¿Cuánto tarda el Maestro Genaro en responder?</summary><p>Puedes escribir las 24 horas. Respondo conforme se liberan los diez espacios privados del día; los casos se revisan en orden.</p></details>
+<details><summary>¿Mi información queda en privado?</summary><p>Sí. No publico conversaciones ni datos personales. Comparte únicamente la información necesaria para comprender tu consulta.</p></details>
+<details><summary>¿Puedo consultar a distancia?</summary><p>Sí. Atiendo por WhatsApp desde New York y otras ciudades de Estados Unidos. No necesitas viajar para la orientación inicial.</p></details>
+<details><summary>¿Qué necesito enviar?</summary><p>Tu nombre, el tema principal y un resumen sincero. Si necesito fechas u otra referencia, te lo pediré directamente.</p></details>
+<details><summary>¿Qué ocurre después de la consulta?</summary><p>Te explico qué modalidad puede servir, qué límites tiene y qué tiempo requiere. Tú decides si deseas continuar; no existe obligación.</p></details>
+<details><summary>¿Se garantizan resultados?</summary><p>No. Las decisiones de otras personas no pueden asegurarse. Mi compromiso es hablar con claridad y no ofrecer resultados imposibles.</p></details>
+<p><a class="btn" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20tengo%20una%20pregunta%20sobre%20la%20consulta%20gratis">Hacer una pregunta directa</a></p>
+</div>
+</section>
+
+<section data-seccion="12-cierre" data-modulo="cierre" id="m-cierre" class="closing reveal">
+<div class="wrap center">
+<span class="eyebrow" style="color:#e2c980">Un paso firme</span>
+<h2>No cargues solo con una duda que puede aclararse</h2>
+<svg class="ink" style="color:#e2c980" viewBox="0 0 120 14" aria-hidden="true"><path d="M3 9 C30 2 62 13 116 5"/></svg>
+<p class="lead" style="margin-left:auto;margin-right:auto">Escríbeme ahora. Dime qué cambió, cuánto tiempo llevas así y qué resultado deseas. Te diré si puedo aceptar tu caso y cuál es el siguiente paso.</p>
+<a class="btn btn-xl" href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20quiero%20saber%20si%20mi%20caso%20tiene%20una%20salida%20y%20solicito%20la%20consulta%20inicial">Escríbele al Maestro Genaro</a>
+<p class="micro">WhatsApp privado · atención en español · sin obligación de continuar</p>
+</div>
+</section>
+</main>
+
+
+<section class="maq-gallery" id="maq-gal-auto"><div class="mgi"><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-altar-esoterico-con-velas-y-fotos.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-muro-de-craneos-con-llamas-y-oferta.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-altar-esoterico-con-estatuas-y-velas-4.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-consulta-esoterica-con-lectura-de-cartas.webp" alt="" loading="lazy" decoding="async"></figure><figure><video src="https://googleads.mkinnovador.com/banco/videos/mujer-agradece-a-maestro-erlin.mp4" poster="https://googleads.mkinnovador.com/banco/videos/mujer-agradece-a-maestro-erlin-caratula.webp" muted loop playsinline preload="none"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-consulta-esoterica-con-velas-y-altar.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-consulta-espiritual-y-sanacion-ritual.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-consultor-esoterico-en-su-despacho.webp" alt="" loading="lazy" decoding="async"></figure><figure><img src="https://brujos-consulta-gratis.brujoychaman.digital/optimizado/ag-178590335681/kw-307651528734/banco-grupo-en-ritual-esoterico-nocturno.webp" alt="" loading="lazy" decoding="async"></figure><figure><video src="https://googleads.mkinnovador.com/banco/videos/hombre-agradecido-al-maestro-juanito.mp4" poster="https://googleads.mkinnovador.com/banco/videos/hombre-agradecido-al-maestro-juanito-caratula.webp" muted loop playsinline preload="none"></video><figcaption class="mgb">▶ VIDEO</figcaption></figure></div></section>
+<footer>
+Maestro Genaro · Orientación espiritual por WhatsApp · Esta página no sustituye asesoría médica, legal, psicológica ni financiera.
+</footer>
+
+<script>
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reveals=document.querySelectorAll('.reveal');
+if(reduced){reveals.forEach(e=>e.classList.add('visible'))}
+else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});reveals.forEach(e=>io.observe(e))}
+const steps=[...document.querySelectorAll('.test-step')],dots=[...document.querySelectorAll('.dot')],answers=[];
+let current=0;
+function show(n){current=n;steps.forEach((s,i)=>s.classList.toggle('active',i===n));dots.forEach((d,i)=>d.classList.toggle('on',i<=n))}
+document.querySelectorAll('[data-opcion]').forEach(b=>b.addEventListener('click',()=>{
+answers[current]=b.dataset.opcion;
+steps[current].querySelectorAll('[data-opcion]').forEach(x=>x.classList.remove('selected'));
+b.classList.add('selected');
+if(current<2)show(current+1);
+else{
+document.querySelector('.result').classList.add('show');
+const msg=`Hola Maestro Genaro, hice el test: ${answers[0]}, desde hace ${answers[1]}, urgencia ${answers[2]}. ¿Me puede ayudar?`;
+document.querySelector('[data-diagnostico-wa]').href='https://wa.me/12137703537?text='+encodeURIComponent(msg);
+}}
+));
+document.querySelectorAll('.back').forEach(b=>b.addEventListener('click',()=>show(Math.max(0,current-1))));
+const nums=document.querySelectorAll('[data-count]');
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,end=+el.dataset.count;if(reduced){el.textContent=end;return}let start;function tick(t){start??=t;const p=Math.min((t-start)/900,1);el.textContent=Math.floor(end*p);if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);cio.unobserve(el)}),{threshold:.5});
+nums.forEach(n=>cio.observe(n));
+</script>
+<script src="https://googleads.mkinnovador.com/wa-tracker.js" defer></script>
+<script id="wa-maq-loader">(function(){if(/[?&](maquetador|mq)\b/.test(location.search)&&!window.__waMaq){var s=document.createElement('script');s.src='https://googleads.mkinnovador.com/maquetador.js?v=1';s.defer=true;(document.head||document.documentElement).appendChild(s);}})();</script>
+<style id="wa-ancho-guard">html,body{max-width:100%!important;overflow-x:clip!important}.watm-wrap{width:auto!important;max-width:100vw!important;box-sizing:border-box}.watm-viewport{overflow:hidden!important;width:auto!important;max-width:100%!important}.watm-track{width:100%!important;max-width:100%!important;min-width:0!important}.watm-slide{flex:0 0 100%!important;width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box}img,svg,video,iframe{max-width:100%}[class^="wfab-"],[class*=" wfab-"]{right:max(12px,env(safe-area-inset-right,0px))!important;left:auto!important;max-width:calc(100% - 24px)}</style>
+<script id="wa-img-guard">(function(){function h(t){if(!t||t.tagName!=='IMG')return;t.style.display='none';var f=t.closest&&t.closest('figure');if(f){var alive=false;f.querySelectorAll('img,video,iframe').forEach(function(m){if(m.style.display!=='none')alive=true});if(!alive)f.style.display='none'}}document.addEventListener('error',function(e){h(e.target)},true);window.addEventListener('load',function(){setTimeout(function(){document.querySelectorAll('img').forEach(function(i){if(i.src&&i.complete&&i.naturalWidth===0)h(i)})},400)});})();</script>
+<script id="wa-reveal-guard-js">(function(){var fixed=false;function hid(){var o=[],a=document.querySelectorAll('[class],[data-reveal],[data-aos]');for(var i=0;i<a href="https://wa.me/12137703537?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20brujos%20consulta%20gratis".length;i++){var e=a[i];if(e.closest&&e.closest('#maq-host'))continue;var c;try{c=getComputedStyle(e)}catch(x){continue}if(!c||c.display==='none'||c.visibility==='hidden')continue;if(c.position==='fixed')continue;if(e.getAttribute('aria-hidden')==='true')continue;if(parseFloat(c.opacity||'1')>0.05)continue;if(!(e.textContent||'').replace(/\s+/g,''))continue;o.push(e)}return o}function inView(e){var r=e.getBoundingClientRect();return r.bottom>0&&r.top<innerHeight&&r.height>0}function fixAll(){if(fixed)return;fixed=true;var els=hid();for(var i=0;i<els.length;i++){var e=els[i];e.classList.add('visible');e.style.setProperty('opacity','1','important');e.style.setProperty('transform','none','important')}var st=document.querySelectorAll('.reveal,.reveal-stagger');for(var j=0;j<st.length;j++)st[j].classList.add('visible')}function check(){if(fixed)return;var els=hid();for(var i=0;i<els.length;i++){if(inView(els[i])){fixAll();return}}}setTimeout(check,1600);setTimeout(check,3500);var t=0;addEventListener('scroll',function(){if(fixed)return;var n=Date.now();if(n-t<400)return;t=n;setTimeout(check,250)},{passive:true})})();</script>
+<!--WA-FAB:luna-plateada--><div class="wfab-luna"><style>
+.wfab-luna{position:fixed;right:16px;bottom:16px;z-index:99999}
+.wfab-luna a{display:flex;align-items:center;gap:10px;padding:9px 16px 9px 9px;border-radius:999px;background:linear-gradient(135deg,#1e1b4b,#312e81 60%,#1e1b4b);border:1px solid rgba(203,213,225,.55);color:#e2e8f0;font:600 13.5px/1.1 'Segoe UI',sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(30,27,75,.55);position:relative;overflow:hidden;animation:wfabLunaFloat 6s ease-in-out infinite}
+.wfab-luna a::before,.wfab-luna a::after{content:'✦';position:absolute;color:rgba(226,232,240,.8);font-size:9px;animation:wfabLunaTwinkle 4s ease-in-out infinite}
+.wfab-luna a::before{top:6px;right:18px}
+.wfab-luna a::after{bottom:7px;right:44px;animation-delay:2s}
+.wfab-luna .wi{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#19c15f;color:#fff;flex:0 0 auto}
+@keyframes wfabLunaFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes wfabLunaTwinkle{0%,100%{opacity:.15}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.wfab-luna a,.wfab-luna a::before,.wfab-luna a::after{animation:none!important}}
+</style><a href="https://wa.me/12137703537?text=Hola%20Maestro%20Genaro%2C%20busco%20brujos%20consulta%20gratis%20y%20quiero%20explicarle%20mi%20caso" target="_blank" rel="noopener" aria-label="Chatea por WhatsApp"><span class="wi"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span><span>Escríbeme ahora 🌙</span></a></div><!--/WA-FAB-->
+<nav id="maq-barra-srv" aria-label="Servicios"><div class="mbs-in"><a href="#s-brujos-consulta">Consulta con un brujo</a><a href="#s-tarot">Lectura de tarot</a><a href="#s-saber-mi-futuro">Orientación del futuro</a><a href="#s-ayuda-espiritual">Ayuda espiritual</a><a href="#s-brujos-en-new-york">Consulta desde New York</a><a href="#m-diagnostico">🔮 ¿Qué necesito?</a><a href="#m-faq">Preguntas</a></div></nav>
+<script id="maq-barra-srv-js">(function(){var b=document.getElementById('maq-barra-srv');if(!b)return;try{var cs=getComputedStyle(document.body),bg=cs.backgroundColor;if(!bg||bg==='rgba(0, 0, 0, 0)'||bg==='transparent')bg=getComputedStyle(document.documentElement).backgroundColor;b.style.background=(bg&&bg!=='rgba(0, 0, 0, 0)')?bg:'#111';b.style.color=cs.color||'#fff';var hd=document.querySelector('header');if(hd){var p=getComputedStyle(hd).position;if(p==='fixed'||p==='sticky')b.style.setProperty('--mbs-top',hd.offsetHeight+'px');}}catch(e){}var h1=document.querySelector('h1');var lim=function(){var s=h1&&(h1.closest('section,header')||h1);return s?s.getBoundingClientRect().bottom+window.scrollY:400;};var L=lim();window.addEventListener('scroll',function(){b.classList.toggle('on',window.scrollY>L);},{passive:true});window.addEventListener('resize',function(){L=lim();},{passive:true});var as=b.querySelectorAll('a');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;as.forEach(function(a){var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('act',on);if(on&&a.scrollIntoView&&b.classList.contains('on')){var r=a.getBoundingClientRect(),w=b.firstChild;if(r.left<0||r.right>window.innerWidth)w.scrollTo({left:a.offsetLeft-12,behavior:'smooth'});}});});},{rootMargin:'-40% 0px -55% 0px'});as.forEach(function(a){var t=document.getElementById(a.getAttribute('href').slice(1));if(t)io.observe(t);});}})();</script>
+<script id="kz-video-io">(function(){var vs=[].slice.call(document.querySelectorAll('video'));if(!vs.length)return;vs.forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.removeAttribute('controls');});function tryPlay(v){var p=v.play();if(p&&p.catch)p.catch(function(){});}var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.intersectionRatio>=0.4){tryPlay(e.target);}else{e.target.pause();}});},{threshold:[0,0.4,1]});vs.forEach(function(v){io.observe(v);});function kick(){vs.forEach(function(v){var r=v.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(v.readyState===0){try{v.load();}catch(err){}}tryPlay(v);}});}['touchstart','click','scroll'].forEach(function(ev){addEventListener(ev,function h(){kick();removeEventListener(ev,h);},{passive:true});});setTimeout(kick,400);})();</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/utm-capture",
+      "destination": "https://googleads.mkinnovador.com/api/wa-clics/registrar"
+    }
+  ]
+}

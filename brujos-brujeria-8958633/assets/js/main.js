@@ -655,7 +655,7 @@ var name = document.getElementById("name");
       var f = name.value.trim();
       var e = message.value.trim();
       var text = encodeURIComponent("Hola " + f + "! " + e);
-      var h = "https://api.whatsapp.com/send?phone=19498917311&text=" + text;
+      var h = "https://api.whatsapp.com/send?phone=17866878279&text=" + text;
       window.open(h, "_blank");
     });
   }
